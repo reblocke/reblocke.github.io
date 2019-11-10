@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * B.S. in Computer Science, University of Colorado, 2009
-  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. [Download Here](http://scholar.colorado.edu/csci_ugrad/29/)
+  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. [Available Here](http://scholar.colorado.edu/csci_ugrad/29/)
 * M.S. in Health Sciences, Montana State University, 2012
   * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana State University
 * M.D. University of Colorado School of Medicine, 2016
