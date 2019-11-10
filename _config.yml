@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Brian Locke, MD"
+title                    : "Brian Locke"
 title_separator          : "-"
 name                     : &name "Brian Locke, MD"
 description              : &description "University of Utah, Chief Medical Resident (2019-2020)"

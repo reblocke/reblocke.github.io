@@ -1,7 +1,7 @@
 ---
 title: "Enhancing Medical Student Quality Improvement Education through Immersion"
 collection: publications
-permalink: https://doi.org/10.1111/medu.13313
+permalink: /publications/2017-04-10-QI-ed-immersion
 excerpt: 'Integrating preclinical medical students into quality improvement teams is feasible and offers numerous potential benefits (including contextual and durable learning)'
 date: 2017-04-10
 venue: 'Medical Education'
