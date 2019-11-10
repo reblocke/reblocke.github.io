@@ -1,7 +1,7 @@
 ---
 title: "Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies carried by Mountain Climbers in Colorado."
 collection: publications
-permalink: /publications/2017-01-20-Mountain-Medical-Kits.md
+permalink: /publications/2017-01-20-Mountain-Medical-Kits
 excerpt: 'A systematic review into the incidence of medical conditions occuring in the backcountry, with a proposed medical kit based on WMS recommendations for the commonest conditions found in the review.'
 date: 2017-01-20
 venue: 'Journal of Travel Medicine'
