@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -12,12 +12,12 @@ redirect_from:
 Education
 ======
 * B.S. in Computer Science, University of Colorado, 2009
-  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. DOI: http://scholar.colorado.edu/csci_ugrad/29/
+  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. [Download Here](http://scholar.colorado.edu/csci_ugrad/29/)
 * M.S. in Health Sciences, Montana State University, 2012
   * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana State University
-* M.D. Doctor of Medicine, University of Colorado, 2016 
+* M.D. University of Colorado School of Medicine, 2016
 
-Experience/Training
+Experience and Training
 ======
 * 2019-2020: Chief Medical Resident
   * University of Utah Affiliated Hospitals and Clinics
@@ -35,12 +35,6 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-
 Teaching
 ======
   <ul>{% for post in site.teaching %}
@@ -49,9 +43,9 @@ Teaching
 
 Service and leadership
 ======
-* Phase IV Subcommittee (2019-2020)
+* University of Utah School of Medicine, Phase IV Subcommittee (2019-2020)
   * Develop and implement year 4 school of medicine curriculum
-* Student Trainee Advisory Committee, member and chair (2017-2019)
+* University of Utah Department of Medicine, Student-Trainee Advisory Committee, member and chair (2017-2019)
   * Provide trainee input for faculty promotions and retention
-* GME Value Council, founding member
+* University of Utah GME Value Council, founding member
   * Improve and coordinate QI + Safety education throughout GME training programs
