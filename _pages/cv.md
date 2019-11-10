@@ -12,10 +12,12 @@ redirect_from:
 Education
 ======
 * B.S. in Computer Science, University of Colorado, 2009
+  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. DOI: http://scholar.colorado.edu/csci_ugrad/29/
 * M.S. in Health Sciences, Montana State University, 2012
-* M.D. Doctor of Medicine, University of Colorado, 2016 (expected)
+  * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana State University
+* M.D. Doctor of Medicine, University of Colorado, 2016 
 
-Work experience
+Experience/Training
 ======
 * 2019-2020: Chief Medical Resident
   * University of Utah Affiliated Hospitals and Clinics
@@ -26,14 +28,6 @@ Work experience
   * University of Utah Affiliated Hospitals and Clinics
   * Focus in: Quality Improvement, Global/Underserved Health
 
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
 Publications
 ======
@@ -55,4 +49,9 @@ Teaching
 
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Phase IV Subcommittee (2019-2020)
+  * Develop and implement year 4 school of medicine curriculum
+* Student Trainee Advisory Committee, member and chair (2017-2019)
+  * Provide trainee input for faculty promotions and retention
+* GME Value Council, founding member
+  * Improve and coordinate QI + Safety education throughout GME training programs
