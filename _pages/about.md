@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently an Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) and Pulmonary / Critical Care fellowship applicant.
+I am currently an Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) and a future Pulmonary / Critical Care fellow at University of Utah (2020-).
 
 My background is in Computer Science (University of Colorado BS 2009) and Exercise Science (Montana State MSc in Health Science, 2012). In medical training, my focus has primarily been medical education and quality improvement.
 

@@ -8,4 +8,6 @@ date: 2019-07-01
 location: "Salt Lake City UT"
 ---
 
+180 Minute Workshop, University of Utah, 2019
+
 (Link etc coming soon)
