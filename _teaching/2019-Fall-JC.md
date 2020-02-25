@@ -19,7 +19,7 @@ Email Template to Participants
 ======
 [ACC/AHA Lipid Guideline Journal Club Example Email](https://reblocke.github.io/files/Email_Template.docx)
 
-Critical Appraisal Templates (based on [Dartmouth](https://www.dartmouth.edu/~library/biomed/guides/research/ebm-resources-materials.html) and [CEBM](https://www.cebm.net/2014/06/critical-appraisal/) templates)
+Critical Appraisal Templates (based on [Dartmouth](https://www.dartmouth.edu/~library/biomed/guides/research/ebm-resources-materials.html), [CEBM](https://www.cebm.net/2014/06/critical-appraisal/), and [Duke](https://guides.mclibrary.duke.edu/ebm/appraise) templates)
 ======
 [Cohort Study Critical Appraisal Worksheet](https://reblocke.github.io/files/UU_IM_Cohort_JC_Template.docx)
 
@@ -28,6 +28,10 @@ Critical Appraisal Templates (based on [Dartmouth](https://www.dartmouth.edu/~li
 [Meta-analysis Critical Appraisal Worksheet](https://reblocke.github.io/files/UU_IM_Metaanalysis_JC_Template.docx)
 
 [Clinical Practice Guideline Critical Appraisal Worksheet](https://reblocke.github.io/files/UU_IM_Guideline_JC_Template.docx)
+
+[Non-inferiority Randomized Controlled Trial](https://reblocke.github.io/files/UU_IM_Noninferiority_Trial_JC_Template.docx)
+
+[Screening Randomized Controlled Trial]((https://reblocke.github.io/files/UU_IM_Preventive_RCT_JC_Template.docx))
 
 Facilitator's Guides
 ======
@@ -38,6 +42,10 @@ Facilitator's Guides
 [Meta-analysis Facilitator's Guide](https://reblocke.github.io/files/UU_IM_Metaanalysis_Fac_Guide.docx)
 
 [Clinical Practice Guideline Facilitator's Guide](https://reblocke.github.io/files/UU_IM_Guideline_Fac_Guide.docx)
+
+[Non-inferiority Randomized Controlled Trial Facilitator's Guide](https://reblocke.github.io/files/UU_IM_Noninferiority_Trial_Fac_Guide.docx)
+
+[Screening Randomized Controlled Trial Facilitator's Guide]((https://reblocke.github.io/files/UU_IM_Preventive_RCT_Fac_Guide.docx))
 
 Learner Assessment
 ======
