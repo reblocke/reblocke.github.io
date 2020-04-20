@@ -1,7 +1,7 @@
 ---
 title: "Teaching Tutorials with Twine"
 collection: teaching
-type: "180 Minute Workshop"
+type: "experimenting with story-based online education"
 permalink: /teaching/2020-Tutorials
 venue: "University of Utah"
 date: 2020-04-19
