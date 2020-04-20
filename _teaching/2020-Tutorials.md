@@ -9,9 +9,10 @@ location: "Salt Lake City UT"
 ---
 
 Twine Tutorials:
-[Hyponatremia tutorial](https://reblocke.github.io/files/Tutorials/Hyponatremia.html)
 
+[Hyponatremia tutorial](https://reblocke.github.io/files/Tutorials/Hyponatremia.html)
 [NSVT sim](https://reblocke.github.io/files/Tutorials/NSVT Page.html)
 
 Video Lectures on Vimeo:
+
 [Zoom Noon Conferences](https://vimeo.com/channels/1565556)
