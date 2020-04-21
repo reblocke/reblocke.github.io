@@ -10,9 +10,12 @@ location: "Salt Lake City UT"
 
 Twine Tutorials:
 
-[Hyponatremia tutorial](https://reblocke.github.io/files/Tutorials/Hyponatremia.html)
-[NSVT sim](https://reblocke.github.io/files/Tutorials/NSVT Page.html)
+1. [Hyponatremia tutorial](https://reblocke.github.io/files/Tutorials/Hyponatremia.html) Warning: long.
+2. [NSVT simulation](https://reblocke.github.io/files/Tutorials/NSVT Page.html)
 
 Video Lectures on Vimeo:
 
 [Zoom Noon Conferences](https://vimeo.com/channels/1565556)
+
+Last Week In Medicine Podcast, Feb 18 20:
+[PLEX For ANCA Vasculitis and Steroids for ARDS](https://www.stitcher.com/podcast/stephen-jenkins/last-week-in-medicine/e/67438992)
