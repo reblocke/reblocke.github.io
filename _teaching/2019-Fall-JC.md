@@ -15,6 +15,8 @@ How to set up the journal club
 ======
 [Instructions for Facilitator](https://reblocke.github.io/files/UU_IM_How_to_Set_up_the_Journal_Club.docx)
 
+[Guidance on how to make a Critical Appraisal Template (e.g. for new study formats)](https://reblocke.github.io/files/UU_IM_How_to_make_an_appraisal_template.docx)
+
 Email Template to Participants
 ======
 [ACC/AHA Lipid Guideline Journal Club Example Email](https://reblocke.github.io/files/Email_Template.docx)
