@@ -10,4 +10,4 @@ location: "Salt Lake City UT"
 
 180 Minute Workshop, University of Utah, 2019
 
-(Link etc coming soon)
+(Link to modules etc coming soon)
