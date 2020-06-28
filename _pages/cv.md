@@ -19,6 +19,9 @@ Education
 
 Experience and Training
 ======
+* 2020-: Pulmonary and Critical Care Fellow
+  * University of Utah Affiliated Hospitals and Clinics
+
 * 2019-2020: Chief Medical Resident
   * University of Utah Affiliated Hospitals and Clinics
   * Focus in: Evidence-Based Medicine, Resident Research, Residency Recruiting
@@ -50,7 +53,7 @@ Teaching
 Service and leadership
 ======
 * University of Utah School of Medicine, Phase IV Subcommittee (2019-2020)
-  * Develop and implement year 4 school of medicine curriculum
+  * Develop and implement year 4 School of Medicine curriculum
 * University of Utah Department of Medicine, Student-Trainee Advisory Committee, member and chair (2017-2019)
   * Provide trainee input for faculty promotions and retention
 * University of Utah GME Value Council, founding member

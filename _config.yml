@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Brian Locke"
 title_separator          : "-"
 name                     : &name "Brian Locke, MD"
-description              : &description "University of Utah, Chief Medical Resident (2019-2020)"
+description              : &description "Fellow, Pulmonary and Critical Care. University of Utah."
 url                      : https://reblocke.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "reblocke.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Brian Locke, MD"
   avatar           : "profile.png"
-  bio              : "Internal Medicine Chief Resident, future Pulm/CC Fellow. Interested in Medical Education, Diagnostic Reasoning, Sleep and Ventilation Control"
+  bio              : "Current Pulm/CC Fellow and former Internal Medicine Chief Medical Resident (2019-2020) at U of U. Interests: Medical Education, Diagnostic Reasoning and Numeracy, Sleep and Ventilation"
   location         : "Salt Lake City, UT. USA"
   employer         : "Univ of Utah Hospitals and Clinics"
   pubmed           :
