@@ -17,8 +17,9 @@ Test Characteristics
 EKG Interpretation
 ======
 [Intro to EKGs Powerpoint](https://reblocke.github.io/files/Locke_Intro_EKG.pptx)
+
 [Arrhythmia Powerpoint](https://reblocke.github.io/files/Locke_Arrhythmia.pptx)
 
 Congestive Heart Failure Management
 ======
-[CHF Powerpoint]((https://reblocke.github.io/files/Locke_CHF.pptx)
+[CHF Powerpoint](https://reblocke.github.io/files/Locke_CHF.pptx)

@@ -54,7 +54,7 @@ Service, Appointments, and Leadership
 ======
 * American Academy of Sleep Medicine Young Investigator Research Forum (2020)
   * [..The research forum aids the career development of promising young investigators in clinical and translational sleep medicine research..](https://aasm.org/professional-development/young-investigators-research-forum/)
-* University of Utah School of Medicine, Phase IV Subcommittee (2019-2020)
+* University of Utah School of Medicine, Phase IV Subcommittee (2019-2021)
   * Develop and implement year 4 School of Medicine curriculum
 * University of Utah Department of Medicine, Student-Trainee Advisory Committee, member and chair (2017-2019)
   * Provide trainee input for faculty promotions and retention
