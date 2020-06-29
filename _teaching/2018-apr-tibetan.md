@@ -8,7 +8,7 @@ date: 2018-04-01
 location: "Dharamshala, Himachal Pradesh, India"
 ---
 
-Introductory Lecture Series on:
+Brief introductory Powerpoint presentations on Test Characteristics, EKG Interpretation, and CHF Management
 
 Test Characteristics
 ======

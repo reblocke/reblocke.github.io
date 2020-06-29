@@ -7,6 +7,7 @@ venue: "University of Utah"
 date: 2019-07-01
 location: "Salt Lake City UT"
 ---
+Given as an introduction to Evidence-Based Medicine, with the goal of introducing foundational concepts prior to participation in journal clubs.
 
 <iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={15a37563-bded-4a6e-954e-4abfc70f9bfa}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="1186px" height="691px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 

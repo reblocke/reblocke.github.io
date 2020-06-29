@@ -7,6 +7,7 @@ venue: "University of Utah"
 date: 2020-04-19
 location: "Salt Lake City UT"
 ---
+This page contains a compilation of teaching content from 2019-2020 IM Chief Year
 
 Video Lectures on Vimeo:
 ======

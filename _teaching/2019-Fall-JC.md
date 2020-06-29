@@ -8,7 +8,7 @@ date: 2019-08-01
 location: "Salt Lake City UT"
 ---
 
-Below are links to the supporting materials for the University of Utah Internal Medicine Residency Journal Club. This is a weekly, outpatient journal club that focuses on appraisal and applications of medical literature (particularly, clinical practice guidelines and primary literature) to patient care.  
+This page contains links to the supporting materials for the University of Utah Internal Medicine Residency Journal Club. This is a weekly, outpatient journal club that focuses on appraisal and applications of medical literature (particularly, clinical practice guidelines and primary literature) to patient care.  
 
 
 How to set up the journal club
