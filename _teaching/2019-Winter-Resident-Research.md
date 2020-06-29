@@ -1,5 +1,5 @@
 ---
-title: "Intern Resident Research and Mentoring Seminar"
+title: "Intern Intro to Research and Mentoring Seminar"
 collection: teaching
 type: "180 Minute Workshop"
 permalink: /teaching/2019-Fall-Resident-Research

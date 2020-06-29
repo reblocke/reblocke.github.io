@@ -1,6 +1,6 @@
 ---
-title: "Coffee Roast Setup"
-excerpt: "Home Roasting<br/><img src='/images/Coffee500x500.jpg'>"
+title: "Coffee Roasting Setup"
+excerpt: "Details on my home roasting setup<br/><img src='/images/Coffee500x500.jpg'>"
 collection: portfolio
 ---
 
@@ -14,7 +14,7 @@ Setup
 
 [Sweet Marias, Green Coffee](https://www.sweetmarias.com/)
 
-[Burr Grinder](https://www.seattlecoffeegear.com/baratza-encore-coffee-grinder)
+[Burr Grinder e.g. Baratza Encore](https://www.seattlecoffeegear.com/baratza-encore-coffee-grinder)
 
 [The World Atlas of Coffee: From Beans to Brewing -- Coffees Explored, Explained and Enjoyed by James Hoffmann](https://www.amazon.com/gp/product/0228100941/)
 
