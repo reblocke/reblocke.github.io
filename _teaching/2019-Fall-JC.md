@@ -56,3 +56,5 @@ Learner Assessment
 <img src='/images/JC_500x300.jpg'>
 
 Example Journal Club, Aug 2019
+
+<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={9db4e5d7-51d6-4467-8853-7a398b8a3477}&amp;action=embedview&amp;wdAr=1.5" width="1154px" height="793px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>

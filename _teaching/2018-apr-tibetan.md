@@ -12,14 +12,14 @@ Introductory Lecture Series on:
 
 Test Characteristics
 ======
-[Test Chars Powerpoint Slides](https://reblocke.github.io/files/Locke_Test_Chars.pptx)
+<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={83b4735e-ca20-4ffa-a720-e966eea112bf}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1026px" height="793px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
 EKG Interpretation
 ======
-[Intro to EKGs Powerpoint](https://reblocke.github.io/files/Locke_Intro_EKG.pptx)
+<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={e7313415-2f09-47a9-a0e7-d671c9759b83}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1026px" height="793px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
-[Arrhythmia Powerpoint](https://reblocke.github.io/files/Locke_Arrhythmia.pptx)
+<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={46e5b778-97e6-4c7b-a74a-95c60d070b5b}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1026px" height="793px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
 
 Congestive Heart Failure Management
 ======
-[CHF Powerpoint](https://reblocke.github.io/files/Locke_CHF.pptx)
+<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={f25f137d-e601-4864-badb-968711cc13b8}&amp;action=embedview&amp;wdAr=1.3333333333333333" width="1026px" height="793px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
