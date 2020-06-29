@@ -14,7 +14,9 @@ Video Lectures on Vimeo:
 
 Power Point Slides: (Last Updated Apr 2020)
 
-1. [COVID Diagnostics Users Guide PPT](https://reblocke.github.io/files/COVID_Diagnostics_Users_Guide.pptx)
+1. COVID Diagnostics Users Guide:
+<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={9a4f732c-761c-4bb2-82e0-b3f31d9723e6}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
 2. [COVID Imaging Users Guide PPT](https://reblocke.github.io/files/COVID_Imaging_Users_Guide.pptx)
 3. [COVID Scarce Resources PPT](https://reblocke.github.io/files/COVID_Scarce_Resources.pptx)
 4. [COVID Transmission PPT](https://reblocke.github.io/files/COVID_Transmission_101.pptx)
