@@ -10,4 +10,6 @@ location: "Salt Lake City UT"
 
 180 Minute Workshop, University of Utah, 2019
 
-(Link to modules etc coming soon)
+[EBM and Journal Club Curriculum Goals and Objectives](https://reblocke.github.io/files/EBM/EBM_and_JC_Curriculum_Overview.docx)
+[Seminar PPT](https://reblocke.github.io/files/EBM/EBM_Seminar.pptx)
+[EBM Tools Document](https://reblocke.github.io/files/EBM/EBM_Seminar_Tools.docx)

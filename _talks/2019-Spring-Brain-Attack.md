@@ -10,4 +10,4 @@ location: "Salt Lake City UT, USA"
 
 Quality improvement project focusing on improving Brain Attack response for suspected acute ischemic strokes that occur on the internal medicine services at the Salt Lake City, VA. Later expanded to other services.
 
-(Link Coming Soon)
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=[https://reblocke.github.io/files/Brain_Attack_Poster.pptx]' width='100%' height='600px' frameborder='0'>

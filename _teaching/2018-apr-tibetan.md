@@ -10,14 +10,15 @@ location: "Dharamshala, Himachal Pradesh, India"
 
 Introductory Lecture Series on:
 
-EKG Interpretation
-======
-(link coming soon)
-
 Test Characteristics
 ======
-(link coming soon)
+[Test Chars Powerpoint Slides](https://reblocke.github.io/files/Locke_Test_Chars.pptx)
+
+EKG Interpretation
+======
+[Intro to EKGs Powerpoint](https://reblocke.github.io/files/Locke_Intro_EKG.pptx)
+[Arrhythmia Powerpoint](https://reblocke.github.io/files/Locke_Arrhythmia.pptx)
 
 Congestive Heart Failure Management
 ======
-(link coming soon)
+[CHF Powerpoint]((https://reblocke.github.io/files/Locke_CHF.pptx)

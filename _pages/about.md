@@ -12,6 +12,6 @@ I am currently a Pulmonary / Critical Care fellow at University of Utah (2020-).
 
 My background is in Computer Science (University of Colorado BS 2009) and Exercise Science (Montana State MSc in Health Science, 2012). In medical training, my focus has primarily been medical education and quality improvement.
 
-My current academic interests are clinical reasoning, sleep and ventilation (characterizing central sleep apnea and effects of sleep apnea in bariatric surgery patients).
+My current academic interests are medical education, clinical reasoning and numeracy, sleep and ventilation.
 
 Outside of medicine I am a skier, [alpinist](https://www.instagram.com/reblocke/), traveler, and coffee nerd.
