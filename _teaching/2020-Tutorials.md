@@ -13,26 +13,31 @@ Video Lectures on Vimeo:
 ======
 [Zoom Noon Conferences](https://vimeo.com/channels/1565556)
 
+
+Shock Lecture, CME to APCs
+======
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/dSirJkp8DqPFyq" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/dSirJkp8DqPFyq" title="Locke vasopressor ppt" target="_blank">Locke vasopressor ppt</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
+
 COVID Power Point Slides: (Last Updated Apr 2020)
 ======
 
 COVID Diagnostics Users Guide:
-<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={9a4f732c-761c-4bb2-82e0-b3f31d9723e6}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ME5JRDT26VKlIl" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/ME5JRDT26VKlIl" title="Covid diagnostics users guide" target="_blank">Covid diagnostics users guide</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 COVID Imaging Users Guide PPT:
-<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={37baa4b0-f178-4e73-a8f9-74667f975f37}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/N2JFRupXG2NOW6" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/N2JFRupXG2NOW6" title="Covid imaging users guide" target="_blank">Covid imaging users guide</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 COVID Scarce Resources PPT
-<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={4690450a-391f-4ecd-9019-4974829bf524}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/ryx4SYkHcsG8Fx" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/ryx4SYkHcsG8Fx" title="Scarce resources" target="_blank">Scarce resources</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 COVID Transmission PPT
-<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={57ae7cee-4985-478f-9272-cba861720e6a}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/BSqvf33nvlNiH4" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/BSqvf33nvlNiH4" title="Locke covid transmission 101" target="_blank">Locke covid transmission 101</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 [COVID Vent Workbook](https://reblocke.github.io/files/COVID_Vent_Basics_Workbook_Combined.docx)
 
 Transition to Intern Year X-Cover PPT:
 ======
-<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={606e46eb-17f0-469a-b929-16528ca6589c}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/xZJMB1xBKlOuiL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/xZJMB1xBKlOuiL" title="Tti top 10 on call anton locke 4-11-20" target="_blank">Tti top 10 on call anton locke 4-11-20</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 Diagrams:
 ======
@@ -40,7 +45,7 @@ Diagrams:
 
 Zoom Case Conference Template:
 ======
-<iframe src="https://uofutah-my.sharepoint.com/personal/u0476159_umail_utah_edu/_layouts/15/Doc.aspx?sourcedoc={8ec07897-e7e0-4c8a-a914-2f5e4b8bddcc}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="962px" height="565px" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/IX6YVzzZRkPuPN" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/secret/IX6YVzzZRkPuPN" title="Virtual noon conf template" target="_blank">Virtual noon conf template</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 Twine Tutorials (experimental):
 ======
