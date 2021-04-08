@@ -56,3 +56,6 @@ Other Projects:
 ======
 Last Week In Medicine Podcast, Feb 18 2020:
 [PLEX For ANCA Vasculitis and Steroids for ARDS](https://www.stitcher.com/podcast/stephen-jenkins/last-week-in-medicine/e/67438992)
+
+Last Week In Medicine Podcast, Apr 8 2021:
+[Regression Discontinuity Analysis of Contrast Nephropathy](https://www.stitcher.com/show/last-week-in-medicine/episode/three-days-of-antibiotics-for-pneumonia-iv-contrast-and-kidney-function-doacs-for-valvular-atrial-fibrillation-83008087)
