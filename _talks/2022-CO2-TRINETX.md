@@ -8,7 +8,7 @@ date: 2022-05-16
 location: "San Fransisco, CA"
 ---
 
-##Evidence Review Table: Hypercapnia: Papers defining groups with hypercapnic respiratory failure, study question, how they identified patients, and key findings
+Evidence Review Table: Hypercapnia: Papers defining groups with hypercapnic respiratory failure, study question, how they identified patients, and key findings
 
 ### Ouanes-Besbes et al. 2021. Tunisia
 *	Ouanes-Besbes L, Hammouda Z, Besbes S, Nouira W, Lahmar M, Ben Abdallah S, Ouanes I, Dachraoui F, Abroug F. Diagnosis of Sleep Apnea Syndrome in the Intensive Care Unit: A Case Series of Survivors of Hypercapnic Respiratory Failure. Annals of the American Thoracic Society. 2021 Apr;18(4):727-9. [Link to paper](https://www.atsjournals.org/doi/full/10.1513/AnnalsATS.202005-425RL)
