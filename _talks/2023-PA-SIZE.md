@@ -15,6 +15,6 @@ REFERENCES
 
 2. Scarpato BM, Locke BW, Bledsoe J, et al. The association between pulmonary artery enlargement and mortality in an Emergency Department population undergoing computed tomography pulmonary angiography. Pulmonary Circulation. 2023;13(2):e12225
 
-*	[Link to prepreint](https://reblocke.github.io/files/2023-10-10_Dose_ _Response_Letter.docx)
+*	[Link to prepreint](https://github.com/reblocke/CTPA-Dose-Response/blob/main/2023-10-10%20Dose%20Response%20Letter.docx)
 
-*	[Link to STATA code](https://reblocke.github.io/files/2023-10-10_Dose_ _Response_Letter.docx)
+*	[Link to STATA code](https://github.com/reblocke/CTPA-Dose-Response/blob/main/BL%20CombofilewithoutEMPI.do)
