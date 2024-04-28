@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Brian Locke"
+title                    : "Brian Locke, MD MSCI"
 title_separator          : "-"
-name                     : &name "Brian Locke, MD"
-description              : &description "Fellow, Pulmonary and Critical Care. University of Utah."
+name                     : &name "Brian Locke, MD MSCI"
+description              : &description "Pulmonary and Critical Care. Intermountain Health and University of Utah."
 url                      : https://reblocke.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "reblocke.github.io"
@@ -80,11 +80,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Brian Locke, MD"
-  avatar           : "profile.png"
-  bio              : "Current Pulm/CC Fellow and former IM Chief Medical Resident (2019-20) at U of U. Interests: Medical Education, Diagnostic Reasoning and Numeracy, Sleep and Ventilation"
+  name             : "Brian Locke, MD MSCI"
+  avatar           : "profile.JPG"
+  bio              : "Pulm/CC Research; former IM Chief Medical Resident (2019-20) at U of U. Interests: Hypercapnic Respiratory Failure, Ventilation, Clinical Reasoning, and Numeracy"
   location         : "Salt Lake City, UT. USA"
-  employer         : "Univ of Utah Hospitals and Clinics"
+  employer         : "Intermountain Health; Univ of Utah"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=O1nydc8AAAAJ"
   email            : "brian.locke@hsc.utah.edu"

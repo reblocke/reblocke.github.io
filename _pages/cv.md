@@ -16,47 +16,38 @@ Education
 * M.S. in Health Sciences, Montana State University, 2012
   * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana State University
 * M.D. University of Colorado School of Medicine, 2016
+* M.S. in Clinical Investigation, University of Utah, 2023
+  * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana 
 
-Experience and Training
+Training
 ======
-* 2020-: Pulmonary and Critical Care Fellow
+* 2023-2024: T32 Research Fellow; Visiting Instructor
   * University of Utah Affiliated Hospitals and Clinics
+
+* 2020-2023: Pulmonary and Critical Care Fellow
+  * University of Utah Affiliated Hospitals and Clinics
+
+* American Academy of Sleep Medicine Young Investigator Research Forum (2020)
+  * [..The research forum aids the career development of promising young investigators in clinical and translational sleep medicine research..](https://aasm.org/professional-development/young-investigators-research-forum/)
 
 * 2019-2020: Chief Medical Resident
   * University of Utah Affiliated Hospitals and Clinics
-  * Focus in: Evidence-Based Medicine, Resident Research, Residency Recruiting
-  * Supervisor: Caroline Milne, MD
 
 * 2016-2019: Internal Medicine Resident
   * University of Utah Affiliated Hospitals and Clinics
-  * Focus in: Quality Improvement, Global/Underserved Health
 
-
-Publications
+Research Support
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* 2022-2024:  Ruth L. Kirschstein National Research Service Award (NIH 5T32HL105321)
+  * University of Utah Affiliated Hospitals and Clinics; Division of Pulmonary and Critical Care (PI: Robert Paine III)
 
-Abstracts
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+* 2022-2024: [Academic Sleep and Pulmonary Integrated Research/Clinical Fellowship (ASPIRE) Program](https://www.aspirefellowship.com/2022-2023)
+  * American Thoracic Society
 
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Service, Appointments, and Leadership
-======
 * American Academy of Sleep Medicine Young Investigator Research Forum (2020)
   * [..The research forum aids the career development of promising young investigators in clinical and translational sleep medicine research..](https://aasm.org/professional-development/young-investigators-research-forum/)
-* University of Utah School of Medicine, Phase IV Subcommittee (2019-2021)
-  * Develop and implement year 4 School of Medicine curriculum
-* University of Utah Department of Medicine, Student-Trainee Advisory Committee, member and chair (2017-2019)
-  * Provide trainee input for faculty promotions and retention
-* University of Utah GME Value Council, founding member
-  * Improve and coordinate QI + Safety education throughout GME training programs
+
+Research
+======
+* [Google Scholar](https://scholar.google.com/citations?user=O1nydc8AAAAJ&hl=en)
+* [ORCID](https://orcid.org/0000-0002-3588-5238)

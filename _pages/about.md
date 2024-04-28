@@ -8,10 +8,4 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Pulmonary / Critical Care fellow at University of Utah (2020-). I was an Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020.
-
-My background is in Computer Science (University of Colorado BS 2009) and Exercise Science (Montana State MSc in Health Science, 2012). In medical training, my focus has primarily been medical education and quality improvement.
-
-My current academic interests are medical education, clinical reasoning and numeracy, sleep and ventilation.
-
-Outside of medicine I am a skier, [alpinist](https://www.instagram.com/reblocke/), traveler, and coffee nerd.
+I am a board-certified researcher, pulmonologist, and intensivist associated with Intermountain Health and the University of Utah. I'm interested in pragmatic clinical research, particularly of hypercapnic respiratory failure. My training has focused on computer science (University of Colorado BS 2009), medicine (University of Colorado, MD 2016), medical education (Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020), and clinical investigation (MS in Clinical Investigation, University of Utah 2023).
