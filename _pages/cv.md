@@ -38,14 +38,11 @@ Training
 
 Research Support
 ======
-* 2022-2024:  Ruth L. Kirschstein National Research Service Award (NIH 5T32HL105321)
-  * University of Utah Affiliated Hospitals and Clinics; Division of Pulmonary and Critical Care (PI: Robert Paine III)
+* 2022-2024:  Ruth L. Kirschstein National Research Service Award, University of Utah Division of Pulmonary and Critical Care
+  * National Institutes of Health: 5T32HL105321, PI: Robert Paine III
 
 * 2022-2024: [Academic Sleep and Pulmonary Integrated Research/Clinical Fellowship (ASPIRE) Program](https://www.aspirefellowship.com/2022-2023)
   * American Thoracic Society
-
-* American Academy of Sleep Medicine Young Investigator Research Forum (2020)
-  * [..The research forum aids the career development of promising young investigators in clinical and translational sleep medicine research..](https://aasm.org/professional-development/young-investigators-research-forum/)
 
 Research
 ======
