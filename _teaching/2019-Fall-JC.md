@@ -57,4 +57,4 @@ Learner Assessment
 
 Example Journal Club, Aug 2019
 
-<iframe src="https://www.slideshare.net/BrianLocke9/slideshelf" width="760px" height="570px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:none;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/LVtMu7A5gSqnyb" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianLocke9/university-of-utah-internal-medicine-journal-club-curriculum" title="University of Utah Internal Medicine - Journal Club Curriculum" target="_blank">University of Utah Internal Medicine - Journal Club Curriculum</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
