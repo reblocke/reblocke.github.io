@@ -1,5 +1,5 @@
 ---
-title: "Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery AUTHORS: Brian W Locke, MD; Conrad Addison, MD; Somya Mishra, MD; Krishna M Sundar, MD. The University of Utah. Division of Pulmonary and Critical Care; Division of Sleep Medicine; Department of Anesthesiology"
+title: "Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery"
 collection: talks
 type: "Poster"
 permalink: /talks/2022-HCO3-BARIATRIC
@@ -7,6 +7,8 @@ venue: "American Thoracic Society 2022"
 date: 2022-05-17
 location: "San Fransisco, CA"
 ---
+
+Full citation: Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery AUTHORS: Brian W Locke, MD; Conrad Addison, MD; Somya Mishra, MD; Krishna M Sundar, MD. The University of Utah. Division of Pulmonary and Critical Care; Division of Sleep Medicine; Department of Anesthesiology
 
 The ERS proposed spectrum of hypoventilatory disorders:
 *	Randerath W, Verbraecken J, Andreas S, Arzt M, Bloch KE, Brack T, Buyse B, De Backer W, Eckert DJ, Grote L, Hagmeyer L. Definition, discrimination, diagnosis and treatment of central breathing disturbances during sleep. European respiratory journal. 2017 Jan 1;49(1).

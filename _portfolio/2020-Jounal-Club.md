@@ -1,5 +1,5 @@
 ---
-title: "Perceptions of a Novel Approach to Chief Resident-Led Journal Club in the Era of Clinical Practice Guidelines. Locke B, Wright J, Anton M, Raaum S, Milne C."
+title: "Perceptions of a Novel Approach to Chief Resident-Led Journal Club in the Era of Clinical Practice Guidelines."
 collection: talks
 type: "Poster"
 permalink: /talks/2020-Journal Club
@@ -7,6 +7,8 @@ venue: "Society of General Internal Medicine (Cancelled due to COVID)"
 date: 2020-05-09
 location: "Birmingham, AL, USA"
 ---
+
+Perceptions of a Novel Approach to Chief Resident-Led Journal Club in the Era of Clinical Practice Guidelines. Locke B, Wright J, Anton M, Raaum S, Milne C.
 
 An educational innovation to adapt the Journal Club format to modern frameworks of evidence-based medicine (EBM).
 

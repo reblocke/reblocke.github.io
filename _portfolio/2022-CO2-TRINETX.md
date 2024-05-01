@@ -1,5 +1,5 @@
 ---
-title: "Common methods of identifying hypercapnic respiratory failure produce meaningfully different cohorts. Brian W Locke, Krishna M Sundar, Jeanette Brown, Ramkiran Gouripeddi."
+title: "Common methods of identifying hypercapnic respiratory failure produce meaningfully different cohorts."
 collection: talks
 type: "Poster"
 permalink: /talks/2022-CO2-TRINETX
@@ -7,6 +7,8 @@ venue: "American Thoracic Society 2022"
 date: 2022-05-16
 location: "San Fransisco, CA"
 ---
+
+Common methods of identifying hypercapnic respiratory failure produce meaningfully different cohorts. Brian W Locke, Krishna M Sundar, Jeanette Brown, Ramkiran Gouripeddi.
 
 Evidence Review Table: Hypercapnia: Papers defining groups with hypercapnic respiratory failure, study question, how they identified patients, and key findings
 
