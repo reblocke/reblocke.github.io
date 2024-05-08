@@ -13,11 +13,11 @@ location: "Salt Lake City UT, USA"
 ## Agenda: 
 1. Survey - here [link to RedCap]
 2. 15-minute sessions on the needed microskills
--- Leadership Style
--- Rhythm Interpretation
--- Do you have what you need?
--- Identifying the Cause
--- Dispo
+> Leadership Style
+> Rhythm Interpretation
+> Do you have what you need?
+> Identifying the Cause
+> Dispo
 3. Q&A
 4. Session Feedback 
 
@@ -56,8 +56,8 @@ We discussed with stakeholders / participants in codes and rapid response teams 
 - Stand at the foot of the bed. Don’t move and don’t do tasks. 
 - Set the tone; give encouragement to sharing information/suggestions
 - Keep the big picture in mind:
--- RRT: Is this a code? Does this patient need to go to the ICU?
--- Code: High quality compressions; shock if shockable
+> RRT: Is this a code? Does this patient need to go to the ICU?
+> Code: High quality compressions; shock if shockable
 
 ## Q & A and Feedback 
 
