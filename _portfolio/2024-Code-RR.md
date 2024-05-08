@@ -15,7 +15,7 @@ Agenda:
 2. 15-minute sessions on the needed microskills
 -- Leadership Style
 -- Rhythm Interpretation
--- Equipment & Personnel
+-- Do you have what you need?
 -- Identifying the Cause
 -- Dispo
 3. Q&A
@@ -38,7 +38,6 @@ The learning objectives:
 
 Module 1: Leadership
 ======
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/s9G7Ybd4RUEpvH" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/BrianLocke9/brain-attack-poster" title="Brain attack poster" target="_blank">Brain attack poster</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke </a></strong> </div>
 
 Module 2: Rhyhtms
 ======
@@ -51,7 +50,17 @@ Module 4: Identifying the Cause
 
 Module 5: Ending the Code/RRT
 ======
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/6V2VZwJ2N9SF1b" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/slideshow/end-of-code-rapid-response-presentation/267921104" title="End of Code / Rapid Response Presentation" target="_blank">End of Code / Rapid Response Presentation</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong> </div>
 
+
+Summary
+======
+- “I’m <Name>, the resident on the code team. Who is running this code?” ”Can I take over?”
+- Stand at the foot of the bed. Don’t move and don’t do tasks. 
+- Set the tone; give encouragement to sharing information/suggestions
+- Keep the big picture in mind:
+-- RRT: Is this a code? Does this patient need to go to the ICU?
+-- Code: High quality compressions; shock if shockable
 
 Q & A and Feedback 
 ======
