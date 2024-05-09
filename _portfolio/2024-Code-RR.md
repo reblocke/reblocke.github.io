@@ -18,15 +18,16 @@ location: "Salt Lake City UT, USA"
     3. Do you have what you need?
     4. Identifying the Cause
     5. Ending the response
-3. Q&A
-4. Session Feedback 
+3. Q&A and equipment
+4. Session Feedback [link to RedCap #2]
 
 # Running Codes and Rapid Response Teams 
 ======
 ### University of Utah, Internal Medicine Residents
 
 ### Methods: 
-We discussed with stakeholders / participants in codes and rapid response teams to identify the most common and consequential mistakes residents make: 
+We've discussed with stakeholders and participants in the rapid response & code teams to identify the most common and consequential mistakes residents make: 
+- **Unfavorable team dynamics emerge**
 - It’s not clear who is running the code.
 - A shockable rhythm is not shocked.
 - Decisions are too delayed.
@@ -52,14 +53,14 @@ We discussed with stakeholders / participants in codes and rapid response teams 
 
 ## Summary
 
-- “I’m <Name>, the resident on the code team. Who is running this code?” ”Can I take over?”
+- **Set the tone; give encouragement to sharing information/suggestions**
+- “I’m Your_Name, the resident on the code team. Who is running this code/RRT?” ”Can I take over?”
 - Stand at the foot of the bed. Don’t move and don’t do tasks. 
-- Set the tone; give encouragement to sharing information/suggestions
 - Keep the big picture in mind:
     - RRT: Is this a code? Does this patient need to go to the ICU?
     - Code: High quality compressions; shock if shockable
 
 ## Q & A and Feedback 
 
-link to feedback form
+[link] to feedback form
 
