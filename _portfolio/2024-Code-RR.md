@@ -8,7 +8,7 @@ date: 2024-5-16
 location: "Salt Lake City UT, USA"
 ---
 
-### Authors: Alex Ryden, Sumit Patel, Ethan Krauspe, Mark Davis, Brian Locke
+### Authors: Alex Ryden, Sumit Patel, Ethan Krauspe, Mark Davis, Rodney Wayne,  Brian Locke
 
 ## Agenda: 
 1. Survey - here [link to RedCap]
