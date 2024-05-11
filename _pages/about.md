@@ -52,3 +52,6 @@ Training
 * 2016-2019: Internal Medicine Resident
   * University of Utah Affiliated Hospitals and Clinics
 
+Potential Conflicts of Interest
+======
+* I advise and am invested in [Mountain Biometrics, Inc](https://www.mountainbiometrics.com/), which is focused on using machine learning to synthesize wearable sensor data. 
