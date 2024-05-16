@@ -92,3 +92,6 @@ Post-session Survey: [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redca
 - Keep the big picture in mind:
     - RRT: Is this a code? Does this patient need to go to the ICU?
     - Code: High quality compressions; shock if shockable
+
+
+[QR Code Link](https://reblocke.github.io/files/code_launch_qr.pptx)
