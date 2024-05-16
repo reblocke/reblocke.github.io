@@ -73,9 +73,9 @@ We're not going to review ACLS, per se:
 
 |    | U of U | IMED | VA |
 |-------|--------|---------|---------|
-| RRT/MET | House Sup, IM Res, SICU RN, Pharm | IM, RN, House Sup, Pharm, RT | IM, MICU, CNO, RN, RT  Pharmacy (7a-7p) |
+| RRT/MET | House Sup, IM Res, SICU RN, Pharm | IM, STICU RN, Nurse Sup, Pharm, RT, EKG, ABG, Lab | IM, MICU, CNO, RNs, RT  Pharmacy (7a-7p) |
 | Code Blue | add: Anesth, EMT, MICU res, Pharm | add: ICU attgs | add: ED |
-| Numbers | Shock Team, Cath, Brain Attack, VAD: 1-2222  | 'Shock Team': Vocera TICU attg, Brain Attack: Operator | Brain attack: Page Neuro Senior, Cath: Page Cardiology, Code: x6 666 |
+| Numbers | Shock Team, Cath, Brain Attack, VAD: 1-2222  | 'Shock Team': Vocera TICU attg, Brain Attack: Operator; x33333 | Brain attack: Page Neuro Senior, Cath: Page Cardiology, Code: x6 666 |
 
 Coming soon: In-depth Code / RRT Guide
 
