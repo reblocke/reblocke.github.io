@@ -8,10 +8,10 @@ date: 2024-5-16
 location: "Salt Lake City UT, USA"
 ---
 
-### Authors: Alex Ryden, Sumit Patel, Ethan Krauspe, Mark Davis, Rodney Wayne,  Brian Locke
+### Contributors: Alex Ryden, Sumit Patel, Ethan Krauspe, Mark Davis, Rodney Wayne,  Brian Locke
 
 ## Agenda: 
-1. Survey - here [link to RedCap]
+1. Survey - here [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redcap/surveys/?s=9RRXET49H9HAAXAX)
 2. 15-minute sessions on the needed microskills
     1. Leadership Style
     2. Rhythm Interpretation
@@ -19,7 +19,7 @@ location: "Salt Lake City UT, USA"
     4. Identifying the Cause
     5. Ending the response
 3. Q&A and equipment
-4. Session Feedback [link to RedCap #2]
+4. Session Feedback [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redcap/surveys/?s=9RRXET49H9HAAXAX)
 
 # Running Codes and Rapid Response Teams 
 ======
@@ -33,14 +33,21 @@ We've discussed with stakeholders and participants in the rapid response & code 
 - Decisions are too delayed.
 - The person who activated the response gets snarked for a false alarm.
 
-(please contact us if you know of other events or near-misses)
+(please let us know of other events or near-misses)
 
 ### The learning objectives:
 - Discuss micro-skills/schemas to avoid each error.   
 
-## Module 1: Leadership
+We're not going to review ACLS, per se:
 
-## Module 2: Rhyhtms
+<img src='/images/va_acls_card.png'>
+
+
+
+
+## Module 1: Leadership Style
+
+## Module 2: Pulse-Check Decisions
 
 ## Module 3: Equipment and Personnel
 
@@ -50,6 +57,9 @@ We've discussed with stakeholders and participants in the rapid response & code 
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/6V2VZwJ2N9SF1b" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/slideshow/end-of-code-rapid-response-presentation/267921104" title="End of Code / Rapid Response Presentation" target="_blank">End of Code / Rapid Response Presentation</a> </strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong> </div>
 
+## Q & A and Feedback 
+
+[link to RedCap](https://redcap01.brisc.utah.edu/ccts/redcap/surveys/?s=9RRXET49H9HAAXAX) to feedback form
 
 ## Summary
 
@@ -59,8 +69,3 @@ We've discussed with stakeholders and participants in the rapid response & code 
 - Keep the big picture in mind:
     - RRT: Is this a code? Does this patient need to go to the ICU?
     - Code: High quality compressions; shock if shockable
-
-## Q & A and Feedback 
-
-[link] to feedback form
-
