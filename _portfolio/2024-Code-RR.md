@@ -73,9 +73,9 @@ We're not going to review ACLS, per se:
 
 |    | U of U | IMED | VA |
 |-------|--------|---------|---------|
-| RRT/MET | House Sup, IM Res, SICU RN, Pharm | TBD | IM, MICU, CNO, RN, RT  Pharmacy (7a-7p) |
-| Code Blue | add: Anesth, EMT, MICU res, Pharm | TBD | add: ED |
-| Numbers | Shock Team, Cath, Brain Attack, VAD: 1-2222  | TBD | Brain attack: Page Neuro Senior, Cath: Page Cardiology, Code: x6 666 |
+| RRT/MET | House Sup, IM Res, SICU RN, Pharm | IM, RN, House Sup, Pharm, RT | IM, MICU, CNO, RN, RT  Pharmacy (7a-7p) |
+| Code Blue | add: Anesth, EMT, MICU res, Pharm | add: ICU attgs | add: ED |
+| Numbers | Shock Team, Cath, Brain Attack, VAD: 1-2222  | 'Shock Team': Vocera TICU attg, Brain Attack: Operator | Brain attack: Page Neuro Senior, Cath: Page Cardiology, Code: x6 666 |
 
 Coming soon: In-depth Code / RRT Guide
 
@@ -87,7 +87,7 @@ Post-session Survey: [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redca
 ## Summary
 
 - **Set the tone; give encouragement to sharing information/suggestions**
-- “I’m Your_Name, the resident on the code team. Who is running this code/RRT?” ”Can I take over?”
+- “I’m Joe/Jane Doe, the resident on the code team. Who is running this code/RRT?” ”Can I take over?”
 - Stand at the foot of the bed. Don’t move and don’t do tasks. 
 - Keep the big picture in mind:
     - RRT: Is this a code? Does this patient need to go to the ICU?
