@@ -51,9 +51,13 @@ We're not going to review ACLS, per se:
 
 ## Module 1: Leadership Style
 
+[Direct Presentation Link](https://reblocke.github.io/files/code-rrt/Leadership.pptx)
+
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/1gV0InYdCs89h5?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/leadership-style-code-and-rapid-response-workshop/268620559" title="Leadership Style - Code and Rapid Response Workshop" target="_blank">Leadership Style - Code and Rapid Response Workshop</a></strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong></div>
 
 ## Module 2: Pulse-Check Decisions
+
+[Direct Presentation Link](https://reblocke.github.io/files/code-rrt/Rhythms.pptx)
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/owXU4Z75NkJMcC?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/pulse-check-decisions-rrt-and-code-blue-workshop/268617398" title="Pulse Check Decisions - RRT and Code Blue Workshop" target="_blank">Pulse Check Decisions - RRT and Code Blue Workshop</a></strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong></div>
 
@@ -63,9 +67,13 @@ We're not going to review ACLS, per se:
 
 ## Module 4: Identifying the Cause
 
+[Direct Presentation Link](https://reblocke.github.io/files/code-rrt/Etiology.pptx)
+
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/2FVYMA9RveOtu8?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/etiology-for-rrt-and-code-blue-workshop/268617664" title="Etiology for RRT and Code Blue Workshop." target="_blank">Etiology for RRT and Code Blue Workshop.</a></strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong></div>
 
 ## Module 5: Ending the Code/RRT
+
+[Direct Presentation Link](https://reblocke.github.io/files/code-rrt/End.pptx)
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/iQBIg4dilZnrMo?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/end-of-response-issues-code-and-rapid-response-workshop/268620823" title="End of Response issues - Code and Rapid Response Workshop" target="_blank">End of Response issues - Code and Rapid Response Workshop</a></strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong></div>
 
@@ -94,4 +102,4 @@ Post-session Survey: [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redca
     - Code: High quality compressions; shock if shockable
 
 
-[QR Code Link](https://reblocke.github.io/files/code_launch_qr.pptx)
+[Launch QR Code Link](https://reblocke.github.io/files/code-rrt/code_launch_qr.pptx)
