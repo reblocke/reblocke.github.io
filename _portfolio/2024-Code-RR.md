@@ -57,7 +57,9 @@ We're not going to review ACLS, per se:
 
 ## Module 2: Pulse-Check Decisions
 
-[Direct Presentation Link](https://reblocke.github.io/files/code-rrt/Rhythms.pptx)
+<iframe src='https://view.officeapps.live.com/op/embed.aspx?src=[https://reblocke.github.io/files/code-rrt/Rhythms.pptx]' width='100%' height='600px' frameborder='0'>
+
+[Direct Download Link](https://reblocke.github.io/files/code-rrt/Rhythms.pptx)
 
 <iframe src="https://www.slideshare.net/slideshow/embed_code/key/owXU4Z75NkJMcC?startSlide=1" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px;max-width: 100%;" allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/pulse-check-decisions-rrt-and-code-blue-workshop/268617398" title="Pulse Check Decisions - RRT and Code Blue Workshop" target="_blank">Pulse Check Decisions - RRT and Code Blue Workshop</a></strong> from <strong><a href="https://www.slideshare.net/BrianLocke9" target="_blank">Brian Locke</a></strong></div>
 
