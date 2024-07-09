@@ -11,6 +11,8 @@ location: "Salt Lake City UT, USA"
 ### Contributors: Alex Ryden, Sumit Patel, Ethan Krauspe, Mark Davis, Rodney Wayne,  Brian Locke
 #### License: Feel free to use and/or modify if attribution to original authors included. 
 
+Bookmark this if so inclined for future reference.
+
 ## Agenda: 
 1. Survey - [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redcap/surveys/?s=9RRXET49H9HAAXAX)
 2. 15-minute sessions on the needed microskills
@@ -22,14 +24,14 @@ location: "Salt Lake City UT, USA"
 3. Q&A and equipment
 4. Session Feedback [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redcap/surveys/?s=9RRXET49H9HAAXAX)
 
-## Pedagical Note: 
+## Pedagogical Note: 
 The right way to learn how to do this is: 
 - Watch someone run a code/RRT well
 - Learn the key considerations*
-- Imitate a well-run code/RRT 
+- Imitate a well-run code/RRT (perhaps with simulation)
 - Receive Feedback
 
-Didactics are only 1 component of this
+Didactics are only 1 component of this. 
 
 ## Methods: 
 We've discussed with stakeholders and participants in the rapid response & code teams to identify the most common and consequential mistakes residents make: 
@@ -94,9 +96,9 @@ Coming soon: In-depth Code / RRT Guide
 
 Post-session Survey: [link to RedCap](https://redcap01.brisc.utah.edu/ccts/redcap/surveys/?s=9RRXET49H9HAAXAX) 
 
-## Summary
+## Summary (TL;DR)
 
-- **Set the tone; give encouragement to sharing information/suggestions**
+- **Emphasize getting the right team dynamics**
 - “I’m Joe/Jane Doe, the resident on the code team. Who is running this code/RRT?” ”Can I take over?”
 - Stand at the foot of the bed. Don’t move and don’t do tasks. 
 - Keep the big picture in mind:

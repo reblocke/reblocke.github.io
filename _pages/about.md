@@ -7,8 +7,8 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-I am a researcher, pulmonologist, and intensivist associated with Intermountain Health and the University of Utah. I'm interested in pragmatic clinical research, particularly of hypercapnic respiratory failure. 
+ 
+I am an assistant professor (Clinical Investigator Track) of Pulmonary and Critical Care at Intermountain Medical Center (Shock Trauma ICU and Schmidt Chest Clinic). I am also an Adjunct Assistant Professor at the University of Utah. My research interests focus on the Application of Clinical Research Informatics to the Study of Chronic Respiratory Fialure. 
 
 My training has focused on computer science (University of Colorado BS 2009), medicine (University of Colorado, MD 2016), medical education (Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020), and clinical investigation (MS in Clinical Investigation, University of Utah 2023).
 
@@ -54,4 +54,4 @@ Training
 
 Potential Conflicts of Interest
 ======
-* I advise and am invested in [Mountain Biometrics, Inc](https://www.mountainbiometrics.com/), which is focused on using machine learning to synthesize wearable sensor data. 
+* I work with [Mountain Biometrics, Inc](https://www.mountainbiometrics.com/), which uses machine learning to synthesize time-series sensor data. 
