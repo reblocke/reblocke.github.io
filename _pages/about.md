@@ -19,11 +19,15 @@ Research
 
 Research Support
 ======
+
+* 2024-2027:  Follow-up Needs after Discharge with Hypercapnia 
+  * Intermountain Fund, PI: Brian Locke
+
 * 2022-2024:  Ruth L. Kirschstein National Research Service Award, University of Utah Division of Pulmonary and Critical Care
   * National Institutes of Health: 5T32HL105321, PI: Robert Paine III
 
 * 2022-2024: [Academic Sleep and Pulmonary Integrated Research/Clinical Fellowship (ASPIRE) Program](https://www.aspirefellowship.com/2022-2023)
-  * American Thoracic Society
+  * American Thoracic Society, PI: Brian Locke
 
 Education
 ======
