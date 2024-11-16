@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
  
-I am an assistant professor (Clinical Investigator Track) of Pulmonary and Critical Care at Intermountain Medical Center (Shock Trauma ICU and Schmidt Chest Clinic). I am also an Adjunct Assistant Professor at the University of Utah. My research interests focus on the Application of Clinical Research Informatics to the Study of Chronic Respiratory Fialure. 
+I am an assistant professor (Clinical Investigation Track) of Pulmonary and Critical Care at Intermountain Medical Center (Shock Trauma ICU and Schmidt Chest Clinic). I am also an adjunct at the University of Utah. I am a clinical research informatician interested in chronic respiratory failure and diagnostic reasoning. 
 
 My training has focused on computer science (University of Colorado BS 2009), medicine (University of Colorado, MD 2016), medical education (Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020), and clinical investigation (MS in Clinical Investigation, University of Utah 2023).
 
