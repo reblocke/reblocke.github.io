@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
  
-I am an [Assistant Professor of Research](https://doctors.intermountainhealth.org/provider/brian-w-locke/2561053#profile-summary) in the Department of Pulmonary and Critical Care at Intermountain Medical Center (Shock Trauma ICU and Schmidt Chest Clinic). I am also an affiliate of the University of Utah. I am a clinical research informaticist interested in diagnostic reasoning and improving the care of patients with chronic respiratory failure. 
+I am an [Assistant Professor of Research](https://doctors.intermountainhealth.org/provider/brian-w-locke/2561053#profile-summary) in the Department of Pulmonary and Critical Care at Intermountain Medical Center. I work in the Shock Trauma ICU and Schmidt Chest Clinic. I am core faculty in the University of Utah Pulmonary and Critical Care Fellowship. I'm interested in research informatics, diagnostic reasoning, and improving the care of patients with chronic respiratory failure. 
 
-My training has focused on computer science (University of Colorado BS 2009), medicine (University of Colorado, MD 2016), medical education (Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020), and clinical investigation (MS in Clinical Investigation, University of Utah 2023).
+I've trained in computer science (University of Colorado BS 2009), medicine (University of Colorado, MD 2016), medical education (Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020), and clinical investigation (MS in Clinical Investigation, University of Utah 2023).
 
 Research
 ======
@@ -56,6 +56,6 @@ Training
 * 2016-2019: Internal Medicine Resident
   * University of Utah Affiliated Hospitals and Clinics
 
-Potential Conflicts of Interest
+Disclosures
 ======
-* I work with [Mountain Biometrics, Inc](https://www.mountainbiometrics.com/), which uses machine learning to synthesize time-series sensor data. 
+* I have an equity interest and work with [Mountain Biometrics, Inc](https://www.mountainbiometrics.com/), which focuses on time-series machine learning applied to wearable sensors and other health data.
