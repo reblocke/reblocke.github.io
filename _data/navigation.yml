@@ -1,4 +1,8 @@
 # main links links
 main:
-  - title: "Projects"
-    url: /portfolio/
+  - title: "About"
+    url: /
+  - title: "Materials"
+    url: /materials/
+  - title: "CV"
+    url: /cv/
