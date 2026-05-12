@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Brian Locke, MD MSc"
+title                    : "Brian W Locke, MD MSCI"
 title_separator          : "-"
 name                     : &name "Brian W Locke, MD MSCI"
 description              : &description "Pulmonary and Critical Care. Intermountain Health and University of Utah."
@@ -57,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : &twitter "doc_BLocke"
 facebook:
   username               :
   app_id                 :
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Brian W Locke, MD MSCI"
   avatar           : "profile.JPG"
-  bio              : "Pulm/CC Clinical Investigator: Respiratory Failure, Clinical Reasoning, and Research Informatics"
+  bio              : "Assistant Professor of Research, Pulmonary and Critical Care Medicine, Intermountain Medical Center"
   location         : "Intermountain Medical Center"
   employer         : 
   pubmed           :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "brian-locke-464457155"
   orcid            : "https://orcid.org/0000-0002-3588-5238"
   pinterest        :
   soundcloud       :

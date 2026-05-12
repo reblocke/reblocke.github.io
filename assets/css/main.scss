@@ -33,9 +33,12 @@
 @import "page";
 @import "archive";
 @import "sidebar";
+@import "site-refresh";
 
+$fa-font-path: "../fonts";
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
+@import "vendor/font-awesome/v4-shims";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";

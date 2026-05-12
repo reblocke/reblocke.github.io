@@ -1,61 +1,60 @@
 ---
+layout: splash
 permalink: /
-title: "About Me"
-excerpt: "About me"
-author_profile: true
+title: "Brian W Locke, MD MSCI"
+excerpt: "Pulmonary and critical care physician and clinical investigator."
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
- 
-I am an [Assistant Professor of Research](https://doctors.intermountainhealth.org/provider/brian-w-locke/2561053#profile-summary) in the Department of Pulmonary and Critical Care at Intermountain Medical Center. I work in the Shock Trauma ICU and Schmidt Chest Clinic. I am core faculty in the University of Utah Pulmonary and Critical Care Fellowship. I'm interested in research informatics, diagnostic reasoning, and improving the care of patients with chronic respiratory failure. 
 
-I've trained in computer science (University of Colorado BS 2009), medicine (University of Colorado, MD 2016), medical education (Internal Medicine Chief Medical Resident at [University of Utah Affiliated Hospitals and Clinics](https://medicine.utah.edu/internalmedicine/residency/) 2019-2020), and clinical investigation (MS in Clinical Investigation, University of Utah 2023).
+{% assign profile = site.data.profile %}
+{% include base_path %}
 
-Research
-======
-* [Google Scholar](https://scholar.google.com/citations?user=O1nydc8AAAAJ&hl=en)
-* [ORCID](https://orcid.org/0000-0002-3588-5238)
+<section class="home-hero">
+  <div class="home-hero__text">
+    <h1>{{ profile.name }}</h1>
+    <p class="home-hero__title">{{ profile.primary_title }}</p>
+    <p class="home-hero__summary">{{ profile.summary }}</p>
+    <ul class="profile-links" aria-label="Profile links">
+      {% for link in profile.links %}
+        <li>
+          <a href="{{ link.url }}">
+            <i class="{{ link.icon }}" aria-hidden="true"></i>
+            <span>{{ link.label }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="home-hero__image">
+    <img src="{{ "/images/profile.JPG" | prepend: base_path }}" alt="{{ profile.name }}">
+  </div>
+</section>
 
-Research Support
-======
+<section class="home-section">
+  <h2>About</h2>
+  <p>
+    I work in the {{ profile.clinical_context }} and serve as core faculty in the
+    University of Utah Pulmonary and Critical Care Fellowship. I trained in computer
+    science, medicine, medical education, and clinical investigation.
+  </p>
+  <p>{{ profile.focus_intro }}</p>
+  <ul class="focus-list">
+    {% for area in profile.focus_areas %}
+      <li>{{ area }}</li>
+    {% endfor %}
+  </ul>
+</section>
 
-* 2024-2027:  Follow-up Needs after Discharge with Hypercapnia 
-  * Intermountain Fund, PI: Brian Locke
-
-* 2022-2024:  Ruth L. Kirschstein National Research Service Award, University of Utah Division of Pulmonary and Critical Care
-  * National Institutes of Health: 5T32HL105321, PI: Robert Paine III
-
-* 2022-2024: [Academic Sleep and Pulmonary Integrated Research/Clinical Fellowship (ASPIRE) Program](https://www.aspirefellowship.com/2022-2023)
-  * American Thoracic Society, PI: Brian Locke
-
-Education
-======
-* B.S. in Computer Science, University of Colorado, 2009
-  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. [Available Here](http://scholar.colorado.edu/csci_ugrad/29/)
-* M.S. in Health Sciences, Montana State University, 2012
-  * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana State University
-* M.D. University of Colorado School of Medicine, 2016
-* M.S. in Clinical Investigation, University of Utah, 2023
-  * Locke B, Richards W, Brown J, Gouripeddi R, Sundar K. Test Performance of Serum Bicarbonate in Identifying Hypercapnia Across Settings and Diseases 
-
-Training
-======
-* 2023-2024: T32 Research Fellow; Visiting Instructor
-  * University of Utah Affiliated Hospitals and Clinics
-
-* 2020-2023: Pulmonary and Critical Care Fellow
-  * University of Utah Affiliated Hospitals and Clinics
-
-* 2020: American Academy of Sleep Medicine Young Investigator Research Forum
-  * [..The research forum aids the career development of promising young investigators in clinical and translational sleep medicine research..](https://aasm.org/professional-development/young-investigators-research-forum/)
-
-* 2019-2020: Chief Medical Resident
-  * University of Utah Affiliated Hospitals and Clinics
-
-* 2016-2019: Internal Medicine Resident
-  * University of Utah Affiliated Hospitals and Clinics
-
-Disclosures
-======
-* I have an equity interest and work with [Mountain Biometrics, Inc](https://www.mountainbiometrics.com/), which focuses on time-series machine learning applied to wearable sensors and other health data.
+<section class="home-section home-section--split">
+  <div>
+    <h2>Materials</h2>
+    <p>
+      Public code, teaching materials, reproducible analyses, and project artifacts
+      are collected from GitHub in one automatically refreshed index.
+    </p>
+  </div>
+  <p><a class="btn btn--primary" href="{{ "/materials/" | prepend: base_path }}">Browse GitHub-accessible materials</a></p>
+</section>

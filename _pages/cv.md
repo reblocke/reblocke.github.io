@@ -1,50 +1,100 @@
 ---
-layout: archive
+layout: splash
 title: "Curriculum Vitae"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
 
 {% include base_path %}
+{% assign profile = site.data.profile %}
+{% assign cv = site.data.cv %}
 
-Education
-======
-* B.S. in Computer Science, University of Colorado, 2009
-  * Locke B, Martin J. Named Entity Recognition: Adapting to Microblogging. 2009. Honors Thesis, University of Colorado. [Available Here](http://scholar.colorado.edu/csci_ugrad/29/)
-* M.S. in Health Sciences, Montana State University, 2012
-  * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana State University
-* M.D. University of Colorado School of Medicine, 2016
-* M.S. in Clinical Investigation, University of Utah, 2023
-  * Locke B, Patterson L, Seifert JG. The Effect of Boot Stiffness on Collegiate Alpine Ski Racers. Unpublished Masters Thesis, Montana 
+<section class="cv-page">
+  <header class="section-header">
+    <h1>Curriculum Vitae</h1>
+    <p>
+      A compact public CV. Publication and repository lists are maintained through
+      external profiles rather than duplicated here.
+    </p>
+    <ul class="profile-links profile-links--compact" aria-label="External academic profiles">
+      {% for link in profile.links %}
+        {% unless link.label == "Email" %}
+          <li>
+            <a href="{{ link.url }}">
+              <i class="{{ link.icon }}" aria-hidden="true"></i>
+              <span>{{ link.label }}</span>
+            </a>
+          </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </header>
 
-Training
-======
-* 2023-2024: T32 Research Fellow; Visiting Instructor
-  * University of Utah Affiliated Hospitals and Clinics
+  <section class="cv-section">
+    <h2>Current Positions</h2>
+    {% for item in cv.positions %}
+      <article class="cv-entry">
+        <p class="cv-entry__dates">{{ item.dates }}</p>
+        <div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.organization }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
 
-* 2020-2023: Pulmonary and Critical Care Fellow
-  * University of Utah Affiliated Hospitals and Clinics
+  <section class="cv-section">
+    <h2>Education</h2>
+    {% for item in cv.education %}
+      <article class="cv-entry">
+        <p class="cv-entry__dates">{{ item.year }}</p>
+        <div>
+          <h3>{{ item.degree }}</h3>
+          <p>{{ item.institution }}</p>
+          {% if item.note %}
+            <p class="cv-entry__note">
+              {% if item.url %}<a href="{{ item.url }}">{{ item.note }}</a>{% else %}{{ item.note }}{% endif %}
+            </p>
+          {% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </section>
 
-* American Academy of Sleep Medicine Young Investigator Research Forum (2020)
-  * [..The research forum aids the career development of promising young investigators in clinical and translational sleep medicine research..](https://aasm.org/professional-development/young-investigators-research-forum/)
+  <section class="cv-section">
+    <h2>Training</h2>
+    {% for item in cv.training %}
+      <article class="cv-entry">
+        <p class="cv-entry__dates">{{ item.dates }}</p>
+        <div>
+          <h3>{{ item.role }}</h3>
+          <p>{{ item.institution }}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
 
-* 2019-2020: Chief Medical Resident
-  * University of Utah Affiliated Hospitals and Clinics
+  <section class="cv-section">
+    <h2>Selected Research Support</h2>
+    {% for item in cv.selected_support %}
+      <article class="cv-entry">
+        <p class="cv-entry__dates">{{ item.dates }}</p>
+        <div>
+          <h3>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h3>
+          <p>{{ item.sponsor }}{% if item.role %}; {{ item.role }}{% endif %}</p>
+        </div>
+      </article>
+    {% endfor %}
+  </section>
 
-* 2016-2019: Internal Medicine Resident
-  * University of Utah Affiliated Hospitals and Clinics
-
-Research Support
-======
-* 2022-2024:  Ruth L. Kirschstein National Research Service Award, University of Utah Division of Pulmonary and Critical Care
-  * National Institutes of Health: 5T32HL105321, PI: Robert Paine III
-
-* 2022-2024: [Academic Sleep and Pulmonary Integrated Research/Clinical Fellowship (ASPIRE) Program](https://www.aspirefellowship.com/2022-2023)
-  * American Thoracic Society
-
-Research
-======
-* [Google Scholar](https://scholar.google.com/citations?user=O1nydc8AAAAJ&hl=en)
-* [ORCID](https://orcid.org/0000-0002-3588-5238)
+  <section class="cv-section">
+    <h2>Professional Context</h2>
+    <ul class="cv-list">
+      {% for item in cv.professional_context %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</section>
