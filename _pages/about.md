@@ -53,7 +53,7 @@ redirect_from:
     <h2>Materials</h2>
     <p>
       Public code, teaching materials, reproducible analyses, and project artifacts
-      are collected from GitHub in one automatically refreshed index.
+      are available in the materials index.
     </p>
   </div>
   <p><a class="btn btn--primary" href="{{ "/materials/" | prepend: base_path }}">Browse GitHub-accessible materials</a></p>
