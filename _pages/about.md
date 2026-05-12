@@ -38,12 +38,27 @@ redirect_from:
   <p>
     I work in the {{ profile.clinical_context }} and serve as core faculty in the
     University of Utah Pulmonary and Critical Care Fellowship. I trained in computer
-    science, medicine, medical education, and clinical investigation.
+    science, medicine, medical education, and clinical investigation. My research
+    centers on measurement, diagnostic evidence, prediction, and reproducible
+    informatics for pulmonary and critical care medicine.
   </p>
   <p>{{ profile.focus_intro }}</p>
   <ul class="focus-list">
     {% for area in profile.focus_areas %}
       <li>{{ area }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="home-section">
+  <h2>Research Approach</h2>
+  <p>{{ profile.approach_intro }}</p>
+  <ul class="approach-list">
+    {% for area in profile.approach_areas %}
+      <li>
+        <h3>{{ area.title }}</h3>
+        <p>{{ area.summary }}</p>
+      </li>
     {% endfor %}
   </ul>
 </section>

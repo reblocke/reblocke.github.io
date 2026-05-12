@@ -148,6 +148,7 @@
 }
 
 .focus-list,
+.approach-list,
 .cv-list {
   display: grid;
   gap: 0.75rem;
@@ -161,6 +162,25 @@
     border-left: 4px solid #2f7d8c;
     border-radius: 0 6px 6px 0;
     background: #f6f9fb;
+  }
+}
+
+.approach-list {
+  grid-template-columns: minmax(0, 1fr);
+
+  h3 {
+    margin: 0 0 0.35rem;
+    color: #1b2d44;
+    font-size: 1em;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 0.95em;
+  }
+
+  @include breakpoint($medium) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
