@@ -21,6 +21,7 @@ Human-readable repository page: https://reblocke.github.io/research-repositories
 - Hypercap-Case-Definitions: Stata code for consistency of hypercapnic respiratory failure case definitions in EHR data. Repository: https://github.com/reblocke/Hypercap-Case-Definitions. Article DOI: https://doi.org/10.1016/j.chest.2025.08.002.
 - Splenectomy-PE: analysis code for pulmonary embolism location, splenectomy, and CTEPH risk. Repository: https://github.com/reblocke/Splenectomy-PE. Article DOI: https://doi.org/10.1002/pul2.70231.
 - code-seminar-analysis: materials and analysis for inpatient emergency leadership curriculum evaluation. Repository: https://github.com/reblocke/code-seminar-analysis. Abstract DOI: https://doi.org/10.1164/ajrccm.2025.211.Abstracts.A5624.
+- llm_estimate_lrs: notebooks and outputs for estimating diagnostic likelihood ratios with LLMs and comparing them with literature-reported values. Repository: https://github.com/reblocke/llm_estimate_lrs.
 
 ## Public methods, tools, and teaching repositories
 
