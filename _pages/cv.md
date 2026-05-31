@@ -100,8 +100,23 @@ redirect_from:
     <p>
       Full publication details are maintained through
       <a href="https://scholar.google.com/citations?hl=en&amp;user=O1nydc8AAAAJ">Google Scholar</a>
-      and <a href="https://orcid.org/0000-0002-3588-5238">ORCID</a>.
+      and <a href="https://orcid.org/0000-0002-3588-5238">ORCID</a>. Selected
+      publications are listed below so that the public CV remains useful if
+      external services fail to load.
     </p>
+    <div class="publication-list publication-list--compact">
+      {% for publication in site.data.selected_publications.publications %}
+        {% if publication.selected_cv %}
+          <article class="publication-item">
+            <h3>{{ publication.title }}</h3>
+            <p class="publication-item__meta">
+              {{ publication.authors }}. <em>{{ publication.venue }}</em>. {{ publication.year }}.
+              {% if publication.doi %}<a href="{{ publication.url }}">doi:{{ publication.doi }}</a>{% endif %}
+            </p>
+          </article>
+        {% endif %}
+      {% endfor %}
+    </div>
     <div
       class="orcid-works"
       data-orcid="0000-0002-3588-5238"
@@ -120,9 +135,19 @@ redirect_from:
   <section class="cv-section">
     <h2>National Abstracts and Presentations</h2>
     <p>
-      Conference abstracts and presentation records are maintained through ORCID
-      and Google Scholar.
+      Selected recent national abstracts are listed below. Additional conference
+      outputs are maintained through ORCID and Google Scholar.
     </p>
+    <p><a href="{{ "/talks/" | prepend: base_path }}">View selected national abstracts and presentations</a>.</p>
+    <div class="content-card-list content-card-list--compact">
+      {% for talk in site.data.selected_talks.talks limit:6 %}
+        <article class="content-card">
+          <p class="content-card__eyebrow">{{ talk.year }} / {{ talk.venue }}</p>
+          <h3>{{ talk.title }}</h3>
+          <p class="content-card__meta">{{ talk.type }}{% if talk.location %} / {{ talk.location }}{% endif %}</p>
+        </article>
+      {% endfor %}
+    </div>
     <div
       class="orcid-works"
       data-orcid="0000-0002-3588-5238"
@@ -139,6 +164,7 @@ redirect_from:
 
   <section class="cv-section">
     <h2>Teaching Experience and Committees</h2>
+    <p><a href="{{ "/teaching/" | prepend: base_path }}">View selected teaching and curriculum activities</a>.</p>
     <h3>Lectures and Seminars</h3>
     <ul class="cv-list">
       {% for item in cv.teaching.lectures %}

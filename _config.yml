@@ -7,17 +7,17 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Brian W Locke, MD MSCI"
+title                    : "Brian W Locke, MD, MSCI"
 title_separator          : "-"
-name                     : &name "Brian W Locke, MD MSCI"
-description              : &description "Pulmonary and Critical Care. Intermountain Health and University of Utah."
+name                     : &name "Brian W Locke, MD, MSCI"
+description              : &description "Pulmonary and critical care physician-scientist focused on respiratory failure, diagnostic evidence, clinical prediction, and reproducible research informatics."
 url                      : https://reblocke.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "reblocke.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
-future                   : true
+future                   : false
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false #change to true to add link to talkmap on talks page
 comments:
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Brian W Locke, MD MSCI"
+  name             : "Brian W Locke, MD, MSCI"
   avatar           : "profile.JPG"
   bio              : "Assistant Professor of Research, Pulmonary and Critical Care Medicine, Intermountain Medical Center"
   location         : "Intermountain Medical Center"
@@ -144,6 +144,9 @@ exclude:
   - log
   - node_modules
   - package.json
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
   - tmp
   - vendor
 keep_files:
@@ -176,16 +179,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -200,6 +203,7 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
+      sitemap: false
       share: true
       related: true
   # _pages
@@ -209,6 +213,16 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # Static legacy HTML files are still served for old links, but should not
+  # be advertised as current public pages.
+  - scope:
+      path: "files/**/*.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "files/**/*.htm"
+    values:
+      sitemap: false
   # _teaching
   - scope:
       path: ""
@@ -218,6 +232,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+      sitemap: false
   # _publications
   - scope:
       path: ""
@@ -226,6 +241,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
+      sitemap: false
       comments: true
   # _portfolio
   - scope:
@@ -236,6 +252,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+      sitemap: false
   # _talks
   - scope:
       path: ""
@@ -244,6 +261,7 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+      sitemap: false
 
 # Sass/SCSS
 sass:

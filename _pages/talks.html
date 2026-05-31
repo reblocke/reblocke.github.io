@@ -1,16 +1,28 @@
 ---
-layout: archive
-title: "Abstracts and Presentations"
+layout: splash
+title: "National Abstracts and Presentations"
 permalink: /talks/
-author_profile: true
+excerpt: "Selected national abstracts and presentations."
+author_profile: false
 ---
 
-{% if site.talkmap_link == true %}
+<section class="content-page">
+  <header class="section-header">
+    <h1>National Abstracts and Presentations</h1>
+    <p>
+      Selected recent abstracts and presentations, with a focus on respiratory
+      failure, clinical prediction, pulmonary vascular imaging, and medical education.
+    </p>
+  </header>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  <div class="content-card-list">
+    {% for talk in site.data.selected_talks.talks %}
+      <article class="content-card">
+        <p class="content-card__eyebrow">{{ talk.year }} / {{ talk.venue }}</p>
+        <h2>{{ talk.title }}</h2>
+        <p class="content-card__meta">{{ talk.type }}{% if talk.location %} / {{ talk.location }}{% endif %}</p>
+        <p>{{ talk.description }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>

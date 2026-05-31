@@ -5,7 +5,7 @@ type: "Poster"
 permalink: /talks/2022-HCO3-BARIATRIC
 venue: "American Thoracic Society 2022"
 date: 2022-05-17
-location: "San Fransisco, CA"
+location: "San Francisco, CA"
 ---
 
 The ERS proposed spectrum of hypoventilatory disorders:

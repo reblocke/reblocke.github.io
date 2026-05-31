@@ -1,7 +1,7 @@
 ---
 layout: splash
 permalink: /
-title: "Brian W Locke, MD MSCI"
+title: "Brian W Locke, MD, MSCI"
 excerpt: "Pulmonary and critical care physician-scientist focused on respiratory failure, diagnostic evidence, clinical prediction, and reproducible research informatics."
 author_profile: false
 redirect_from:
@@ -62,6 +62,52 @@ redirect_from:
       </li>
     {% endfor %}
   </ul>
+</section>
+
+<section class="home-section">
+  <h2>Selected Current Work</h2>
+  <div class="content-card-list">
+    <article class="content-card">
+      <h3>Hypercapnic Respiratory Failure</h3>
+      <p>
+        Measuring disease burden, care variation, and post-discharge needs after
+        hospitalization with hypercapnic respiratory failure.
+      </p>
+      <p><a href="{{ "/publications/" | prepend: base_path }}">Selected publications</a></p>
+    </article>
+    <article class="content-card">
+      <h3>Diagnostic Evidence and Prediction</h3>
+      <p>
+        Developing EHR-derived phenotypes and prediction models that make
+        respiratory measurement more interpretable and reproducible.
+      </p>
+      <p><a href="{{ "/cv/" | prepend: base_path }}">Academic CV</a></p>
+    </article>
+    <article class="content-card">
+      <h3>Reproducible Research Workflows</h3>
+      <p>
+        Maintaining open statistical code, teaching materials, and research
+        artifacts that support transparent clinical investigation.
+      </p>
+      <p><a href="{{ "/materials/" | prepend: base_path }}">Materials index</a></p>
+    </article>
+    <article class="content-card">
+      <h3>National Abstracts and Presentations</h3>
+      <p>
+        Sharing recent work on respiratory failure, clinical prediction,
+        pulmonary vascular imaging, and medical education.
+      </p>
+      <p><a href="{{ "/talks/" | prepend: base_path }}">Selected abstracts and presentations</a></p>
+    </article>
+    <article class="content-card">
+      <h3>Teaching and Curriculum</h3>
+      <p>
+        Developing teaching around evidence-based reasoning, pulmonary and
+        critical care medicine, and clinical research methods.
+      </p>
+      <p><a href="{{ "/teaching/" | prepend: base_path }}">Selected teaching activities</a></p>
+    </article>
+  </div>
 </section>
 
 <section class="home-section home-section--split">

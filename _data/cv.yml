@@ -63,6 +63,18 @@ research_support:
     role: "PI"
     dates: "09/2024-02/2027"
     summary: "Uses administrative data to characterize post-discharge testing, specialty referral patterns, healthcare utilization, and costs after hospitalization with hypercapnic respiratory failure."
+  - title: "Developing a Computable Phenotype for Hypercapnic Respiratory Failure"
+    sponsor: "American Thoracic Society"
+    award: "ASPIRE Fellowship"
+    role: "PI"
+    dates: "07/2022-06/2024"
+    summary: "Supported development of reproducible electronic health record approaches to defining hypercapnic respiratory failure."
+  - title: "Multidisciplinary Pulmonary and Critical Care Research Training Program"
+    sponsor: "NIH NHLBI"
+    award: "T32HL105321"
+    role: "Postdoctoral trainee"
+    dates: "06/2022-05/2024"
+    summary: "Supported formal research training in pulmonary and critical care clinical investigation."
 
 teaching:
   lectures:

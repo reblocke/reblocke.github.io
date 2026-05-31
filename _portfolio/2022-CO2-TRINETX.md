@@ -5,7 +5,7 @@ type: "Poster"
 permalink: /talks/2022-CO2-TRINETX
 venue: "American Thoracic Society 2022"
 date: 2022-05-16
-location: "San Fransisco, CA"
+location: "San Francisco, CA"
 ---
 
 Common methods of identifying hypercapnic respiratory failure produce meaningfully different cohorts. Brian W Locke, Krishna M Sundar, Jeanette Brown, Ramkiran Gouripeddi.

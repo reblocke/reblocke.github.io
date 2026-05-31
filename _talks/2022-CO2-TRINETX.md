@@ -5,7 +5,7 @@ type: "Poster"
 permalink: /talks/2022-CO2-TRINETX
 venue: "American Thoracic Society 2022"
 date: 2022-05-16
-location: "San Fransisco, CA"
+location: "San Francisco, CA"
 ---
 
 Evidence Review Table: Hypercapnia: Papers defining groups with hypercapnic respiratory failure, study question, how they identified patients, and key findings

@@ -5,7 +5,7 @@ type: "Poster"
 permalink: /talks/2022-HCO3-BARIATRIC
 venue: "American Thoracic Society 2022"
 date: 2022-05-17
-location: "San Fransisco, CA"
+location: "San Francisco, CA"
 ---
 
 Full citation: Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery AUTHORS: Brian W Locke, MD; Conrad Addison, MD; Somya Mishra, MD; Krishna M Sundar, MD. The University of Utah. Division of Pulmonary and Critical Care; Division of Sleep Medicine; Department of Anesthesiology

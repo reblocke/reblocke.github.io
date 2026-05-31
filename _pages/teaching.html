@@ -1,12 +1,36 @@
 ---
-layout: archive
+layout: splash
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+excerpt: "Selected teaching, curriculum, and mentoring activities."
+author_profile: false
 ---
 
-{% include base_path %}
+<section class="content-page">
+  <header class="section-header">
+    <h1>Teaching</h1>
+    <p>
+      Selected recent teaching, curriculum design, and trainee-development work
+      in pulmonary and critical care medicine, evidence-based reasoning, and
+      clinical research methods.
+    </p>
+  </header>
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  {% for section in site.data.selected_teaching.sections %}
+    <section class="content-section">
+      <h2>{{ section.title }}</h2>
+      <div class="content-card-list">
+        {% for item in site.data.selected_teaching.items %}
+          {% if item.section == section.key %}
+            <article class="content-card">
+              <p class="content-card__eyebrow">{{ item.year }}</p>
+              <h3>{{ item.title }}</h3>
+              <p class="content-card__meta">{{ item.audience }}</p>
+              <p>{{ item.description }}</p>
+            </article>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endfor %}
+</section>
