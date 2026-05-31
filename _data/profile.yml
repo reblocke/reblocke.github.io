@@ -1,7 +1,8 @@
 name: "Brian W Locke, MD MSCI"
 primary_title: "Assistant Professor of Research, Department of Pulmonary and Critical Care Medicine, Intermountain Medical Center"
 clinical_context: "Shock Trauma ICU and Schmidt Chest Clinic"
-summary: "I am a pulmonary and critical care physician-scientist focused on respiratory failure, diagnostic evidence, clinical prediction, and reproducible research informatics. My work connects respiratory measurement, Bayesian and statistical reasoning, and open clinical research workflows to practical questions in pulmonary and critical care medicine."
+career_purpose: "Pulmonary and critical care physician-scientist focused on respiratory failure, diagnostic evidence, clinical prediction, and reproducible research informatics."
+summary: "My work connects respiratory measurement, Bayesian and statistical reasoning, and open clinical research workflows to practical questions in pulmonary and critical care medicine."
 focus_intro: "Current research and teaching interests include:"
 focus_areas:
   - "Respiratory measurement, hypercapnia, and follow-up after hospitalization"

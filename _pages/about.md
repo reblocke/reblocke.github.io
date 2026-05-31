@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 title: "Brian W Locke, MD MSCI"
-excerpt: "Pulmonary and critical care physician and clinical investigator."
+excerpt: "Pulmonary and critical care physician-scientist focused on respiratory failure, diagnostic evidence, clinical prediction, and reproducible research informatics."
 author_profile: false
 redirect_from:
   - /about/
@@ -15,6 +15,7 @@ redirect_from:
 <section class="home-hero">
   <div class="home-hero__text">
     <h1>{{ profile.name }}</h1>
+    <p class="home-hero__purpose">{{ profile.career_purpose }}</p>
     <p class="home-hero__title">{{ profile.primary_title }}</p>
     <p class="home-hero__summary">{{ profile.summary }}</p>
     <ul class="profile-links" aria-label="Profile links">
@@ -38,9 +39,9 @@ redirect_from:
   <p>
     I work in the {{ profile.clinical_context }} and serve as core faculty in the
     University of Utah Pulmonary and Critical Care Fellowship. I trained in computer
-    science, medicine, medical education, and clinical investigation. My research
-    centers on measurement, diagnostic evidence, prediction, and reproducible
-    informatics for pulmonary and critical care medicine.
+    science, medicine, medical education, and clinical investigation. My career
+    purpose centers on respiratory failure, diagnostic evidence, clinical prediction,
+    and reproducible research informatics.
   </p>
   <p>{{ profile.focus_intro }}</p>
   <ul class="focus-list">

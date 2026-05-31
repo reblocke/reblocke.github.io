@@ -52,6 +52,14 @@
   line-height: 1.45;
 }
 
+.home-hero__purpose {
+  margin-bottom: 0.65em;
+  color: #102a56;
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
 .home-hero__summary,
 .section-header p,
 .home-section p {
@@ -435,6 +443,7 @@
   }
 
   .home-hero__title,
+  .home-hero__purpose,
   .home-hero__summary,
   .section-header p,
   .home-section p {
