@@ -1,0 +1,39 @@
+repo,default_branch,source,readme_stale_exact,readme_stale_variant_heading,llms_txt_present,remediation_status,remediation_prs,merged_at,merge_commits
+NRH-SCI-Vent,main,manifest,False,False,True,no_stale_readme_heading,,,
+AOM-and-Bari-Surg-for-OSA-SRMA,main,manifest,False,False,False,no_stale_readme_heading,,,
+vr_icu,main,manifest,False,False,True,no_stale_readme_heading,,,
+hickams-dictum,master,manifest,False,False,True,no_stale_readme_heading,,,
+CSA-CPAP-Prescribing,main,manifest,False,False,True,no_stale_readme_heading,,,
+CPAPOutcomes,master,manifest,False,False,True,no_stale_readme_heading,,,
+NHPI-OSA-Burden,master,manifest,False,False,True,no_stale_readme_heading,,,
+CTPA-Dose-Response,main,manifest,False,False,True,no_stale_readme_heading,,,
+Hypercap-Case-Definitions,main,manifest,False,False,True,no_stale_readme_heading,,,
+Splenectomy-PE,main,manifest,False,False,True,no_stale_readme_heading,,,
+Hypercap-Trial-Adverse-Events,main,manifest,False,False,True,no_stale_readme_heading,,,
+code-seminar-analysis,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/code-seminar-analysis/pull/2,2026-06-05T14:05:23Z,63c127fc5a1d27d197a79391a45d6a6b57b170d1
+llm_estimate_lrs,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/llm_estimate_lrs/pull/2,2026-06-05T14:06:10Z,47626e1ba5380a8dca2f676a69320a2e0f32b4e9
+abg-vbg-project,main,manifest,False,False,False,no_stale_readme_heading,,,
+tcco2-accuracy,main,manifest,False,False,True,no_stale_readme_heading,,,
+TriNetXHypercapnia,master,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/TriNetXHypercapnia/pull/2; https://github.com/reblocke/TriNetXHypercapnia/pull/3,2026-06-05T14:05:05Z; 2026-06-05T14:14:10Z,3c448bce2255884a5219386ce942d45c6e1e15f7; 2ff59f9deb2ca25e7d54f5ecbc9a06028afb493f
+trinetx-preprocessing,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/trinetx-preprocessing/pull/2; https://github.com/reblocke/trinetx-preprocessing/pull/3,2026-06-05T14:07:18Z; 2026-06-05T14:14:20Z,dde9dc8e3473f4e99d352bd37670f5036de2c2c3; 8a6e90360718b26595ec60c4eafb59e5d5839b8e
+Bari-CPAP,master,manifest,False,False,True,no_stale_readme_heading,,,
+CSA,master,manifest,False,False,True,no_stale_readme_heading,,,
+StateVetsHome,master,manifest,False,False,True,no_stale_readme_heading,,,
+tele_crit_care,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/tele_crit_care/pull/2; https://github.com/reblocke/tele_crit_care/pull/3,2026-06-05T14:07:02Z; 2026-06-05T14:14:28Z,8390d266f417ef3203dcb6ea7aec2065630ce42f; 93388e39802bb46791139dc6bed6f01acaf8c101
+notebooks_dx_reasoning,main,manifest,False,False,False,no_stale_readme_heading,,,
+clinical_talks,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/clinical_talks/pull/2,2026-06-05T14:05:13Z,670f395f76e576881bcb68e92544cd6c06d0842a
+U-of-U-IM-Codes-and-Rapid-Responses,main,manifest,False,False,True,no_stale_readme_heading,,,
+intro_clin_research,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/intro_clin_research/pull/2; https://github.com/reblocke/intro_clin_research/pull/3,2026-06-05T14:06:02Z; 2026-06-05T14:14:38Z,83bc7520f1f06b3009496a1fb595a35708ce1aa6; e2b9d7e9c70e8c5eea995eabe6556a48169b62f0
+fellow_stats,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/fellow_stats/pull/2; https://github.com/reblocke/fellow_stats/pull/3,2026-06-05T14:05:45Z; 2026-06-05T14:14:47Z,f9f600814dadce9c88fbaf1d1e05adc07caa61aa; 6f768ff5266c3b976404c76355de5aaa96dfc79b
+stata-codex-skills,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/stata-codex-skills/pull/2; https://github.com/reblocke/stata-codex-skills/pull/3,2026-06-05T14:06:46Z; 2026-06-05T14:14:56Z,bb588030b10b6ddf524fc61b295a5d4f2c26f475; c51bd2c5c0b9cef5cb2dd392643ff9d3dc4ab280
+conf_curve_likelihood,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/conf_curve_likelihood/pull/10,2026-06-05T14:05:36Z,d86d4c5ddf1e0da236641fdc2d63e7d25b70b1df
+stewart-light,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/stewart-light/pull/2; https://github.com/reblocke/stewart-light/pull/3,2026-06-05T14:06:54Z; 2026-06-05T14:15:04Z,23fd472ab68949ffeac7594cde8efa697324287f; d2b25089f998748a91abfea14c68c23ac9eed708
+forensic_metascience,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/forensic_metascience/pull/2,2026-06-05T14:05:54Z,4299427e6a07d16f37ab54af86b612cac75640eb
+sofa_resp_sim,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/sofa_resp_sim/pull/7; https://github.com/reblocke/sofa_resp_sim/pull/8,2026-06-05T14:06:37Z; 2026-06-05T14:15:14Z,dc857e69bfe35d864bf2d58e3003f3cd88272d37; bcc0b7aaa5f2289b230b02b803eb5a4268d65a5f
+sodium_change,main,manifest|stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/sodium_change/pull/2,2026-06-05T14:06:28Z,96c5d60a859d76c9432d54200cc13e8e5be578ed
+dx_chat_entropy,main,manifest,False,False,True,no_stale_readme_heading,,,
+Hypercap-CC-NLP,main,newer_touched,False,False,True,no_stale_readme_heading,,,
+code-status-exploration,main,newer_touched,False,False,True,no_stale_readme_heading,,,
+OSA-ML-editorial,main,stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/OSA-ML-editorial/pull/2,2026-06-05T14:04:56Z,65ba0bb466e6af5eaac8abe5e4ea63e5431e9484
+trinetx-hypercapnia-code,master,stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/trinetx-hypercapnia-code/pull/2,2026-06-05T14:07:10Z,1185a6bc9957a02cb24be5f1f7fa10c48d8a4c13
+n95-editorial,main,stale_heading_hit,False,False,True,remediated,https://github.com/reblocke/n95-editorial/pull/2,2026-06-05T14:06:19Z,a4f7d2406cbf31861aad035555c50270c5a3ec71
