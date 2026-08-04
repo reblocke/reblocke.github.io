@@ -37,6 +37,8 @@ The monthly workflow retrieves public metadata from GitHub, ORCID, Crossref, and
 
 The generated reconciliation report separates unmatched ORCID candidates, fields missing from canonical records, and material source conflicts. DOI or PMID matches anywhere in the canonical work registry count as represented; external metadata never overwrites curated content automatically.
 
+The refresh retains the website repository's public GitHub metadata but omits its self-changing `updated_at` value so deployment commits do not manufacture metadata-only pull requests.
+
 Run the refresh locally with:
 
 ```bash
