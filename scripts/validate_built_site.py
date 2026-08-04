@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import re
+import struct
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
@@ -14,6 +15,14 @@ from xml.etree import ElementTree
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
 CANONICAL = {"/", "/work/", "/cv/", "/research-repositories/"}
+SOCIAL_TITLES = {
+    "/": "Brian W. Locke, MD, MSCI",
+    "/work/": "Work · Brian Locke",
+    "/cv/": "Curriculum Vitae · Brian Locke",
+    "/research-repositories/": "Public Research Repositories · Brian Locke",
+}
+SOCIAL_IMAGE = "https://reblocke.github.io/images/social-preview.png"
+SOCIAL_IMAGE_ALT = "Portrait of Brian W. Locke with his name and pulmonary and critical care research focus"
 
 
 class PageParser(HTMLParser):
@@ -24,6 +33,8 @@ class PageParser(HTMLParser):
         self.images: list[dict[str, str | None]] = []
         self.h1_count = 0
         self.canonical: str | None = None
+        self.meta_properties: dict[str, str] = {}
+        self.meta_names: dict[str, str] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         data = dict(attrs)
@@ -37,6 +48,10 @@ class PageParser(HTMLParser):
             self.h1_count += 1
         if tag == "link" and data.get("rel") == "canonical":
             self.canonical = data.get("href")
+        if tag == "meta" and data.get("property") and data.get("content"):
+            self.meta_properties[str(data["property"])] = str(data["content"])
+        if tag == "meta" and data.get("name") and data.get("content"):
+            self.meta_names[str(data["name"])] = str(data["content"])
 
 
 def route_file(route: str) -> Path:
@@ -69,6 +84,48 @@ for route in CANONICAL:
     expected = f"https://reblocke.github.io{route}"
     if parser.canonical != expected:
         errors.append(f"{route} canonical is {parser.canonical!r}, expected {expected!r}")
+    page_description = parser.meta_names.get("description")
+    if not page_description:
+        errors.append(f"{route} is missing a meta description")
+        page_description = ""
+    expected_properties = {
+        "og:type": "website",
+        "og:site_name": "Brian W. Locke",
+        "og:locale": "en_US",
+        "og:title": SOCIAL_TITLES[route],
+        "og:description": page_description,
+        "og:url": expected,
+        "og:image": SOCIAL_IMAGE,
+        "og:image:type": "image/png",
+        "og:image:width": "1200",
+        "og:image:height": "630",
+        "og:image:alt": SOCIAL_IMAGE_ALT,
+    }
+    expected_names = {
+        "twitter:card": "summary_large_image",
+        "twitter:title": SOCIAL_TITLES[route],
+        "twitter:description": page_description,
+        "twitter:image": SOCIAL_IMAGE,
+        "twitter:image:alt": SOCIAL_IMAGE_ALT,
+    }
+    for name, value in expected_properties.items():
+        if parser.meta_properties.get(name) != value:
+            errors.append(f"{route} {name} is {parser.meta_properties.get(name)!r}, expected {value!r}")
+    for name, value in expected_names.items():
+        if parser.meta_names.get(name) != value:
+            errors.append(f"{route} {name} is {parser.meta_names.get(name)!r}, expected {value!r}")
+
+preview_path = SITE / "images" / "social-preview.png"
+if preview_path.exists():
+    header = preview_path.read_bytes()[:24]
+    if len(header) < 24 or header[:8] != b"\x89PNG\r\n\x1a\n":
+        errors.append("social preview is not a valid PNG")
+    elif struct.unpack(">II", header[16:24]) != (1200, 630):
+        errors.append("social preview dimensions are not 1200x630")
+    if preview_path.stat().st_size > 1_000_000:
+        errors.append("social preview exceeds 1 MB")
+else:
+    errors.append("built social preview asset is missing")
 
 for html, parser in pages.items():
     for href in parser.hrefs:

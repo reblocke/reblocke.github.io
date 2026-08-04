@@ -37,6 +37,12 @@ image:
   width: 800
   height: 1000
   alt: "Portrait of Brian W. Locke"
+social_preview:
+  path: "/images/social-preview.png"
+  mime_type: "image/png"
+  width: 1200
+  height: 630
+  alt: "Portrait of Brian W. Locke with his name and pulmonary and critical care research focus"
 disclosure: >-
   Brian W. Locke has an equity interest in and serves as an advisor to
   Mountain Biometrics, Inc. (MTN), a healthcare data-integration company.
