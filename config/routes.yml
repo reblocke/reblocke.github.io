@@ -1,0 +1,18 @@
+canonical:
+  - "/"
+  - "/work/"
+  - "/cv/"
+  - "/research-repositories/"
+redirects:
+  - {from: "/materials/", to: "/work/#software-and-repositories"}
+  - {from: "/projects/", to: "/work/#software-and-repositories"}
+  - {from: "/portfolio/", to: "/work/#software-and-repositories"}
+  - {from: "/publications/", to: "/work/"}
+  - {from: "/talks/", to: "/cv/#presentations"}
+  - {from: "/teaching/", to: "/cv/#teaching-and-curriculum"}
+  - {from: "/about/", to: "/"}
+  - {from: "/about.html", to: "/"}
+  - {from: "/resume", to: "/cv/"}
+retired:
+  - "/sitemap/"
+
