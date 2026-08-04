@@ -1,0 +1,12 @@
+{% assign person = site.data.person %}
+<footer class="site-footer">
+  <div class="site-container site-footer__inner">
+    <p>© {{ site.time | date: '%Y' }} Brian W. Locke</p>
+    <nav aria-label="External profiles">
+      <a href="{{ person.profiles.github }}">GitHub</a>
+      <a href="{{ person.profiles.orcid }}">ORCID</a>
+      <a href="mailto:{{ person.email }}">Email</a>
+      <a href="/NOTICE/">Notice</a>
+    </nav>
+  </div>
+</footer>

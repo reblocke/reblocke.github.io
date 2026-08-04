@@ -1,0 +1,46 @@
+name: "Brian W. Locke, MD, MSCI"
+given_name: "Brian"
+family_name: "Locke"
+credentials:
+  - "MD"
+  - "MSCI"
+summary: >-
+  Pulmonary and critical care physician-scientist focused on respiratory
+  failure, diagnostic evidence, clinical prediction, and reproducible
+  research informatics.
+research_statement: >-
+  I study respiratory failure, diagnostic evidence, and the systems needed
+  to turn clinical data into reliable research and care.
+primary_affiliation:
+  role: "Assistant Professor of Research"
+  organization: "Intermountain Health"
+secondary_affiliations:
+  - role: "Advisor"
+    organization: "MTN"
+    legal_name: "Mountain Biometrics, Inc."
+    descriptor: "Adaptive healthcare data integration"
+clinical_context:
+  - "Shock Trauma ICU"
+  - "Schmidt Chest Clinic"
+email: "brian.locke@hsc.utah.edu"
+profiles:
+  orcid: "https://orcid.org/0000-0002-3588-5238"
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=O1nydc8AAAAJ"
+  github: "https://github.com/reblocke"
+  linkedin: "https://www.linkedin.com/in/brian-locke-464457155"
+  x: "https://x.com/doc_BLocke"
+website: "https://reblocke.github.io"
+image:
+  source: "/images/profile.JPG"
+  webp: "/images/profile-portrait.webp"
+  jpeg: "/images/profile-portrait.jpg"
+  width: 800
+  height: 1000
+  alt: "Portrait of Brian W. Locke"
+disclosure: >-
+  Brian W. Locke has an equity interest in and serves as an advisor to
+  Mountain Biometrics, Inc. (MTN), a healthcare data-integration company.
+  This relationship is separate from his role at Intermountain Health.
+schema:
+  type: "Person"
+  job_title: "Assistant Professor of Research"

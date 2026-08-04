@@ -1,0 +1,437 @@
+{
+  "orcid_candidates": [
+    {
+      "put_code": 141379361,
+      "title": "Named entity recognition: Adapting to microblogging",
+      "type": "dissertation-thesis",
+      "year": 2009,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726590100504
+    },
+    {
+      "put_code": 141379362,
+      "title": "The Effect of OSA Severity and CPAP Adherence on Weight Regain After Bariatric Surgery",
+      "type": "conference-abstract",
+      "year": 2020,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726589992329
+    },
+    {
+      "put_code": 141379363,
+      "title": "Spectrum of Central Sleep Apnea at an Academic Sleep Center Between 2016-2018 and Treatment Responses to CPAP vs. Adaptive Servo Ventilation",
+      "type": "conference-abstract",
+      "year": 2020,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726589972109
+    },
+    {
+      "put_code": 141379365,
+      "title": "LEARNER PERCEPTIONS OF A NOVEL APPROACH TO CHIEF RESIDENT-LED JOURNAL CLUB IN THE ERA OF CLINICAL PRACTICE GUIDELINES",
+      "type": "conference-paper",
+      "year": 2020,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1693341165347
+    },
+    {
+      "put_code": 141379367,
+      "title": "Electronic health record--derived outcomes in obstructive sleep apnea managed with positive airway pressure tracking systems",
+      "type": "journal-article",
+      "year": 2022,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1693341165363
+    },
+    {
+      "put_code": 141379368,
+      "title": "Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery",
+      "type": "conference-abstract",
+      "year": 2022,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726589867626
+    },
+    {
+      "put_code": 141379370,
+      "title": "Common Methods of Identifying Hypercapnic Respiratory Failure Produce Meaningfully Different Cohorts",
+      "type": "conference-abstract",
+      "year": 2022,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726589939633
+    },
+    {
+      "put_code": 141379373,
+      "title": "Trajectory of Bicarbonate With CPAP Usage Across the Spectrum of Obesity Related Hypoventilation",
+      "type": "conference-abstract",
+      "year": 2023,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726589892655
+    },
+    {
+      "put_code": 141379374,
+      "title": "Test Performance of Serum Bicarbonate in Identifying Hypercapnia Across Settings and Diseases",
+      "type": "conference-abstract",
+      "year": 2023,
+      "doi": null,
+      "pmid": null,
+      "url": null,
+      "last_modified": 1726622724795
+    },
+    {
+      "put_code": 140310676,
+      "title": "The association between pulmonary artery enlargement and mortality in an Emergency Department population undergoing computed tomography pulmonary angiography",
+      "type": "journal-article",
+      "year": 2023,
+      "doi": "10.1002/pul2.12225",
+      "pmid": null,
+      "url": "http://dx.doi.org/10.1002/pul2.12225",
+      "last_modified": 1693341195938
+    },
+    {
+      "put_code": 203326186,
+      "title": "Splenectomy Increases CTEPH Risk and Modifies Clinical Features of Acute Pulmonary Embolism.",
+      "type": "journal-article",
+      "year": 2025,
+      "doi": "10.1002/pul2.70231",
+      "pmid": "41472662",
+      "url": "https://europepmc.org/articles/PMC12745883",
+      "last_modified": 1769134894640
+    },
+    {
+      "put_code": 176595730,
+      "title": "Use of High-Dose Hydroxocobalamin for Septic Shock",
+      "type": "journal-article",
+      "year": 2025,
+      "doi": "10.1016/j.chest.2025.01.016",
+      "pmid": null,
+      "url": "https://doi.org/10.1016/j.chest.2025.01.016",
+      "last_modified": 1751969060718
+    },
+    {
+      "put_code": 203326217,
+      "title": "Entropy removal of clinical features.",
+      "type": "journal-article",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-29069-0",
+      "pmid": "41276591",
+      "url": "https://europepmc.org/articles/PMC12749281",
+      "last_modified": 1769134978695
+    },
+    {
+      "put_code": 141379455,
+      "title": "What explains high self-reports of poor sleep quality in Native Hawaiian/Pacific Islanders?",
+      "type": "conference-abstract",
+      "year": 2023,
+      "doi": "10.1093/sleep/zsad077.0930",
+      "pmid": null,
+      "url": "https://doi.org/10.1093/sleep/zsad077.0930",
+      "last_modified": 1726589877784
+    },
+    {
+      "put_code": 149644063,
+      "title": "The Verity of a Unifying Diagnosis",
+      "type": "journal-article",
+      "year": 2023,
+      "doi": "10.1177/0272989x231192521",
+      "pmid": null,
+      "url": "http://dx.doi.org/10.1177/0272989x231192521",
+      "last_modified": 1703956814960
+    },
+    {
+      "put_code": 208120514,
+      "title": "Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us",
+      "type": "journal-article",
+      "year": 2026,
+      "doi": "10.1177/19433654261424871",
+      "pmid": null,
+      "url": "https://doi.org/10.1177/19433654261424871",
+      "last_modified": 1773233575005
+    },
+    {
+      "put_code": 208336169,
+      "title": "Postacute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury: A Retrospective Analysis",
+      "type": "journal-article",
+      "year": 2026,
+      "doi": "10.1177/19433654261428406",
+      "pmid": null,
+      "url": "https://doi.org/10.1177/19433654261428406",
+      "last_modified": 1773402146650
+    },
+    {
+      "put_code": 214285339,
+      "title": "Letter: Author Response to Letter to the Editor from Luo et al.",
+      "type": "journal-article",
+      "year": 2026,
+      "doi": "10.1177/19433654261450544",
+      "pmid": null,
+      "url": "https://doi.org/10.1177/19433654261450544",
+      "last_modified": 1785746391657
+    },
+    {
+      "put_code": 130582743,
+      "title": "Severity, comorbidities, and adherence to therapy in Native Hawaiians/Pacific Islanders with obstructive sleep apnea",
+      "type": "journal-article",
+      "year": 2023,
+      "doi": "10.5664/jcsm.10472",
+      "pmid": null,
+      "url": "http://dx.doi.org/10.5664/jcsm.10472",
+      "last_modified": 1678468085066
+    },
+    {
+      "put_code": 203326255,
+      "title": "Seeing the random forest for the Zzz's: machine learning's new role in sleep science.",
+      "type": "journal-article",
+      "year": 2025,
+      "doi": "10.5664/jcsm.11674",
+      "pmid": "40094162",
+      "url": "https://doi.org/10.5664/jcsm.11674",
+      "last_modified": 1769135069751
+    },
+    {
+      "put_code": 111306881,
+      "title": "Electronic health record–derived outcomes in obstructive sleep apnea managed with positive airway pressure tracking systems",
+      "type": "journal-article",
+      "year": 2022,
+      "doi": "10.5664/jcsm.9750",
+      "pmid": null,
+      "url": "http://dx.doi.org/10.5664/jcsm.9750",
+      "last_modified": 1649779742456
+    },
+    {
+      "put_code": 212478634,
+      "title": "Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU",
+      "type": "preprint",
+      "year": 2026,
+      "doi": "10.64898/2026.04.19.26351213",
+      "pmid": null,
+      "url": "https://doi.org/10.64898/2026.04.19.26351213",
+      "last_modified": 1776806704236
+    },
+    {
+      "put_code": 219851789,
+      "title": "Emergency Department Presenting Concerns Among Admissions With Hypercapnia: A Retrospective NLP Study of MIMIC-IV",
+      "type": "preprint",
+      "year": 2026,
+      "doi": "10.64898/2026.07.03.26357242",
+      "pmid": null,
+      "url": "https://doi.org/10.64898/2026.07.03.26357242",
+      "last_modified": 1785192184956
+    }
+  ],
+  "proposed_canonical_changes": [
+    {
+      "id": "doi:10.1007/978-3-031-66538-7_4",
+      "doi": "10.1007/978-3-031-66538-7_4",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "title",
+          "canonical": "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records",
+          "source": "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Record Data"
+        },
+        {
+          "field": "authors",
+          "canonical": "Locke BW et al",
+          "source": "Locke, Brian W.; Richards, W. Wayne; Brown, Jeanette P.; Cui, Wanting; Finkelstein, Joseph; Sundar, Krishna M.; Gouripeddi, Ramkiran"
+        },
+        {
+          "field": "venue",
+          "canonical": "Artificial Intelligence in Medicine / Lecture Notes in Computer Science",
+          "source": "Lecture Notes in Computer Science"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1007/s00408-023-00657-z",
+      "doi": "10.1007/s00408-023-00657-z",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": null,
+          "source": "Locke, Brian W.; Sellman, Jeffrey; McFarland, Jonathan; Uribe, Francisco; Workman, Kimberly; Sundar, Krishna M."
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1007/s11606-024-09120-y",
+      "doi": "10.1007/s11606-024-09120-y",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "title",
+          "canonical": "Hickam's Dictum: An Analysis of Multiple Diagnoses",
+          "source": "Hickam’s Dictum: An Analysis of Multiple Diagnoses"
+        },
+        {
+          "field": "authors",
+          "canonical": "Aberegg SK, Poole BR, Locke BW",
+          "source": "Aberegg, Scott K.; Poole, Brian R.; Locke, Brian W."
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1016/j.chest.2023.03.037",
+      "doi": "10.1016/j.chest.2023.03.037",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": "Locke BW, Callahan SJ",
+          "source": "Locke, Brian W.; Callahan, Sean J."
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1016/j.chest.2025.08.002",
+      "doi": "10.1016/j.chest.2025.08.002",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": "Locke BW et al",
+          "source": "Locke, Brian W.; Richards, W. Wayne; Gouripeddi, Ramkiran; Brown, Jeanette P.; Anderson-Bell, Dustin; Finkelstein, Joseph; Sundar, Krishna M.; Peltan, Ithan D.; Brown, Samuel M."
+        },
+        {
+          "field": "year",
+          "canonical": 2025,
+          "source": 2026
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1016/j.jsmc.2024.02.012",
+      "doi": "10.1016/j.jsmc.2024.02.012",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "title",
+          "canonical": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings",
+          "source": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Inpatient, and Outpatient Settings"
+        },
+        {
+          "field": "authors",
+          "canonical": "Locke BW, Brown JP, Sundar KM",
+          "source": "Locke, Brian W.; Brown, Jeanette P.; Sundar, Krishna M."
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1093/jtm/taw088",
+      "doi": "10.1093/jtm/taw088",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "title",
+          "canonical": "Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies Carried by Mountain Climbers in Colorado",
+          "source": "Mountain medical kits: epidemiology-based recommendations and analysis of medical supplies carried by mountain climbers in Colorado"
+        },
+        {
+          "field": "authors",
+          "canonical": "Brandenburg W, Locke B",
+          "source": "Brandenburg, William E.; Locke, Brian W."
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1111/medu.13313",
+      "doi": "10.1111/medu.13313",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "title",
+          "canonical": "Enhancing Medical Student Quality Improvement Education through Immersion",
+          "source": "Enhancing medical student quality improvement education through immersion"
+        },
+        {
+          "field": "authors",
+          "canonical": "Locke B, Kneeland PP",
+          "source": "Locke, Brian; Kneeland, Patrick"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1111/obr.13697",
+      "doi": "10.1111/obr.13697",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "title",
+          "canonical": "The association of weight loss from anti-obesity medications or bariatric surgery and apnea-hypopnea index in obstructive sleep apnea",
+          "source": "The association of weight loss from anti‐obesity medications or bariatric surgery and apnea‐hypopnea index in obstructive sleep apnea"
+        },
+        {
+          "field": "authors",
+          "canonical": "Locke BW et al",
+          "source": "Locke, Brian W.; Gomez‐Lumbreras, Ainhoa; Tan, Chia Jie; Nonthasawadsri, Teerawat; Veettil, Sajesh K.; Patikorn, Chanthawat; Chaiyakunapruk, Nathorn"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.2196/62842",
+      "doi": "10.2196/62842",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": "Locke BW et al",
+          "source": "Locke, Brian W; Tsai, Te-yi; Reategui-Rivera, C Mahony; Gabriel, Aileen S; Smiley, Aref; Finkelstein, Joseph"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.3390/ijerph19095473",
+      "doi": "10.3390/ijerph19095473",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": "Locke BW, Lee JJ, Sundar KM",
+          "source": "Locke, Brian W.; Lee, Janet J.; Sundar, Krishna M."
+        }
+      ]
+    },
+    {
+      "id": "doi:10.4187/respcare.11573",
+      "doi": "10.4187/respcare.11573",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": "Locke BW, Brown J",
+          "source": "Locke, Brian W; Brown, Jeanette"
+        },
+        {
+          "field": "year",
+          "canonical": 2024,
+          "source": 2023
+        }
+      ]
+    },
+    {
+      "id": "doi:10.4300/jgme-d-20-00206.1",
+      "doi": "10.4300/jgme-d-20-00206.1",
+      "source": "Crossref",
+      "changes": [
+        {
+          "field": "authors",
+          "canonical": "Anton M, Wright J, Braithwaite M, Sturgeon G, Locke B, Milne C, Crosby A",
+          "source": "Anton, Marja; Wright, Josephine; Braithwaite, Matthew; Sturgeon, Greg; Locke, Brian; Milne, Caroline; Crosby, Aaron"
+        }
+      ]
+    }
+  ]
+}

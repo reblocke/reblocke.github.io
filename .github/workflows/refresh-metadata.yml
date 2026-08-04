@@ -1,0 +1,62 @@
+name: Refresh external metadata
+
+on:
+  schedule:
+    - cron: "17 8 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ github.token }}
+      ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
+      ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
+      NCBI_API_KEY: ${{ secrets.NCBI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3.12"
+          bundler-cache: true
+      - name: Refresh and validate
+        run: |
+          ruby scripts/refresh_external_metadata.rb
+          ruby scripts/generate_indexes.rb --write
+          bin/check
+      - name: Create or update the review pull request
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo "No metadata changes."
+            exit 0
+          fi
+          branch="automation/metadata-refresh"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin "$branch:refs/remotes/origin/$branch" || true
+          git switch -C "$branch"
+          git add _data/external _data/generated _generated_routes llms.txt research-repositories.json research-repositories.csv
+          git commit -m "Refresh external scholarly metadata"
+          git push --force-with-lease origin "$branch"
+          existing="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
+          summary="$(jq . _data/external/refresh_summary.generated.json)"
+          body="Automated review-gated refresh from GitHub, ORCID, Crossref, and PubMed. The workflow regenerated the static indexes and completed bin/check before opening this PR. Review reconciliation.generated.json for candidate or conflicting works.
+
+          Metadata changes:
+
+          \`\`\`json
+          $summary
+          \`\`\`"
+          if [[ -z "$existing" ]]; then
+            gh pr create --base master --head "$branch" --title "Refresh external scholarly metadata" --body "$body"
+          else
+            gh pr comment "$existing" --body "$body"
+          fi

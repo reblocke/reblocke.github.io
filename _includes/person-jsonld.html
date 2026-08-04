@@ -1,0 +1,24 @@
+{% assign person = site.data.person %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ person.name | jsonify }},
+  "givenName": {{ person.given_name | jsonify }},
+  "familyName": {{ person.family_name | jsonify }},
+  "url": {{ person.website | jsonify }},
+  "image": {{ person.image.jpeg | absolute_url | jsonify }},
+  "jobTitle": {{ person.primary_affiliation.role | jsonify }},
+  "affiliation": [
+    {"@type": "Organization", "name": {{ person.primary_affiliation.organization | jsonify }}},
+    {"@type": "Organization", "name": {{ person.secondary_affiliations[0].legal_name | jsonify }}}
+  ],
+  "sameAs": [
+    {{ person.profiles.orcid | jsonify }},
+    {{ person.profiles.google_scholar | jsonify }},
+    {{ person.profiles.github | jsonify }},
+    {{ person.profiles.linkedin | jsonify }},
+    {{ person.profiles.x | jsonify }}
+  ]
+}
+</script>

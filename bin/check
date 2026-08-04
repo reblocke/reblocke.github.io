@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$repo_root"
+
+ruby scripts/validate_site_data.rb
+ruby scripts/generate_indexes.rb --check
+bundle exec jekyll build --trace
+bundle exec htmlproofer ./_site --disable-external --allow-hash-href --checks Links,Images
+python3 scripts/validate_built_site.py
+python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --advisory
+
+if git grep -nE 'pub\.orcid\.org|api\.github\.com/users/.*/repos' -- _pages _includes _layouts assets; then
+  echo "Visitor-time external metadata call found." >&2
+  exit 1
+fi
+if git grep -nE 'Medical AI Lead|Clinical AI Lead|Clinical Research Lead|Clinical Research Director' -- _config.yml _data/person.yml _data/cv.yml _data/work.yml _pages _includes; then
+  echo "Superseded current title found." >&2
+  exit 1
+fi
+if git grep -n 'http://github.com' -- _config.yml _data _pages _includes _layouts assets files images; then
+  echo "Insecure GitHub link found." >&2
+  exit 1
+fi
+
+git diff --check
+echo "All site checks passed."

@@ -1,0 +1,7 @@
+{% assign person = site.data.person %}
+<div class="affiliations">
+  <p><strong>{{ person.primary_affiliation.role }}</strong><br>{{ person.primary_affiliation.organization }}</p>
+  {% for affiliation in person.secondary_affiliations %}
+    <p><strong>{{ affiliation.role }}, {{ affiliation.organization }}</strong><br>{{ affiliation.descriptor }}</p>
+  {% endfor %}
+</div>

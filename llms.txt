@@ -1,44 +1,38 @@
-# Brian W. Locke research index
+# Brian W. Locke academic website
 
-This file is a machine-readable guide to public research code, teaching materials, and publication-support repositories maintained by Brian W. Locke.
+> Public academic profile and curated index of scholarly work.
 
-Canonical website: https://reblocke.github.io/
-GitHub profile: https://github.com/reblocke
-ORCID: https://orcid.org/0000-0002-3588-5238
-Repository audit manifest: https://reblocke.github.io/research_repository_audit.csv
-Human-readable repository page: https://reblocke.github.io/research-repositories/
+## Principal pages
 
-## Public publication-linked repositories
+- About: https://reblocke.github.io/
+- Work: https://reblocke.github.io/work/
+- CV: https://reblocke.github.io/cv/
+- Public repository catalog: https://reblocke.github.io/research-repositories/
 
-- NRH-SCI-Vent: code for post-acute ventilator weaning and discharge outcomes in cervical spinal cord injury. Repository: https://github.com/reblocke/NRH-SCI-Vent. Article DOI: https://doi.org/10.1177/19433654261428406. Author response DOI: https://doi.org/10.1177/19433654261450544.
-- AOM-and-Bari-Surg-for-OSA-SRMA: code and extraction tables for a systematic review and meta-analysis of anti-obesity medications, bariatric surgery, and apnea-hypopnea index in obstructive sleep apnea. Repository: https://github.com/reblocke/AOM-and-Bari-Surg-for-OSA-SRMA. Article DOI: https://doi.org/10.1111/obr.13697. PubMed Central: https://pmc.ncbi.nlm.nih.gov/articles/PMC11311115/.
-- vr_icu: code and materials for an immersive virtual reality feasibility study in the medical ICU. Repository: https://github.com/reblocke/vr_icu. Article DOI: https://doi.org/10.2196/62842.
-- hickams-dictum: code and data for Hickam's Dictum: An Analysis of Multiple Diagnoses. Repository: https://github.com/reblocke/hickams-dictum. Article DOI: https://doi.org/10.1007/s11606-024-09120-y.
-- CSA-CPAP-Prescribing: Stata code supporting predictors of initial CPAP prescription and subsequent course with CPAP in central sleep apnea. Repository: https://github.com/reblocke/CSA-CPAP-Prescribing. Article DOI: https://doi.org/10.1007/s00408-023-00657-z.
-- CSA: Legacy Python workflow associated with the same central sleep apnea CPAP-prescribing paper; cleaned for repository hygiene and local reruns on authorized compatible workbooks. Repository: https://github.com/reblocke/CSA. Article DOI: https://doi.org/10.1007/s00408-023-00657-z.
-- CPAPOutcomes: analysis for EHR-derived outcomes in obstructive sleep apnea managed with positive airway pressure adherence tracking systems. Repository: https://github.com/reblocke/CPAPOutcomes. Article DOI: https://doi.org/10.5664/jcsm.9750.
-- NHPI-OSA-Burden: Stata code for severity, comorbidities, and adherence to therapy in Native Hawaiians/Pacific Islanders with obstructive sleep apnea. Repository: https://github.com/reblocke/NHPI-OSA-Burden. Article DOI: https://doi.org/10.5664/jcsm.10472.
-- CTPA-Dose-Response: files for pulmonary artery size on CT pulmonary angiography and mortality. Repository: https://github.com/reblocke/CTPA-Dose-Response. Article DOI: https://doi.org/10.1002/pul2.12225.
-- Hypercap-Case-Definitions: Stata code for consistency of hypercapnic respiratory failure case definitions in EHR data. Repository: https://github.com/reblocke/Hypercap-Case-Definitions. Article DOI: https://doi.org/10.1016/j.chest.2025.08.002.
-- Splenectomy-PE: analysis code for pulmonary embolism location, splenectomy, and CTEPH risk. Repository: https://github.com/reblocke/Splenectomy-PE. Article DOI: https://doi.org/10.1002/pul2.70231.
-- code-seminar-analysis: materials and analysis for inpatient emergency leadership curriculum evaluation. Repository: https://github.com/reblocke/code-seminar-analysis. Abstract DOI: https://doi.org/10.1164/ajrccm.2025.211.Abstracts.A5624.
-- llm_estimate_lrs: notebooks and outputs for estimating diagnostic likelihood ratios with LLMs and comparing them with literature-reported values. Repository: https://github.com/reblocke/llm_estimate_lrs.
+## Selected scholarly work
 
-## Public methods, tools, and teaching repositories
+- The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data (2025): https://doi.org/10.1016/j.chest.2025.08.002
+- Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records (2024): https://doi.org/10.1007/978-3-031-66538-7_4
+- The association of weight loss from anti-obesity medications or bariatric surgery and apnea-hypopnea index in obstructive sleep apnea (2024): https://doi.org/10.1111/obr.13697
+- Immersive Virtual Reality Use in Medical Intensive Care: Mixed Methods Feasibility Study (2024): https://doi.org/10.2196/62842
+- The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings (2024): https://doi.org/10.1016/j.jsmc.2024.02.012
+- OSA and Chronic Respiratory Disease: Mechanisms and Epidemiology (2022): https://doi.org/10.3390/ijerph19095473
+- Hickam's Dictum: An Analysis of Multiple Diagnoses (2024): https://doi.org/10.1007/s11606-024-09120-y
+- What Are We Aiming for in Chronic Hypercapnic Respiratory Failure? (2024): https://doi.org/10.4187/respcare.11573
+- Uncomfortable Truths About Data, Justice, and Idiopathic Pulmonary Fibrosis in the Veterans Health Administration (2023): https://doi.org/10.1016/j.chest.2023.03.037
+- Creating a COVID-19 Action Plan for GME Programs (2020): https://doi.org/10.4300/jgme-d-20-00206.1
+- Enhancing Medical Student Quality Improvement Education through Immersion (2017): https://doi.org/10.1111/medu.13313
+- Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies Carried by Mountain Climbers in Colorado (2017): https://doi.org/10.1093/jtm/taw088
+- Simulation suggests transcutaneous CO2 sensors may accurately detect hypercapnia across settings (2025): https://reblocke.github.io/work/
+- Rates of diagnostic evaluation for causes of hypercapnic respiratory failure in Utah (2025): https://reblocke.github.io/work/
+- Central versus peripheral location of pulmonary embolism in asplenic patients (2025): https://reblocke.github.io/work/
+- Enhancing intern leadership of inpatient emergencies (2025): https://reblocke.github.io/work/
+- In silico estimation of transcutaneous CO2 sensor performance (2025): https://reblocke.github.io/work/
+- Hypercapnic respiratory failure is infrequently reported as an adverse event in clinical trials (2024): https://reblocke.github.io/work/
+- Low research-burden study of immersive virtual reality feasibility in ICU (2024): https://reblocke.github.io/work/
+- Determinants of serum bicarbonate performance for identifying hypercapnia (2024): https://reblocke.github.io/work/
 
-- notebooks_dx_reasoning: interactive notebooks and Binder/Voila apps for Bayesian diagnostic reasoning and log-odds evidence. Repository: https://github.com/reblocke/notebooks_dx_reasoning.
-- clinical_talks: rendered clinical teaching talks and supporting source materials. Repository: https://github.com/reblocke/clinical_talks.
-- U-of-U-IM-Codes-and-Rapid-Responses: course website and materials for code blue and rapid-response team leadership. Repository: https://github.com/reblocke/U-of-U-IM-Codes-and-Rapid-Responses. Site: https://reblocke.github.io/U-of-U-IM-Codes-and-Rapid-Responses/.
-- intro_clin_research: guide for students, residents, and fellows starting clinical research. Repository: https://github.com/reblocke/intro_clin_research.
-- fellow_stats: pulmonary and critical care statistics workshop materials. Repository: https://github.com/reblocke/fellow_stats.
-- stata-codex-skills: generated local Codex skills for Stata. Repository: https://github.com/reblocke/stata-codex-skills.
-- conf_curve_likelihood: confidence curve and profile-likelihood visualization tools. Repository: https://github.com/reblocke/conf_curve_likelihood.
-- stewart-light: Stewart-Light acid-base visualization tools. Repository: https://github.com/reblocke/stewart-light.
-- forensic_metascience: forensic science replication and metascience materials. Repository: https://github.com/reblocke/forensic_metascience.
-- sofa_resp_sim: simulation of SOFA respiratory score generation from EHR data at elevation. Repository: https://github.com/reblocke/sofa_resp_sim.
-- sodium_change: program to evaluate how likely two sodium values represent a real clinical change. Repository: https://github.com/reblocke/sodium_change.
-- dx_chat_entropy: code to analyze clinical-reasoning efficiency via chatbot interactions. Repository: https://github.com/reblocke/dx_chat_entropy.
+## Machine-readable data
 
-## Copyright and data-use notes
-
-Public repositories may contain code, de-identified derived tables, teaching materials, or study-level extraction data. Restricted clinical datasets, PHI, internal grant drafts, and publisher PDFs are intentionally not indexed here. When manuscript text is unavailable as an author-owned accepted version or an open-access full text, use the DOI, PubMed, PubMed Central, repository README, and `CITATION.cff` instead of inferring details from a publisher PDF.
+- https://reblocke.github.io/research-repositories.json
+- https://reblocke.github.io/research-repositories.csv

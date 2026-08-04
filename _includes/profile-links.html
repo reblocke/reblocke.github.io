@@ -1,0 +1,8 @@
+{% assign person = site.data.person %}
+<nav class="text-link-row" aria-label="Professional profiles">
+  <a href="/work/">Work</a>
+  <a href="/cv/">CV</a>
+  <a href="{{ person.profiles.google_scholar }}">Google Scholar</a>
+  <a href="{{ person.profiles.orcid }}">ORCID</a>
+  <a href="{{ person.profiles.github }}">GitHub</a>
+</nav>

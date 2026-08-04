@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Audit public research repositories for READMEBuilder and LLM-readiness surfaces.
 
-The script reads ``research_repository_audit.csv`` and checks each listed
+The script reads ``research-repositories.csv`` and checks each listed
 repository through the GitHub CLI. It intentionally fails when required
 surfaces are missing so the manifest can drive small, reviewable PRs.
 """
@@ -139,7 +139,8 @@ def read_manifest(path: Path) -> list[dict[str, str]]:
 
 
 def audit_repo(row: dict[str, str], refs: dict[str, str]) -> Result:
-    repo = row["repo"]
+    full_name = row.get("repository") or row.get("repo") or ""
+    repo = full_name.split("/", 1)[-1]
     ref = refs.get(repo)
     problems: list[str] = []
     try:
@@ -156,7 +157,7 @@ def audit_repo(row: dict[str, str], refs: dict[str, str]) -> Result:
         readme_present = True
     llms_present = has_case_insensitive(names, "llms.txt")
 
-    if row.get("doi") and not has_case_insensitive(names, "CITATION.cff"):
+    if (row.get("related_doi") or row.get("doi")) and not has_case_insensitive(names, "CITATION.cff"):
         problems.append("publication-linked repo missing CITATION.cff")
     if not has_license(names):
         problems.append("missing LICENSE/LICENCE file")
@@ -192,7 +193,7 @@ def audit_repo(row: dict[str, str], refs: dict[str, str]) -> Result:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--manifest", default="research_repository_audit.csv")
+    parser.add_argument("--manifest", default="research-repositories.csv")
     parser.add_argument("--repos", nargs="*", help="Optional subset of repository names")
     parser.add_argument(
         "--ref",
@@ -200,6 +201,11 @@ def main() -> int:
         default=[],
         metavar="REPO=REF",
         help="Check a repository at a non-default branch or tag.",
+    )
+    parser.add_argument(
+        "--advisory",
+        action="store_true",
+        help="Report repository-readiness gaps without failing the site build.",
     )
     parser.add_argument(
         "--report",
@@ -216,7 +222,12 @@ def main() -> int:
     rows = read_manifest(Path(args.manifest))
     if args.repos:
         wanted = set(args.repos)
-        rows = [row for row in rows if row["repo"] in wanted]
+        rows = [
+            row
+            for row in rows
+            if (row.get("repository") or row.get("repo")) in wanted
+            or (row.get("repository") or row.get("repo", "")).split("/", 1)[-1] in wanted
+        ]
 
     results = [audit_repo(row, refs) for row in rows]
     failing = [result for result in results if result.problems]
@@ -258,7 +269,7 @@ def main() -> int:
                 )
 
     print(f"\nAudited {len(results)} repositories; {len(failing)} failing.")
-    return 1 if failing else 0
+    return 0 if args.advisory else (1 if failing else 0)
 
 
 if __name__ == "__main__":
