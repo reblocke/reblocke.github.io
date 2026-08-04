@@ -1,0 +1,11 @@
+{% assign item = include.item %}
+<article class="cv-entry">
+  <p class="cv-entry__dates">{{ item.dates }}</p>
+  <div>
+    <h3>{{ item.title | default: item.role | default: item.degree }}</h3>
+    {% if item.organization %}<p>{{ item.organization }}</p>{% endif %}
+    {% if item.institution %}<p>{{ item.institution }}</p>{% endif %}
+    {% if item.note %}<p class="muted">{% if item.url %}<a href="{{ item.url }}">{{ item.note }}</a>{% else %}{{ item.note }}{% endif %}</p>{% endif %}
+    {% if item.summary %}<p class="muted">{{ item.summary }}</p>{% endif %}
+  </div>
+</article>

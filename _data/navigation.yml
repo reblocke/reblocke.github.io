@@ -1,8 +1,7 @@
-# main links links
 main:
   - title: "About"
-    url: /
-  - title: "Materials"
-    url: /materials/
+    url: "/"
+  - title: "Work"
+    url: "/work/"
   - title: "CV"
-    url: /cv/
+    url: "/cv/"

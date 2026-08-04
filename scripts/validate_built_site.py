@@ -105,4 +105,3 @@ if errors:
     print("\n".join(f"ERROR: {error}" for error in errors), file=sys.stderr)
     raise SystemExit(1)
 print(f"Built-site validation passed for {len(pages)} HTML files.")
-

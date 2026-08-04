@@ -1,65 +1,60 @@
 # Brian W. Locke academic website
 
-This repository publishes the personal academic website at <https://reblocke.github.io/> and the public machine-readable index for research repositories.
+This repository publishes <https://reblocke.github.io/> as a small static Jekyll site and maintains its public scholarly metadata.
 
-## Links
+## Routine edits
 
-- Website: <https://reblocke.github.io/>
-- LLM index: <https://reblocke.github.io/llms.txt>
-- Research repository page: <https://reblocke.github.io/research-repositories/>
-- Public audit manifest: [`research_repository_audit.csv`](./research_repository_audit.csv)
+Human-maintained facts live in only three files:
 
-## Purpose
+- `_data/person.yml`: identity, affiliations, profiles, portrait, and disclosure.
+- `_data/cv.yml`: appointments, training, support, teaching, service, and honors.
+- `_data/work.yml`: curated publications, presentations, repositories, relationships, and editorial selections.
 
-The site collects publications, teaching materials, clinical research resources, and links to reproducible code repositories. The root `llms.txt` and audit manifest are designed to help language-model agents find the correct repository, DOI, citation metadata, and data-access limitations without guessing from paywalled PDFs or incomplete GitHub descriptions.
+Files under `_data/external/`, `_data/generated/`, `llms.txt`, and `research-repositories.*` are generated. Do not edit them manually.
 
-## Repository Layout
+## Local development
 
-| Path | Purpose |
-|---|---|
-| `_pages/` | Website pages, including the research repository index. |
-| `_publications/` | Publication entries rendered by the academicpages theme. |
-| `_talks/` and `_portfolio/` | Teaching, talk, and project pages. |
-| `files/` | Public downloadable files used by the website. |
-| `llms.txt` | Public machine-readable research index. |
-| `research_repository_audit.csv` | Public audit manifest for research and teaching repositories. |
-| `scripts/audit_llm_readiness.py` | CLI audit for READMEBuilder and LLM-readiness surfaces. |
-
-## Local Development
-
-Install Ruby dependencies if needed, then run the Jekyll site locally:
+Install Ruby 3.3.12 and Bundler, then run:
 
 ```bash
 bundle install
+bin/check
 bundle exec jekyll serve
 ```
 
-The site should be available at `http://localhost:4000`.
+The local site is available at <http://127.0.0.1:4000/>.
 
-## LLM-Readiness Audit
-
-Run the public repository audit with:
+To regenerate deterministic outputs after editing canonical data:
 
 ```bash
-python3 scripts/audit_llm_readiness.py --manifest research_repository_audit.csv
+ruby scripts/generate_indexes.rb --write
+bin/check
 ```
 
-To check only a subset while preparing a small PR batch:
+## External metadata refresh
+
+The monthly workflow retrieves public metadata from GitHub, ORCID, Crossref, and PubMed, regenerates the site, validates it, and opens a review pull request. It never publishes directly.
+
+Run the refresh locally with:
 
 ```bash
-python3 scripts/audit_llm_readiness.py --manifest research_repository_audit.csv --repos NRH-SCI-Vent AOM-and-Bari-Surg-for-OSA-SRMA notebooks_dx_reasoning
+GITHUB_TOKEN="$(gh auth token)" ruby scripts/refresh_external_metadata.rb
+ruby scripts/generate_indexes.rb --write
+bin/check
 ```
 
-The audit intentionally exits nonzero when a repository is missing root `README.md`, `CITATION.cff` for publication-linked work, a license file, `AGENTS.md`, or core READMEBuilder content categories.
+`ORCID_CLIENT_ID` and `ORCID_CLIENT_SECRET` may be configured for authenticated ORCID Public API access. The public endpoint is used for this single public record when credentials are absent. `NCBI_API_KEY` is optional for higher PubMed request limits.
 
-## Data, Manuscripts, and Copyright
+Google Scholar remains the linked comprehensive profile. It does not provide a supported automated profile API, so the site does not scrape it.
 
-This public website must not include PHI, restricted datasets, private grant drafts, collaborator-only manuscripts, credentials, or publisher-formatted article text. Manuscript Markdown should be added only after confirming that an author-owned accepted manuscript, preprint, or other reusable version is available.
+## Publishing
 
-## License
+Pull requests and `master` run the same `bin/check` build. A push to `master` deploys the exact validated `_site` artifact through GitHub Pages Actions. Repository Settings → Pages → Build and deployment must use **GitHub Actions**.
 
-The underlying academicpages/minimal-mistakes theme code remains under its original MIT-compatible licensing. Original site text and repository-audit metadata are copyright Brian W. Locke unless otherwise noted.
+## Public-content boundary
 
-## Contact
+Do not commit PHI, restricted datasets, credentials, private repository names, collaborator-only drafts, unpublished grant material, or publisher-formatted PDFs. Link to DOI, PubMed, PubMed Central, accepted manuscripts with verified rights, and public repositories.
 
-Maintainer: Brian W. Locke (`@reblocke`)
+## License and attribution
+
+See [LICENSE](./LICENSE) and [NOTICE.md](./NOTICE.md).

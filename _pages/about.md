@@ -1,122 +1,41 @@
 ---
-layout: splash
 permalink: /
-title: "Brian W Locke, MD, MSCI"
-excerpt: "Pulmonary and critical care physician-scientist focused on respiratory failure, diagnostic evidence, clinical prediction, and reproducible research informatics."
-author_profile: false
-redirect_from:
-  - /about/
-  - /about.html
+title: "Brian W. Locke, MD, MSCI"
+description: "Pulmonary and critical care physician-scientist studying respiratory failure, diagnostic evidence, and reproducible research systems."
 ---
+{% assign person = site.data.person %}
+{% assign work = site.data.generated.work %}
 
-{% assign profile = site.data.profile %}
-{% include base_path %}
-
-<section class="home-hero">
+<section class="home-hero site-container section">
   <div class="home-hero__text">
-    <h1>{{ profile.name }}</h1>
-    <p class="home-hero__purpose">{{ profile.career_purpose }}</p>
-    <p class="home-hero__title">{{ profile.primary_title }}</p>
-    <p class="home-hero__summary">{{ profile.summary }}</p>
-    <ul class="profile-links" aria-label="Profile links">
-      {% for link in profile.links %}
-        <li>
-          <a href="{{ link.url }}">
-            <i class="{{ link.icon }}" aria-hidden="true"></i>
-            <span>{{ link.label }}</span>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+    <h1>{{ person.name }}</h1>
+    {% include affiliations.html %}
+    <p class="hero-statement">{{ person.research_statement }}</p>
+    <p class="clinical-context">Clinical practice: {{ person.clinical_context | join: " and " }}.</p>
+    {% include profile-links.html %}
   </div>
-  <div class="home-hero__image">
-    <img src="{{ "/images/profile.JPG" | prepend: base_path }}" alt="{{ profile.name }}">
-  </div>
+  <picture class="home-hero__portrait">
+    <source srcset="{{ person.image.webp }}" type="image/webp">
+    <img src="{{ person.image.jpeg }}" width="{{ person.image.width }}" height="{{ person.image.height }}" alt="{{ person.image.alt }}">
+  </picture>
 </section>
 
-<section class="home-section">
-  <h2>About</h2>
-  <p>
-    I work in the {{ profile.clinical_context }} and serve as core faculty in the
-    University of Utah Pulmonary and Critical Care Fellowship. I trained in computer
-    science, medicine, medical education, and clinical investigation. My career
-    purpose centers on respiratory failure, diagnostic evidence, clinical prediction,
-    and reproducible research informatics.
-  </p>
-  <p>{{ profile.focus_intro }}</p>
-  <ul class="focus-list">
-    {% for area in profile.focus_areas %}
-      <li>{{ area }}</li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section class="home-section">
-  <h2>Research Approach</h2>
-  <p>{{ profile.approach_intro }}</p>
-  <ul class="approach-list">
-    {% for area in profile.approach_areas %}
-      <li>
-        <h3>{{ area.title }}</h3>
-        <p>{{ area.summary }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
-
-<section class="home-section">
-  <h2>Selected Current Work</h2>
-  <div class="content-card-list">
-    <article class="content-card">
-      <h3>Hypercapnic Respiratory Failure</h3>
-      <p>
-        Measuring disease burden, care variation, and post-discharge needs after
-        hospitalization with hypercapnic respiratory failure.
-      </p>
-      <p><a href="{{ "/publications/" | prepend: base_path }}">Selected publications</a></p>
-    </article>
-    <article class="content-card">
-      <h3>Diagnostic Evidence and Prediction</h3>
-      <p>
-        Developing EHR-derived phenotypes and prediction models that make
-        respiratory measurement more interpretable and reproducible.
-      </p>
-      <p><a href="{{ "/cv/" | prepend: base_path }}">Academic CV</a></p>
-    </article>
-    <article class="content-card">
-      <h3>Reproducible Research Workflows</h3>
-      <p>
-        Maintaining open statistical code, teaching materials, and research
-        artifacts that support transparent clinical investigation.
-      </p>
-      <p><a href="{{ "/materials/" | prepend: base_path }}">Materials index</a></p>
-    </article>
-    <article class="content-card">
-      <h3>National Abstracts and Presentations</h3>
-      <p>
-        Sharing recent work on respiratory failure, clinical prediction,
-        pulmonary vascular imaging, and medical education.
-      </p>
-      <p><a href="{{ "/talks/" | prepend: base_path }}">Selected abstracts and presentations</a></p>
-    </article>
-    <article class="content-card">
-      <h3>Teaching and Curriculum</h3>
-      <p>
-        Developing teaching around evidence-based reasoning, pulmonary and
-        critical care medicine, and clinical research methods.
-      </p>
-      <p><a href="{{ "/teaching/" | prepend: base_path }}">Selected teaching activities</a></p>
-    </article>
+<section class="section section--surface">
+  <div class="site-container">
+    <h2>Research themes</h2>
+    <div class="theme-grid">
+      <article><h3>Respiratory failure</h3><p>Measurement, hypercapnia, and care after hospitalization.</p></article>
+      <article><h3>Evidence and prediction</h3><p>Diagnostic reasoning, clinical prediction, and causal methods.</p></article>
+      <article><h3>Research infrastructure</h3><p>Reproducible analysis, linked clinical data, and pragmatic trials.</p></article>
+    </div>
   </div>
 </section>
 
-<section class="home-section home-section--split">
-  <div>
-    <h2>Materials</h2>
-    <p>
-      Public code, teaching materials, reproducible analyses, and project artifacts
-      are available in the materials index.
-    </p>
+<section class="site-container section" id="selected-work">
+  <header class="section-heading prose"><h2>Selected work</h2><p>Recent publications that represent the breadth of the current research program.</p></header>
+  <div class="featured-grid">
+    {% assign homepage_items = work.items | where_exp: "item", "item.selected.homepage == true" %}
+    {% for item in homepage_items %}{% include work-card.html item=item %}{% endfor %}
   </div>
-  <p><a class="btn btn--primary" href="{{ "/materials/" | prepend: base_path }}">Browse GitHub-accessible materials</a></p>
+  <p class="closing-link">View <a href="/work/">all selected work</a> or the <a href="/cv/">full curriculum vitae</a>.</p>
 </section>
