@@ -9,6 +9,7 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlparse
+from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
@@ -92,10 +93,15 @@ for html, parser in pages.items():
             if target_parser and parsed.fragment not in target_parser.ids:
                 errors.append(f"{html.relative_to(SITE)} missing anchor {href}")
 
-sitemap = (SITE / "sitemap.xml").read_text(encoding="utf-8")
-for forbidden in ("/materials/", "/publications/", "/talks/", "/teaching/", "/portfolio/"):
-    if f"https://reblocke.github.io{forbidden}" in sitemap:
-        errors.append(f"redirect route appears in sitemap: {forbidden}")
+sitemap = ElementTree.parse(SITE / "sitemap.xml")
+sitemap_routes = {
+    urlparse(location.text or "").path
+    for location in sitemap.findall(".//{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
+}
+if sitemap_routes != CANONICAL:
+    missing = sorted(CANONICAL - sitemap_routes)
+    unexpected = sorted(sitemap_routes - CANONICAL)
+    errors.append(f"sitemap route mismatch; missing={missing}, unexpected={unexpected}")
 
 catalog = json.loads((SITE / "research-repositories.json").read_text(encoding="utf-8"))
 if any(record.get("repository", "").count("/") != 1 for record in catalog):
