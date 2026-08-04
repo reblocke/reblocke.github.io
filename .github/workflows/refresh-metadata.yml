@@ -27,8 +27,8 @@ jobs:
           bundler-cache: true
       - name: Refresh and validate
         run: |
-          ruby scripts/refresh_external_metadata.rb
-          ruby scripts/generate_indexes.rb --write
+          bundle exec ruby scripts/refresh_external_metadata.rb
+          bundle exec ruby scripts/generate_indexes.rb --write
           bin/check
       - name: Create or update the review pull request
         shell: bash

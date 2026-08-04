@@ -4,8 +4,9 @@ set -euo pipefail
 repo_root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$repo_root"
 
-ruby scripts/validate_site_data.rb
-ruby scripts/generate_indexes.rb --check
+bundle exec ruby scripts/test_metadata_reconciliation.rb
+bundle exec ruby scripts/validate_site_data.rb
+bundle exec ruby scripts/generate_indexes.rb --check
 bundle exec jekyll build --trace
 bundle exec htmlproofer ./_site --disable-external --allow-hash-href --checks Links,Images
 python3 scripts/validate_built_site.py
