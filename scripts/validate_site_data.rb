@@ -115,11 +115,22 @@ end
 homepage = items.select { |item| item.dig("selected", "homepage") }
 errors << "homepage must contain 3 to 6 selected works" unless (3..6).cover?(homepage.length)
 
-Array(routes["canonical"]).each do |route|
+canonical_routes = Array(routes["canonical"])
+canonical_routes.each do |route|
   errors << "canonical route must begin and end with /: #{route}" unless route.start_with?("/") && route.end_with?("/")
 end
-Array(routes["redirects"]).each do |redirect|
+redirects = Array(routes["redirects"])
+redirect_sources = redirects.filter_map { |redirect| redirect["from"] }
+duplicate_redirects = redirect_sources.tally.select { |_route, count| count > 1 }.keys
+errors << "duplicate redirect routes: #{duplicate_redirects.join(', ')}" unless duplicate_redirects.empty?
+redirects.each do |redirect|
   errors << "redirect missing from/to" unless redirect["from"] && redirect["to"]
+  next unless redirect["from"] && redirect["to"]
+
+  errors << "redirect source must begin with /: #{redirect['from']}" unless redirect["from"].start_with?("/")
+  errors << "redirect source conflicts with a canonical route: #{redirect['from']}" if canonical_routes.include?(redirect["from"])
+  target_route = redirect["to"].split("#", 2).first
+  errors << "redirect target is not canonical: #{redirect['to']}" unless canonical_routes.include?(target_route)
 end
 
 if errors.empty?
