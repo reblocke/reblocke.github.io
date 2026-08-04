@@ -55,6 +55,20 @@ Google Scholar remains the linked comprehensive profile. It does not provide a s
 
 Pull requests and `master` run the same `bin/check` build. A push to `master` deploys the exact validated `_site` artifact through GitHub Pages Actions. Repository Settings → Pages → Build and deployment must use **GitHub Actions**.
 
+## Search discovery and Search Console
+
+The generated `sitemap.xml` contains only the four canonical routes, and the generated `robots.txt` advertises `https://reblocke.github.io/sitemap.xml`. `bin/check` validates both files. This supports ordinary crawler discovery without a Google account, but it does not provide Search Console reports or an authenticated sitemap submission.
+
+Search Console ownership requires a human Google sign-in; Google OAuth credentials are not stored in this repository. The remaining handoff can be completed from a phone or any browser:
+
+1. Open [Google Search Console](https://search.google.com/search-console) and add or select the **URL-prefix** property `https://reblocke.github.io/`.
+2. If verification is required, choose **HTML tag** or **HTML file**. Copy the exact tag or download the exact file supplied by Google, then add it through the normal pull-request and validated Pages deployment workflow.
+3. Confirm that the deployed homepage contains the exact tag, or that the exact verification-file URL returns HTTP 200 without authentication, before selecting **Verify**.
+4. Retain the verification tag or file after verification; Google checks it periodically.
+5. In **Sitemaps**, submit `sitemap.xml`. Then use **URL inspection** for `/`, `/work/`, `/cv/`, and `/research-repositories/` and request indexing when useful.
+
+The HTML verification tag or file is intentionally public. Google passwords, OAuth authorization codes, access or refresh tokens, recovery codes, and browser-session data are secrets and must never be committed or shared for this workflow. Sitemap submission and indexing requests are asynchronous and do not guarantee immediate indexing.
+
 ## Public-content boundary
 
 Do not commit PHI, restricted datasets, credentials, private repository names, collaborator-only drafts, unpublished grant material, or publisher-formatted PDFs. Link to DOI, PubMed, PubMed Central, accepted manuscripts with verified rights, and public repositories.
