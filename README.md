@@ -27,7 +27,7 @@ The local site is available at <http://127.0.0.1:4000/>.
 To regenerate deterministic outputs after editing canonical data:
 
 ```bash
-ruby scripts/generate_indexes.rb --write
+bundle exec ruby scripts/generate_indexes.rb --write
 bin/check
 ```
 
@@ -35,11 +35,13 @@ bin/check
 
 The monthly workflow retrieves public metadata from GitHub, ORCID, Crossref, and PubMed, regenerates the site, validates it, and opens a review pull request. It never publishes directly.
 
+The generated reconciliation report separates unmatched ORCID candidates, fields missing from canonical records, and material source conflicts. DOI or PMID matches anywhere in the canonical work registry count as represented; external metadata never overwrites curated content automatically.
+
 Run the refresh locally with:
 
 ```bash
-GITHUB_TOKEN="$(gh auth token)" ruby scripts/refresh_external_metadata.rb
-ruby scripts/generate_indexes.rb --write
+GITHUB_TOKEN="$(gh auth token)" bundle exec ruby scripts/refresh_external_metadata.rb
+bundle exec ruby scripts/generate_indexes.rb --write
 bin/check
 ```
 

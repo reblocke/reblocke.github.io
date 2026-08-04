@@ -8,6 +8,7 @@ require "net/http"
 require "time"
 require "uri"
 require "yaml"
+require_relative "metadata_reconciliation"
 
 ROOT = File.expand_path("..", __dir__)
 OUTPUT = File.join(ROOT, "_data/external")
@@ -52,7 +53,7 @@ end
 
 def write_json(name, records)
   FileUtils.mkdir_p(OUTPUT)
-  File.write(File.join(OUTPUT, name), JSON.pretty_generate(records) + "\n")
+  File.write(File.join(OUTPUT, name), MetadataReconciliation.stable_pretty_json(records) + "\n")
 end
 
 def existing_json(name)
@@ -112,13 +113,14 @@ orcid_records = Array(orcid["group"]).map do |group|
   {
     "put_code" => summary["put-code"], "title" => summary.dig("title", "title", "value"),
     "type" => summary["type"], "year" => summary.dig("publication-date", "year", "value")&.to_i,
-    "doi" => external_ids["doi"]&.downcase, "pmid" => external_ids["pmid"],
+    "doi" => external_ids["doi"] && MetadataReconciliation.normalize_doi(external_ids["doi"]), "pmid" => external_ids["pmid"],
     "url" => summary.dig("url", "value"), "last_modified" => summary.dig("last-modified-date", "value")
   }
 end.sort_by { |record| [record["doi"].to_s, record["put_code"].to_i] }
 write_json("orcid_works.generated.json", orcid_records)
 
-dois = (Array(work["items"]).filter_map { |item| item["doi"] } + orcid_records.filter_map { |item| item["doi"] }).map(&:downcase).uniq.sort
+canonical_records = Array(work["items"]) + Array(work["repositories"])
+dois = (canonical_records.filter_map { |item| item["doi"] } + orcid_records.filter_map { |item| item["doi"] }).map { |doi| MetadataReconciliation.normalize_doi(doi) }.reject(&:empty?).uniq.sort
 crossref_records = dois.filter_map do |doi|
   begin
     payload, = request_json("https://api.crossref.org/works/#{CGI.escape(doi)}?mailto=brian.locke@hsc.utah.edu")
@@ -133,7 +135,7 @@ crossref_records = dois.filter_map do |doi|
 end
 write_json("crossref_works.generated.json", crossref_records)
 
-pmids = (Array(work["items"]).filter_map { |item| item["pmid"] } + orcid_records.filter_map { |item| item["pmid"] }).uniq.sort
+pmids = (canonical_records.filter_map { |item| item["pmid"] } + orcid_records.filter_map { |item| item["pmid"] }).map { |pmid| MetadataReconciliation.normalize_pmid(pmid) }.reject(&:empty?).uniq.sort
 pubmed_records = []
 unless pmids.empty?
   api_key = ENV["NCBI_API_KEY"]
@@ -149,22 +151,7 @@ unless pmids.empty?
 end
 write_json("pubmed_works.generated.json", pubmed_records.sort_by { |record| record["pmid"].to_i })
 
-canonical_dois = Array(work["items"]).filter_map { |item| item["doi"]&.downcase }
-reconciliation = {
-  "orcid_candidates" => orcid_records.reject { |record| record["doi"] && canonical_dois.include?(record["doi"]) },
-  "proposed_canonical_changes" => crossref_records.filter_map do |record|
-    canonical = Array(work["items"]).find { |item| item["doi"]&.downcase == record["doi"] }
-    next unless canonical
-
-    changes = %w[title authors venue year].filter_map do |field|
-      next if record[field].nil? || record[field] == "" || canonical[field] == record[field]
-      {"field" => field, "canonical" => canonical[field], "source" => record[field]}
-    end
-    next if changes.empty?
-
-    {"id" => canonical["id"], "doi" => record["doi"], "source" => "Crossref", "changes" => changes}
-  end
-}
+reconciliation = MetadataReconciliation.build(work: work, orcid_records: orcid_records, crossref_records: crossref_records)
 write_json("reconciliation.generated.json", reconciliation)
 write_json(
   "refresh_summary.generated.json",
