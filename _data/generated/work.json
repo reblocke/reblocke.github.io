@@ -28,6 +28,27 @@
   ],
   "items": [
     {
+      "id": "doi:10.1177/19433654261428406",
+      "type": "journal-article",
+      "title": "Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury",
+      "authors": "Fenger C, Locke BW, Barker J, Tang W, Creveling P, Foster-Palmer S, Flis A, Park K, Rosenbluth J, Brown JP",
+      "venue": "Respiratory Care",
+      "year": 2026,
+      "doi": "10.1177/19433654261428406",
+      "pmid": "41823210",
+      "section": "health-services",
+      "summary": "A retrospective cohort analysis of ventilator weaning and discharge outcomes after cervical spinal cord injury.",
+      "related_ids": [
+        "repo:reblocke/NRH-SCI-Vent"
+      ],
+      "selected": {
+        "homepage": true,
+        "work": true,
+        "cv": true
+      },
+      "order": 5
+    },
+    {
       "id": "doi:10.1016/j.chest.2025.08.002",
       "type": "journal-article",
       "title": "The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data",
@@ -48,6 +69,26 @@
       "order": 10
     },
     {
+      "id": "doi:10.64898/2026.07.03.26357242",
+      "type": "preprint",
+      "title": "Emergency Department Presenting Concerns Among Admissions With Hypercapnia: A Retrospective NLP Study of MIMIC-IV",
+      "authors": "Merdad R, Ramirez M, Christenson M, Pettine WW, Locke BW",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.07.03.26357242",
+      "section": "respiratory-failure",
+      "summary": "A MIMIC-IV study using natural language processing to characterize presenting concerns among admissions with hypercapnia.",
+      "related_ids": [
+        "repo:reblocke/Hypercap-CC-NLP"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 15
+    },
+    {
       "id": "doi:10.1007/978-3-031-66538-7_4",
       "type": "conference-paper",
       "title": "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records",
@@ -63,6 +104,24 @@
         "cv": true
       },
       "order": 20
+    },
+    {
+      "id": "doi:10.64898/2026.04.19.26351213",
+      "type": "preprint",
+      "title": "Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU",
+      "authors": "Pozo M, Pape A, Locke B, Pettine WW",
+      "venue": "medRxiv",
+      "year": 2026,
+      "doi": "10.64898/2026.04.19.26351213",
+      "pmid": "42078409",
+      "section": "evidence-and-prediction",
+      "summary": "A decision-curve analysis evaluating when ICU transfer prediction models could support next-day clinical workflows.",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 25
     },
     {
       "id": "doi:10.1111/obr.13697",
@@ -106,6 +165,24 @@
       "order": 40
     },
     {
+      "id": "doi:10.1177/19433654261424871",
+      "type": "commentary",
+      "title": "Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us",
+      "authors": "Locke BW",
+      "venue": "Respiratory Care",
+      "year": 2026,
+      "doi": "10.1177/19433654261424871",
+      "pmid": "41778637",
+      "section": "respiratory-failure",
+      "summary": "An editorial interpreting the physiologic and symptom effects of surgical and N95 masks in chronic hypercapnic respiratory failure.",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 45
+    },
+    {
       "id": "doi:10.1016/j.jsmc.2024.02.012",
       "type": "journal-article",
       "title": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings",
@@ -120,6 +197,26 @@
         "cv": true
       },
       "order": 50
+    },
+    {
+      "id": "doi:10.1177/19433654261450544",
+      "type": "letter",
+      "title": "Letter: Author Response to Letter to the Editor from Luo et al",
+      "authors": "Fenger C, Locke B, Brown J",
+      "venue": "Respiratory Care",
+      "year": 2026,
+      "doi": "10.1177/19433654261450544",
+      "pmid": "42109263",
+      "section": "health-services",
+      "related_ids": [
+        "doi:10.1177/19433654261428406"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": false,
+        "cv": false
+      },
+      "order": 55
     },
     {
       "id": "doi:10.3390/ijerph19095473",
@@ -530,12 +627,26 @@
       "section": "health-services",
       "artifact_type": "reproducible analysis",
       "analysis_language": "Stata",
-      "doi": "10.1177/19433654261428406",
-      "pmid": "41823210",
+      "related_id": "doi:10.1177/19433654261428406",
+      "display_with": "doi:10.1177/19433654261428406",
       "license": "MIT",
       "selected_work": false,
       "order": 310,
       "data_availability": "Restricted EHR data are not public."
+    },
+    {
+      "id": "repo:reblocke/Hypercap-CC-NLP",
+      "repository": "reblocke/Hypercap-CC-NLP",
+      "title": "Hypercapnia Presenting-Concern NLP Study",
+      "section": "respiratory-failure",
+      "artifact_type": "reproducible NLP analysis",
+      "analysis_language": "Python",
+      "related_id": "doi:10.64898/2026.07.03.26357242",
+      "display_with": "doi:10.64898/2026.07.03.26357242",
+      "license": "MIT",
+      "selected_work": false,
+      "order": 315,
+      "data_availability": "Restricted MIMIC-IV data are not public; access requires PhysioNet credentials and applicable approvals."
     },
     {
       "id": "repo:reblocke/CSA-CPAP-Prescribing",

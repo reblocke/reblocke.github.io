@@ -40,11 +40,35 @@
     "pubdate": "2026 Jan"
   },
   {
+    "pmid": "41778637",
+    "pmcid": null,
+    "doi": "10.1177/19433654261424871",
+    "title": "Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us.",
+    "venue": "Respiratory care",
+    "pubdate": "2026 Apr"
+  },
+  {
     "pmid": "41823210",
     "pmcid": null,
     "doi": "10.1177/19433654261428406",
     "title": "Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury.",
     "venue": "Respiratory care",
     "pubdate": "2026 Apr"
+  },
+  {
+    "pmid": "42078409",
+    "pmcid": "PMC13131748",
+    "doi": "10.64898/2026.04.19.26351213",
+    "title": "Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU.",
+    "venue": "medRxiv : the preprint server for health sciences",
+    "pubdate": "2026 Apr 21"
+  },
+  {
+    "pmid": "42109263",
+    "pmcid": null,
+    "doi": "10.1177/19433654261450544",
+    "title": "Letter: Author Response to Letter to the Editor from Luo et al.",
+    "venue": "Respiratory care",
+    "pubdate": "2026 Aug"
   }
 ]

@@ -63,6 +63,10 @@ assert(result["source_conflicts"][0]["fields"].map { |field| field["field"] } ==
 assert(MetadataReconciliation.equivalent?("venue", "Conference / Journal Series", "Journal Series"), "curated venue enrichment became a conflict")
 assert(!MetadataReconciliation.equivalent?("venue", "Journal of Lung Research", "Lung"), "venue substring hid a conflict")
 assert(MetadataReconciliation.equivalent?("title", "Anti-obesity methods", "Anti‐obesity methods."), "typographic title variation became a conflict")
+assert(
+  MetadataReconciliation.equivalent?("title", "Letter: Author Response", "<i>Letter:</i>\n Author Response."),
+  "Crossref title markup became a conflict"
+)
 assert(!MetadataReconciliation.equivalent?("title", "C++ methods", "C methods"), "meaningful scholarly punctuation was erased")
 assert(!MetadataReconciliation.authors_equivalent?("Locke BW et al", "Smith, Priya; Locke, Brian W."), "changed first author was hidden")
 assert(!MetadataReconciliation.authors_equivalent?("Locke BW, Brown J", "Locke, Brian W.; Smith, Priya"), "changed complete author sequence was hidden")
