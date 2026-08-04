@@ -210,6 +210,20 @@
     "latest_release": "v2.0.0"
   },
   {
+    "repository": "reblocke/Hypercap-CC-NLP",
+    "title": "Hypercapnia Presenting-Concern NLP Study",
+    "artifact_type": "reproducible NLP analysis",
+    "analysis_language": "Python",
+    "related_doi": "10.64898/2026.07.03.26357242",
+    "related_pmid": null,
+    "data_availability": "Restricted MIMIC-IV data are not public; access requires PhysioNet credentials and applicable approvals.",
+    "license_status": "MIT",
+    "public_url": "https://github.com/reblocke/Hypercap-CC-NLP",
+    "archived": false,
+    "default_branch": "main",
+    "latest_release": "v0.1.1"
+  },
+  {
     "repository": "reblocke/Hypercap-Trial-Adverse-Events",
     "title": "Hypercapnia Trial Adverse Events",
     "artifact_type": "reproducible analysis",

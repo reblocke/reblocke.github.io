@@ -131,26 +131,6 @@
       "last_modified": 1703956814960
     },
     {
-      "put_code": 208120514,
-      "title": "Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us",
-      "type": "journal-article",
-      "year": 2026,
-      "doi": "10.1177/19433654261424871",
-      "pmid": null,
-      "url": "https://doi.org/10.1177/19433654261424871",
-      "last_modified": 1773233575005
-    },
-    {
-      "put_code": 214285339,
-      "title": "Letter: Author Response to Letter to the Editor from Luo et al.",
-      "type": "journal-article",
-      "year": 2026,
-      "doi": "10.1177/19433654261450544",
-      "pmid": null,
-      "url": "https://doi.org/10.1177/19433654261450544",
-      "last_modified": 1785746391657
-    },
-    {
       "put_code": 203326255,
       "title": "Seeing the random forest for the Zzz's: machine learning's new role in sleep science.",
       "type": "journal-article",
@@ -159,26 +139,6 @@
       "pmid": "40094162",
       "url": "https://doi.org/10.5664/jcsm.11674",
       "last_modified": 1769135069751
-    },
-    {
-      "put_code": 212478634,
-      "title": "Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU",
-      "type": "preprint",
-      "year": 2026,
-      "doi": "10.64898/2026.04.19.26351213",
-      "pmid": null,
-      "url": "https://doi.org/10.64898/2026.04.19.26351213",
-      "last_modified": 1776806704236
-    },
-    {
-      "put_code": 219851789,
-      "title": "Emergency Department Presenting Concerns Among Admissions With Hypercapnia: A Retrospective NLP Study of MIMIC-IV",
-      "type": "preprint",
-      "year": 2026,
-      "doi": "10.64898/2026.07.03.26357242",
-      "pmid": null,
-      "url": "https://doi.org/10.64898/2026.07.03.26357242",
-      "last_modified": 1785192184956
     }
   ],
   "missing_canonical_fields": [
@@ -228,6 +188,18 @@
           "field": "title",
           "canonical": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings",
           "source": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Inpatient, and Outpatient Settings"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1177/19433654261428406",
+      "doi": "10.1177/19433654261428406",
+      "source": "Crossref",
+      "fields": [
+        {
+          "field": "title",
+          "canonical": "Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury",
+          "source": "Postacute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury: A Retrospective Analysis"
         }
       ]
     },

@@ -11,10 +11,14 @@
 
 ## Selected scholarly work
 
+- Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury (2026): https://doi.org/10.1177/19433654261428406
 - The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data (2025): https://doi.org/10.1016/j.chest.2025.08.002
+- Emergency Department Presenting Concerns Among Admissions With Hypercapnia: A Retrospective NLP Study of MIMIC-IV (2026): https://doi.org/10.64898/2026.07.03.26357242
 - Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records (2024): https://doi.org/10.1007/978-3-031-66538-7_4
+- Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU (2026): https://doi.org/10.64898/2026.04.19.26351213
 - The association of weight loss from anti-obesity medications or bariatric surgery and apnea-hypopnea index in obstructive sleep apnea (2024): https://doi.org/10.1111/obr.13697
 - Immersive Virtual Reality Use in Medical Intensive Care: Mixed Methods Feasibility Study (2024): https://doi.org/10.2196/62842
+- Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us (2026): https://doi.org/10.1177/19433654261424871
 - The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings (2024): https://doi.org/10.1016/j.jsmc.2024.02.012
 - OSA and Chronic Respiratory Disease: Mechanisms and Epidemiology (2022): https://doi.org/10.3390/ijerph19095473
 - Hickam's Dictum: An Analysis of Multiple Diagnoses (2024): https://doi.org/10.1007/s11606-024-09120-y

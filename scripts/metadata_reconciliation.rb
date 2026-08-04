@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "cgi"
 require "json"
 require "set"
 
@@ -19,7 +20,7 @@ module MetadataReconciliation
   end
 
   def normalize_text(value)
-    value.to_s
+    CGI.unescapeHTML(value.to_s.gsub(/<[^>]+>/, ""))
       .unicode_normalize(:nfkc)
       .gsub(/[‘’]/, "'")
       .gsub(/[‐‑‒–—―−]/, "-")
