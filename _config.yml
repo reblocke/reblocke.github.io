@@ -43,6 +43,10 @@ defaults:
       type: pages
     values:
       layout: default
+  - scope:
+      path: "files/**/*.htm*"
+    values:
+      sitemap: false
 
 sass:
   sass_dir: _sass
