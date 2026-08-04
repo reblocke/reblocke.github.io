@@ -13,6 +13,7 @@ require_relative "metadata_reconciliation"
 ROOT = File.expand_path("..", __dir__)
 OUTPUT = File.join(ROOT, "_data/external")
 USER_AGENT = "reblocke-academic-site/1.0 (mailto:brian.locke@hsc.utah.edu)"
+SELF_REPOSITORY = "reblocke/reblocke.github.io"
 
 def request_json(url, headers = {})
   uri = URI(url)
@@ -96,7 +97,8 @@ loop do
       "visibility" => "public",
       "archived" => repo["archived"], "fork" => repo["fork"], "topics" => Array(repo["topics"]).sort,
       "primary_language" => repo["language"], "default_branch" => repo["default_branch"],
-      "latest_release" => release, "created_at" => repo["created_at"], "updated_at" => repo["updated_at"]
+      "latest_release" => release, "created_at" => repo["created_at"],
+      "updated_at" => repo["full_name"] == SELF_REPOSITORY ? nil : repo["updated_at"]
     }
   end)
   break if payload.length < 100
