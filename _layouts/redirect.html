@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
-    <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+    {% assign canonical_target = page.redirect_to | split: "#" | first %}
+    <link rel="canonical" href="{{ canonical_target | absolute_url }}">
     <title>Page moved · {{ site.title }}</title>
   </head>
   <body>

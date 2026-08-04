@@ -36,6 +36,7 @@ class PageParser(HTMLParser):
         self.canonical: str | None = None
         self.meta_properties: dict[str, str] = {}
         self.meta_names: dict[str, str] = {}
+        self.meta_http_equiv: dict[str, str] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         data = dict(attrs)
@@ -53,10 +54,32 @@ class PageParser(HTMLParser):
             self.meta_properties[str(data["property"])] = str(data["content"])
         if tag == "meta" and data.get("name") and data.get("content"):
             self.meta_names[str(data["name"])] = str(data["content"])
+        if tag == "meta" and data.get("http-equiv") and data.get("content"):
+            self.meta_http_equiv[str(data["http-equiv"]).lower()] = str(data["content"])
 
 
 def route_file(route: str) -> Path:
     return SITE / ("index.html" if route == "/" else route.strip("/") + "/index.html")
+
+
+def redirect_file(route: str) -> Path:
+    relative = route.lstrip("/")
+    if route.endswith("/"):
+        return SITE / relative / "index.html"
+    if route.endswith(".html"):
+        return SITE / relative
+    return SITE / f"{relative}.html"
+
+
+def generated_redirects() -> dict[str, str]:
+    redirects: dict[str, str] = {}
+    for source in sorted((ROOT / "_generated_routes").glob("*.md")):
+        text = source.read_text(encoding="utf-8")
+        route_match = re.search(r"^permalink:\s*(.+?)\s*$", text, flags=re.MULTILINE)
+        target_match = re.search(r"^redirect_to:\s*(.+?)\s*$", text, flags=re.MULTILINE)
+        if route_match and target_match:
+            redirects[route_match.group(1)] = target_match.group(1)
+    return redirects
 
 
 errors: list[str] = []
@@ -115,6 +138,26 @@ for route in CANONICAL:
     for name, value in expected_names.items():
         if parser.meta_names.get(name) != value:
             errors.append(f"{route} {name} is {parser.meta_names.get(name)!r}, expected {value!r}")
+
+for route, target in generated_redirects().items():
+    path = redirect_file(route)
+    if not path.exists():
+        errors.append(f"missing generated redirect route {route}")
+        continue
+    parser = pages[path]
+    expected_canonical = f"https://reblocke.github.io{target.split('#', 1)[0]}"
+    if parser.canonical != expected_canonical:
+        errors.append(
+            f"{route} canonical is {parser.canonical!r}, expected {expected_canonical!r}"
+        )
+    if parser.meta_names.get("robots") != "noindex":
+        errors.append(f"{route} redirect is missing robots noindex")
+    expected_refresh = f"0; url={target}"
+    if parser.meta_http_equiv.get("refresh") != expected_refresh:
+        errors.append(
+            f"{route} refresh is {parser.meta_http_equiv.get('refresh')!r}, "
+            f"expected {expected_refresh!r}"
+        )
 
 preview_path = SITE / "images" / "social-preview.png"
 if preview_path.exists():
