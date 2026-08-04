@@ -23,6 +23,7 @@ SOCIAL_TITLES = {
 }
 SOCIAL_IMAGE = "https://reblocke.github.io/images/social-preview.png"
 SOCIAL_IMAGE_ALT = "Portrait of Brian W. Locke with his name and pulmonary and critical care research focus"
+SITEMAP_URL = "https://reblocke.github.io/sitemap.xml"
 
 
 class PageParser(HTMLParser):
@@ -159,6 +160,21 @@ if sitemap_routes != CANONICAL:
     missing = sorted(CANONICAL - sitemap_routes)
     unexpected = sorted(sitemap_routes - CANONICAL)
     errors.append(f"sitemap route mismatch; missing={missing}, unexpected={unexpected}")
+
+robots_path = SITE / "robots.txt"
+if not robots_path.exists():
+    errors.append("built robots.txt is missing")
+else:
+    sitemap_declarations = [
+        line.strip()
+        for line in robots_path.read_text(encoding="utf-8").splitlines()
+        if line.strip().lower().startswith("sitemap:")
+    ]
+    if sitemap_declarations != [f"Sitemap: {SITEMAP_URL}"]:
+        errors.append(
+            "robots.txt sitemap declarations are "
+            f"{sitemap_declarations!r}, expected {[f'Sitemap: {SITEMAP_URL}']!r}"
+        )
 
 catalog = json.loads((SITE / "research-repositories.json").read_text(encoding="utf-8"))
 if any(record.get("repository", "").count("/") != 1 for record in catalog):
