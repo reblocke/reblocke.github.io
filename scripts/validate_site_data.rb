@@ -25,8 +25,28 @@ cv = load_yaml("_data/cv.yml")
 work = load_yaml("_data/work.yml")
 routes = load_yaml("config/routes.yml")
 
-%w[name summary primary_affiliation secondary_affiliations email profiles image disclosure].each do |key|
+%w[name summary primary_affiliation secondary_affiliations email profiles image social_preview disclosure].each do |key|
   errors << "person.yml missing #{key}" if person[key].nil? || person[key].respond_to?(:empty?) && person[key].empty?
+end
+
+social_preview = person["social_preview"] || {}
+%w[path mime_type width height alt].each do |key|
+  errors << "person.yml social_preview missing #{key}" if social_preview[key].nil? || social_preview[key].respond_to?(:empty?) && social_preview[key].empty?
+end
+errors << "social preview must be a local PNG" unless social_preview["path"]&.match?(%r{\A/images/[^/]+\.png\z}) && social_preview["mime_type"] == "image/png"
+errors << "social preview dimensions must be 1200x630" unless social_preview["width"] == 1200 && social_preview["height"] == 630
+
+preview_path = File.join(ROOT, social_preview["path"].to_s.sub(%r{\A/}, ""))
+if File.file?(preview_path)
+  header = File.binread(preview_path, 24)
+  if header.start_with?("\x89PNG\r\n\x1a\n".b) && header.bytesize >= 24
+    width, height = header.byteslice(16, 8).unpack("NN")
+    errors << "social preview file dimensions must be 1200x630" unless width == 1200 && height == 630
+  else
+    errors << "social preview file is not a valid PNG"
+  end
+else
+  errors << "social preview asset is missing: #{social_preview['path']}"
 end
 
 primary = person.dig("primary_affiliation", "organization")

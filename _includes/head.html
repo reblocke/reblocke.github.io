@@ -2,17 +2,30 @@
 {% assign page_title = page.title | default: person.name %}
 {% assign page_description = page.description | default: site.description %}
 {% assign canonical_url = page.url | absolute_url %}
+{% assign social_image = person.social_preview %}
+{% capture social_title %}{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · Brian Locke{% endif %}{% endcapture %}
+{% assign social_title = social_title | strip %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · Brian Locke{% endif %}</title>
+<title>{{ social_title }}</title>
 <meta name="description" content="{{ page_description | escape }}">
 <link rel="canonical" href="{{ canonical_url }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ page_title | escape }}">
+<meta property="og:site_name" content="Brian W. Locke">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="{{ social_title | escape }}">
 <meta property="og:description" content="{{ page_description | escape }}">
 <meta property="og:url" content="{{ canonical_url }}">
-<meta property="og:image" content="{{ person.image.jpeg | absolute_url }}">
+<meta property="og:image" content="{{ social_image.path | absolute_url }}">
+<meta property="og:image:type" content="{{ social_image.mime_type }}">
+<meta property="og:image:width" content="{{ social_image.width }}">
+<meta property="og:image:height" content="{{ social_image.height }}">
+<meta property="og:image:alt" content="{{ social_image.alt | escape }}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ social_title | escape }}">
+<meta name="twitter:description" content="{{ page_description | escape }}">
+<meta name="twitter:image" content="{{ social_image.path | absolute_url }}">
+<meta name="twitter:image:alt" content="{{ social_image.alt | escape }}">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 {% include person-jsonld.html %}
