@@ -1,0 +1,15 @@
+@media print {
+  @page { size: auto; margin: 0.65in; }
+  :root { --color-ink: #000; --color-muted: #333; --color-rule: #aaa; }
+  body { font-size: 10.5pt; line-height: 1.42; }
+  .site-header, .site-footer, .skip-link, .anchor-index, .text-link-row { display: none !important; }
+  .site-main, .site-container, .page--cv { width: 100%; max-width: none; min-height: 0; margin: 0; padding: 0; }
+  h1 { font-size: 24pt; }
+  h2 { margin-top: 18pt; font-size: 15pt; break-after: avoid; }
+  h3 { break-after: avoid; }
+  a { color: inherit; text-decoration: none; }
+  .cv-entry { grid-template-columns: 1.15in 1fr; padding-block: 7pt; }
+  .cv-section, .work-section { margin-top: 20pt; }
+  .cv-entry, .citation-list li { break-inside: avoid; }
+  .section--surface { background: transparent; }
+}
