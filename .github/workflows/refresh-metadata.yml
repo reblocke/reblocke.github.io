@@ -34,11 +34,15 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
+          branch="automation/metadata-refresh"
+          existing="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
           if git diff --quiet; then
             echo "No metadata changes."
+            if [[ -n "$existing" ]]; then
+              gh pr close "$existing" --comment "Closing automatically because the latest validated refresh produces no changes relative to master."
+            fi
             exit 0
           fi
-          branch="automation/metadata-refresh"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git fetch origin "$branch:refs/remotes/origin/$branch" || true
@@ -46,7 +50,6 @@ jobs:
           git add _data/external _data/generated _generated_routes llms.txt research-repositories.json research-repositories.csv
           git commit -m "Refresh external scholarly metadata"
           git push --force-with-lease origin "$branch"
-          existing="$(gh pr list --head "$branch" --state open --json number --jq '.[0].number // empty')"
           summary="$(jq . _data/external/refresh_summary.generated.json)"
           body="Automated review-gated refresh from GitHub, ORCID, Crossref, and PubMed. The workflow regenerated the static indexes and completed bin/check before opening this PR. Review reconciliation.generated.json for candidate or conflicting works.
 
