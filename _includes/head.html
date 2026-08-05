@@ -9,6 +9,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ social_title }}</title>
 <meta name="description" content="{{ page_description | escape }}">
+{% if page.url == "/" and site.google_site_verification %}
+<meta name="google-site-verification" content="{{ site.google_site_verification | escape }}">
+{% endif %}
 <link rel="canonical" href="{{ canonical_url }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Brian W. Locke">

@@ -36,6 +36,7 @@ class PageParser(HTMLParser):
         self.canonical: str | None = None
         self.meta_properties: dict[str, str] = {}
         self.meta_names: dict[str, str] = {}
+        self.meta_name_counts: dict[str, int] = {}
         self.meta_http_equiv: dict[str, str] = {}
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -53,7 +54,9 @@ class PageParser(HTMLParser):
         if tag == "meta" and data.get("property") and data.get("content"):
             self.meta_properties[str(data["property"])] = str(data["content"])
         if tag == "meta" and data.get("name") and data.get("content"):
-            self.meta_names[str(data["name"])] = str(data["content"])
+            name = str(data["name"])
+            self.meta_names[name] = str(data["content"])
+            self.meta_name_counts[name] = self.meta_name_counts.get(name, 0) + 1
         if tag == "meta" and data.get("http-equiv") and data.get("content"):
             self.meta_http_equiv[str(data["http-equiv"]).lower()] = str(data["content"])
 
@@ -83,6 +86,17 @@ def generated_redirects() -> dict[str, str]:
 
 
 errors: list[str] = []
+config_match = re.search(
+    r'^google_site_verification:\s*"([A-Za-z0-9_-]+)"\s*$',
+    (ROOT / "_config.yml").read_text(encoding="utf-8"),
+    flags=re.MULTILINE,
+)
+if config_match:
+    google_site_verification = config_match.group(1)
+else:
+    google_site_verification = ""
+    errors.append("unable to read google_site_verification from _config.yml")
+
 pages: dict[Path, PageParser] = {}
 for html in SITE.rglob("*.html"):
     parser = PageParser()
@@ -132,6 +146,15 @@ for route in CANONICAL:
         "twitter:image": SOCIAL_IMAGE,
         "twitter:image:alt": SOCIAL_IMAGE_ALT,
     }
+    verification_count = parser.meta_name_counts.get("google-site-verification", 0)
+    if route == "/":
+        if verification_count != 1:
+            errors.append(
+                f"{route} has {verification_count} google-site-verification tags, expected 1"
+            )
+        expected_names["google-site-verification"] = google_site_verification
+    elif verification_count:
+        errors.append(f"{route} unexpectedly contains google-site-verification")
     for name, value in expected_properties.items():
         if parser.meta_properties.get(name) != value:
             errors.append(f"{route} {name} is {parser.meta_properties.get(name)!r}, expected {value!r}")
