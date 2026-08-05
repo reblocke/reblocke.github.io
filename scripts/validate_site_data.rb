@@ -20,10 +20,17 @@ rescue Psych::SyntaxError => e
 end
 
 errors = []
+config = load_yaml("_config.yml")
 person = load_yaml("_data/person.yml")
 cv = load_yaml("_data/cv.yml")
 work = load_yaml("_data/work.yml")
 routes = load_yaml("config/routes.yml")
+
+verification_token = config["google_site_verification"].to_s
+errors << "_config.yml missing google_site_verification" if verification_token.empty?
+unless verification_token.empty? || verification_token.match?(%r{\A[A-Za-z0-9_-]+\z})
+  errors << "_config.yml google_site_verification has an invalid format"
+end
 
 %w[name summary primary_affiliation secondary_affiliations email profiles image social_preview disclosure].each do |key|
   errors << "person.yml missing #{key}" if person[key].nil? || person[key].respond_to?(:empty?) && person[key].empty?

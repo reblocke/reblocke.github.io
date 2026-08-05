@@ -59,15 +59,15 @@ Pull requests and `master` run the same `bin/check` build. A push to `master` de
 
 The generated `sitemap.xml` contains only the four canonical routes, and the generated `robots.txt` advertises `https://reblocke.github.io/sitemap.xml`. `bin/check` validates both files. This supports ordinary crawler discovery without a Google account, but it does not provide Search Console reports or an authenticated sitemap submission.
 
-Search Console ownership requires a human Google sign-in; Google OAuth credentials are not stored in this repository. The remaining handoff can be completed from a phone or any browser:
+The URL-prefix property `https://reblocke.github.io/` uses a public HTML verification tag sourced from `google_site_verification` in `_config.yml` and rendered only in the homepage `<head>`. Retain the tag after verification because Google checks it periodically. If Google issues a replacement, update it through the normal pull-request and validated Pages deployment workflow.
 
-1. Open [Google Search Console](https://search.google.com/search-console) and add or select the **URL-prefix** property `https://reblocke.github.io/`.
-2. If verification is required, choose **HTML tag** or **HTML file**. Copy the exact tag or download the exact file supplied by Google, then add it through the normal pull-request and validated Pages deployment workflow.
-3. Confirm that the deployed homepage contains the exact tag, or that the exact verification-file URL returns HTTP 200 without authentication, before selecting **Verify**.
-4. Retain the verification tag or file after verification; Google checks it periodically.
-5. In **Sitemaps**, submit `sitemap.xml`. Then use **URL inspection** for `/`, `/work/`, `/cv/`, and `/research-repositories/` and request indexing when useful.
+A signed-in maintainer completes the Google-side handoff from [Google Search Console](https://search.google.com/search-console):
 
-The HTML verification tag or file is intentionally public. Google passwords, OAuth authorization codes, access or refresh tokens, recovery codes, and browser-session data are secrets and must never be committed or shared for this workflow. Sitemap submission and indexing requests are asynchronous and do not guarantee immediate indexing.
+1. Confirm that the live homepage contains the exact verification tag, then select **Verify** for the URL-prefix property.
+2. In **Sitemaps**, submit `sitemap.xml`.
+3. Use **URL inspection** for `/`, `/work/`, `/cv/`, and `/research-repositories/` and request indexing when useful.
+
+The HTML verification tag is intentionally public. Google passwords, OAuth authorization codes, access or refresh tokens, recovery codes, and browser-session data are secrets and must never be committed or shared for this workflow. Sitemap submission and indexing requests are asynchronous and do not guarantee immediate indexing.
 
 ## Public-content boundary
 
