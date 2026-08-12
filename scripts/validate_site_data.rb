@@ -25,6 +25,7 @@ person = load_yaml("_data/person.yml")
 cv = load_yaml("_data/cv.yml")
 work = load_yaml("_data/work.yml")
 routes = load_yaml("config/routes.yml")
+navigation = load_yaml("_data/navigation.yml")
 
 verification_token = config["google_site_verification"].to_s
 errors << "_config.yml missing google_site_verification" if verification_token.empty?
@@ -32,8 +33,27 @@ unless verification_token.empty? || verification_token.match?(%r{\A[A-Za-z0-9_-]
   errors << "_config.yml google_site_verification has an invalid format"
 end
 
-%w[name summary primary_affiliation secondary_affiliations email profiles image social_preview disclosure].each do |key|
+%w[name summary research_statement clinical_role biography research_themes primary_affiliation secondary_affiliations email profiles image social_preview disclosure].each do |key|
   errors << "person.yml missing #{key}" if person[key].nil? || person[key].respond_to?(:empty?) && person[key].empty?
+end
+
+biography = Array(person["biography"])
+errors << "person.yml biography must contain exactly three paragraphs" unless biography.length == 3
+biography.each_with_index do |paragraph, index|
+  errors << "person.yml biography paragraph #{index + 1} must be nonempty text" unless paragraph.is_a?(String) && !paragraph.strip.empty?
+end
+
+research_themes = Array(person["research_themes"])
+errors << "person.yml research_themes must contain exactly three themes" unless research_themes.length == 3
+research_themes.each_with_index do |theme, index|
+  unless theme.is_a?(Hash)
+    errors << "person.yml research theme #{index + 1} must be an object"
+    next
+  end
+  %w[title description].each do |key|
+    value = theme[key]
+    errors << "person.yml research theme #{index + 1} missing #{key}" unless value.is_a?(String) && !value.strip.empty?
+  end
 end
 
 social_preview = person["social_preview"] || {}
@@ -59,6 +79,38 @@ end
 primary = person.dig("primary_affiliation", "organization")
 secondary = Array(person["secondary_affiliations"]).map { |item| item["organization"] }
 errors << "primary and secondary affiliations must differ" if secondary.include?(primary)
+
+current_positions = Array(cv["positions"]).select { |position| position["status"] == "current" }
+primary_role = person.dig("primary_affiliation", "role")
+primary_match = current_positions.any? do |position|
+  position["title"] == primary_role && position["organization"] == primary
+end
+unless primary_match
+  errors << "person.yml primary affiliation does not match a current cv.yml position: #{primary_role}, #{primary}"
+end
+
+clinical_role = person["clinical_role"]
+clinical_context = Array(person["clinical_context"])
+clinical_match = current_positions.any? do |position|
+  organization = position["organization"].to_s
+  position["title"] == clinical_role &&
+    organization.include?(primary.to_s) &&
+    clinical_context.all? { |context| organization.include?(context.to_s) }
+end
+unless clinical_match
+  errors << "person.yml clinical role and context do not match a current cv.yml position: #{clinical_role}"
+end
+
+Array(person["secondary_affiliations"]).each do |affiliation|
+  names = [affiliation["organization"], affiliation["legal_name"]].compact.reject(&:empty?)
+  match = current_positions.any? do |position|
+    organization = position["organization"].to_s
+    position["title"] == affiliation["role"] && names.all? { |name| organization.include?(name) }
+  end
+  unless match
+    errors << "person.yml secondary affiliation does not match a current cv.yml position: #{affiliation['role']}, #{affiliation['organization']}"
+  end
+end
 
 canonical_text = [person, cv].to_json
 PROHIBITED_TITLES.each do |title|
@@ -123,8 +175,21 @@ homepage = items.select { |item| item.dig("selected", "homepage") }
 errors << "homepage must contain 3 to 6 selected works" unless (3..6).cover?(homepage.length)
 
 canonical_routes = Array(routes["canonical"])
+expected_canonical_routes = ["/", "/bio/", "/work/", "/cv/", "/research-repositories/"]
+unless canonical_routes == expected_canonical_routes
+  errors << "canonical routes must be exactly: #{expected_canonical_routes.join(', ')}"
+end
 canonical_routes.each do |route|
   errors << "canonical route must begin and end with /: #{route}" unless route.start_with?("/") && route.end_with?("/")
+end
+
+expected_navigation = [
+  {"title" => "About", "url" => "/"},
+  {"title" => "Work", "url" => "/work/"},
+  {"title" => "CV", "url" => "/cv/"}
+]
+unless Array(navigation["main"]) == expected_navigation
+  errors << "principal navigation must be exactly About, Work, and CV"
 end
 redirects = Array(routes["redirects"])
 redirect_sources = redirects.filter_map { |redirect| redirect["from"] }

@@ -14,9 +14,10 @@ from xml.etree import ElementTree
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
-CANONICAL = {"/", "/work/", "/cv/", "/research-repositories/"}
+CANONICAL = {"/", "/bio/", "/work/", "/cv/", "/research-repositories/"}
 SOCIAL_TITLES = {
     "/": "Brian W. Locke, MD, MSCI",
+    "/bio/": "Biography · Brian Locke",
     "/work/": "Work · Brian Locke",
     "/cv/": "Curriculum Vitae · Brian Locke",
     "/research-repositories/": "Public Research Repositories · Brian Locke",

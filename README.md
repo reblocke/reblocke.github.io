@@ -57,7 +57,7 @@ Pull requests and `master` run the same `bin/check` build. A push to `master` de
 
 ## Search discovery and Search Console
 
-The generated `sitemap.xml` contains only the four canonical routes, and the generated `robots.txt` advertises `https://reblocke.github.io/sitemap.xml`. `bin/check` validates both files. This supports ordinary crawler discovery without a Google account, but it does not provide Search Console reports or an authenticated sitemap submission.
+The generated `sitemap.xml` contains only the five canonical routes: `/`, `/bio/`, `/work/`, `/cv/`, and `/research-repositories/`. The generated `robots.txt` advertises `https://reblocke.github.io/sitemap.xml`, and `bin/check` validates both files. This supports ordinary crawler discovery without a Google account, but it does not provide Search Console reports or an authenticated sitemap submission.
 
 The URL-prefix property `https://reblocke.github.io/` uses a public HTML verification tag sourced from `google_site_verification` in `_config.yml` and rendered only in the homepage `<head>`. Retain the tag after verification because Google checks it periodically. If Google issues a replacement, update it through the normal pull-request and validated Pages deployment workflow.
 
@@ -65,7 +65,7 @@ A signed-in maintainer completes the Google-side handoff from [Google Search Con
 
 1. Confirm that the live homepage contains the exact verification tag, then select **Verify** for the URL-prefix property.
 2. In **Sitemaps**, submit `sitemap.xml`.
-3. Use **URL inspection** for `/`, `/work/`, `/cv/`, and `/research-repositories/` and request indexing when useful.
+3. Use **URL inspection** for `/`, `/bio/`, `/work/`, `/cv/`, and `/research-repositories/` and request indexing when useful.
 
 The HTML verification tag is intentionally public. Google passwords, OAuth authorization codes, access or refresh tokens, recovery codes, and browser-session data are secrets and must never be committed or shared for this workflow. Sitemap submission and indexing requests are asynchronous and do not guarantee immediate indexing.
 

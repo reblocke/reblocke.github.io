@@ -11,7 +11,6 @@
 }
 .home-hero__text { min-width: 0; }
 .hero-statement { max-width: 60ch; font-size: unquote("clamp(1.12rem, 1.03rem + 0.35vw, 1.28rem)"); line-height: 1.55; }
-.clinical-context { max-width: 60ch; color: var(--color-muted); }
 .home-hero__portrait { width: unquote("min(13rem, 58vw)"); justify-self: start; }
 .home-hero__portrait img { width: 100%; aspect-ratio: 4 / 5; border-radius: var(--radius-small); object-fit: cover; object-position: 50% 45%; }
 .theme-grid { display: grid; grid-template-columns: 1fr; gap: var(--space-6); }
