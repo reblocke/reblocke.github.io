@@ -1,6 +1,10 @@
 {% assign person = site.data.person %}
 {% assign page_title = page.title | default: person.name %}
-{% assign page_description = page.description | default: site.description %}
+{% if page.url == "/" %}
+  {% assign page_description = person.research_statement %}
+{% else %}
+  {% assign page_description = page.description | default: person.summary %}
+{% endif %}
 {% assign canonical_url = page.url | absolute_url %}
 {% assign social_image = person.social_preview %}
 {% capture social_title %}{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · Brian Locke{% endif %}{% endcapture %}

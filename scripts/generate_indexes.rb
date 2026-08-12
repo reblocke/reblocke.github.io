@@ -79,6 +79,7 @@ def generate(destination)
     "## Principal pages",
     "",
     "- About: https://reblocke.github.io/",
+    "- Biography: https://reblocke.github.io/bio/",
     "- Work: https://reblocke.github.io/work/",
     "- CV: https://reblocke.github.io/cv/",
     "- Public repository catalog: https://reblocke.github.io/research-repositories/",

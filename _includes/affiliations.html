@@ -1,7 +1,8 @@
 {% assign person = site.data.person %}
 <div class="affiliations">
-  <p><strong>{{ person.primary_affiliation.role }}</strong><br>{{ person.primary_affiliation.organization }}</p>
+  <p><strong>{{ person.primary_affiliation.role }}</strong>, {{ person.primary_affiliation.organization }}</p>
+  <p><strong>{{ person.clinical_role }}</strong></p>
   {% for affiliation in person.secondary_affiliations %}
-    <p><strong>{{ affiliation.role }}, {{ affiliation.organization }}</strong><br>{{ affiliation.descriptor }}</p>
+    <p><strong>{{ affiliation.role }}, {{ affiliation.organization }}</strong>{% if affiliation.descriptor %} · {{ affiliation.descriptor }}{% endif %}</p>
   {% endfor %}
 </div>

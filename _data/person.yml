@@ -5,15 +5,18 @@ credentials:
   - "MD"
   - "MSCI"
 summary: >-
-  Pulmonary and critical care physician-scientist focused on respiratory
-  failure, diagnostic evidence, clinical prediction, and reproducible
-  research informatics.
+  My research uses linked clinical and claims data, computable phenotypes,
+  clinical prediction, causal inference, and pragmatic trials to improve the
+  recognition and management of respiratory failure. I practice in the Shock
+  Trauma ICU and Schmidt Chest Clinic and serve as core faculty in the
+  University of Utah Pulmonary and Critical Care Fellowship.
 research_statement: >-
-  I study respiratory failure, diagnostic evidence, and the systems needed
-  to turn clinical data into reliable research and care.
+  I study how health systems recognize, evaluate, and manage respiratory
+  failure, from physiologic measurement through care after hospitalization.
 primary_affiliation:
   role: "Assistant Professor of Research"
   organization: "Intermountain Health"
+clinical_role: "Pulmonary and Critical Care Physician"
 secondary_affiliations:
   - role: "Advisor"
     organization: "MTN"
@@ -22,6 +25,29 @@ secondary_affiliations:
 clinical_context:
   - "Shock Trauma ICU"
   - "Schmidt Chest Clinic"
+biography:
+  - >-
+    Brian W. Locke is a pulmonary and critical care physician-scientist and
+    Assistant Professor of Research at Intermountain Health. He practices in
+    the Shock Trauma ICU and Schmidt Chest Clinic and serves as core faculty in
+    the University of Utah Pulmonary and Critical Care Fellowship.
+  - >-
+    His research examines how respiratory failure is recognized, measured,
+    and managed across health systems, with particular emphasis on hypercapnic
+    respiratory failure and care after hospitalization. He uses linked EHR and
+    claims data, computable phenotypes, clinical prediction, causal inference,
+    and pragmatic trials, and develops reproducible analytical tools in Stata,
+    R, and Python.
+  - >-
+    Separately, he advises MTN on clinical evidence and healthcare applications
+    of adaptive data integration.
+research_themes:
+  - title: "Respiratory failure"
+    description: "Measurement, hypercapnia, and care after hospitalization."
+  - title: "Evidence and prediction"
+    description: "Diagnostic reasoning, clinical prediction, and causal methods."
+  - title: "Research infrastructure"
+    description: "Linked clinical data, reproducible analysis, and pragmatic trials."
 email: "brian.locke@hsc.utah.edu"
 profiles:
   orcid: "https://orcid.org/0000-0002-3588-5238"

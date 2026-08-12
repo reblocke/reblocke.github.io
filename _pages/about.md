@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "Brian W. Locke, MD, MSCI"
-description: "Pulmonary and critical care physician-scientist studying respiratory failure, diagnostic evidence, and reproducible research systems."
 ---
 {% assign person = site.data.person %}
 {% assign work = site.data.generated.work %}
@@ -11,7 +10,6 @@ description: "Pulmonary and critical care physician-scientist studying respirato
     <h1>{{ person.name }}</h1>
     {% include affiliations.html %}
     <p class="hero-statement">{{ person.research_statement }}</p>
-    <p class="clinical-context">Clinical practice: {{ person.clinical_context | join: " and " }}.</p>
     {% include profile-links.html %}
   </div>
   <picture class="home-hero__portrait">
@@ -20,13 +18,19 @@ description: "Pulmonary and critical care physician-scientist studying respirato
   </picture>
 </section>
 
+<section class="site-container section prose" aria-labelledby="about-heading">
+  <h2 id="about-heading">About</h2>
+  <p>{{ person.summary }}</p>
+  <p><a href="/bio/">Full biography</a></p>
+</section>
+
 <section class="section section--surface">
   <div class="site-container">
     <h2>Research themes</h2>
     <div class="theme-grid">
-      <article><h3>Respiratory failure</h3><p>Measurement, hypercapnia, and care after hospitalization.</p></article>
-      <article><h3>Evidence and prediction</h3><p>Diagnostic reasoning, clinical prediction, and causal methods.</p></article>
-      <article><h3>Research infrastructure</h3><p>Reproducible analysis, linked clinical data, and pragmatic trials.</p></article>
+      {% for theme in person.research_themes %}
+        <article><h3>{{ theme.title }}</h3><p>{{ theme.description }}</p></article>
+      {% endfor %}
     </div>
   </div>
 </section>
