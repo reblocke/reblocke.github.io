@@ -1,0 +1,19 @@
+name: Repository readiness audit
+
+on:
+  schedule:
+    - cron: "41 9 8 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v7
+      - name: Audit public repository readiness
+        run: python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --advisory
