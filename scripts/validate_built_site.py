@@ -25,6 +25,11 @@ SOCIAL_TITLES = {
 SOCIAL_IMAGE = "https://reblocke.github.io/images/social-preview.png"
 SOCIAL_IMAGE_ALT = "Portrait of Brian W. Locke with his name and pulmonary and critical care research focus"
 SITEMAP_URL = "https://reblocke.github.io/sitemap.xml"
+EXPECTED_ICONS = [
+    {"rel": "icon", "href": "/favicon.svg", "type": "image/svg+xml"},
+    {"rel": "icon", "href": "/favicon.ico", "sizes": "32x32"},
+    {"rel": "apple-touch-icon", "href": "/apple-touch-icon.png", "sizes": "180x180"},
+]
 
 
 class PageParser(HTMLParser):
@@ -33,6 +38,7 @@ class PageParser(HTMLParser):
         self.ids: list[str] = []
         self.hrefs: list[str] = []
         self.images: list[dict[str, str | None]] = []
+        self.icons: list[dict[str, str | None]] = []
         self.h1_count = 0
         self.canonical: str | None = None
         self.meta_properties: dict[str, str] = {}
@@ -52,6 +58,10 @@ class PageParser(HTMLParser):
             self.h1_count += 1
         if tag == "link" and data.get("rel") == "canonical":
             self.canonical = data.get("href")
+        if tag == "link":
+            rel_tokens = set(str(data.get("rel") or "").split())
+            if rel_tokens.intersection({"icon", "apple-touch-icon"}):
+                self.icons.append(data)
         if tag == "meta" and data.get("property") and data.get("content"):
             self.meta_properties[str(data["property"])] = str(data["content"])
         if tag == "meta" and data.get("name") and data.get("content"):
@@ -162,6 +172,14 @@ for route in CANONICAL:
     for name, value in expected_names.items():
         if parser.meta_names.get(name) != value:
             errors.append(f"{route} {name} is {parser.meta_names.get(name)!r}, expected {value!r}")
+    if len(parser.icons) != len(EXPECTED_ICONS):
+        errors.append(f"{route} has {len(parser.icons)} icon declarations, expected {len(EXPECTED_ICONS)}")
+    for expected_icon in EXPECTED_ICONS:
+        if not any(
+            all(icon.get(key) == value for key, value in expected_icon.items())
+            for icon in parser.icons
+        ):
+            errors.append(f"{route} is missing icon declaration {expected_icon!r}")
 
 for route, target in generated_redirects().items():
     path = redirect_file(route)
@@ -194,6 +212,46 @@ if preview_path.exists():
         errors.append("social preview exceeds 1 MB")
 else:
     errors.append("built social preview asset is missing")
+
+favicon_svg_path = SITE / "favicon.svg"
+if not favicon_svg_path.exists():
+    errors.append("built SVG favicon is missing")
+else:
+    favicon_svg = favicon_svg_path.read_text(encoding="utf-8", errors="replace")
+    if "<svg" not in favicon_svg or "Brian Locke monogram" not in favicon_svg:
+        errors.append("built SVG favicon is invalid")
+
+touch_icon_path = SITE / "apple-touch-icon.png"
+if touch_icon_path.exists():
+    header = touch_icon_path.read_bytes()[:26]
+    if len(header) < 26 or header[:8] != b"\x89PNG\r\n\x1a\n":
+        errors.append("Apple touch icon is not a valid PNG")
+    elif struct.unpack(">II", header[16:24]) != (180, 180):
+        errors.append("Apple touch icon dimensions are not 180x180")
+    elif header[25] != 2:
+        errors.append("Apple touch icon must be an opaque RGB PNG")
+else:
+    errors.append("built Apple touch icon is missing")
+
+favicon_ico_path = SITE / "favicon.ico"
+if favicon_ico_path.exists():
+    data = favicon_ico_path.read_bytes()
+    if len(data) < 22:
+        errors.append("favicon.ico is invalid")
+    else:
+        reserved, image_type, count = struct.unpack("<HHH", data[:6])
+        entries: set[tuple[int, int]] = set()
+        for index in range(count):
+            offset = 6 + index * 16
+            if offset + 16 > len(data):
+                break
+            width = data[offset] or 256
+            height = data[offset + 1] or 256
+            entries.add((width, height))
+        if reserved != 0 or image_type != 1 or (32, 32) not in entries:
+            errors.append("favicon.ico does not contain a 32x32 icon")
+else:
+    errors.append("built favicon.ico is missing")
 
 for html, parser in pages.items():
     for href in parser.hrefs:

@@ -10,7 +10,6 @@ bundle exec ruby scripts/generate_indexes.rb --check
 bundle exec jekyll build --trace
 bundle exec htmlproofer ./_site --disable-external --allow-hash-href --checks Links,Images
 python3 scripts/validate_built_site.py
-python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --advisory
 
 if git grep -nE 'pub\.orcid\.org|api\.github\.com/users/.*/repos' -- _pages _includes _layouts assets; then
   echo "Visitor-time external metadata call found." >&2

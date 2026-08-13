@@ -40,3 +40,5 @@ The stable public repository catalog is `research-repositories.csv`. Run the rea
 python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --advisory
 python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --repos reblocke/example
 ```
+
+This audit accesses GitHub and is intentionally separate from the deterministic `bin/check` merge gate.

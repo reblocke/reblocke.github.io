@@ -31,6 +31,12 @@ bundle exec ruby scripts/generate_indexes.rb --write
 bin/check
 ```
 
+`bin/check` is deterministic and uses only repository-local inputs. The separate **Repository readiness audit** workflow performs the networked public-repository checks monthly and on demand. To run that advisory audit locally with GitHub authentication:
+
+```bash
+GH_TOKEN="$(gh auth token)" python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --advisory
+```
+
 ## External metadata refresh
 
 The monthly workflow retrieves public metadata from GitHub, ORCID, Crossref, and PubMed, regenerates the site, validates it, and opens a review pull request. It never publishes directly.

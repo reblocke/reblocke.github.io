@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Brian Locke monogram</title>
+  <rect width="64" height="64" rx="10" fill="#315f78"/>
+  <path fill="#fff" d="M12 12h12c8 0 12 4 12 10 0 4-2 7-6 9 5 1 8 5 8 10 0 7-5 11-14 11H12V12Zm7 6v10h5c3 0 5-2 5-5s-2-5-5-5h-5Zm0 16v12h5c5 0 7-2 7-6s-2-6-7-6h-5Z"/>
+  <path fill="#fff" d="M41 12h7v33h10v7H41V12Z"/>
+</svg>

@@ -19,6 +19,10 @@ rescue Psych::SyntaxError => e
   abort "Invalid YAML in #{path}: #{e.message}"
 end
 
+def nonempty_string?(value)
+  value.is_a?(String) && !value.strip.empty?
+end
+
 errors = []
 config = load_yaml("_config.yml")
 person = load_yaml("_data/person.yml")
@@ -33,7 +37,7 @@ unless verification_token.empty? || verification_token.match?(%r{\A[A-Za-z0-9_-]
   errors << "_config.yml google_site_verification has an invalid format"
 end
 
-%w[name summary research_statement clinical_role biography research_themes primary_affiliation secondary_affiliations email profiles image social_preview disclosure].each do |key|
+%w[name summary research_statement clinical_role email profiles image social_preview disclosure].each do |key|
   errors << "person.yml missing #{key}" if person[key].nil? || person[key].respond_to?(:empty?) && person[key].empty?
 end
 
@@ -53,6 +57,41 @@ research_themes.each_with_index do |theme, index|
   %w[title description].each do |key|
     value = theme[key]
     errors << "person.yml research theme #{index + 1} missing #{key}" unless value.is_a?(String) && !value.strip.empty?
+  end
+end
+
+primary_affiliation = person["primary_affiliation"]
+unless primary_affiliation.is_a?(Hash)
+  errors << "person.yml primary_affiliation must be an object"
+  primary_affiliation = {}
+end
+%w[role organization].each do |key|
+  errors << "person.yml primary_affiliation missing #{key}" unless nonempty_string?(primary_affiliation[key])
+end
+
+clinical_context = person["clinical_context"]
+unless clinical_context.is_a?(Array) && !clinical_context.empty?
+  errors << "person.yml clinical_context must be a nonempty list"
+  clinical_context = []
+end
+clinical_context.each_with_index do |context, index|
+  errors << "person.yml clinical_context item #{index + 1} must be nonempty text" unless nonempty_string?(context)
+end
+
+secondary_affiliations = person["secondary_affiliations"]
+unless secondary_affiliations.is_a?(Array) && !secondary_affiliations.empty?
+  errors << "person.yml secondary_affiliations must be a nonempty list"
+  secondary_affiliations = []
+end
+secondary_affiliations.each_with_index do |affiliation, index|
+  unless affiliation.is_a?(Hash)
+    errors << "person.yml secondary affiliation #{index + 1} must be an object"
+    next
+  end
+  %w[role organization legal_name descriptor].each do |key|
+    unless nonempty_string?(affiliation[key])
+      errors << "person.yml secondary affiliation #{index + 1} missing #{key}"
+    end
   end
 end
 
@@ -76,12 +115,14 @@ else
   errors << "social preview asset is missing: #{social_preview['path']}"
 end
 
-primary = person.dig("primary_affiliation", "organization")
-secondary = Array(person["secondary_affiliations"]).map { |item| item["organization"] }
+primary = primary_affiliation["organization"]
+secondary = secondary_affiliations.filter_map do |item|
+  item["organization"] if item.is_a?(Hash) && nonempty_string?(item["organization"])
+end
 errors << "primary and secondary affiliations must differ" if secondary.include?(primary)
 
 current_positions = Array(cv["positions"]).select { |position| position["status"] == "current" }
-primary_role = person.dig("primary_affiliation", "role")
+primary_role = primary_affiliation["role"]
 primary_match = current_positions.any? do |position|
   position["title"] == primary_role && position["organization"] == primary
 end
@@ -90,10 +131,10 @@ unless primary_match
 end
 
 clinical_role = person["clinical_role"]
-clinical_context = Array(person["clinical_context"])
 clinical_match = current_positions.any? do |position|
   organization = position["organization"].to_s
-  position["title"] == clinical_role &&
+  !clinical_context.empty? &&
+    position["title"] == clinical_role &&
     organization.include?(primary.to_s) &&
     clinical_context.all? { |context| organization.include?(context.to_s) }
 end
@@ -101,11 +142,15 @@ unless clinical_match
   errors << "person.yml clinical role and context do not match a current cv.yml position: #{clinical_role}"
 end
 
-Array(person["secondary_affiliations"]).each do |affiliation|
-  names = [affiliation["organization"], affiliation["legal_name"]].compact.reject(&:empty?)
+secondary_affiliations.each do |affiliation|
+  next unless affiliation.is_a?(Hash)
+
+  names = [affiliation["organization"], affiliation["legal_name"]].select { |name| nonempty_string?(name) }
   match = current_positions.any? do |position|
     organization = position["organization"].to_s
-    position["title"] == affiliation["role"] && names.all? { |name| organization.include?(name) }
+    !names.empty? &&
+      position["title"] == affiliation["role"] &&
+      names.all? { |name| organization.include?(name) }
   end
   unless match
     errors << "person.yml secondary affiliation does not match a current cv.yml position: #{affiliation['role']}, #{affiliation['organization']}"
