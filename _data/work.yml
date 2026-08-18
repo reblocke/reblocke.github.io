@@ -16,6 +16,50 @@ sections:
     order: 50
 
 items:
+  - id: "doi:10.1038/s41598-026-61766-2"
+    type: "journal-article"
+    title: "Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion"
+    authors: "Chong P, He S, Samadian K, Mohamed A, Peng B, Chua E, Rohlfsen C, Locke BW"
+    venue: "Scientific Reports"
+    year: 2026
+    doi: "10.1038/s41598-026-61766-2"
+    pmid: "42436230"
+    section: "evidence-and-prediction"
+    related_ids: ["repo:reblocke/llm_estimate_lrs"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 1
+  - id: "doi:10.1007/978-3-032-17790-2_39"
+    type: "conference-paper"
+    title: "Exploring the Impact of Virtual Reality Interventions on Autonomic Arousal in ICU Patients"
+    authors: "Finkelstein J, Gabriel AS, Locke BW, Tsai TY, Reategui-Rivera CM, Smiley A"
+    venue: "Proceedings of the 2025 World Conference of the International Society for Virtual Rehabilitation"
+    year: 2026
+    doi: "10.1007/978-3-032-17790-2_39"
+    section: "health-services"
+    selected: {homepage: false, work: true, cv: true}
+    order: 2
+  - id: "doi:10.32873/unmc.dc.gmerj.8.1.004"
+    type: "journal-article"
+    title: "AI-Based Simulated Patient Encounters for Clinical Reasoning: A Needs Assessment"
+    authors: "Sorrick A, Liebovitz D, Vick S, Parsons AS, Locke BW, Herskovitz J, Rohlfsen C"
+    venue: "Graduate Medical Education Research Journal"
+    year: 2026
+    doi: "10.32873/unmc.dc.gmerj.8.1.004"
+    section: "teaching-resources"
+    selected: {homepage: false, work: true, cv: true}
+    order: 3
+  - id: "doi:10.1002/pul2.70231"
+    type: "journal-article"
+    title: "Splenectomy Increases CTEPH Risk and Modifies Clinical Features of Acute Pulmonary Embolism"
+    authors: "White D, Locke BW, Scarpato BM, Cirulis MM, Raif K, Dodson MW"
+    venue: "Pulmonary Circulation"
+    year: 2026
+    doi: "10.1002/pul2.70231"
+    pmid: "41472662"
+    section: "evidence-and-prediction"
+    related_ids: ["repo:reblocke/Splenectomy-PE"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 4
   - id: "doi:10.1177/19433654261428406"
     type: "journal-article"
     title: "Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury"
@@ -32,10 +76,11 @@ items:
   - id: "doi:10.1016/j.chest.2025.08.002"
     type: "journal-article"
     title: "The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data"
-    authors: "Locke BW et al"
+    authors: "Locke BW, Richards WW, Gouripeddi R, Brown JP, Anderson-Bell D, Finkelstein J, Sundar KM, Peltan ID, Brown SM"
     venue: "CHEST"
-    year: 2025
+    year: 2026
     doi: "10.1016/j.chest.2025.08.002"
+    pmid: "40885535"
     section: "respiratory-failure"
     summary: "A comparison of reproducible EHR definitions for identifying hypercapnic respiratory failure."
     related_ids: ["repo:reblocke/Hypercap-Case-Definitions"]
@@ -44,7 +89,7 @@ items:
   - id: "doi:10.64898/2026.07.03.26357242"
     type: "preprint"
     title: "Emergency Department Presenting Concerns Among Admissions With Hypercapnia: A Retrospective NLP Study of MIMIC-IV"
-    authors: "Merdad R, Ramirez M, Christenson M, Pettine WW, Locke BW"
+    authors: "Merdad RH, Ramirez M, Christenson M, Pettine WW, Locke BW"
     venue: "medRxiv"
     year: 2026
     doi: "10.64898/2026.07.03.26357242"
@@ -55,8 +100,8 @@ items:
     order: 15
   - id: "doi:10.1007/978-3-031-66538-7_4"
     type: "conference-paper"
-    title: "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records"
-    authors: "Locke BW et al"
+    title: "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Record Data"
+    authors: "Locke BW, Richards WW, Brown JP, Cui W, Finkelstein J, Sundar KM, Gouripeddi R"
     venue: "Artificial Intelligence in Medicine / Lecture Notes in Computer Science"
     year: 2024
     doi: "10.1007/978-3-031-66538-7_4"
@@ -76,10 +121,22 @@ items:
     summary: "A decision-curve analysis evaluating when ICU transfer prediction models could support next-day clinical workflows."
     selected: {homepage: false, work: true, cv: true}
     order: 25
+  - id: "doi:10.1038/s41598-025-29069-0"
+    type: "journal-article"
+    title: "Entropy removal of clinical features"
+    authors: "Samadian KD, Chua E, Peng B, Coleska A, Hassan A, Chong P, Locke B, Liebovitz DM, Rohlfsen C, He S"
+    venue: "Scientific Reports"
+    year: 2025
+    doi: "10.1038/s41598-025-29069-0"
+    pmid: "41276591"
+    section: "evidence-and-prediction"
+    related_ids: ["repo:reblocke/dx_chat_entropy"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 26
   - id: "doi:10.1111/obr.13697"
     type: "journal-article"
     title: "The association of weight loss from anti-obesity medications or bariatric surgery and apnea-hypopnea index in obstructive sleep apnea"
-    authors: "Locke BW et al"
+    authors: "Locke BW, Gomez-Lumbreras A, Tan CJ, Nonthasawadsri T, Veettil SK, Patikorn C, Chaiyakunapruk N"
     venue: "Obesity Reviews"
     year: 2024
     doi: "10.1111/obr.13697"
@@ -89,10 +146,20 @@ items:
     related_ids: ["repo:reblocke/AOM-and-Bari-Surg-for-OSA-SRMA"]
     selected: {homepage: true, work: true, cv: true}
     order: 30
+  - id: "doi:10.48550/arxiv.2412.03427"
+    type: "preprint"
+    title: "Assessing Foundation Models' Transferability to Physiological Signals in Precision Medicine"
+    authors: "Christenson M, Geary C, Locke B, Koirala P, Pettine WW"
+    venue: "arXiv"
+    year: 2024
+    doi: "10.48550/arxiv.2412.03427"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: true, cv: true}
+    order: 35
   - id: "doi:10.2196/62842"
     type: "journal-article"
     title: "Immersive Virtual Reality Use in Medical Intensive Care: Mixed Methods Feasibility Study"
-    authors: "Locke BW et al"
+    authors: "Locke BW, Tsai TY, Reategui-Rivera CM, Gabriel AS, Smiley A, Finkelstein J"
     venue: "JMIR Serious Games"
     year: 2024
     doi: "10.2196/62842"
@@ -101,6 +168,17 @@ items:
     related_ids: ["repo:reblocke/vr_icu"]
     selected: {homepage: true, work: true, cv: true}
     order: 40
+  - id: "doi:10.1016/j.chest.2025.01.016"
+    type: "journal-article"
+    title: "Use of High-Dose Hydroxocobalamin for Septic Shock"
+    authors: "Carr JR, Locke B, Patel JJ, Peltan ID, Brown SM, Bosch NA, Law AC"
+    venue: "CHEST"
+    year: 2025
+    doi: "10.1016/j.chest.2025.01.016"
+    pmid: "39864505"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 42
   - id: "doi:10.1177/19433654261424871"
     type: "commentary"
     title: "Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us"
@@ -115,7 +193,7 @@ items:
     order: 45
   - id: "doi:10.1016/j.jsmc.2024.02.012"
     type: "journal-article"
-    title: "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings"
+    title: "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Inpatient, and Outpatient Settings"
     authors: "Locke BW, Brown JP, Sundar KM"
     venue: "Sleep Medicine Clinics"
     year: 2024
@@ -126,7 +204,7 @@ items:
   - id: "doi:10.1177/19433654261450544"
     type: "letter"
     title: "Letter: Author Response to Letter to the Editor from Luo et al"
-    authors: "Fenger C, Locke B, Brown J"
+    authors: "Fenger C, Locke BW, Brown J"
     venue: "Respiratory Care"
     year: 2026
     doi: "10.1177/19433654261450544"
@@ -135,6 +213,17 @@ items:
     related_ids: ["doi:10.1177/19433654261428406"]
     selected: {homepage: false, work: false, cv: false}
     order: 55
+  - id: "doi:10.5664/jcsm.11674"
+    type: "commentary"
+    title: "Seeing the random forest for the Zzz's: machine learning's new role in sleep science"
+    authors: "Anderson-Bell D, Locke BW"
+    venue: "Journal of Clinical Sleep Medicine"
+    year: 2025
+    doi: "10.5664/jcsm.11674"
+    pmid: "40094162"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: true, cv: true}
+    order: 56
   - id: "doi:10.3390/ijerph19095473"
     type: "journal-article"
     title: "OSA and Chronic Respiratory Disease: Mechanisms and Epidemiology"
@@ -161,7 +250,7 @@ items:
     title: "What Are We Aiming for in Chronic Hypercapnic Respiratory Failure?"
     authors: "Locke BW, Brown J"
     venue: "Respiratory Care"
-    year: 2024
+    year: 2023
     doi: "10.4187/respcare.11573"
     section: "respiratory-failure"
     selected: {homepage: false, work: true, cv: true}
@@ -199,7 +288,7 @@ items:
   - id: "doi:10.1093/jtm/taw088"
     type: "journal-article"
     title: "Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies Carried by Mountain Climbers in Colorado"
-    authors: "Brandenburg W, Locke B"
+    authors: "Brandenburg WE, Locke BW"
     venue: "Journal of Travel Medicine"
     year: 2017
     doi: "10.1093/jtm/taw088"
@@ -217,6 +306,75 @@ items:
     related_ids: ["repo:reblocke/CSA-CPAP-Prescribing", "repo:reblocke/CSA"]
     selected: {homepage: false, work: false, cv: false}
     order: 125
+  - id: "doi:10.1093/ajrccm/aamag162.4637"
+    type: "abstract"
+    title: "A55-47 Prognostic Value of Hypercapnia by ABG vs VBG: A Propensity-Weighted, Multicenter EHR Cohort"
+    authors: "Mehta A, Brown JP, Gouripeddi R, Peltan ID, Locke BW"
+    venue: "American Thoracic Society International Conference"
+    year: 2026
+    location: "Orlando, FL"
+    doi: "10.1093/ajrccm/aamag162.4637"
+    section: "respiratory-failure"
+    related_ids: ["repo:reblocke/abg-vbg-project"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 121
+  - id: "doi:10.1093/ajrccm/aamag162.939"
+    type: "abstract"
+    title: "B38-12 Intern Code Blue and Rapid Response Leadership: A Pre-post Evaluation of a Micro-Module Curriculum"
+    authors: "Situmeang J, Ryden A, Long CW, Krauspe E, Patel S, Sheth R, Locke BW"
+    venue: "American Thoracic Society International Conference"
+    year: 2026
+    location: "Orlando, FL"
+    doi: "10.1093/ajrccm/aamag162.939"
+    section: "teaching-resources"
+    related_ids: ["repo:reblocke/code-seminar-analysis"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 122
+  - id: "doi:10.1093/ajrccm/aamag162.1058"
+    type: "abstract"
+    title: "C56-19 Beyond Verification: Exploring Resident Attitudes and Behaviors in Code-Status Discussions"
+    authors: "Long C, Langmann GA, Hirshberg EL, Locke BW"
+    venue: "American Thoracic Society International Conference"
+    year: 2026
+    location: "Orlando, FL"
+    doi: "10.1093/ajrccm/aamag162.1058"
+    section: "teaching-resources"
+    selected: {homepage: false, work: true, cv: true}
+    order: 123
+  - id: "doi:10.1093/ajrccm/aamag162.2740"
+    type: "abstract"
+    title: "C58-05 Epidemiology of Sarcoidosis in Utah: Incidence, Organ Involvement, and Mortality Compared With National Benchmarks"
+    authors: "Anderson-Bell D, Scarpato B, Locke BW"
+    venue: "American Thoracic Society International Conference"
+    year: 2026
+    location: "Orlando, FL"
+    doi: "10.1093/ajrccm/aamag162.2740"
+    section: "health-services"
+    selected: {homepage: false, work: true, cv: true}
+    order: 124
+  - id: "doi:10.1093/ajrccm/aamag162.6420"
+    type: "abstract"
+    title: "C75-05 Costs Surrounding Index Hospitalization for Any-Cause Hypercapnic Respiratory Failure in an Integrated Healthsystem"
+    authors: "Locke BW, Hedges D, Fowers R, Green N, Brown SM"
+    venue: "American Thoracic Society International Conference"
+    year: 2026
+    location: "Orlando, FL"
+    doi: "10.1093/ajrccm/aamag162.6420"
+    section: "health-services"
+    selected: {homepage: false, work: true, cv: true}
+    order: 125
+  - id: "doi:10.1093/ajrccm/aamag162.4737"
+    type: "abstract"
+    title: "C75-09 Chief Complaint Profiles in Hypercapnic Respiratory Failure: A Natural Language Processing Study of MIMIC-IV"
+    authors: "Merdad RH, Crawford M, Christenson M, Pettine W, Locke B"
+    venue: "American Thoracic Society International Conference"
+    year: 2026
+    location: "Orlando, FL"
+    doi: "10.1093/ajrccm/aamag162.4737"
+    section: "respiratory-failure"
+    related_ids: ["repo:reblocke/Hypercap-CC-NLP"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 126
   - id: "abstract:chest:2025:tcco2-sensor-performance"
     type: "abstract"
     title: "Simulation suggests transcutaneous CO2 sensors may accurately detect hypercapnia across settings"
@@ -313,9 +471,9 @@ repositories:
   - {id: "repo:reblocke/CPAPOutcomes", repository: "reblocke/CPAPOutcomes", title: "Electronic Health Record-derived CPAP Outcomes", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Python", doi: "10.5664/jcsm.9750", license: "Unconfirmed", selected_work: false, order: 330, data_availability: "Restricted EHR-derived data are not public."}
   - {id: "repo:reblocke/NHPI-OSA-Burden", repository: "reblocke/NHPI-OSA-Burden", title: "Native Hawaiian and Pacific Islander OSA Burden", section: "health-services", artifact_type: "reproducible analysis", analysis_language: "Stata", doi: "10.5664/jcsm.10472", license: "MIT", selected_work: false, order: 340, data_availability: "Restricted clinical data are not public."}
   - {id: "repo:reblocke/CTPA-Dose-Response", repository: "reblocke/CTPA-Dose-Response", title: "Pulmonary Artery Enlargement and Mortality", section: "evidence-and-prediction", artifact_type: "reproducible analysis", doi: "10.1002/pul2.12225", license: "Unconfirmed", selected_work: false, order: 350, data_availability: "Restricted imaging and EHR data are not public."}
-  - {id: "repo:reblocke/Splenectomy-PE", repository: "reblocke/Splenectomy-PE", title: "Splenectomy and Pulmonary Embolism", section: "evidence-and-prediction", artifact_type: "reproducible analysis", doi: "10.1002/pul2.70231", license: "MIT", selected_work: false, order: 360, data_availability: "Restricted clinical data are not public."}
+  - {id: "repo:reblocke/Splenectomy-PE", repository: "reblocke/Splenectomy-PE", title: "Splenectomy and Pulmonary Embolism", section: "evidence-and-prediction", artifact_type: "reproducible analysis", related_id: "doi:10.1002/pul2.70231", display_with: "doi:10.1002/pul2.70231", license: "MIT", selected_work: false, order: 360, data_availability: "Restricted clinical data are not public."}
   - {id: "repo:reblocke/code-seminar-analysis", repository: "reblocke/code-seminar-analysis", title: "Inpatient Emergency Leadership Seminar Analysis", section: "teaching-resources", artifact_type: "educational evaluation", analysis_language: "R and Quarto", doi: "10.1164/ajrccm.2025.211.abstracts.a5624", license: "MIT", selected_work: false, order: 370, data_availability: "No trainee identifiers are published."}
-  - {id: "repo:reblocke/llm_estimate_lrs", repository: "reblocke/llm_estimate_lrs", title: "LLM Estimation of Likelihood Ratios", section: "evidence-and-prediction", artifact_type: "research notebooks", analysis_language: "Jupyter Notebook", license: "MIT", selected_work: false, order: 380, data_availability: "Generated model outputs and literature-derived comparisons only."}
+  - {id: "repo:reblocke/llm_estimate_lrs", repository: "reblocke/llm_estimate_lrs", title: "LLM Estimation of Likelihood Ratios", section: "evidence-and-prediction", artifact_type: "research notebooks", analysis_language: "Jupyter Notebook", related_id: "doi:10.1038/s41598-026-61766-2", display_with: "doi:10.1038/s41598-026-61766-2", license: "MIT", selected_work: false, order: 380, data_availability: "Generated model outputs and literature-derived comparisons only."}
   - {id: "repo:reblocke/abg-vbg-project", repository: "reblocke/abg-vbg-project", title: "ABG versus VBG Project", section: "respiratory-failure", artifact_type: "active research code", license: "MIT", selected_work: false, order: 390, data_availability: "Restricted clinical data are not public."}
   - {id: "repo:reblocke/TriNetXHypercapnia", repository: "reblocke/TriNetXHypercapnia", title: "TriNetX Hypercapnia Analysis", section: "software-and-repositories", artifact_type: "legacy analysis code", analysis_language: "Python", license: "Unconfirmed", selected_work: false, order: 400, data_availability: "No restricted row-level TriNetX data are published."}
   - {id: "repo:reblocke/trinetx-preprocessing", repository: "reblocke/trinetx-preprocessing", title: "TriNetX Preprocessing", section: "software-and-repositories", artifact_type: "data-processing tool", analysis_language: "Python", license: "MIT", selected_work: false, order: 410, data_availability: "No restricted export rows are published."}
@@ -330,4 +488,4 @@ repositories:
   - {id: "repo:reblocke/forensic_metascience", repository: "reblocke/forensic_metascience", title: "Forensic Metascience Replications", section: "software-and-repositories", artifact_type: "replication code", analysis_language: "Python", license: "MIT", selected_work: false, order: 500, data_availability: "Public replication data; consult source licenses."}
   - {id: "repo:reblocke/sofa_resp_sim", repository: "reblocke/sofa_resp_sim", title: "SOFA Respiratory Score Simulation", section: "software-and-repositories", artifact_type: "simulation", analysis_language: "Python", license: "MIT", selected_work: true, order: 510, data_availability: "Simulation data only."}
   - {id: "repo:reblocke/sodium_change", repository: "reblocke/sodium_change", title: "Sodium Change Probability", section: "software-and-repositories", artifact_type: "clinical teaching tool", analysis_language: "Python", license: "MIT", selected_work: false, order: 520, data_availability: "No patient data."}
-  - {id: "repo:reblocke/dx_chat_entropy", repository: "reblocke/dx_chat_entropy", title: "Diagnostic Chat Entropy", section: "evidence-and-prediction", artifact_type: "research code", analysis_language: "Python", license: "MIT", selected_work: false, order: 530, data_availability: "No private chat transcripts are published."}
+  - {id: "repo:reblocke/dx_chat_entropy", repository: "reblocke/dx_chat_entropy", title: "Diagnostic Chat Entropy", section: "evidence-and-prediction", artifact_type: "research code", analysis_language: "Python", related_id: "doi:10.1038/s41598-025-29069-0", display_with: "doi:10.1038/s41598-025-29069-0", license: "MIT", selected_work: false, order: 530, data_availability: "No private chat transcripts are published."}
