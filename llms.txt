@@ -12,22 +12,36 @@
 
 ## Selected scholarly work
 
+- Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion (2026): https://doi.org/10.1038/s41598-026-61766-2
+- Exploring the Impact of Virtual Reality Interventions on Autonomic Arousal in ICU Patients (2026): https://doi.org/10.1007/978-3-032-17790-2_39
+- AI-Based Simulated Patient Encounters for Clinical Reasoning: A Needs Assessment (2026): https://doi.org/10.32873/unmc.dc.gmerj.8.1.004
+- Splenectomy Increases CTEPH Risk and Modifies Clinical Features of Acute Pulmonary Embolism (2026): https://doi.org/10.1002/pul2.70231
 - Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury (2026): https://doi.org/10.1177/19433654261428406
-- The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data (2025): https://doi.org/10.1016/j.chest.2025.08.002
+- The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data (2026): https://doi.org/10.1016/j.chest.2025.08.002
 - Emergency Department Presenting Concerns Among Admissions With Hypercapnia: A Retrospective NLP Study of MIMIC-IV (2026): https://doi.org/10.64898/2026.07.03.26357242
-- Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records (2024): https://doi.org/10.1007/978-3-031-66538-7_4
+- Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Record Data (2024): https://doi.org/10.1007/978-3-031-66538-7_4
 - Decision Curve Analysis for Evaluating Machine Learning Models for Next-Day Transfer Out of ICU (2026): https://doi.org/10.64898/2026.04.19.26351213
+- Entropy removal of clinical features (2025): https://doi.org/10.1038/s41598-025-29069-0
 - The association of weight loss from anti-obesity medications or bariatric surgery and apnea-hypopnea index in obstructive sleep apnea (2024): https://doi.org/10.1111/obr.13697
+- Assessing Foundation Models' Transferability to Physiological Signals in Precision Medicine (2024): https://doi.org/10.48550/arxiv.2412.03427
 - Immersive Virtual Reality Use in Medical Intensive Care: Mixed Methods Feasibility Study (2024): https://doi.org/10.2196/62842
+- Use of High-Dose Hydroxocobalamin for Septic Shock (2025): https://doi.org/10.1016/j.chest.2025.01.016
 - Surgical and N95 Masks in Chronic Hypercapnic Respiratory Failure: What Physiology Can and Cannot Tell Us (2026): https://doi.org/10.1177/19433654261424871
-- The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings (2024): https://doi.org/10.1016/j.jsmc.2024.02.012
+- The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Inpatient, and Outpatient Settings (2024): https://doi.org/10.1016/j.jsmc.2024.02.012
+- Seeing the random forest for the Zzz's: machine learning's new role in sleep science (2025): https://doi.org/10.5664/jcsm.11674
 - OSA and Chronic Respiratory Disease: Mechanisms and Epidemiology (2022): https://doi.org/10.3390/ijerph19095473
 - Hickam's Dictum: An Analysis of Multiple Diagnoses (2024): https://doi.org/10.1007/s11606-024-09120-y
-- What Are We Aiming for in Chronic Hypercapnic Respiratory Failure? (2024): https://doi.org/10.4187/respcare.11573
+- What Are We Aiming for in Chronic Hypercapnic Respiratory Failure? (2023): https://doi.org/10.4187/respcare.11573
 - Uncomfortable Truths About Data, Justice, and Idiopathic Pulmonary Fibrosis in the Veterans Health Administration (2023): https://doi.org/10.1016/j.chest.2023.03.037
 - Creating a COVID-19 Action Plan for GME Programs (2020): https://doi.org/10.4300/jgme-d-20-00206.1
 - Enhancing Medical Student Quality Improvement Education through Immersion (2017): https://doi.org/10.1111/medu.13313
 - Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies Carried by Mountain Climbers in Colorado (2017): https://doi.org/10.1093/jtm/taw088
+- A55-47 Prognostic Value of Hypercapnia by ABG vs VBG: A Propensity-Weighted, Multicenter EHR Cohort (2026): https://doi.org/10.1093/ajrccm/aamag162.4637
+- B38-12 Intern Code Blue and Rapid Response Leadership: A Pre-post Evaluation of a Micro-Module Curriculum (2026): https://doi.org/10.1093/ajrccm/aamag162.939
+- C56-19 Beyond Verification: Exploring Resident Attitudes and Behaviors in Code-Status Discussions (2026): https://doi.org/10.1093/ajrccm/aamag162.1058
+- C58-05 Epidemiology of Sarcoidosis in Utah: Incidence, Organ Involvement, and Mortality Compared With National Benchmarks (2026): https://doi.org/10.1093/ajrccm/aamag162.2740
+- C75-05 Costs Surrounding Index Hospitalization for Any-Cause Hypercapnic Respiratory Failure in an Integrated Healthsystem (2026): https://doi.org/10.1093/ajrccm/aamag162.6420
+- C75-09 Chief Complaint Profiles in Hypercapnic Respiratory Failure: A Natural Language Processing Study of MIMIC-IV (2026): https://doi.org/10.1093/ajrccm/aamag162.4737
 - Simulation suggests transcutaneous CO2 sensors may accurately detect hypercapnia across settings (2025): https://reblocke.github.io/work/
 - Rates of diagnostic evaluation for causes of hypercapnic respiratory failure in Utah (2025): https://reblocke.github.io/work/
 - Central versus peripheral location of pulmonary embolism in asplenic patients (2025): https://reblocke.github.io/work/

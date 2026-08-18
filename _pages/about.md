@@ -41,5 +41,5 @@ title: "Brian W. Locke, MD, MSCI"
     {% assign homepage_items = work.items | where_exp: "item", "item.selected.homepage == true" %}
     {% for item in homepage_items %}{% include work-card.html item=item %}{% endfor %}
   </div>
-  <p class="closing-link">View <a href="/work/">all selected work</a> or the <a href="/cv/">full curriculum vitae</a>.</p>
+  <p class="closing-link">View <a href="/work/">all selected work</a> or the <a href="/cv/">public curriculum vitae</a>.</p>
 </section>
