@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /publications/2020-09-01-COVID-Action-Plan
-redirect_to: /work/
+permalink: /talks/2012-Glu-Lactate
+redirect_to: /cv/#presentations
 sitemap: false
 ---

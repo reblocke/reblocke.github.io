@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /about.html
-redirect_to: /
+permalink: /resume
+redirect_to: /cv/
 sitemap: false
 ---

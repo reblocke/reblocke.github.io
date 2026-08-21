@@ -36,8 +36,14 @@ def generate(destination)
   # Scheduled pull requests expose proposed changes for review; rendered facts
   # continue to come from work.yml until a maintainer accepts them there.
   effective_items = Array(work["items"]).map(&:dup).sort_by { |item| [item["order"] || 99_999, item["id"]] }
+  topics = Array(work["topics"]).map(&:dup)
 
-  effective = {"sections" => work["sections"], "items" => effective_items, "repositories" => work["repositories"]}
+  effective = {
+    "sections" => work["sections"],
+    "topics" => topics,
+    "items" => effective_items,
+    "repositories" => work["repositories"]
+  }
   write_file(destination, "_data/generated/work.json", JSON.pretty_generate(effective) + "\n")
 
   catalog = Array(work["repositories"]).map do |record|
@@ -53,6 +59,8 @@ def generate(destination)
       "data_availability" => record["data_availability"],
       "license_status" => record["license"],
       "public_url" => remote["html_url"] || "https://github.com/#{record['repository']}",
+      "live_url" => record["live_url"],
+      "live_label" => record["live_label"],
       "archived" => remote.fetch("archived", false),
       "default_branch" => remote["default_branch"],
       "latest_release" => remote["latest_release"]
@@ -63,7 +71,7 @@ def generate(destination)
   write_file(destination, "research-repositories.json", json)
   write_file(destination, "_data/generated/research_repositories.json", json)
 
-  headers = %w[repository title artifact_type analysis_language related_doi related_pmid data_availability license_status public_url archived default_branch latest_release]
+  headers = %w[repository title artifact_type analysis_language related_doi related_pmid data_availability license_status public_url live_url live_label archived default_branch latest_release]
   csv = CSV.generate do |out|
     out << headers
     catalog.each { |record| out << headers.map { |header| record[header] } }
@@ -81,6 +89,8 @@ def generate(destination)
     "- About: https://reblocke.github.io/",
     "- Biography: https://reblocke.github.io/bio/",
     "- Work: https://reblocke.github.io/work/",
+    "- Publications: https://reblocke.github.io/publications/",
+    *topics.map { |topic| "- #{topic['title']}: https://reblocke.github.io#{topic['permalink']}" },
     "- CV: https://reblocke.github.io/cv/",
     "- Public repository catalog: https://reblocke.github.io/research-repositories/",
     "",

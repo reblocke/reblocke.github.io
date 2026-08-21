@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /talks/
-redirect_to: /cv/#presentations
+permalink: /teaching/
+redirect_to: /cv/#teaching-and-curriculum
 sitemap: false
 ---

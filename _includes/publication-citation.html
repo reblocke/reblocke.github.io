@@ -1,0 +1,8 @@
+{% assign item = include.item %}
+{% assign title_last = item.title | slice: -1, 1 %}
+<li data-work-id="{{ item.id | escape }}">
+  <span class="citation-title">{{ item.title }}</span>{% unless title_last == "?" or title_last == "!" or title_last == "." %}.{% endunless %}
+  {{ item.authors }}. <em>{{ item.venue }}</em>. {{ item.year }}.
+  {% if item.doi %}<a href="https://doi.org/{{ item.doi }}">doi:{{ item.doi }}</a>{% endif %}
+  {% if item.pmid %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ item.pmid }}/">PubMed</a>{% endif %}
+</li>

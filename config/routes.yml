@@ -2,21 +2,22 @@ canonical:
   - "/"
   - "/bio/"
   - "/work/"
+  - "/publications/"
+  - "/topics/hypercapnic-respiratory-failure/"
   - "/cv/"
   - "/research-repositories/"
 redirects:
   - {from: "/materials/", to: "/work/#software-and-repositories"}
   - {from: "/projects/", to: "/work/#software-and-repositories"}
   - {from: "/portfolio/", to: "/work/#software-and-repositories"}
-  - {from: "/publications/", to: "/work/"}
   - {from: "/talks/", to: "/cv/#presentations"}
   - {from: "/teaching/", to: "/cv/#teaching-and-curriculum"}
   - {from: "/about/", to: "/"}
   - {from: "/about.html", to: "/"}
   - {from: "/resume", to: "/cv/"}
-  - {from: "/publications/2017-01-20-Mountain-Medical-Kits", to: "/work/"}
-  - {from: "/publications/2017-04-10-QI-ed-immersion", to: "/work/"}
-  - {from: "/publications/2020-09-01-COVID-Action-Plan", to: "/work/"}
+  - {from: "/publications/2017-01-20-Mountain-Medical-Kits", to: "/publications/"}
+  - {from: "/publications/2017-04-10-QI-ed-immersion", to: "/publications/"}
+  - {from: "/publications/2020-09-01-COVID-Action-Plan", to: "/publications/"}
   - {from: "/talks/2012-Glu-Lactate", to: "/cv/#presentations"}
   - {from: "/talks/2014-CTPA-QI", to: "/cv/#presentations"}
   - {from: "/talks/2016-Panc-Pleural", to: "/cv/#presentations"}

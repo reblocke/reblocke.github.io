@@ -1,8 +1,10 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+require "csv"
 require "json"
 require "set"
+require "uri"
 require "yaml"
 
 ROOT = File.expand_path("..", __dir__)
@@ -11,6 +13,40 @@ PROHIBITED_TITLES = [
   "Clinical AI Lead",
   "Clinical Research Lead",
   "Clinical Research Director"
+].freeze
+EXPECTED_CANONICAL_ROUTES = [
+  "/",
+  "/bio/",
+  "/work/",
+  "/publications/",
+  "/topics/hypercapnic-respiratory-failure/",
+  "/cv/",
+  "/research-repositories/"
+].freeze
+EXPECTED_TOPIC = {
+  "id" => "hypercapnic-respiratory-failure",
+  "title" => "Hypercapnic Respiratory Failure and Respiratory Measurement",
+  "permalink" => "/topics/hypercapnic-respiratory-failure/"
+}.freeze
+EXPECTED_TOPIC_ITEM_IDS = [
+  "doi:10.1016/j.chest.2025.08.002",
+  "doi:10.64898/2026.07.03.26357242",
+  "doi:10.1111/obr.13697",
+  "doi:10.1177/19433654261424871",
+  "doi:10.1016/j.jsmc.2024.02.012",
+  "doi:10.3390/ijerph19095473",
+  "doi:10.4187/respcare.11573",
+  "doi:10.1093/ajrccm/aamag162.4637",
+  "doi:10.1093/ajrccm/aamag162.4737",
+  "abstract:chest:2025:tcco2-sensor-performance",
+  "abstract:ats:2025:tcco2-performance",
+  "abstract:chest:2024:hypercapnia-adverse-events",
+  "abstract:ats:2024:bicarbonate-hypercapnia"
+].freeze
+EXPECTED_CATALOG_COLUMNS = %w[
+  repository title artifact_type analysis_language related_doi related_pmid
+  data_availability license_status public_url live_url live_label archived
+  default_branch latest_release
 ].freeze
 
 def load_yaml(path)
@@ -21,6 +57,15 @@ end
 
 def nonempty_string?(value)
   value.is_a?(String) && !value.strip.empty?
+end
+
+def valid_https_url?(value)
+  return false unless nonempty_string?(value)
+
+  uri = URI.parse(value)
+  uri.is_a?(URI::HTTPS) && nonempty_string?(uri.host)
+rescue URI::InvalidURIError
+  false
 end
 
 errors = []
@@ -157,6 +202,81 @@ secondary_affiliations.each do |affiliation|
   end
 end
 
+schema = person["schema"]
+unless schema.is_a?(Hash)
+  errors << "person.yml schema must be an object"
+  schema = {}
+end
+
+expected_schema_ids = {
+  "person_id" => "https://reblocke.github.io/#person",
+  "website_id" => "https://reblocke.github.io/#website",
+  "portrait_id" => "https://reblocke.github.io/#portrait"
+}
+expected_schema_ids.each do |key, expected|
+  errors << "person.yml schema #{key} must be #{expected}" unless schema[key] == expected
+end
+errors << "person.yml schema type must be Person" unless schema["type"] == "Person"
+errors << "person.yml schema display_name must be nonempty" unless nonempty_string?(schema["display_name"])
+
+{
+  "alternate_names" => schema["alternate_names"],
+  "honorific_suffixes" => schema["honorific_suffixes"],
+  "job_titles" => schema["job_titles"],
+  "knows_about" => schema["knows_about"]
+}.each do |key, values|
+  unless values.is_a?(Array) && !values.empty? && values.all? { |value| nonempty_string?(value) } && values.uniq == values
+    errors << "person.yml schema #{key} must be a nonempty list of unique strings"
+  end
+end
+unless Array(schema["honorific_suffixes"]) == Array(person["credentials"])
+  errors << "person.yml schema honorific_suffixes must match credentials"
+end
+unless Array(schema["job_titles"]).include?(primary_affiliation["role"]) && Array(schema["job_titles"]).include?(person["clinical_role"])
+  errors << "person.yml schema job_titles must include the primary and clinical roles"
+end
+
+orcid_id = schema["orcid_id"]
+unless nonempty_string?(orcid_id) && orcid_id.match?(%r{\A\d{4}-\d{4}-\d{4}-\d{3}[\dX]\z})
+  errors << "person.yml schema orcid_id has an invalid format"
+end
+unless person.dig("profiles", "orcid") == "https://orcid.org/#{orcid_id}"
+  errors << "person.yml schema orcid_id must match profiles.orcid"
+end
+
+organizations = schema["organizations"]
+unless organizations.is_a?(Hash) && organizations.keys.sort == %w[advisor employer university]
+  errors << "person.yml schema organizations must contain exactly employer, university, and advisor"
+  organizations = {}
+end
+organization_ids = []
+{
+  "employer" => "Organization",
+  "university" => "CollegeOrUniversity",
+  "advisor" => "Organization"
+}.each do |key, expected_type|
+  organization = organizations[key]
+  unless organization.is_a?(Hash)
+    errors << "person.yml schema organization #{key} must be an object"
+    next
+  end
+  %w[id name].each do |field|
+    errors << "person.yml schema organization #{key} missing #{field}" unless nonempty_string?(organization[field])
+  end
+  organization_ids << organization["id"] if nonempty_string?(organization["id"])
+  unless organization["id"].to_s.match?(%r{\Ahttps://reblocke\.github\.io/#[a-z0-9-]+\z})
+    errors << "person.yml schema organization #{key} needs a stable site-fragment id"
+  end
+  errors << "person.yml schema organization #{key} type must be #{expected_type}" unless organization["type"] == expected_type
+  if %w[employer university].include?(key) && !valid_https_url?(organization["url"])
+    errors << "person.yml schema organization #{key} needs an HTTPS url"
+  end
+  if key == "advisor" && !nonempty_string?(organization["alternate_name"])
+    errors << "person.yml schema organization advisor needs alternate_name"
+  end
+end
+errors << "person.yml schema organization ids must be unique" unless organization_ids.uniq == organization_ids
+
 canonical_text = [person, cv].to_json
 PROHIBITED_TITLES.each do |title|
   errors << "superseded current title remains: #{title}" if canonical_text.include?(title)
@@ -192,10 +312,59 @@ records.each do |record|
   if record["doi"] && record["doi"] != record["doi"].downcase
     errors << "DOI must be lowercase: #{record['doi']}"
   end
+  live_url = record["live_url"]
+  live_label = record["live_label"]
+  if !!live_url != !!live_label || (live_url && (!nonempty_string?(live_url) || !nonempty_string?(live_label)))
+    errors << "#{record['id']} live_url and live_label must be present together as nonempty strings"
+  elsif live_url
+    errors << "#{record['id']} live_url must be HTTPS" unless valid_https_url?(live_url)
+    errors << "#{record['id']} live metadata is allowed only for repositories" unless record["repository"]
+    errors << "#{record['id']} live metadata requires selected_work" unless record["selected_work"]
+    expected_live_url = "https://reblocke.github.io/#{record['repository'].to_s.split('/', 2).last}/"
+    errors << "#{record['id']} live_url must be its GitHub Pages project root #{expected_live_url}" unless live_url == expected_live_url
+  end
   selected = record["selected"] || {}
   if selected.values.any? || record["selected_work"]
     errors << "selected record #{record['id']} requires an integer order" unless record["order"].is_a?(Integer)
   end
+end
+
+items.reject { |item| item["type"] == "abstract" }.each do |item|
+  %w[title authors venue].each do |field|
+    errors << "#{item['id']} non-abstract publication missing #{field}" unless nonempty_string?(item[field])
+  end
+  errors << "#{item['id']} non-abstract publication missing year" unless item["year"].is_a?(Integer)
+end
+
+topics = Array(work["topics"])
+unless topics.length == 1
+  errors << "work topics must contain exactly one curated topic"
+end
+topic_ids = topics.filter_map { |topic| topic["id"] if topic.is_a?(Hash) }
+errors << "work topic ids must be unique" unless topic_ids.uniq == topic_ids
+item_ids = items.map { |item| item["id"] }.to_set
+topics.each_with_index do |topic, index|
+  unless topic.is_a?(Hash)
+    errors << "work topic #{index + 1} must be an object"
+    next
+  end
+  expected_keys = %w[description id item_ids permalink title]
+  errors << "work topic #{index + 1} must contain exactly #{expected_keys.join(', ')}" unless topic.keys.sort == expected_keys
+  EXPECTED_TOPIC.each do |key, expected|
+    errors << "work topic #{index + 1} #{key} must be #{expected.inspect}" unless topic[key] == expected
+  end
+  errors << "work topic #{index + 1} description must be nonempty" unless nonempty_string?(topic["description"])
+  members = topic["item_ids"]
+  unless members.is_a?(Array) && members.length == 13 && members.all? { |member| nonempty_string?(member) }
+    errors << "work topic #{index + 1} item_ids must contain exactly 13 explicit IDs"
+    members = []
+  end
+  unless members == EXPECTED_TOPIC_ITEM_IDS
+    errors << "work topic #{index + 1} item_ids must match the approved respiratory set"
+  end
+  errors << "work topic #{index + 1} item_ids must be unique" unless members.uniq == members
+  unknown_members = members.reject { |member| item_ids.include?(member) }
+  errors << "work topic #{index + 1} references non-item IDs: #{unknown_members.join(', ')}" unless unknown_members.empty?
 end
 
 github_path = File.join(ROOT, "_data/external/github_repositories.generated.json")
@@ -210,19 +379,32 @@ end
 catalog_path = File.join(ROOT, "research-repositories.json")
 if File.exist?(catalog_path)
   prohibited_columns = %w[readme_gaps planned_pr pending_review remediation_status]
-  JSON.parse(File.read(catalog_path)).each do |record|
+  catalog = JSON.parse(File.read(catalog_path))
+  catalog.each do |record|
     found = record.keys & prohibited_columns
     errors << "generated catalog contains maintenance-only fields: #{found.join(', ')}" unless found.empty?
+    errors << "generated catalog schema mismatch for #{record['repository']}" unless record.keys == EXPECTED_CATALOG_COLUMNS
   end
+end
+
+catalog_csv_path = File.join(ROOT, "research-repositories.csv")
+if File.exist?(catalog_csv_path)
+  catalog_csv = CSV.read(catalog_csv_path, headers: true)
+  errors << "generated catalog CSV schema mismatch" unless catalog_csv.headers == EXPECTED_CATALOG_COLUMNS
+end
+
+generated_work_path = File.join(ROOT, "_data/generated/work.json")
+if File.exist?(generated_work_path)
+  generated_work = JSON.parse(File.read(generated_work_path))
+  errors << "generated work topics do not match work.yml" unless generated_work["topics"] == topics
 end
 
 homepage = items.select { |item| item.dig("selected", "homepage") }
 errors << "homepage must contain 3 to 6 selected works" unless (3..6).cover?(homepage.length)
 
 canonical_routes = Array(routes["canonical"])
-expected_canonical_routes = ["/", "/bio/", "/work/", "/cv/", "/research-repositories/"]
-unless canonical_routes == expected_canonical_routes
-  errors << "canonical routes must be exactly: #{expected_canonical_routes.join(', ')}"
+unless canonical_routes == EXPECTED_CANONICAL_ROUTES
+  errors << "canonical routes must be exactly: #{EXPECTED_CANONICAL_ROUTES.join(', ')}"
 end
 canonical_routes.each do |route|
   errors << "canonical route must begin and end with /: #{route}" unless route.start_with?("/") && route.end_with?("/")
@@ -237,6 +419,7 @@ unless Array(navigation["main"]) == expected_navigation
   errors << "principal navigation must be exactly About, Work, and CV"
 end
 redirects = Array(routes["redirects"])
+errors << "redirect registry must contain exactly 31 routes" unless redirects.length == 31
 redirect_sources = redirects.filter_map { |redirect| redirect["from"] }
 duplicate_redirects = redirect_sources.tally.select { |_route, count| count > 1 }.keys
 errors << "duplicate redirect routes: #{duplicate_redirects.join(', ')}" unless duplicate_redirects.empty?
@@ -251,7 +434,8 @@ redirects.each do |redirect|
 end
 
 if errors.empty?
-  puts "Site data valid: #{records.length} work records, #{homepage.length} homepage selections."
+  live_count = records.count { |record| record["live_url"] }
+  puts "Site data valid: #{records.length} work records, #{homepage.length} homepage selections, #{topics.length} topic, #{live_count} live sites."
 else
   warn errors.map { |error| "ERROR: #{error}" }.join("\n")
   exit 1

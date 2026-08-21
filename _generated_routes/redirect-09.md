@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /resume
-redirect_to: /cv/
+permalink: /publications/2017-01-20-Mountain-Medical-Kits
+redirect_to: /publications/
 sitemap: false
 ---

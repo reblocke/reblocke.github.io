@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="robots" content="noindex">
     <meta http-equiv="refresh" content="0; url={{ page.redirect_to }}">
     {% assign canonical_target = page.redirect_to | split: "#" | first %}
     <link rel="canonical" href="{{ canonical_target | absolute_url }}">

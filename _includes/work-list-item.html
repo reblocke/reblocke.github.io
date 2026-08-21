@@ -1,0 +1,18 @@
+{% assign item = include.item %}
+{% assign work = site.data.generated.work %}
+<article class="work-item" data-work-id="{{ item.id | escape }}">
+  <p class="item-meta">{{ item.year }} · {{ item.type | replace: '-', ' ' | capitalize }}</p>
+  <h3>{{ item.title }}</h3>
+  {% if item.summary %}<p class="prose">{{ item.summary }}</p>{% endif %}
+  <p class="item-links">
+    {% if item.doi %}<a href="https://doi.org/{{ item.doi }}">DOI</a>{% endif %}
+    {% if item.pmid %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ item.pmid }}/">PubMed</a>{% endif %}
+    {% for related_id in item.related_ids %}
+      {% assign repo = work.repositories | where: "id", related_id | first %}
+      {% if repo %}
+        <a href="https://github.com/{{ repo.repository }}">Repository</a>
+        {% if repo.live_url %}<a href="{{ repo.live_url }}">{{ repo.live_label }}</a>{% endif %}
+      {% endif %}
+    {% endfor %}
+  </p>
+</article>

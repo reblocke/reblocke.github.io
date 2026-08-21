@@ -1,9 +1,14 @@
 ---
 permalink: /
 title: "Brian W. Locke, MD, MSCI"
+seo_title: "Brian W. Locke, MD, MSCI | Pulmonary & Critical Care Research"
+description: "Brian W. Locke is a pulmonary and critical care physician-scientist studying respiratory failure, clinical data, prediction, causal inference, and pragmatic trials."
+schema_type: "WebPage"
+schema_main_entity: true
 ---
 {% assign person = site.data.person %}
 {% assign work = site.data.generated.work %}
+{% assign respiratory_topic = work.topics | where: "id", "hypercapnic-respiratory-failure" | first %}
 
 <section class="home-hero site-container section">
   <div class="home-hero__text">
@@ -32,6 +37,7 @@ title: "Brian W. Locke, MD, MSCI"
         <article><h3>{{ theme.title }}</h3><p>{{ theme.description }}</p></article>
       {% endfor %}
     </div>
+    {% if respiratory_topic %}<p class="closing-link">Explore research on <a href="{{ respiratory_topic.permalink }}">{{ respiratory_topic.title }}</a>.</p>{% endif %}
   </div>
 </section>
 
@@ -41,5 +47,5 @@ title: "Brian W. Locke, MD, MSCI"
     {% assign homepage_items = work.items | where_exp: "item", "item.selected.homepage == true" %}
     {% for item in homepage_items %}{% include work-card.html item=item %}{% endfor %}
   </div>
-  <p class="closing-link">View <a href="/work/">all selected work</a> or the <a href="/cv/">public curriculum vitae</a>.</p>
+  <p class="closing-link">View <a href="/work/">selected work</a>, browse <a href="/publications/">all publications</a>, or read the <a href="/cv/">public curriculum vitae</a>.</p>
 </section>

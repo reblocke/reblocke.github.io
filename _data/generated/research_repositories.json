@@ -9,6 +9,8 @@
     "data_availability": "Restricted clinical data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/abg-vbg-project",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "v0.1.0"
@@ -23,6 +25,8 @@
     "data_availability": "Study-level extraction data only; no patient-level data.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/AOM-and-Bari-Surg-for-OSA-SRMA",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "stata-baseline-v1"
@@ -37,6 +41,8 @@
     "data_availability": "Restricted clinical sleep-center data are not public.",
     "license_status": "Unconfirmed",
     "public_url": "https://github.com/reblocke/Bari-CPAP",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": "legacy-ats2022-aggregate-outputs-2026-06-04"
@@ -51,6 +57,8 @@
     "data_availability": "Teaching materials only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/clinical_talks",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -65,6 +73,8 @@
     "data_availability": "No trainee identifiers are published.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/code-seminar-analysis",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -79,6 +89,8 @@
     "data_availability": "No clinical data.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/conf_curve_likelihood",
+    "live_url": "https://reblocke.github.io/conf_curve_likelihood/",
+    "live_label": "Live tool",
     "archived": false,
     "default_branch": "main",
     "latest_release": "v0.2.7"
@@ -93,6 +105,8 @@
     "data_availability": "Restricted EHR-derived data are not public.",
     "license_status": "Unconfirmed",
     "public_url": "https://github.com/reblocke/CPAPOutcomes",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": null
@@ -107,6 +121,8 @@
     "data_availability": "Restricted clinical data are not public; only synthetic fixtures are included.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/CSA",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": "legacy-python-outputs-2026-06-03"
@@ -121,6 +137,8 @@
     "data_availability": "Restricted clinical sleep-center data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/CSA-CPAP-Prescribing",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -135,6 +153,8 @@
     "data_availability": "Restricted imaging and EHR data are not public.",
     "license_status": "Unconfirmed",
     "public_url": "https://github.com/reblocke/CTPA-Dose-Response",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "legacy-rendered-artifacts-2026-06-04"
@@ -149,6 +169,8 @@
     "data_availability": "No private chat transcripts are published.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/dx_chat_entropy",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -163,6 +185,8 @@
     "data_availability": "Teaching materials only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/fellow_stats",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -177,6 +201,8 @@
     "data_availability": "Public replication data; consult source licenses.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/forensic_metascience",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -191,6 +217,8 @@
     "data_availability": "See the repository for the public analysis data and reuse terms.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/hickams-dictum",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": null
@@ -205,6 +233,8 @@
     "data_availability": "Restricted EHR-derived data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/Hypercap-Case-Definitions",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "v2.0.0"
@@ -219,6 +249,8 @@
     "data_availability": "Restricted MIMIC-IV data are not public; access requires PhysioNet credentials and applicable approvals.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/Hypercap-CC-NLP",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "v0.1.1"
@@ -233,6 +265,8 @@
     "data_availability": "Public trial-registry-derived data only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/Hypercap-Trial-Adverse-Events",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -247,6 +281,8 @@
     "data_availability": "Teaching materials only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/intro_clin_research",
+    "live_url": "https://reblocke.github.io/intro_clin_research/",
+    "live_label": "Teaching site",
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -261,6 +297,8 @@
     "data_availability": "Generated model outputs and literature-derived comparisons only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/llm_estimate_lrs",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "v1.1.0"
@@ -275,6 +313,8 @@
     "data_availability": "Restricted clinical data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/NHPI-OSA-Burden",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": null
@@ -289,6 +329,8 @@
     "data_availability": "Teaching examples only; no patient data.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/notebooks_dx_reasoning",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -303,6 +345,8 @@
     "data_availability": "Restricted EHR data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/NRH-SCI-Vent",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "v0.3.0"
@@ -317,6 +361,8 @@
     "data_availability": "No patient data.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/sodium_change",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -331,6 +377,8 @@
     "data_availability": "Simulation data only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/sofa_resp_sim",
+    "live_url": "https://reblocke.github.io/sofa_resp_sim/",
+    "live_label": "Live tool",
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -345,6 +393,8 @@
     "data_availability": "Restricted clinical data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/Splenectomy-PE",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -359,6 +409,8 @@
     "data_availability": "No clinical data.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/stata-codex-skills",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -373,6 +425,8 @@
     "data_availability": "Sensitive goals-of-care data are not public.",
     "license_status": "Unconfirmed",
     "public_url": "https://github.com/reblocke/StateVetsHome",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": "legacy-covid-goc-outputs-2026-06-04"
@@ -387,6 +441,8 @@
     "data_availability": "No patient data.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/stewart-light",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -401,6 +457,8 @@
     "data_availability": "Simulation outputs only; no patient-level data are published.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/tcco2-accuracy",
+    "live_url": "https://reblocke.github.io/tcco2-accuracy/",
+    "live_label": "Live tool",
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -415,6 +473,8 @@
     "data_availability": "Restricted clinical operations data are not public.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/tele_crit_care",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null
@@ -429,6 +489,8 @@
     "data_availability": "No restricted export rows are published.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/trinetx-preprocessing",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": "v0.2.0"
@@ -443,6 +505,8 @@
     "data_availability": "No restricted row-level TriNetX data are published.",
     "license_status": "Unconfirmed",
     "public_url": "https://github.com/reblocke/TriNetXHypercapnia",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "master",
     "latest_release": null
@@ -457,6 +521,8 @@
     "data_availability": "Educational materials only.",
     "license_status": "MIT",
     "public_url": "https://github.com/reblocke/U-of-U-IM-Codes-and-Rapid-Responses",
+    "live_url": "https://reblocke.github.io/U-of-U-IM-Codes-and-Rapid-Responses/",
+    "live_label": "Teaching site",
     "archived": false,
     "default_branch": "main",
     "latest_release": "v2025.06"
@@ -471,6 +537,8 @@
     "data_availability": "Study materials and de-identified outputs only.",
     "license_status": "Unconfirmed",
     "public_url": "https://github.com/reblocke/vr_icu",
+    "live_url": null,
+    "live_label": null,
     "archived": false,
     "default_branch": "main",
     "latest_release": null

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /teaching/
-redirect_to: /cv/#teaching-and-curriculum
+permalink: /about/
+redirect_to: /
 sitemap: false
 ---

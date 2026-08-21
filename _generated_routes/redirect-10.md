@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /publications/2017-01-20-Mountain-Medical-Kits
-redirect_to: /work/
+permalink: /publications/2017-04-10-QI-ed-immersion
+redirect_to: /publications/
 sitemap: false
 ---
