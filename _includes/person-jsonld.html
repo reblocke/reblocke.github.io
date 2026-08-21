@@ -1,25 +1,92 @@
 {% assign person = site.data.person %}
+{% assign schema = person.schema %}
+{% assign schema_type = page.schema_type | default: "WebPage" %}
+{% assign page_schema_id = canonical_url | append: "#webpage" %}
+{% assign website_url = "/" | absolute_url %}
+{% assign image_url = person.image.jpeg | absolute_url %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": {{ person.name | jsonify }},
-  "givenName": {{ person.given_name | jsonify }},
-  "familyName": {{ person.family_name | jsonify }},
-  "description": {{ person.summary | jsonify }},
-  "url": {{ person.website | jsonify }},
-  "image": {{ person.image.jpeg | absolute_url | jsonify }},
-  "jobTitle": {{ person.primary_affiliation.role | jsonify }},
-  "affiliation": [
-    {"@type": "Organization", "name": {{ person.primary_affiliation.organization | jsonify }}},
-    {"@type": "Organization", "name": {{ person.secondary_affiliations[0].legal_name | jsonify }}}
-  ],
-  "sameAs": [
-    {{ person.profiles.orcid | jsonify }},
-    {{ person.profiles.google_scholar | jsonify }},
-    {{ person.profiles.github | jsonify }},
-    {{ person.profiles.linkedin | jsonify }},
-    {{ person.profiles.x | jsonify }}
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ schema.website_id | jsonify }},
+      "url": {{ website_url | jsonify }},
+      "name": {{ schema.display_name | jsonify }},
+      "alternateName": {{ person.name | jsonify }},
+      "inLanguage": {{ site.locale | default: "en-US" | jsonify }},
+      "publisher": {"@id": {{ schema.person_id | jsonify }}}
+    },
+    {
+      "@type": {{ schema_type | jsonify }},
+      "@id": {{ page_schema_id | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ seo_title | jsonify }},
+      "description": {{ page_description | strip | jsonify }},
+      "inLanguage": {{ site.locale | default: "en-US" | jsonify }},
+      "isPartOf": {"@id": {{ schema.website_id | jsonify }}},
+      "about": {"@id": {{ schema.person_id | jsonify }}}{% if schema_type == "ProfilePage" or page.schema_main_entity %},
+      "mainEntity": {"@id": {{ schema.person_id | jsonify }}}{% endif %}
+    },
+    {
+      "@type": {{ schema.type | jsonify }},
+      "@id": {{ schema.person_id | jsonify }},
+      "name": {{ schema.display_name | jsonify }},
+      "alternateName": {{ schema.alternate_names | jsonify }},
+      "givenName": {{ person.given_name | jsonify }},
+      "familyName": {{ person.family_name | jsonify }},
+      "honorificSuffix": {{ schema.honorific_suffixes | jsonify }},
+      "description": {{ person.summary | strip | jsonify }},
+      "url": {{ website_url | jsonify }},
+      "image": {"@id": {{ schema.portrait_id | jsonify }}},
+      "jobTitle": {{ schema.job_titles | jsonify }},
+      "worksFor": {"@id": {{ schema.organizations.employer.id | jsonify }}},
+      "affiliation": [
+        {"@id": {{ schema.organizations.university.id | jsonify }}},
+        {"@id": {{ schema.organizations.advisor.id | jsonify }}}
+      ],
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": {{ schema.orcid_id | jsonify }},
+        "url": {{ person.profiles.orcid | jsonify }}
+      },
+      "knowsAbout": {{ schema.knows_about | jsonify }},
+      "sameAs": [
+        {{ person.profiles.orcid | jsonify }},
+        {{ person.profiles.google_scholar | jsonify }},
+        {{ person.profiles.github | jsonify }},
+        {{ person.profiles.linkedin | jsonify }},
+        {{ person.profiles.x | jsonify }}
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": {{ schema.portrait_id | jsonify }},
+      "url": {{ image_url | jsonify }},
+      "contentUrl": {{ image_url | jsonify }},
+      "width": {{ person.image.width | jsonify }},
+      "height": {{ person.image.height | jsonify }},
+      "caption": {{ person.image.alt | jsonify }}
+    },
+    {
+      "@type": {{ schema.organizations.employer.type | jsonify }},
+      "@id": {{ schema.organizations.employer.id | jsonify }},
+      "name": {{ schema.organizations.employer.name | jsonify }},
+      "url": {{ schema.organizations.employer.url | jsonify }}
+    },
+    {
+      "@type": {{ schema.organizations.university.type | jsonify }},
+      "@id": {{ schema.organizations.university.id | jsonify }},
+      "name": {{ schema.organizations.university.name | jsonify }},
+      "url": {{ schema.organizations.university.url | jsonify }}
+    },
+    {
+      "@type": {{ schema.organizations.advisor.type | jsonify }},
+      "@id": {{ schema.organizations.advisor.id | jsonify }},
+      "name": {{ schema.organizations.advisor.name | jsonify }},
+      "alternateName": {{ schema.organizations.advisor.alternate_name | jsonify }}
+    }
   ]
 }
 </script>

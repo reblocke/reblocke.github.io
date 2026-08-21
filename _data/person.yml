@@ -51,7 +51,7 @@ research_themes:
 email: "brian.locke@hsc.utah.edu"
 profiles:
   orcid: "https://orcid.org/0000-0002-3588-5238"
-  google_scholar: "https://scholar.google.com/citations?hl=en&user=O1nydc8AAAAJ"
+  google_scholar: "https://scholar.google.com/citations?user=O1nydc8AAAAJ"
   github: "https://github.com/reblocke"
   linkedin: "https://www.linkedin.com/in/brian-locke-464457155"
   x: "https://x.com/doc_BLocke"
@@ -76,3 +76,40 @@ disclosure: >-
 schema:
   type: "Person"
   job_title: "Assistant Professor of Research"
+  person_id: "https://reblocke.github.io/#person"
+  website_id: "https://reblocke.github.io/#website"
+  portrait_id: "https://reblocke.github.io/#portrait"
+  display_name: "Brian W. Locke"
+  alternate_names:
+    - "Brian W Locke"
+    - "Brian Locke"
+  honorific_suffixes:
+    - "MD"
+    - "MSCI"
+  job_titles:
+    - "Pulmonary and Critical Care Physician"
+    - "Assistant Professor of Research"
+  orcid_id: "0000-0002-3588-5238"
+  knows_about:
+    - "Hypercapnic respiratory failure"
+    - "Respiratory measurement"
+    - "Linked clinical and claims data"
+    - "Clinical prediction"
+    - "Causal inference"
+    - "Pragmatic clinical trials"
+  organizations:
+    employer:
+      id: "https://reblocke.github.io/#intermountain-health"
+      type: "Organization"
+      name: "Intermountain Health"
+      url: "https://intermountainhealth.org/"
+    university:
+      id: "https://reblocke.github.io/#university-of-utah"
+      type: "CollegeOrUniversity"
+      name: "University of Utah"
+      url: "https://www.utah.edu/"
+    advisor:
+      id: "https://reblocke.github.io/#mtn"
+      type: "Organization"
+      name: "Mountain Biometrics, Inc."
+      alternate_name: "MTN"

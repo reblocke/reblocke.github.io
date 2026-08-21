@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /about/
+permalink: /about.html
 redirect_to: /
 sitemap: false
 ---

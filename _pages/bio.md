@@ -1,6 +1,9 @@
 ---
 permalink: /bio/
 title: "Biography"
+seo_title: "Brian W. Locke, MD, MSCI | Physician-Scientist Biography"
+description: "Biography of Brian W. Locke, MD, MSCI, an Intermountain Health pulmonary and critical care physician-scientist and University of Utah fellowship faculty member."
+schema_type: "ProfilePage"
 ---
 {% assign person = site.data.person %}
 <article class="site-container page">

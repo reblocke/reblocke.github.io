@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /teaching/2016-01-01-Prior-Residency
+permalink: /teaching/2018-apr-tibetan
 redirect_to: /cv/#teaching-and-curriculum
 sitemap: false
 ---

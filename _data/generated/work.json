@@ -26,6 +26,29 @@
       "order": 50
     }
   ],
+  "topics": [
+    {
+      "id": "hypercapnic-respiratory-failure",
+      "title": "Hypercapnic Respiratory Failure and Respiratory Measurement",
+      "description": "Research on how hypercapnic respiratory failure is identified, measured, and interpreted across clinical settings, including related sleep-disordered breathing and physiologic measurement.",
+      "permalink": "/topics/hypercapnic-respiratory-failure/",
+      "item_ids": [
+        "doi:10.1016/j.chest.2025.08.002",
+        "doi:10.64898/2026.07.03.26357242",
+        "doi:10.1111/obr.13697",
+        "doi:10.1177/19433654261424871",
+        "doi:10.1016/j.jsmc.2024.02.012",
+        "doi:10.3390/ijerph19095473",
+        "doi:10.4187/respcare.11573",
+        "doi:10.1093/ajrccm/aamag162.4637",
+        "doi:10.1093/ajrccm/aamag162.4737",
+        "abstract:chest:2025:tcco2-sensor-performance",
+        "abstract:ats:2025:tcco2-performance",
+        "abstract:chest:2024:hypercapnia-adverse-events",
+        "abstract:ats:2024:bicarbonate-hypercapnia"
+      ]
+    }
+  ],
   "items": [
     {
       "id": "doi:10.1038/s41598-026-61766-2",
@@ -554,6 +577,7 @@
       "id": "doi:10.1007/s00408-023-00657-z",
       "type": "journal-article",
       "title": "Predictors of Initial CPAP Prescription and Subsequent Course with CPAP in Patients with Central Sleep Apneas at a Single Center",
+      "authors": "Locke BW, Sellman J, McFarland J, Uribe F, Workman K, Sundar KM",
       "venue": "Lung",
       "year": 2023,
       "doi": "10.1007/s00408-023-00657-z",
@@ -771,6 +795,8 @@
       "license": "MIT",
       "selected_work": true,
       "order": 220,
+      "live_url": "https://reblocke.github.io/tcco2-accuracy/",
+      "live_label": "Live tool",
       "data_availability": "Simulation outputs only; no patient-level data are published."
     },
     {
@@ -850,6 +876,8 @@
       "license": "MIT",
       "selected_work": true,
       "order": 280,
+      "live_url": "https://reblocke.github.io/U-of-U-IM-Codes-and-Rapid-Responses/",
+      "live_label": "Teaching site",
       "data_availability": "Educational materials only."
     },
     {
@@ -872,6 +900,8 @@
       "license": "MIT",
       "selected_work": true,
       "order": 300,
+      "live_url": "https://reblocke.github.io/intro_clin_research/",
+      "live_label": "Teaching site",
       "data_availability": "Teaching materials only."
     },
     {
@@ -1111,6 +1141,8 @@
       "license": "MIT",
       "selected_work": true,
       "order": 480,
+      "live_url": "https://reblocke.github.io/conf_curve_likelihood/",
+      "live_label": "Live tool",
       "data_availability": "No clinical data."
     },
     {
@@ -1147,6 +1179,8 @@
       "license": "MIT",
       "selected_work": true,
       "order": 510,
+      "live_url": "https://reblocke.github.io/sofa_resp_sim/",
+      "live_label": "Live tool",
       "data_availability": "Simulation data only."
     },
     {

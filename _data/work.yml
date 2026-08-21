@@ -15,6 +15,29 @@ sections:
     title: "Teaching resources"
     order: 50
 
+topics:
+  - id: "hypercapnic-respiratory-failure"
+    title: "Hypercapnic Respiratory Failure and Respiratory Measurement"
+    description: >-
+      Research on how hypercapnic respiratory failure is identified, measured,
+      and interpreted across clinical settings, including related
+      sleep-disordered breathing and physiologic measurement.
+    permalink: "/topics/hypercapnic-respiratory-failure/"
+    item_ids:
+      - "doi:10.1016/j.chest.2025.08.002"
+      - "doi:10.64898/2026.07.03.26357242"
+      - "doi:10.1111/obr.13697"
+      - "doi:10.1177/19433654261424871"
+      - "doi:10.1016/j.jsmc.2024.02.012"
+      - "doi:10.3390/ijerph19095473"
+      - "doi:10.4187/respcare.11573"
+      - "doi:10.1093/ajrccm/aamag162.4637"
+      - "doi:10.1093/ajrccm/aamag162.4737"
+      - "abstract:chest:2025:tcco2-sensor-performance"
+      - "abstract:ats:2025:tcco2-performance"
+      - "abstract:chest:2024:hypercapnia-adverse-events"
+      - "abstract:ats:2024:bicarbonate-hypercapnia"
+
 items:
   - id: "doi:10.1038/s41598-026-61766-2"
     type: "journal-article"
@@ -298,6 +321,7 @@ items:
   - id: "doi:10.1007/s00408-023-00657-z"
     type: "journal-article"
     title: "Predictors of Initial CPAP Prescription and Subsequent Course with CPAP in Patients with Central Sleep Apneas at a Single Center"
+    authors: "Locke BW, Sellman J, McFarland J, Uribe F, Workman K, Sundar KM"
     venue: "Lung"
     year: 2023
     doi: "10.1007/s00408-023-00657-z"
@@ -456,15 +480,15 @@ items:
 
 repositories:
   - {id: "repo:reblocke/Hypercap-Case-Definitions", repository: "reblocke/Hypercap-Case-Definitions", title: "Hypercapnic Respiratory Failure Case Definitions", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1016/j.chest.2025.08.002", display_with: "doi:10.1016/j.chest.2025.08.002", license: "MIT", selected_work: true, order: 210, data_availability: "Restricted EHR-derived data are not public."}
-  - {id: "repo:reblocke/tcco2-accuracy", repository: "reblocke/tcco2-accuracy", title: "Transcutaneous CO2 Accuracy", section: "respiratory-failure", artifact_type: "simulation and analysis", analysis_language: "Python", display_with: "abstract:chest:2025:tcco2-sensor-performance", license: "MIT", selected_work: true, order: 220, data_availability: "Simulation outputs only; no patient-level data are published."}
+  - {id: "repo:reblocke/tcco2-accuracy", repository: "reblocke/tcco2-accuracy", title: "Transcutaneous CO2 Accuracy", section: "respiratory-failure", artifact_type: "simulation and analysis", analysis_language: "Python", display_with: "abstract:chest:2025:tcco2-sensor-performance", license: "MIT", selected_work: true, order: 220, live_url: "https://reblocke.github.io/tcco2-accuracy/", live_label: "Live tool", data_availability: "Simulation outputs only; no patient-level data are published."}
   - {id: "repo:reblocke/Hypercap-Trial-Adverse-Events", repository: "reblocke/Hypercap-Trial-Adverse-Events", title: "Hypercapnia Trial Adverse Events", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Jupyter Notebook", display_with: "abstract:chest:2024:hypercapnia-adverse-events", license: "MIT", selected_work: true, order: 230, data_availability: "Public trial-registry-derived data only."}
   - {id: "repo:reblocke/hickams-dictum", repository: "reblocke/hickams-dictum", title: "Hickam's Dictum", section: "evidence-and-prediction", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1007/s11606-024-09120-y", display_with: "doi:10.1007/s11606-024-09120-y", license: "MIT", selected_work: true, order: 240, data_availability: "See the repository for the public analysis data and reuse terms."}
   - {id: "repo:reblocke/AOM-and-Bari-Surg-for-OSA-SRMA", repository: "reblocke/AOM-and-Bari-Surg-for-OSA-SRMA", title: "Weight Loss and OSA Meta-analysis", section: "respiratory-failure", artifact_type: "systematic review and meta-analysis", analysis_language: "Stata", related_id: "doi:10.1111/obr.13697", display_with: "doi:10.1111/obr.13697", license: "MIT", selected_work: true, order: 250, data_availability: "Study-level extraction data only; no patient-level data."}
   - {id: "repo:reblocke/vr_icu", repository: "reblocke/vr_icu", title: "Immersive Virtual Reality in the ICU", section: "health-services", artifact_type: "mixed-methods analysis", analysis_language: "Stata", related_id: "doi:10.2196/62842", display_with: "doi:10.2196/62842", license: "Unconfirmed", selected_work: true, order: 260, data_availability: "Study materials and de-identified outputs only."}
   - {id: "repo:reblocke/notebooks_dx_reasoning", repository: "reblocke/notebooks_dx_reasoning", title: "Diagnostic Reasoning Notebooks", section: "teaching-resources", artifact_type: "interactive teaching notebooks", analysis_language: "Jupyter Notebook", license: "MIT", selected_work: true, order: 270, data_availability: "Teaching examples only; no patient data."}
-  - {id: "repo:reblocke/U-of-U-IM-Codes-and-Rapid-Responses", repository: "reblocke/U-of-U-IM-Codes-and-Rapid-Responses", title: "Code Blue and Rapid Response Leadership", section: "teaching-resources", artifact_type: "teaching site", analysis_language: "Quarto", license: "MIT", selected_work: true, order: 280, data_availability: "Educational materials only."}
+  - {id: "repo:reblocke/U-of-U-IM-Codes-and-Rapid-Responses", repository: "reblocke/U-of-U-IM-Codes-and-Rapid-Responses", title: "Code Blue and Rapid Response Leadership", section: "teaching-resources", artifact_type: "teaching site", analysis_language: "Quarto", license: "MIT", selected_work: true, order: 280, live_url: "https://reblocke.github.io/U-of-U-IM-Codes-and-Rapid-Responses/", live_label: "Teaching site", data_availability: "Educational materials only."}
   - {id: "repo:reblocke/fellow_stats", repository: "reblocke/fellow_stats", title: "PCCM Fellows Statistics Workshop", section: "teaching-resources", artifact_type: "teaching site", license: "MIT", selected_work: true, order: 290, data_availability: "Teaching materials only."}
-  - {id: "repo:reblocke/intro_clin_research", repository: "reblocke/intro_clin_research", title: "Introduction to Clinical Research", section: "teaching-resources", artifact_type: "teaching site", license: "MIT", selected_work: true, order: 300, data_availability: "Teaching materials only."}
+  - {id: "repo:reblocke/intro_clin_research", repository: "reblocke/intro_clin_research", title: "Introduction to Clinical Research", section: "teaching-resources", artifact_type: "teaching site", license: "MIT", selected_work: true, order: 300, live_url: "https://reblocke.github.io/intro_clin_research/", live_label: "Teaching site", data_availability: "Teaching materials only."}
   - {id: "repo:reblocke/NRH-SCI-Vent", repository: "reblocke/NRH-SCI-Vent", title: "Post-Acute Ventilator Weaning and Discharge Outcomes in Cervical Spinal Cord Injury", section: "health-services", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1177/19433654261428406", display_with: "doi:10.1177/19433654261428406", license: "MIT", selected_work: false, order: 310, data_availability: "Restricted EHR data are not public."}
   - {id: "repo:reblocke/Hypercap-CC-NLP", repository: "reblocke/Hypercap-CC-NLP", title: "Hypercapnia Presenting-Concern NLP Study", section: "respiratory-failure", artifact_type: "reproducible NLP analysis", analysis_language: "Python", related_id: "doi:10.64898/2026.07.03.26357242", display_with: "doi:10.64898/2026.07.03.26357242", license: "MIT", selected_work: false, order: 315, data_availability: "Restricted MIMIC-IV data are not public; access requires PhysioNet credentials and applicable approvals."}
   - {id: "repo:reblocke/CSA-CPAP-Prescribing", repository: "reblocke/CSA-CPAP-Prescribing", title: "Central Sleep Apnea CPAP Prescribing", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1007/s00408-023-00657-z", license: "MIT", selected_work: false, order: 320, data_availability: "Restricted clinical sleep-center data are not public."}
@@ -483,9 +507,9 @@ repositories:
   - {id: "repo:reblocke/tele_crit_care", repository: "reblocke/tele_crit_care", title: "Tele-critical Care Transfers During COVID", section: "health-services", artifact_type: "research code", analysis_language: "Stata", license: "MIT", selected_work: false, order: 450, data_availability: "Restricted clinical operations data are not public."}
   - {id: "repo:reblocke/clinical_talks", repository: "reblocke/clinical_talks", title: "Clinical Talks", section: "teaching-resources", artifact_type: "teaching site", analysis_language: "Quarto", license: "MIT", selected_work: false, order: 460, data_availability: "Teaching materials only."}
   - {id: "repo:reblocke/stata-codex-skills", repository: "reblocke/stata-codex-skills", title: "Stata Codex Skills", section: "software-and-repositories", artifact_type: "developer tool", analysis_language: "Python", license: "MIT", selected_work: true, order: 470, data_availability: "No clinical data."}
-  - {id: "repo:reblocke/conf_curve_likelihood", repository: "reblocke/conf_curve_likelihood", title: "Confidence Curves and Likelihood", section: "software-and-repositories", artifact_type: "statistical visualization tool", analysis_language: "Python", license: "MIT", selected_work: true, order: 480, data_availability: "No clinical data."}
+  - {id: "repo:reblocke/conf_curve_likelihood", repository: "reblocke/conf_curve_likelihood", title: "Confidence Curves and Likelihood", section: "software-and-repositories", artifact_type: "statistical visualization tool", analysis_language: "Python", license: "MIT", selected_work: true, order: 480, live_url: "https://reblocke.github.io/conf_curve_likelihood/", live_label: "Live tool", data_availability: "No clinical data."}
   - {id: "repo:reblocke/stewart-light", repository: "reblocke/stewart-light", title: "Stewart-Light Acid-Base Visualization", section: "software-and-repositories", artifact_type: "clinical teaching tool", analysis_language: "Python", license: "MIT", selected_work: false, order: 490, data_availability: "No patient data."}
   - {id: "repo:reblocke/forensic_metascience", repository: "reblocke/forensic_metascience", title: "Forensic Metascience Replications", section: "software-and-repositories", artifact_type: "replication code", analysis_language: "Python", license: "MIT", selected_work: false, order: 500, data_availability: "Public replication data; consult source licenses."}
-  - {id: "repo:reblocke/sofa_resp_sim", repository: "reblocke/sofa_resp_sim", title: "SOFA Respiratory Score Simulation", section: "software-and-repositories", artifact_type: "simulation", analysis_language: "Python", license: "MIT", selected_work: true, order: 510, data_availability: "Simulation data only."}
+  - {id: "repo:reblocke/sofa_resp_sim", repository: "reblocke/sofa_resp_sim", title: "SOFA Respiratory Score Simulation", section: "software-and-repositories", artifact_type: "simulation", analysis_language: "Python", license: "MIT", selected_work: true, order: 510, live_url: "https://reblocke.github.io/sofa_resp_sim/", live_label: "Live tool", data_availability: "Simulation data only."}
   - {id: "repo:reblocke/sodium_change", repository: "reblocke/sodium_change", title: "Sodium Change Probability", section: "software-and-repositories", artifact_type: "clinical teaching tool", analysis_language: "Python", license: "MIT", selected_work: false, order: 520, data_availability: "No patient data."}
   - {id: "repo:reblocke/dx_chat_entropy", repository: "reblocke/dx_chat_entropy", title: "Diagnostic Chat Entropy", section: "evidence-and-prediction", artifact_type: "research code", analysis_language: "Python", related_id: "doi:10.1038/s41598-025-29069-0", display_with: "doi:10.1038/s41598-025-29069-0", license: "MIT", selected_work: false, order: 530, data_availability: "No private chat transcripts are published."}

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /talks/2022-HCO3-BARIATRIC
+permalink: /talks/2023-PA-SIZE
 redirect_to: /cv/#presentations
 sitemap: false
 ---

@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /publications/
-redirect_to: /work/
+permalink: /talks/
+redirect_to: /cv/#presentations
 sitemap: false
 ---

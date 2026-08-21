@@ -1,6 +1,8 @@
 ---
 permalink: /NOTICE/
 title: "Notice"
+description: "Copyright and license notice for Brian W. Locke's academic website."
+robots: "noindex,follow"
 sitemap: false
 ---
 # Notice

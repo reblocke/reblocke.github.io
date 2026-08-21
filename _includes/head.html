@@ -1,18 +1,24 @@
 {% assign person = site.data.person %}
 {% assign page_title = page.title | default: person.name %}
 {% if page.url == "/" %}
-  {% assign page_description = person.research_statement %}
+  {% assign page_description = page.description | default: person.research_statement %}
 {% else %}
   {% assign page_description = page.description | default: person.summary %}
 {% endif %}
 {% assign canonical_url = page.url | absolute_url %}
 {% assign social_image = person.social_preview %}
-{% capture social_title %}{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · Brian Locke{% endif %}{% endcapture %}
-{% assign social_title = social_title | strip %}
+{% capture fallback_seo_title %}{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · Brian Locke{% endif %}{% endcapture %}
+{% assign fallback_seo_title = fallback_seo_title | strip %}
+{% assign seo_title = page.seo_title | default: fallback_seo_title | strip %}
+{% assign robots_content = page.robots | default: "" | strip %}
+{% assign robots_normalized = robots_content | downcase %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ social_title }}</title>
+<title>{{ seo_title | escape }}</title>
 <meta name="description" content="{{ page_description | escape }}">
+{% if robots_content != "" %}
+<meta name="robots" content="{{ robots_content | escape }}">
+{% endif %}
 {% if page.url == "/" and site.google_site_verification %}
 <meta name="google-site-verification" content="{{ site.google_site_verification | escape }}">
 {% endif %}
@@ -20,7 +26,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Brian W. Locke">
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="{{ social_title | escape }}">
+<meta property="og:title" content="{{ seo_title | escape }}">
 <meta property="og:description" content="{{ page_description | escape }}">
 <meta property="og:url" content="{{ canonical_url }}">
 <meta property="og:image" content="{{ social_image.path | absolute_url }}">
@@ -29,7 +35,7 @@
 <meta property="og:image:height" content="{{ social_image.height }}">
 <meta property="og:image:alt" content="{{ social_image.alt | escape }}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ social_title | escape }}">
+<meta name="twitter:title" content="{{ seo_title | escape }}">
 <meta name="twitter:description" content="{{ page_description | escape }}">
 <meta name="twitter:image" content="{{ social_image.path | absolute_url }}">
 <meta name="twitter:image:alt" content="{{ social_image.alt | escape }}">
@@ -38,4 +44,6 @@
 <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32">
 <link rel="apple-touch-icon" href="{{ '/apple-touch-icon.png' | relative_url }}" sizes="180x180">
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+{% unless robots_normalized contains "noindex" %}
 {% include person-jsonld.html %}
+{% endunless %}

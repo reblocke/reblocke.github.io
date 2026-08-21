@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /talks/2025-Spiro-COPD
-redirect_to: /cv/#presentations
+permalink: /teaching/2016-01-01-Prior-Residency
+redirect_to: /cv/#teaching-and-curriculum
 sitemap: false
 ---
