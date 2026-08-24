@@ -16,7 +16,6 @@ PROHIBITED_TITLES = [
 ].freeze
 EXPECTED_CANONICAL_ROUTES = [
   "/",
-  "/bio/",
   "/work/",
   "/publications/",
   "/topics/hypercapnic-respiratory-failure/",
@@ -419,7 +418,11 @@ unless Array(navigation["main"]) == expected_navigation
   errors << "principal navigation must be exactly About, Work, and CV"
 end
 redirects = Array(routes["redirects"])
-errors << "redirect registry must contain exactly 31 routes" unless redirects.length == 31
+errors << "redirect registry must contain exactly 32 routes" unless redirects.length == 32
+bio_redirect = redirects.find { |redirect| redirect["from"] == "/bio/" }
+unless bio_redirect == {"from" => "/bio/", "to" => "/#about"}
+  errors << "redirect registry must map /bio/ exactly to /#about"
+end
 redirect_sources = redirects.filter_map { |redirect| redirect["from"] }
 duplicate_redirects = redirect_sources.tally.select { |_route, count| count > 1 }.keys
 errors << "duplicate redirect routes: #{duplicate_redirects.join(', ')}" unless duplicate_redirects.empty?

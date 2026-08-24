@@ -65,7 +65,7 @@ Pull requests and `master` run the same `bin/check` build. A push to `master` de
 
 ## Search discovery and Search Console
 
-The generated `sitemap.xml` contains only the seven canonical routes: `/`, `/bio/`, `/work/`, `/publications/`, `/topics/hypercapnic-respiratory-failure/`, `/cv/`, and `/research-repositories/`. The generated `robots.txt` allows crawling and advertises `https://reblocke.github.io/sitemap.xml`. Canonical and historical redirect pages must not carry blocking `robots`, `googlebot`, or `bingbot` directives. The 404 and Notice pages are intentionally excluded with `noindex,follow` and omitted from the sitemap.
+The generated `sitemap.xml` contains only the six canonical routes: `/`, `/work/`, `/publications/`, `/topics/hypercapnic-respiratory-failure/`, `/cv/`, and `/research-repositories/`. The former `/bio/` route redirects to the homepage About section. The generated `robots.txt` allows crawling and advertises `https://reblocke.github.io/sitemap.xml`. Canonical and historical redirect pages must not carry blocking `robots`, `googlebot`, or `bingbot` directives. The 404 and Notice pages are intentionally excluded with `noindex,follow` and omitted from the sitemap.
 
 Each canonical page has a unique search title and description, a self-canonical URL, at least one crawlable internal link, and one schema.org `@graph` grounded in the canonical person data. `bin/check` verifies those contracts as well as rendered coverage of all non-abstract publications and the curated respiratory topic. These controls support ordinary crawler discovery without a Google account, but they do not provide Search Console reports or prove that Google has indexed a URL.
 
@@ -75,7 +75,7 @@ A signed-in maintainer completes the Google-side handoff from [Google Search Con
 
 1. Confirm that the live homepage contains the exact verification tag, then select **Verify** for the URL-prefix property.
 2. In **Sitemaps**, submit `sitemap.xml`.
-3. Use **URL inspection** for the seven canonical routes listed above and request indexing when useful.
+3. Use **URL inspection** for the six canonical routes listed above and request indexing when useful.
 
 The HTML verification tag is intentionally public. Google passwords, OAuth authorization codes, access or refresh tokens, recovery codes, and browser-session data are secrets and must never be committed or shared for this workflow. Sitemap submission and indexing requests are asynchronous and do not guarantee immediate indexing.
 

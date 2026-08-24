@@ -5,7 +5,6 @@
 ## Principal pages
 
 - About: https://reblocke.github.io/
-- Biography: https://reblocke.github.io/bio/
 - Work: https://reblocke.github.io/work/
 - Publications: https://reblocke.github.io/publications/
 - Hypercapnic Respiratory Failure and Respiratory Measurement: https://reblocke.github.io/topics/hypercapnic-respiratory-failure/

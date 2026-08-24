@@ -1,6 +1,5 @@
 canonical:
   - "/"
-  - "/bio/"
   - "/work/"
   - "/publications/"
   - "/topics/hypercapnic-respiratory-failure/"
@@ -38,5 +37,6 @@ redirects:
   - {from: "/teaching/2019-Fall-JC", to: "/cv/#teaching-and-curriculum"}
   - {from: "/teaching/2019-Fall-Resident-Research", to: "/cv/#teaching-and-curriculum"}
   - {from: "/teaching/2020-Tutorials", to: "/cv/#teaching-and-curriculum"}
+  - {from: "/bio/", to: "/#about"}
 retired:
   - "/sitemap/"

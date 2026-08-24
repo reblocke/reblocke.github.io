@@ -132,16 +132,12 @@ def duplicate_graph_id(site: Path) -> None:
     mutate_graph(site, "/", mutation)
 
 
-def remove_bio_incoming_links(site: Path) -> None:
-    changed = 0
-    for path in site.rglob("*.html"):
-        text = path.read_text(encoding="utf-8")
-        updated, count = re.subn(r'href="/bio/"', 'href="/work/"', text)
-        if count:
-            path.write_text(updated, encoding="utf-8")
-            changed += count
-    if not changed:
-        raise RuntimeError("no /bio/ incoming links found to mutate")
+def remove_integrated_biography(site: Path) -> None:
+    replace_once(
+        route_file(site, "/"),
+        "My research examines how respiratory failure is recognized, measured, and managed across health systems, with particular emphasis on hypercapnic respiratory failure and care after hospitalization. I use linked EHR and claims data, computable phenotypes, clinical prediction, causal inference, and pragmatic trials, and develop reproducible analytical tools in Stata, R, and Python.",
+        "Biography paragraph removed.",
+    )
 
 
 def remove_topic_from_sitemap(site: Path) -> None:
@@ -182,9 +178,9 @@ def mutations() -> list[Mutation]:
         ),
         Mutation(
             "duplicate-canonical",
-            "/bio/ has 2 canonical links",
+            "/cv/ has 2 canonical links",
             lambda site: inject_head_meta(
-                site, "/bio/", '<link rel="canonical" href="https://reblocke.github.io/bio/">'
+                site, "/cv/", '<link rel="canonical" href="https://reblocke.github.io/cv/">'
             ),
         ),
         Mutation(
@@ -198,17 +194,17 @@ def mutations() -> list[Mutation]:
         ),
         Mutation(
             "wrong-description",
-            "/bio/ description is",
+            "/ description is",
             lambda site: replace_once(
-                route_file(site, "/bio/"),
-                "Biography of Brian W. Locke, MD, MSCI, an Intermountain Health pulmonary and critical care physician-scientist and University of Utah fellowship faculty member.",
+                route_file(site, "/"),
+                "Brian W. Locke is a pulmonary and critical care physician-scientist studying respiratory failure, clinical data, prediction, causal inference, and pragmatic trials.",
                 "Generic biography.",
             ),
         ),
         Mutation(
-            "missing-incoming-link",
-            "/bio/ has no incoming crawlable link",
-            remove_bio_incoming_links,
+            "homepage-biography",
+            "/ About biography paragraphs must exactly match person.yml",
+            remove_integrated_biography,
         ),
         Mutation(
             "redirect-visible-target",

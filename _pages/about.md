@@ -23,10 +23,11 @@ schema_main_entity: true
   </picture>
 </section>
 
-<section class="site-container section prose" aria-labelledby="about-heading">
+<section class="site-container section prose" id="about" aria-labelledby="about-heading">
   <h2 id="about-heading">About</h2>
-  <p>{{ person.summary }}</p>
-  <p><a href="/bio/">Full biography</a></p>
+  {% for paragraph in person.biography %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
 </section>
 
 <section class="section section--surface">
