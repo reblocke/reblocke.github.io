@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: var(--space-4);
 }
+.site-header__inner--home { justify-content: flex-end; }
 .site-name {
   color: var(--color-ink);
   font-family: var(--font-serif);

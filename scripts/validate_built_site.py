@@ -12,6 +12,7 @@ import struct
 import subprocess
 import sys
 from collections import Counter
+from html import unescape
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
@@ -22,7 +23,6 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SITE = ROOT / "_site"
 CANONICAL_ROUTES = (
     "/",
-    "/bio/",
     "/work/",
     "/publications/",
     "/topics/hypercapnic-respiratory-failure/",
@@ -32,7 +32,6 @@ CANONICAL_ROUTES = (
 CANONICAL = set(CANONICAL_ROUTES)
 SOCIAL_TITLES = {
     "/": "Brian W. Locke, MD, MSCI | Pulmonary & Critical Care Research",
-    "/bio/": "Brian W. Locke, MD, MSCI | Physician-Scientist Biography",
     "/work/": "Respiratory Failure Research & Software | Brian W. Locke",
     "/publications/": "Publications | Brian W. Locke, MD, MSCI",
     "/topics/hypercapnic-respiratory-failure/": "Hypercapnic Respiratory Failure Research | Brian W. Locke",
@@ -41,7 +40,6 @@ SOCIAL_TITLES = {
 }
 EXPECTED_DESCRIPTIONS = {
     "/": "Brian W. Locke is a pulmonary and critical care physician-scientist studying respiratory failure, clinical data, prediction, causal inference, and pragmatic trials.",
-    "/bio/": "Biography of Brian W. Locke, MD, MSCI, an Intermountain Health pulmonary and critical care physician-scientist and University of Utah fellowship faculty member.",
     "/work/": "Research, publications, software, and teaching by Brian W. Locke on hypercapnic respiratory failure, respiratory measurement, clinical data, and prediction.",
     "/publications/": "Peer-reviewed publications, reviews, editorials, preprints, and scholarly products by Brian W. Locke, with DOI and PubMed links.",
     "/topics/hypercapnic-respiratory-failure/": "Research by Brian W. Locke on recognizing, measuring, and managing hypercapnic respiratory failure using clinical data, physiologic measurement, and reproducible methods.",
@@ -50,14 +48,13 @@ EXPECTED_DESCRIPTIONS = {
 }
 SCHEMA_TYPES = {
     "/": "WebPage",
-    "/bio/": "ProfilePage",
     "/work/": "CollectionPage",
     "/publications/": "CollectionPage",
     "/topics/hypercapnic-respiratory-failure/": "CollectionPage",
     "/cv/": "WebPage",
     "/research-repositories/": "CollectionPage",
 }
-MAIN_ENTITY_ROUTES = {"/", "/bio/"}
+MAIN_ENTITY_ROUTES = {"/"}
 SOCIAL_IMAGE = "https://reblocke.github.io/images/social-preview.png"
 SOCIAL_IMAGE_ALT = (
     "Portrait of Brian W. Locke with his name and pulmonary and critical care "
@@ -163,6 +160,10 @@ class PageParser(HTMLParser):
 
 def route_file(site: Path, route: str) -> Path:
     return site / ("index.html" if route == "/" else route.strip("/") + "/index.html")
+
+
+def normalized_text(fragment: str) -> str:
+    return " ".join(unescape(re.sub(r"<[^>]+>", " ", fragment)).split())
 
 
 def redirect_file(site: Path, route: str) -> Path:
@@ -516,6 +517,54 @@ def validate(site: Path) -> list[str]:
     if len(set(canonical_descriptions)) != len(CANONICAL_ROUTES):
         errors.append("canonical page descriptions must be unique")
 
+    homepage_path = route_file(site, "/")
+    if homepage_path.exists():
+        homepage_html = homepage_path.read_text(encoding="utf-8", errors="replace")
+        about_match = re.search(
+            r'<section\b[^>]*\bid="about"[^>]*>(.*?)</section>',
+            homepage_html,
+            flags=re.DOTALL,
+        )
+        if about_match is None:
+            errors.append("/ is missing the #about biography section")
+        else:
+            biography = person.get("biography")
+            if not isinstance(biography, list) or len(biography) != 3:
+                errors.append("person biography must contain three paragraphs")
+            else:
+                rendered_paragraphs = [
+                    normalized_text(match.group(1))
+                    for match in re.finditer(
+                        r"<p(?:\s[^>]*)?>(.*?)</p>",
+                        about_match.group(1),
+                        flags=re.DOTALL,
+                    )
+                ]
+                expected_paragraphs = [
+                    " ".join(str(paragraph).split()) for paragraph in biography
+                ]
+                if rendered_paragraphs != expected_paragraphs:
+                    errors.append("/ About biography paragraphs must exactly match person.yml")
+        if re.search(r'<a\b[^>]*class="[^"]*\bsite-name\b[^"]*"', homepage_html):
+            errors.append("/ must not render the compact site-name link")
+
+    display_name = person.get("schema", {}).get("display_name")
+    expected_site_name = f'<a class="site-name" href="/">{display_name}</a>'
+    for route in CANONICAL_ROUTES:
+        if route == "/":
+            continue
+        path = route_file(site, route)
+        if path.exists():
+            page_html = path.read_text(encoding="utf-8", errors="replace")
+            if page_html.count(expected_site_name) != 1:
+                errors.append(
+                    f"{route} must render one canonical compact site-name home link"
+                )
+
+    for route, parser in canonical_pages.items():
+        if "/bio/" in parser.hrefs:
+            errors.append(f"{route} must not link to the retired /bio/ route")
+
     incoming: dict[str, set[str]] = {route: set() for route in CANONICAL_ROUTES}
     for source_route, parser in canonical_pages.items():
         for link in parser.links:
@@ -530,8 +579,10 @@ def validate(site: Path) -> list[str]:
             errors.append(f"{route} has no incoming crawlable link from a canonical page")
 
     redirects = generated_redirects()
-    if len(redirects) != 31:
-        errors.append(f"generated redirect count is {len(redirects)}, expected 31")
+    if len(redirects) != 32:
+        errors.append(f"generated redirect count is {len(redirects)}, expected 32")
+    if redirects.get("/bio/") != "/#about":
+        errors.append("generated /bio/ redirect must target /#about")
     for route, target in redirects.items():
         path = redirect_file(site, route)
         if not path.exists():

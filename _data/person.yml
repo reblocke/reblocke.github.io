@@ -27,20 +27,19 @@ clinical_context:
   - "Schmidt Chest Clinic"
 biography:
   - >-
-    Brian W. Locke is a pulmonary and critical care physician-scientist and
-    Assistant Professor of Research at Intermountain Health. He practices in
-    the Shock Trauma ICU and Schmidt Chest Clinic and serves as core faculty in
-    the University of Utah Pulmonary and Critical Care Fellowship.
+    I practice in the Shock Trauma ICU and Schmidt Chest Clinic and serve as
+    core faculty in the University of Utah Pulmonary and Critical Care
+    Fellowship.
   - >-
-    His research examines how respiratory failure is recognized, measured,
+    My research examines how respiratory failure is recognized, measured,
     and managed across health systems, with particular emphasis on hypercapnic
-    respiratory failure and care after hospitalization. He uses linked EHR and
+    respiratory failure and care after hospitalization. I use linked EHR and
     claims data, computable phenotypes, clinical prediction, causal inference,
-    and pragmatic trials, and develops reproducible analytical tools in Stata,
+    and pragmatic trials, and develop reproducible analytical tools in Stata,
     R, and Python.
   - >-
-    Separately, he advises MTN on clinical evidence and healthcare applications
-    of adaptive data integration.
+    Separately from my role at Intermountain Health, my work with MTN focuses on
+    clinical evidence and healthcare applications of adaptive data integration.
 research_themes:
   - title: "Respiratory failure"
     description: "Measurement, hypercapnia, and care after hospitalization."

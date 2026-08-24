@@ -7,7 +7,7 @@
 {% endif %}
 {% assign canonical_url = page.url | absolute_url %}
 {% assign social_image = person.social_preview %}
-{% capture fallback_seo_title %}{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · Brian Locke{% endif %}{% endcapture %}
+{% capture fallback_seo_title %}{% if page.url == "/" %}{{ person.name }}{% else %}{{ page_title }} · {{ person.schema.display_name }}{% endif %}{% endcapture %}
 {% assign fallback_seo_title = fallback_seo_title | strip %}
 {% assign seo_title = page.seo_title | default: fallback_seo_title | strip %}
 {% assign robots_content = page.robots | default: "" | strip %}
