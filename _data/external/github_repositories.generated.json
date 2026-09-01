@@ -39,7 +39,7 @@
     "default_branch": "main",
     "latest_release": "v0.3.0",
     "created_at": "2026-07-12T11:28:46Z",
-    "updated_at": "2026-07-12T11:46:00Z"
+    "updated_at": "2026-08-18T15:06:57Z"
   },
   {
     "full_name": "reblocke/Bari-CPAP",
@@ -277,7 +277,7 @@
     "default_branch": "main",
     "latest_release": null,
     "created_at": "2024-12-06T23:08:45Z",
-    "updated_at": "2026-06-05T00:54:43Z"
+    "updated_at": "2026-08-18T15:08:43Z"
   },
   {
     "full_name": "reblocke/fellow_stats",
@@ -389,7 +389,7 @@
     "default_branch": "main",
     "latest_release": "v0.1.1",
     "created_at": "2025-10-10T18:04:05Z",
-    "updated_at": "2026-06-23T14:53:45Z"
+    "updated_at": "2026-08-26T02:26:35Z"
   },
   {
     "full_name": "reblocke/Hypercap-Trial-Adverse-Events",
@@ -452,7 +452,7 @@
     "default_branch": "main",
     "latest_release": "v1.1.0",
     "created_at": "2025-02-01T02:26:43Z",
-    "updated_at": "2026-08-04T19:03:10Z"
+    "updated_at": "2026-08-21T03:38:09Z"
   },
   {
     "full_name": "reblocke/NHPI-OSA-Burden",
@@ -529,12 +529,25 @@
   },
   {
     "full_name": "reblocke/reblocke.github.io",
-    "description": "Github Pages template for academic personal websites, forked from mmistakes/minimal-mistakes",
+    "description": "Academic website of Brian W. Locke, MD, MSCI—pulmonary and critical care physician-scientist studying respiratory failure, clinical data, prediction, and pragmatic trials.",
     "html_url": "https://github.com/reblocke/reblocke.github.io",
     "visibility": "public",
     "archived": false,
     "fork": false,
-    "topics": [],
+    "topics": [
+      "academic-website",
+      "causal-inference",
+      "clinical-informatics",
+      "clinical-research",
+      "critical-care",
+      "github-pages",
+      "hypercapnia",
+      "physician-scientist",
+      "pragmatic-trials",
+      "pulmonary-medicine",
+      "reproducible-research",
+      "respiratory-failure"
+    ],
     "primary_language": "HTML",
     "default_branch": "master",
     "latest_release": null,
@@ -567,7 +580,7 @@
     "default_branch": "main",
     "latest_release": null,
     "created_at": "2026-01-28T01:28:52Z",
-    "updated_at": "2026-06-05T14:06:35Z"
+    "updated_at": "2026-08-18T15:01:19Z"
   },
   {
     "full_name": "reblocke/sofa_resp_sim",
@@ -619,7 +632,7 @@
     "default_branch": "main",
     "latest_release": null,
     "created_at": "2026-03-22T18:59:10Z",
-    "updated_at": "2026-08-04T19:06:49Z"
+    "updated_at": "2026-08-18T18:53:02Z"
   },
   {
     "full_name": "reblocke/StateVetsHome",
@@ -697,7 +710,7 @@
     "default_branch": "main",
     "latest_release": null,
     "created_at": "2025-02-14T00:15:39Z",
-    "updated_at": "2026-06-05T00:53:24Z"
+    "updated_at": "2026-08-08T04:40:26Z"
   },
   {
     "full_name": "reblocke/tele_crit_care",
@@ -725,7 +738,7 @@
     "default_branch": "main",
     "latest_release": "v0.2.0",
     "created_at": "2024-04-12T15:29:15Z",
-    "updated_at": "2026-08-04T19:14:30Z"
+    "updated_at": "2026-08-18T14:51:33Z"
   },
   {
     "full_name": "reblocke/TriNetXHypercapnia",
@@ -796,7 +809,7 @@
     "default_branch": "main",
     "latest_release": null,
     "created_at": "2026-08-02T21:20:55Z",
-    "updated_at": "2026-08-02T21:35:04Z"
+    "updated_at": "2026-08-18T14:28:47Z"
   },
   {
     "full_name": "reblocke/vr_icu",
