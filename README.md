@@ -33,7 +33,13 @@ bin/check
 
 `bin/check` is deterministic and uses only repository-local inputs. It validates source data, regenerability, the built site, canonical indexability, structured-data graphs, rendered publication/topic completeness, and negative mutations that must be rejected. The built-site validator and mutation suite also accept an alternate artifact through `--site PATH`.
 
-The separate **Repository readiness audit** workflow performs the networked public-repository checks monthly and on demand. To run that advisory audit locally with GitHub authentication:
+The separate **Repository readiness audit** workflow inventories public repository
+documentation monthly and on demand. It resolves one commit per repository and
+reports file access, exact README casing, placeholders and structural term matches.
+Its result is **not** semantic documentation acceptance, scientific reproduction,
+or release readiness; semantic review is reported as `not_evaluated`. An absent
+license or agent-instruction file is an observation unless an applicable project
+policy requires it. To run the advisory inventory locally with GitHub authentication:
 
 ```bash
 GH_TOKEN="$(gh auth token)" python3 scripts/audit_llm_readiness.py --manifest research-repositories.csv --advisory
