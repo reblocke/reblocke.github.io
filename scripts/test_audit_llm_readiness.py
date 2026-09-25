@@ -160,6 +160,18 @@ class AuditorTests(unittest.TestCase):
             self.assertTrue(result.problems)
             self.assertTrue(any(f"source-link inventory {outcome}" in p for p in result.problems))
 
+    def test_common_reference_forms_and_fenced_examples(self):
+        readme = (
+            "[full][run] [run][] [run]\n"
+            "[run]: scripts/real.py\n"
+            "```md\n[example](scripts/not-real.py)\n```\n"
+        )
+        self.assertEqual(audit.linked_source_paths(readme), {"scripts/real.py"})
+
+    def test_malformed_links_do_not_abort_inventory(self):
+        readme = "[empty]( ) [bad](http://[invalid) [good](scripts/real.py)"
+        self.assertEqual(audit.linked_source_paths(readme), {"scripts/real.py"})
+
     def test_unknown_role_does_not_invent_license_or_agent_obligations(self):
         run, _ = fake_api(["README.md"], "Purpose.")
         with patch.object(audit, "run_gh", run):

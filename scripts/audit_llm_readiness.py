@@ -220,6 +220,25 @@ def fetch_tree(repo: str, snapshot: Snapshot) -> TreeRead:
 def linked_source_paths(readme: str) -> set[str]:
     """Find common inline and reference links to local tracked-code locations."""
     paths: set[str] = set()
+    visible_lines: list[str] = []
+    fence_char = ""
+    fence_width = 0
+    for line in readme.splitlines():
+        fence = re.match(r"^ {0,3}(`{3,}|~{3,})", line)
+        if fence:
+            marker = fence.group(1)
+            if not fence_char:
+                fence_char, fence_width = marker[0], len(marker)
+            elif (
+                marker[0] == fence_char
+                and len(marker) >= fence_width
+                and not line[fence.end() :].strip()
+            ):
+                fence_char, fence_width = "", 0
+            continue
+        if not fence_char:
+            visible_lines.append(line)
+    readme = "\n".join(visible_lines)
     definitions = {
         label.casefold(): angle or bare
         for label, angle, bare in re.findall(
@@ -229,17 +248,27 @@ def linked_source_paths(readme: str) -> set[str]:
     }
     raw_links = re.findall(r"\]\(([^)]+)\)", readme)
     raw_links.extend(
+        definitions[(reference or label).casefold()]
+        for label, reference in re.findall(r"\[([^\]]+)\]\[([^\]]*)\]", readme)
+        if (reference or label).casefold() in definitions
+    )
+    raw_links.extend(
         definitions[label.casefold()]
-        for label in re.findall(r"\]\[([^\]]+)\]", readme)
+        for label in re.findall(r"\[([^\]]+)\](?![\[(:])", readme)
         if label.casefold() in definitions
     )
     for raw in raw_links:
         target = raw.strip()
+        if not target:
+            continue
         if target.startswith("<") and ">" in target:
             target = target[1 : target.index(">")]
         else:
             target = target.split()[0]
-        parsed = urlsplit(target)
+        try:
+            parsed = urlsplit(target)
+        except ValueError:
+            continue
         if parsed.scheme or parsed.netloc or not parsed.path:
             continue
         path = unquote(parsed.path.removeprefix("/").removeprefix("./"))
