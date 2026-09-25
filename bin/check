@@ -5,6 +5,7 @@ repo_root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$repo_root"
 
 bundle exec ruby scripts/test_metadata_reconciliation.rb
+python3 scripts/test_audit_llm_readiness.py
 bundle exec ruby scripts/validate_site_data.rb
 bundle exec ruby scripts/generate_indexes.rb --check
 bundle exec jekyll build --trace
