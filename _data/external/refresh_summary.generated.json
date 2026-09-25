@@ -2,20 +2,52 @@
   "github": {
     "added": [],
     "removed": [],
-    "changed": []
+    "changed": [
+      "reblocke/Hypercap-CC-NLP",
+      "reblocke/VBG_interpreter",
+      "reblocke/ards-nlp",
+      "reblocke/dx_chat_entropy",
+      "reblocke/llm_estimate_lrs",
+      "reblocke/reblocke.github.io",
+      "reblocke/sodium_change",
+      "reblocke/stata-codex-skills",
+      "reblocke/tcco2-accuracy",
+      "reblocke/trinetx-preprocessing"
+    ]
   },
   "orcid": {
-    "added": [],
+    "added": [
+      223521532
+    ],
     "removed": [],
-    "changed": []
+    "changed": [
+      208120514,
+      208336169
+    ]
   },
   "crossref": {
-    "added": [],
+    "added": [
+      "10.1007/978-3-032-17790-2_39",
+      "10.1038/s41598-026-61766-2",
+      "10.1093/ajrccm/aamag162.1058",
+      "10.1093/ajrccm/aamag162.2740",
+      "10.1093/ajrccm/aamag162.4637",
+      "10.1093/ajrccm/aamag162.4737",
+      "10.1093/ajrccm/aamag162.6420",
+      "10.1093/ajrccm/aamag162.939",
+      "10.32873/unmc.dc.gmerj.8.1.004"
+    ],
     "removed": [],
-    "changed": []
+    "changed": [
+      "10.1177/19433654261428406"
+    ]
   },
   "pubmed": {
-    "added": [],
+    "added": [
+      "39864505",
+      "40885535",
+      "42436230"
+    ],
     "removed": [],
     "changed": []
   }

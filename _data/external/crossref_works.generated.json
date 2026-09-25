@@ -27,6 +27,15 @@
     "url": "https://doi.org/10.1007/978-3-031-66538-7_4"
   },
   {
+    "doi": "10.1007/978-3-032-17790-2_39",
+    "title": "Exploring the Impact of Virtual Reality Interventions on Autonomic Arousal in ICU Patients",
+    "authors": "Finkelstein, Joseph; Gabriel, Aileen S.; Locke, Brian W.; Tsai, Te-Yi; Reategui-Rivera, C. Mahony; Smiley, Aref",
+    "venue": "Proceedings of the 2025 World Conference of the International Society for Virtual Rehabilitation",
+    "year": 2026,
+    "type": "book-chapter",
+    "url": "https://doi.org/10.1007/978-3-032-17790-2_39"
+  },
+  {
     "doi": "10.1007/s00408-023-00657-z",
     "title": "Predictors of Initial CPAP Prescription and Subsequent Course with CPAP in Patients with Central Sleep Apneas at a Single Center",
     "authors": "Locke, Brian W.; Sellman, Jeffrey; McFarland, Jonathan; Uribe, Francisco; Workman, Kimberly; Sundar, Krishna M.",
@@ -88,6 +97,69 @@
     "year": 2025,
     "type": "journal-article",
     "url": "https://doi.org/10.1038/s41598-025-29069-0"
+  },
+  {
+    "doi": "10.1038/s41598-026-61766-2",
+    "title": "Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion",
+    "authors": "Chong, Paul; He, Shuhan; Samadian, Kian; Mohamed, Amal; Peng, Boyu; Chua, Emma; Rohlfsen, Cory; Locke, Brian W.",
+    "venue": "Scientific Reports",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1038/s41598-026-61766-2"
+  },
+  {
+    "doi": "10.1093/ajrccm/aamag162.1058",
+    "title": "C56-19 Beyond Verification: Exploring Resident Attitudes and Behaviors in Code-Status Discussions",
+    "authors": "Long, C; Langmann, G A; Hirshberg, E L; Locke, B W",
+    "venue": "American Journal of Respiratory and Critical Care Medicine",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/ajrccm/aamag162.1058"
+  },
+  {
+    "doi": "10.1093/ajrccm/aamag162.2740",
+    "title": "C58-05 Epidemiology of Sarcoidosis in Utah: Incidence, Organ Involvement, and Mortality Compared With National Benchmarks",
+    "authors": "Anderson-Bell, D; Scarpato, B; Locke, B W",
+    "venue": "American Journal of Respiratory and Critical Care Medicine",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/ajrccm/aamag162.2740"
+  },
+  {
+    "doi": "10.1093/ajrccm/aamag162.4637",
+    "title": "A55-47 Prognostic Value of Hypercapnia by ABG vs VBG: A Propensity-Weighted, Multicenter EHR Cohort",
+    "authors": "Mehta, A; Brown, J P; Gouripeddi, R; Peltan, I D; Locke, B W",
+    "venue": "American Journal of Respiratory and Critical Care Medicine",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/ajrccm/aamag162.4637"
+  },
+  {
+    "doi": "10.1093/ajrccm/aamag162.4737",
+    "title": "C75-09 Chief Complaint Profiles in Hypercapnic Respiratory Failure: A Natural Language Processing Study of MIMIC-IV",
+    "authors": "Merdad, R H; Crawford, M; Christenson, M; Pettine, W; Locke, B",
+    "venue": "American Journal of Respiratory and Critical Care Medicine",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/ajrccm/aamag162.4737"
+  },
+  {
+    "doi": "10.1093/ajrccm/aamag162.6420",
+    "title": "C75-05 Costs Surrounding Index Hospitalization for Any-Cause Hypercapnic Respiratory Failure in an Integrated Healthsystem",
+    "authors": "Locke, B W; Hedges, D; Fowers, R; Green, N; Brown, S M",
+    "venue": "American Journal of Respiratory and Critical Care Medicine",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/ajrccm/aamag162.6420"
+  },
+  {
+    "doi": "10.1093/ajrccm/aamag162.939",
+    "title": "B38-12 Intern Code Blue and Rapid Response Leadership: A Pre-post Evaluation of a Micro-Module Curriculum",
+    "authors": "Situmeang, J; Ryden, A; Long, C W; Krauspe, E; Patel, S; Sheth, R; Locke, B W",
+    "venue": "American Journal of Respiratory and Critical Care Medicine",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.1093/ajrccm/aamag162.939"
   },
   {
     "doi": "10.1093/jtm/taw088",
@@ -154,7 +226,7 @@
   },
   {
     "doi": "10.1177/19433654261428406",
-    "title": "Postacute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury: A Retrospective Analysis",
+    "title": "Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury",
     "authors": "Fenger, Casey; Locke, Brian W.; Barker, James; Tang, William; Creveling, Polly; Foster-Palmer, Stormy; Flis, Alexandra; Park, Kevin; Rosenbluth, Jeffrey; Brown, Jeanette P.",
     "venue": "Respiratory Care",
     "year": 2026,
@@ -178,6 +250,15 @@
     "year": 2024,
     "type": "journal-article",
     "url": "https://doi.org/10.2196/62842"
+  },
+  {
+    "doi": "10.32873/unmc.dc.gmerj.8.1.004",
+    "title": "AI-Based Simulated Patient Encounters for Clinical Reasoning: A Needs Assessment",
+    "authors": "Sorrick, Alex; Liebovitz, David; Vick, Sarah; Parsons, Andrew; Locke, Brian; Herskovitz, Jonathan; Rohlfsen, Cory",
+    "venue": "Graduate Medical Education Research Journal",
+    "year": 2026,
+    "type": "journal-article",
+    "url": "https://doi.org/10.32873/unmc.dc.gmerj.8.1.004"
   },
   {
     "doi": "10.3390/ijerph19095473",

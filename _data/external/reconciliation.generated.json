@@ -91,26 +91,6 @@
       "last_modified": 1726622724795
     },
     {
-      "put_code": 176595730,
-      "title": "Use of High-Dose Hydroxocobalamin for Septic Shock",
-      "type": "journal-article",
-      "year": 2025,
-      "doi": "10.1016/j.chest.2025.01.016",
-      "pmid": null,
-      "url": "https://doi.org/10.1016/j.chest.2025.01.016",
-      "last_modified": 1751969060718
-    },
-    {
-      "put_code": 203326217,
-      "title": "Entropy removal of clinical features.",
-      "type": "journal-article",
-      "year": 2025,
-      "doi": "10.1038/s41598-025-29069-0",
-      "pmid": "41276591",
-      "url": "https://europepmc.org/articles/PMC12749281",
-      "last_modified": 1769134978695
-    },
-    {
       "put_code": 141379455,
       "title": "What explains high self-reports of poor sleep quality in Native Hawaiian/Pacific Islanders?",
       "type": "conference-abstract",
@@ -129,89 +109,79 @@
       "pmid": null,
       "url": "http://dx.doi.org/10.1177/0272989x231192521",
       "last_modified": 1703956814960
-    },
-    {
-      "put_code": 203326255,
-      "title": "Seeing the random forest for the Zzz's: machine learning's new role in sleep science.",
-      "type": "journal-article",
-      "year": 2025,
-      "doi": "10.5664/jcsm.11674",
-      "pmid": "40094162",
-      "url": "https://doi.org/10.5664/jcsm.11674",
-      "last_modified": 1769135069751
     }
   ],
-  "missing_canonical_fields": [
-    {
-      "id": "doi:10.1007/s00408-023-00657-z",
-      "doi": "10.1007/s00408-023-00657-z",
-      "source": "Crossref",
-      "fields": [
-        {
-          "field": "authors",
-          "source": "Locke, Brian W.; Sellman, Jeffrey; McFarland, Jonathan; Uribe, Francisco; Workman, Kimberly; Sundar, Krishna M."
-        }
-      ]
-    }
-  ],
+  "missing_canonical_fields": [],
   "source_conflicts": [
     {
-      "id": "doi:10.1007/978-3-031-66538-7_4",
-      "doi": "10.1007/978-3-031-66538-7_4",
+      "id": "doi:10.1093/ajrccm/aamag162.1058",
+      "doi": "10.1093/ajrccm/aamag162.1058",
       "source": "Crossref",
       "fields": [
         {
-          "field": "title",
-          "canonical": "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Records",
-          "source": "Diagnostic Modeling to Identify Unrecognized Inpatient Hypercapnia Using Health Record Data"
+          "field": "venue",
+          "canonical": "American Thoracic Society International Conference",
+          "source": "American Journal of Respiratory and Critical Care Medicine"
         }
       ]
     },
     {
-      "id": "doi:10.1016/j.chest.2025.08.002",
-      "doi": "10.1016/j.chest.2025.08.002",
+      "id": "doi:10.1093/ajrccm/aamag162.2740",
+      "doi": "10.1093/ajrccm/aamag162.2740",
       "source": "Crossref",
       "fields": [
         {
-          "field": "year",
-          "canonical": 2025,
-          "source": 2026
+          "field": "venue",
+          "canonical": "American Thoracic Society International Conference",
+          "source": "American Journal of Respiratory and Critical Care Medicine"
         }
       ]
     },
     {
-      "id": "doi:10.1016/j.jsmc.2024.02.012",
-      "doi": "10.1016/j.jsmc.2024.02.012",
+      "id": "doi:10.1093/ajrccm/aamag162.4637",
+      "doi": "10.1093/ajrccm/aamag162.4637",
       "source": "Crossref",
       "fields": [
         {
-          "field": "title",
-          "canonical": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Emergency, Inpatient, and Outpatient Settings",
-          "source": "The Role of Obstructive Sleep Apnea in Hypercapnic Respiratory Failure Identified in Critical Care, Inpatient, and Outpatient Settings"
+          "field": "venue",
+          "canonical": "American Thoracic Society International Conference",
+          "source": "American Journal of Respiratory and Critical Care Medicine"
         }
       ]
     },
     {
-      "id": "doi:10.1177/19433654261428406",
-      "doi": "10.1177/19433654261428406",
+      "id": "doi:10.1093/ajrccm/aamag162.4737",
+      "doi": "10.1093/ajrccm/aamag162.4737",
       "source": "Crossref",
       "fields": [
         {
-          "field": "title",
-          "canonical": "Post-Acute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury",
-          "source": "Postacute Ventilator Weaning and Discharge Outcomes in Individuals With Cervical Spinal Cord Injury: A Retrospective Analysis"
+          "field": "venue",
+          "canonical": "American Thoracic Society International Conference",
+          "source": "American Journal of Respiratory and Critical Care Medicine"
         }
       ]
     },
     {
-      "id": "doi:10.4187/respcare.11573",
-      "doi": "10.4187/respcare.11573",
+      "id": "doi:10.1093/ajrccm/aamag162.6420",
+      "doi": "10.1093/ajrccm/aamag162.6420",
       "source": "Crossref",
       "fields": [
         {
-          "field": "year",
-          "canonical": 2024,
-          "source": 2023
+          "field": "venue",
+          "canonical": "American Thoracic Society International Conference",
+          "source": "American Journal of Respiratory and Critical Care Medicine"
+        }
+      ]
+    },
+    {
+      "id": "doi:10.1093/ajrccm/aamag162.939",
+      "doi": "10.1093/ajrccm/aamag162.939",
+      "source": "Crossref",
+      "fields": [
+        {
+          "field": "venue",
+          "canonical": "American Thoracic Society International Conference",
+          "source": "American Journal of Respiratory and Critical Care Medicine"
         }
       ]
     }
