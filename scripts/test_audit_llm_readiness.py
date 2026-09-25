@@ -19,7 +19,10 @@ TREE = "b" * 40
 ROW = {"repository": "reblocke/example", "artifact_type": "research code"}
 
 
-def fake_api(names, readme="Purpose and data.", tree_paths=(), read_error=None):
+def fake_api(
+    names, readme="Purpose and data.", tree_paths=(), read_error=None,
+    tree_error=None, tree_truncated=False,
+):
     calls = []
 
     def run(args):
@@ -37,7 +40,9 @@ def fake_api(names, readme="Purpose and data.", tree_paths=(), read_error=None):
             content = base64.b64encode(readme.encode("utf-8") if isinstance(readme, str) else readme)
             return json.dumps({"encoding": "base64", "content": content.decode()})
         if endpoint == f"repos/reblocke/example/git/trees/{TREE}?recursive=1":
-            return json.dumps({"truncated": False, "tree": [{"path": p} for p in tree_paths]})
+            if tree_error:
+                raise audit.GhError(tree_error)
+            return json.dumps({"truncated": tree_truncated, "tree": [{"path": p} for p in tree_paths]})
         raise AssertionError(f"unexpected endpoint: {endpoint}")
 
     return run, calls
@@ -127,6 +132,33 @@ class AuditorTests(unittest.TestCase):
         with patch.object(audit, "run_gh", run):
             result = audit.audit_repo(ROW, {})
         self.assertEqual(result.problems, ["linked tracked source missing at snapshot: scripts/missing.py"])
+
+    def test_reference_and_root_relative_source_links_are_checked(self):
+        prose = (
+            "[run][runner] [other](/src/missing.py)\n"
+            "[runner]: scripts/missing.py \"run script\"\n"
+        )
+        run, _ = fake_api(["README.md"], prose, ["scripts/existing.py"])
+        with patch.object(audit, "run_gh", run):
+            result = audit.audit_repo(ROW, {})
+        self.assertEqual(
+            result.problems,
+            [
+                "linked tracked source missing at snapshot: scripts/missing.py",
+                "linked tracked source missing at snapshot: src/missing.py",
+            ],
+        )
+
+    def test_source_link_inventory_failure_never_reports_pass(self):
+        for options, outcome in [
+            ({"tree_error": "connection reset"}, "unavailable"),
+            ({"tree_truncated": True}, "unsupported"),
+        ]:
+            run, _ = fake_api(["README.md"], "[run](scripts/missing.py)", **options)
+            with patch.object(audit, "run_gh", run):
+                result = audit.audit_repo(ROW, {})
+            self.assertTrue(result.problems)
+            self.assertTrue(any(f"source-link inventory {outcome}" in p for p in result.problems))
 
     def test_unknown_role_does_not_invent_license_or_agent_obligations(self):
         run, _ = fake_api(["README.md"], "Purpose.")

@@ -218,17 +218,38 @@ def fetch_tree(repo: str, snapshot: Snapshot) -> TreeRead:
 
 
 def linked_source_paths(readme: str) -> set[str]:
-    """Find explicit local links to tracked-code locations, not prose mentions."""
+    """Find common inline and reference links to local tracked-code locations."""
     paths: set[str] = set()
-    for raw in re.findall(r"\]\(([^)]+)\)", readme):
-        parsed = urlsplit(raw.split()[0])
+    definitions = {
+        label.casefold(): angle or bare
+        for label, angle, bare in re.findall(
+            r"(?m)^\s{0,3}\[([^\]]+)\]:\s*(?:<([^>]+)>|(\S+))",
+            readme,
+        )
+    }
+    raw_links = re.findall(r"\]\(([^)]+)\)", readme)
+    raw_links.extend(
+        definitions[label.casefold()]
+        for label in re.findall(r"\]\[([^\]]+)\]", readme)
+        if label.casefold() in definitions
+    )
+    for raw in raw_links:
+        target = raw.strip()
+        if target.startswith("<") and ">" in target:
+            target = target[1 : target.index(">")]
+        else:
+            target = target.split()[0]
+        parsed = urlsplit(target)
         if parsed.scheme or parsed.netloc or not parsed.path:
             continue
-        path = unquote(parsed.path.removeprefix("./"))
+        path = unquote(parsed.path.removeprefix("/").removeprefix("./"))
         parts = PurePosixPath(path).parts
         if not parts or ".." in parts:
             continue
-        if path.startswith(("scripts/", "src/", "stata/do/", "r/scripts/", "tests/")):
+        if path.startswith(("scripts/", "src/", "stata/do/", "r/scripts/", "tests/")) or (
+            PurePosixPath(path).suffix.lower() in {".py", ".r", ".do", ".sh", ".ipynb", ".jl", ".sas"}
+            and not path.startswith(("data/", "reports/", "docs/"))
+        ):
             paths.add(path.rstrip("/"))
     return paths
 
@@ -336,7 +357,7 @@ def audit_repo(row: dict[str, str], refs: dict[str, str]) -> Result:
                     ):
                         problems.append(f"linked tracked source missing at snapshot: {path}")
             else:
-                observations.append(f"source-link inventory {tree.outcome}: {tree.detail}")
+                problems.append(f"source-link inventory {tree.outcome}: {tree.detail}")
 
     return Result(
         repo,
