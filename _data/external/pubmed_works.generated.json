@@ -16,12 +16,28 @@
     "pubdate": "2024 Apr"
   },
   {
+    "pmid": "39864505",
+    "pmcid": "PMC12264341",
+    "doi": "10.1016/j.chest.2025.01.016",
+    "title": "Use of High-Dose Hydroxocobalamin for Septic Shock.",
+    "venue": "Chest",
+    "pubdate": "2025 Jul"
+  },
+  {
     "pmid": "40094162",
     "pmcid": "PMC12048313",
     "doi": "10.5664/jcsm.11674",
     "title": "Seeing the random forest for the Zzz's: machine learning's new role in sleep science.",
     "venue": "Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine",
     "pubdate": "2025 May 1"
+  },
+  {
+    "pmid": "40885535",
+    "pmcid": "PMC12739763",
+    "doi": "10.1016/j.chest.2025.08.002",
+    "title": "The Consistency of Hypercapnic Respiratory Failure Case Definitions in Electronic Health Record Data.",
+    "venue": "Chest",
+    "pubdate": "2026 Jan"
   },
   {
     "pmid": "41276591",
@@ -70,5 +86,13 @@
     "title": "Letter: Author Response to Letter to the Editor from Luo et al.",
     "venue": "Respiratory care",
     "pubdate": "2026 Aug"
+  },
+  {
+    "pmid": "42436230",
+    "pmcid": null,
+    "doi": "10.1038/s41598-026-61766-2",
+    "title": "Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion.",
+    "venue": "Scientific reports",
+    "pubdate": "2026 Jul 11"
   }
 ]
