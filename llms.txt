@@ -13,6 +13,8 @@
 
 ## Selected scholarly work
 
+- The information in diagnostic tests (2026): https://doi.org/10.64898/2026.09.13.26362573
+- Meaning of clinical calculator results: a cross-sectional analysis of the MDCalc catalogue (2026): https://doi.org/10.64898/2026.09.08.26362556
 - Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion (2026): https://doi.org/10.1038/s41598-026-61766-2
 - Exploring the Impact of Virtual Reality Interventions on Autonomic Arousal in ICU Patients (2026): https://doi.org/10.1007/978-3-032-17790-2_39
 - AI-Based Simulated Patient Encounters for Clinical Reasoning: A Needs Assessment (2026): https://doi.org/10.32873/unmc.dc.gmerj.8.1.004
@@ -32,7 +34,11 @@
 - Seeing the random forest for the Zzz's: machine learning's new role in sleep science (2025): https://doi.org/10.5664/jcsm.11674
 - OSA and Chronic Respiratory Disease: Mechanisms and Epidemiology (2022): https://doi.org/10.3390/ijerph19095473
 - Hickam's Dictum: An Analysis of Multiple Diagnoses (2024): https://doi.org/10.1007/s11606-024-09120-y
+- The association between pulmonary artery enlargement and mortality in an Emergency Department population undergoing computed tomography pulmonary angiography (2023): https://doi.org/10.1002/pul2.12225
+- The Verity of a Unifying Diagnosis (2023): https://doi.org/10.1177/0272989x231192521
+- Severity, comorbidities, and adherence to therapy in Native Hawaiians/Pacific Islanders with obstructive sleep apnea (2023): https://doi.org/10.5664/jcsm.10472
 - What Are We Aiming for in Chronic Hypercapnic Respiratory Failure? (2023): https://doi.org/10.4187/respcare.11573
+- Electronic health record–derived outcomes in obstructive sleep apnea managed with positive airway pressure tracking systems (2022): https://doi.org/10.5664/jcsm.9750
 - Uncomfortable Truths About Data, Justice, and Idiopathic Pulmonary Fibrosis in the Veterans Health Administration (2023): https://doi.org/10.1016/j.chest.2023.03.037
 - Creating a COVID-19 Action Plan for GME Programs (2020): https://doi.org/10.4300/jgme-d-20-00206.1
 - Enhancing Medical Student Quality Improvement Education through Immersion (2017): https://doi.org/10.1111/medu.13313
@@ -51,6 +57,12 @@
 - Hypercapnic respiratory failure is infrequently reported as an adverse event in clinical trials (2024): https://reblocke.github.io/work/
 - Low research-burden study of immersive virtual reality feasibility in ICU (2024): https://reblocke.github.io/work/
 - Determinants of serum bicarbonate performance for identifying hypercapnia (2024): https://reblocke.github.io/work/
+- Decomposing treatment effect estimation reveals asymmetric clinical knowledge in large language models: analysis code, frozen prompts and aggregate results (2026): https://doi.org/10.55157/csd.nnt.2026.001
+- Parallel Circulation Oxygen Explorer (2026): https://reblocke.github.io/work/
+- VBG Acid–Base Explorer (2026): https://reblocke.github.io/work/
+- Wald inference tools (2026): https://reblocke.github.io/work/
+- MIMIC-CXR Bilateral Opacity Benchmark (2026): https://reblocke.github.io/work/
+- PAP, RADs, HMVs: Historical pathways and the current landscape (2026): https://github.com/reblocke/pap_rad_hmv/blob/main/PAP_RAD_HMV_Companion_v2.md
 
 ## Machine-readable data
 

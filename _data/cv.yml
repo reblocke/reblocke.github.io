@@ -118,6 +118,13 @@ teaching:
     organization: "Utah American College of Physicians"
     dates: "2026"
     kind: "Invited talk"
+    url: "https://www.acponline.org/sites/default/files/documents/about_acp/chapters/ut/26mtg/locke.pdf"
+    link_label: "Official slides"
+  - id: "teaching-ats-boards-editor"
+    title: "ATS Review for Critical Care Boards, Edition 2"
+    organization: "American Thoracic Society"
+    dates: "2024"
+    kind: "Junior Editor, Chapter 1: Renal, Endocrine, and Metabolic Disorders—Acid-Base and Acute Kidney Injury subsections"
   - id: "teaching-pancreatitis"
     title: "Recent pancreatitis evidence"
     organization: "Intermountain TeleCritical Care"
@@ -179,6 +186,9 @@ service:
     title: "University of Utah GME Value Council, founding member"
 
 honors:
+  - id: "honor-utah-imc-outstanding-faculty-teaching"
+    title: "University of Utah Department of Internal Medicine, Outstanding Faculty Teaching Award — Subspecialty IMC"
+    dates: "2025–2026"
   - id: "honor-ats-aspire"
     title: "American Thoracic Society ASPIRE Fellowship"
     dates: "2022–2024"

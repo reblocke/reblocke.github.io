@@ -51,6 +51,45 @@
   ],
   "items": [
     {
+      "id": "doi:10.64898/2026.09.13.26362573",
+      "type": "preprint",
+      "title": "The information in diagnostic tests",
+      "authors": "He S, Locke BW, Joseph JW, Liebovitz DM, Rohlfsen C, Goff A, Safari P, Kabrhel C, Mohamed A, Raja AS, Goldstein JN",
+      "venue": "medRxiv",
+      "year": 2026,
+      "date": "2026-09-14",
+      "doi": "10.64898/2026.09.13.26362573",
+      "section": "evidence-and-prediction",
+      "summary": "A preprint examining the information in diagnostic tests, with separately cited registered protocol and supporting data and analysis code.",
+      "related_ids": [
+        "doi:10.55157/csr.di.2026.001",
+        "doi:10.55157/csd.di.2026.001"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": -20
+    },
+    {
+      "id": "doi:10.64898/2026.09.08.26362556",
+      "type": "preprint",
+      "title": "Meaning of clinical calculator results: a cross-sectional analysis of the MDCalc catalogue",
+      "authors": "He S, Joseph JW, Safari P, Akomeh N, Goff A, Slusarz PJ, Mohamed A, Lord S, Goldstein JN, Raja AS, Kabrhel C, Locke BW, Rohlfsen C, Liebovitz DM",
+      "venue": "medRxiv",
+      "year": 2026,
+      "date": "2026-09-10",
+      "doi": "10.64898/2026.09.08.26362556",
+      "section": "evidence-and-prediction",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": -10
+    },
+    {
       "id": "doi:10.1038/s41598-026-61766-2",
       "type": "journal-article",
       "title": "Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion",
@@ -420,6 +459,62 @@
       "order": 70
     },
     {
+      "id": "doi:10.1002/pul2.12225",
+      "type": "journal-article",
+      "title": "The association between pulmonary artery enlargement and mortality in an Emergency Department population undergoing computed tomography pulmonary angiography",
+      "authors": "Scarpato BM, Locke BW, Bledsoe J, Knox DB, Conner K, Stoddard GJ, Cirulis MM, Elliott CG, Dodson MW",
+      "venue": "Pulmonary Circulation",
+      "year": 2023,
+      "doi": "10.1002/pul2.12225",
+      "section": "evidence-and-prediction",
+      "related_ids": [
+        "repo:reblocke/CTPA-Dose-Response"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 71
+    },
+    {
+      "id": "doi:10.1177/0272989x231192521",
+      "type": "letter",
+      "title": "The Verity of a Unifying Diagnosis",
+      "authors": "Locke BW, Aberegg SK",
+      "venue": "Medical Decision Making",
+      "year": 2023,
+      "doi": "10.1177/0272989x231192521",
+      "pmid": "37706444",
+      "status": "Letter/Comment",
+      "section": "evidence-and-prediction",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 72
+    },
+    {
+      "id": "doi:10.5664/jcsm.10472",
+      "type": "journal-article",
+      "title": "Severity, comorbidities, and adherence to therapy in Native Hawaiians/Pacific Islanders with obstructive sleep apnea",
+      "authors": "Locke BW, Sundar DJ, Ryujin D",
+      "venue": "Journal of Clinical Sleep Medicine",
+      "year": 2023,
+      "doi": "10.5664/jcsm.10472",
+      "section": "respiratory-failure",
+      "related_ids": [
+        "repo:reblocke/NHPI-OSA-Burden"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 73
+    },
+    {
       "id": "doi:10.4187/respcare.11573",
       "type": "commentary",
       "title": "What Are We Aiming for in Chronic Hypercapnic Respiratory Failure?",
@@ -434,6 +529,25 @@
         "cv": true
       },
       "order": 80
+    },
+    {
+      "id": "doi:10.5664/jcsm.9750",
+      "type": "journal-article",
+      "title": "Electronic health record–derived outcomes in obstructive sleep apnea managed with positive airway pressure tracking systems",
+      "authors": "Locke BW, Neill SE, Howe HE, Crotty MC, Kim J, Sundar KM",
+      "venue": "Journal of Clinical Sleep Medicine",
+      "year": 2022,
+      "doi": "10.5664/jcsm.9750",
+      "section": "respiratory-failure",
+      "related_ids": [
+        "repo:reblocke/CPAPOutcomes"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 81
     },
     {
       "id": "doi:10.1016/j.chest.2023.03.037",
@@ -767,9 +881,238 @@
         "cv": true
       },
       "order": 200
+    },
+    {
+      "id": "doi:10.55157/csr.di.2026.001",
+      "type": "protocol",
+      "title": "The information in diagnostic tests: registered protocol",
+      "authors": "He S, Joseph JW, Liebovitz DM, Rohlfsen C, Locke BW, Goff A, Safari P, Kabrhel C, Mohamed A, Raja AS, Goldstein JN",
+      "venue": "ConductScience",
+      "year": 2026,
+      "date": "2026-09-13",
+      "status": "Registered protocol",
+      "doi": "10.55157/csr.di.2026.001",
+      "section": "evidence-and-prediction",
+      "selected": {
+        "homepage": false,
+        "work": false,
+        "cv": true
+      },
+      "order": 201
+    },
+    {
+      "id": "doi:10.55157/csd.nnt.2026.001",
+      "type": "dataset",
+      "title": "Decomposing treatment effect estimation reveals asymmetric clinical knowledge in large language models: analysis code, frozen prompts and aggregate results",
+      "authors": "He S, Mohamed A, Rohlfsen C, Locke BW, Sheridan B, Akomeah N, Sorrick A, Parsons AS, Raja A, Lee J, Liebovitz D",
+      "venue": "ConductScience Data",
+      "year": 2026,
+      "date": "2026-09-24",
+      "version": "1.0.1",
+      "status": "Public dataset; source-specific reuse terms",
+      "doi": "10.55157/csd.nnt.2026.001",
+      "url": "https://conductscience.org/data/records/nnt-estimation",
+      "section": "evidence-and-prediction",
+      "summary": "Analysis code, frozen prompts, and aggregate results for treatment-effect estimation. This record is a dataset, not a manuscript publication.",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 202
+    },
+    {
+      "id": "doi:10.55157/csd.di.2026.001",
+      "type": "dataset",
+      "title": "The information in diagnostic tests: supporting data and analysis code",
+      "authors": "He S, Locke BW, Joseph JW, Liebovitz DM, Rohlfsen C, Goff A, Safari P, Kabrhel C, Mohamed A, Raja AS, Goldstein JN",
+      "venue": "ConductScience Data",
+      "year": 2026,
+      "date": "2026-09-14",
+      "version": "1.13.3",
+      "status": "Public dataset; source-specific reuse terms",
+      "doi": "10.55157/csd.di.2026.001",
+      "url": "https://conductscience.org/data/records/diagnostic-information",
+      "section": "evidence-and-prediction",
+      "selected": {
+        "homepage": false,
+        "work": false,
+        "cv": true
+      },
+      "order": 203
+    },
+    {
+      "id": "software:reblocke/single_vent_sim",
+      "type": "software",
+      "title": "Parallel Circulation Oxygen Explorer",
+      "authors": "Locke BW",
+      "venue": "GitHub Pages",
+      "year": 2026,
+      "date": "2026-09-22",
+      "status": "Deployed educational/research application; not clinically validated",
+      "section": "software-and-repositories",
+      "summary": "An interactive educational and research exploration of parallel circulation and oxygen transport. No formal release version is claimed; source-replication caveats remain documented in the repository.",
+      "related_ids": [
+        "repo:reblocke/single_vent_sim"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 204
+    },
+    {
+      "id": "software:reblocke/VBG_interpreter",
+      "type": "software",
+      "title": "VBG Acid–Base Explorer",
+      "authors": "Locke BW",
+      "venue": "GitHub",
+      "year": 2026,
+      "date": "2026-09-14",
+      "version": "0.6.1",
+      "status": "Public research preview; source version; not clinically validated",
+      "section": "software-and-repositories",
+      "summary": "A research and educational acid–base explorer. The version and date follow the source citation file; do not enter patient information or use it for clinical decisions.",
+      "related_ids": [
+        "repo:reblocke/VBG_interpreter"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 205
+    },
+    {
+      "id": "software:reblocke/wald-inference-tools",
+      "type": "software",
+      "title": "Wald inference tools",
+      "authors": "Locke BW",
+      "venue": "GitHub",
+      "year": 2026,
+      "date": "2026-07-31",
+      "version": "0.2.2",
+      "status": "Open-source research software",
+      "section": "software-and-repositories",
+      "summary": "An umbrella project for Wald inference tools, including confidence-curve and likelihood visualizations.",
+      "related_ids": [
+        "repo:reblocke/wald-inference-tools",
+        "repo:reblocke/conf_curve_likelihood"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 206
+    },
+    {
+      "id": "software:reblocke/ards-nlp",
+      "type": "software",
+      "title": "MIMIC-CXR Bilateral Opacity Benchmark",
+      "authors": "Locke BW",
+      "venue": "GitHub",
+      "year": 2026,
+      "date": "2026-07-12",
+      "version": "0.3.0",
+      "status": "Public Preview; research benchmark, not a clinical diagnostic model",
+      "section": "software-and-repositories",
+      "summary": "An automated silver-label benchmark for bilateral opacity in MIMIC-CXR reports, not a validated full ARDS diagnosis system. Restricted MIMIC data are not distributed.",
+      "related_ids": [
+        "repo:reblocke/ards-nlp"
+      ],
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 207
+    },
+    {
+      "id": "education:pap-rad-hmv-companion",
+      "type": "educational-resource",
+      "title": "PAP, RADs, HMVs: Historical pathways and the current landscape",
+      "authors": "Locke BW",
+      "venue": "PCCM educational text companion",
+      "year": 2026,
+      "date": "2026-09-19",
+      "version": "Working Version 2",
+      "status": "Working educational materials",
+      "url": "https://github.com/reblocke/pap_rad_hmv/blob/main/PAP_RAD_HMV_Companion_v2.md",
+      "section": "teaching-resources",
+      "summary": "A working text companion for pulmonary and critical care fellows covering PAP, respiratory assist devices, and home mechanical ventilators.",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 208
     }
   ],
   "repositories": [
+    {
+      "id": "repo:reblocke/single_vent_sim",
+      "repository": "reblocke/single_vent_sim",
+      "title": "Parallel Circulation Oxygen Explorer",
+      "section": "software-and-repositories",
+      "artifact_type": "research software",
+      "analysis_language": "Python",
+      "related_id": "software:reblocke/single_vent_sim",
+      "display_with": "software:reblocke/single_vent_sim",
+      "license": "MIT",
+      "selected_work": true,
+      "order": 540,
+      "live_url": "https://reblocke.github.io/single_vent_sim/",
+      "live_label": "Live tool",
+      "data_availability": "Educational simulations only; not clinically validated."
+    },
+    {
+      "id": "repo:reblocke/VBG_interpreter",
+      "repository": "reblocke/VBG_interpreter",
+      "title": "VBG Acid–Base Explorer",
+      "section": "software-and-repositories",
+      "artifact_type": "research software",
+      "analysis_language": "Python",
+      "related_id": "software:reblocke/VBG_interpreter",
+      "display_with": "software:reblocke/VBG_interpreter",
+      "license": "MIT",
+      "selected_work": true,
+      "order": 550,
+      "live_url": "https://reblocke.github.io/VBG_interpreter/",
+      "live_label": "Live tool",
+      "data_availability": "Public research preview only; do not enter patient information."
+    },
+    {
+      "id": "repo:reblocke/wald-inference-tools",
+      "repository": "reblocke/wald-inference-tools",
+      "title": "Wald inference tools",
+      "section": "software-and-repositories",
+      "artifact_type": "research software",
+      "analysis_language": "Python",
+      "related_id": "software:reblocke/wald-inference-tools",
+      "display_with": "software:reblocke/wald-inference-tools",
+      "license": "MIT",
+      "selected_work": true,
+      "order": 560,
+      "live_url": "https://reblocke.github.io/wald-inference-tools/",
+      "live_label": "Live tool",
+      "data_availability": "Statistical examples only; no clinical data."
+    },
+    {
+      "id": "repo:reblocke/ards-nlp",
+      "repository": "reblocke/ards-nlp",
+      "title": "MIMIC-CXR Bilateral Opacity Benchmark",
+      "section": "software-and-repositories",
+      "artifact_type": "research software",
+      "analysis_language": "Python",
+      "related_id": "software:reblocke/ards-nlp",
+      "display_with": "software:reblocke/ards-nlp",
+      "license": "MIT",
+      "selected_work": true,
+      "order": 570,
+      "data_availability": "Restricted MIMIC-CXR data are not distributed; credentialed access is required."
+    },
     {
       "id": "repo:reblocke/Hypercap-Case-Definitions",
       "repository": "reblocke/Hypercap-Case-Definitions",
@@ -952,7 +1295,8 @@
       "section": "respiratory-failure",
       "artifact_type": "reproducible analysis",
       "analysis_language": "Python",
-      "doi": "10.5664/jcsm.9750",
+      "related_id": "doi:10.5664/jcsm.9750",
+      "display_with": "doi:10.5664/jcsm.9750",
       "license": "Unconfirmed",
       "selected_work": false,
       "order": 330,
@@ -965,7 +1309,8 @@
       "section": "health-services",
       "artifact_type": "reproducible analysis",
       "analysis_language": "Stata",
-      "doi": "10.5664/jcsm.10472",
+      "related_id": "doi:10.5664/jcsm.10472",
+      "display_with": "doi:10.5664/jcsm.10472",
       "license": "MIT",
       "selected_work": false,
       "order": 340,
@@ -977,7 +1322,8 @@
       "title": "Pulmonary Artery Enlargement and Mortality",
       "section": "evidence-and-prediction",
       "artifact_type": "reproducible analysis",
-      "doi": "10.1002/pul2.12225",
+      "related_id": "doi:10.1002/pul2.12225",
+      "display_with": "doi:10.1002/pul2.12225",
       "license": "Unconfirmed",
       "selected_work": false,
       "order": 350,
@@ -1138,6 +1484,8 @@
       "section": "software-and-repositories",
       "artifact_type": "statistical visualization tool",
       "analysis_language": "Python",
+      "related_id": "software:reblocke/wald-inference-tools",
+      "display_with": "software:reblocke/wald-inference-tools",
       "license": "MIT",
       "selected_work": true,
       "order": 480,

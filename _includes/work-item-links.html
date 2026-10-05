@@ -1,0 +1,15 @@
+{% assign linked_item = include.item %}
+{% assign linked_work = site.data.generated.work %}
+{% if linked_item.doi %}<a href="https://doi.org/{{ linked_item.doi }}">doi:{{ linked_item.doi }}</a>{% endif %}
+{% if linked_item.pmid %}<a href="https://pubmed.ncbi.nlm.nih.gov/{{ linked_item.pmid }}/">PubMed</a>{% endif %}
+{% if linked_item.url %}<a href="{{ linked_item.url }}">{% if linked_item.type == "educational-resource" %}Text companion{% else %}Source record{% endif %}</a>{% endif %}
+{% for related_id in linked_item.related_ids %}
+  {% assign related_repo = linked_work.repositories | where: "id", related_id | first %}
+  {% assign related_product = linked_work.items | where: "id", related_id | first %}
+  {% if related_repo %}
+    <a href="https://github.com/{{ related_repo.repository }}">Repository: {{ related_repo.title }}</a>
+    {% if related_repo.live_url %}<a href="{{ related_repo.live_url }}">{{ related_repo.live_label }}: {{ related_repo.title }}</a>{% endif %}
+  {% elsif related_product.doi %}
+    <a href="https://doi.org/{{ related_product.doi }}">{{ related_product.type | replace: '-', ' ' | capitalize }}: {{ related_product.title }}</a>
+  {% endif %}
+{% endfor %}

@@ -165,6 +165,26 @@ def add_notice_json_ld(site: Path) -> None:
 def mutations() -> list[Mutation]:
     return [
         Mutation(
+            "product-section-label",
+            "/cv/ missing labeled product section datasets",
+            lambda site: replace_once(route_file(site, "/cv/"), "Datasets and analysis resources", "Other outputs"),
+        ),
+        Mutation(
+            "preprint-status",
+            "missing citation metadata: Not peer reviewed",
+            lambda site: replace_once(route_file(site, "/publications/"), "Not peer reviewed", "Peer reviewed"),
+        ),
+        Mutation(
+            "related-protocol-link",
+            "missing related/citation link https://doi.org/10.55157/csr.di.2026.001",
+            lambda site: replace_once(route_file(site, "/work/"), 'href="https://doi.org/10.55157/csr.di.2026.001"', 'href="https://example.invalid/protocol"'),
+        ),
+        Mutation(
+            "dataset-in-publications",
+            "/publications/ data-work-id mismatch",
+            lambda site: replace_once(route_file(site, "/publications/"), '</ol>', '<li data-work-id="doi:10.55157/csd.nnt.2026.001">Dataset</li></ol>'),
+        ),
+        Mutation(
             "canonical-googlebot-noindex",
             "/ has blocking robots directives",
             lambda site: inject_head_meta(site, "/", '<meta name="googlebot" content="noindex">'),
