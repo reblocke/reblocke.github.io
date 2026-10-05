@@ -10,6 +10,8 @@ Human-maintained facts live in only three files:
 - `_data/cv.yml`: appointments, training, support, teaching, service, and honors.
 - `_data/work.yml`: curated publications, presentations, topic collections, repositories, live project-site links, relationships, and editorial selections.
 
+Work items distinguish publications (`journal-article`, `conference-paper`, `preprint`, `commentary`, `letter`), presentations (`abstract`), and scholarly products (`protocol`, `dataset`, `software`, `educational-resource`). Only publication types enter `/publications/`; selected products have separately labeled sections on `/cv/`. Optional `url`, quoted ISO `date`, `version`, and `status` describe the cited record without implying peer review, clinical validation, or a formal software release. Preserve each product's own author order. Use `related_ids` to link companions and repositories; a repository paired through `display_with` stays in the catalog but does not repeat as standalone Work. Keep a DOI on its publication/product record and resolve the repository's citation through `related_id`.
+
 Files under `_data/external/`, `_data/generated/`, `llms.txt`, and `research-repositories.*` are generated. Do not edit them manually.
 
 ## Local development
@@ -73,7 +75,7 @@ Pull requests and `master` run the same `bin/check` build. A push to `master` de
 
 The generated `sitemap.xml` contains only the six canonical routes: `/`, `/work/`, `/publications/`, `/topics/hypercapnic-respiratory-failure/`, `/cv/`, and `/research-repositories/`. The former `/bio/` route redirects to the homepage About section. The generated `robots.txt` allows crawling and advertises `https://reblocke.github.io/sitemap.xml`. Canonical and historical redirect pages must not carry blocking `robots`, `googlebot`, or `bingbot` directives. The 404 and Notice pages are intentionally excluded with `noindex,follow` and omitted from the sitemap.
 
-Each canonical page has a unique search title and description, a self-canonical URL, at least one crawlable internal link, and one schema.org `@graph` grounded in the canonical person data. `bin/check` verifies those contracts as well as rendered coverage of all non-abstract publications and the curated respiratory topic. These controls support ordinary crawler discovery without a Google account, but they do not provide Search Console reports or prove that Google has indexed a URL.
+Each canonical page has a unique search title and description, a self-canonical URL, at least one crawlable internal link, and one schema.org `@graph` grounded in the canonical person data. `bin/check` verifies those contracts as well as rendered publication/product placement, citation metadata, related links, and the curated respiratory topic. These controls support ordinary crawler discovery without a Google account, but they do not provide Search Console reports or prove that Google has indexed a URL.
 
 The URL-prefix property `https://reblocke.github.io/` uses a public HTML verification tag sourced from `google_site_verification` in `_config.yml` and rendered only in the homepage `<head>`. Retain the tag after verification because Google checks it periodically. If Google issues a replacement, update it through the normal pull-request and validated Pages deployment workflow.
 

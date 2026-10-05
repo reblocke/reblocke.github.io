@@ -8,6 +8,7 @@ schema_type: "WebPage"
 {% assign person = site.data.person %}
 {% assign cv = site.data.cv %}
 {% assign work = site.data.generated.work %}
+{% assign publication_types = "journal-article,conference-paper,preprint,commentary,letter" | split: "," %}
 <article class="site-container page page--cv">
   <header class="page-header">
     <h1>Curriculum Vitae</h1>
@@ -23,9 +24,13 @@ schema_type: "WebPage"
   <section class="cv-section" id="training"><h2>Education and training</h2>{% for item in cv.education %}{% include cv-entry.html item=item %}{% endfor %}{% for item in cv.training %}{% include cv-entry.html item=item %}{% endfor %}</section>
   <section class="cv-section" id="certifications"><h2>Certifications</h2><ul class="plain-list">{% for item in cv.certifications %}<li>{{ item.title }}</li>{% endfor %}</ul></section>
   <section class="cv-section" id="support"><h2>Research support</h2><h3>Current</h3>{% for item in cv.research_support.current %}{% include cv-entry.html item=item %}{% endfor %}<h3>Completed</h3>{% for item in cv.research_support.completed %}{% include cv-entry.html item=item %}{% endfor %}</section>
-  <section class="cv-section" id="publications"><h2>Selected scholarly outputs</h2><ol class="citation-list">{% for item in work.items %}{% if item.selected.cv and item.type != "abstract" %}{% include publication-citation.html item=item %}{% endif %}{% endfor %}</ol></section>
+  <section class="cv-section" id="publications"><h2>Selected publications and preprints</h2><ol class="citation-list">{% for item in work.items %}{% if item.selected.cv and publication_types contains item.type %}{% include publication-citation.html item=item %}{% endif %}{% endfor %}</ol></section>
+  <section class="cv-section" id="registered-protocols"><h2>Registered protocols</h2><ol class="citation-list">{% for item in work.items %}{% if item.selected.cv and item.type == "protocol" %}{% include publication-citation.html item=item %}{% endif %}{% endfor %}</ol></section>
+  <section class="cv-section" id="datasets"><h2>Datasets and analysis resources</h2><ol class="citation-list">{% for item in work.items %}{% if item.selected.cv and item.type == "dataset" %}{% include publication-citation.html item=item %}{% endif %}{% endfor %}</ol></section>
+  <section class="cv-section" id="research-software"><h2>Research software</h2><ol class="citation-list">{% for item in work.items %}{% if item.selected.cv and item.type == "software" %}{% include publication-citation.html item=item %}{% endif %}{% endfor %}</ol></section>
+  <section class="cv-section" id="educational-resources"><h2>Educational resources</h2><ol class="citation-list">{% for item in work.items %}{% if item.selected.cv and item.type == "educational-resource" %}{% include publication-citation.html item=item %}{% endif %}{% endfor %}</ol></section>
   <section class="cv-section" id="presentations"><h2>Selected presentations</h2>{% for item in work.items %}{% if item.selected.cv and item.type == "abstract" %}<article class="cv-entry"><p class="cv-entry__dates">{{ item.year }}</p><div><h3>{{ item.title }}</h3><p>{{ item.venue }}{% if item.location %}, {{ item.location }}{% endif %}</p></div></article>{% endif %}{% endfor %}</section>
-  <section class="cv-section" id="teaching-and-curriculum"><h2>Teaching and curriculum</h2>{% for item in cv.teaching %}<article class="cv-entry"><p class="cv-entry__dates">{{ item.dates }}</p><div><h3>{{ item.title }}</h3><p>{{ item.kind }} · {{ item.organization }}</p></div></article>{% endfor %}</section>
+  <section class="cv-section" id="teaching-and-curriculum"><h2>Teaching and curriculum</h2>{% for item in cv.teaching %}<article class="cv-entry"><p class="cv-entry__dates">{{ item.dates }}</p><div><h3>{{ item.title }}</h3><p>{{ item.kind }} · {{ item.organization }}</p>{% if item.url %}<p><a href="{{ item.url }}">{{ item.link_label | default: "Source" }}</a></p>{% endif %}</div></article>{% endfor %}</section>
   <section class="cv-section" id="service"><h2>Service, honors, and peer review</h2><h3>Service</h3><ul class="plain-list">{% for item in cv.service %}<li>{{ item.title }}</li>{% endfor %}</ul><h3>Honors</h3>{% for item in cv.honors %}{% include cv-entry.html item=item %}{% endfor %}<h3>Peer review</h3><ul class="plain-list columns-list">{% for item in cv.peer_review %}<li>{{ item }}</li>{% endfor %}</ul></section>
   <section class="cv-section" id="disclosure"><h2>Professional disclosure</h2><p>{{ person.disclosure }}</p></section>
 </article>

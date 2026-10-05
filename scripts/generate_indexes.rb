@@ -97,7 +97,7 @@ def generate(destination)
     ""
   ]
   selected.each do |item|
-    url = item["doi"] ? "https://doi.org/#{item['doi']}" : "https://reblocke.github.io/work/"
+    url = item["doi"] ? "https://doi.org/#{item['doi']}" : (item["url"] || "https://reblocke.github.io/work/")
     llms << "- #{item['title']} (#{item['year']}): #{url}"
   end
   llms += ["", "## Machine-readable data", "", "- https://reblocke.github.io/research-repositories.json", "- https://reblocke.github.io/research-repositories.csv", ""]

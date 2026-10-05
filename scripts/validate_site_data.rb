@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require "csv"
+require "date"
 require "json"
 require "set"
 require "uri"
@@ -287,6 +288,22 @@ errors << "work section keys must be unique" unless section_keys.uniq.length == 
 
 items = Array(work["items"])
 repositories = Array(work["repositories"])
+item_types = %w[journal-article conference-paper preprint commentary letter abstract protocol dataset software educational-resource]
+items.each do |item|
+  errors << "#{item['id']} has unknown work type #{item['type']}" unless item_types.include?(item["type"])
+  errors << "#{item['id']} url must be HTTPS" if item["url"] && !valid_https_url?(item["url"])
+  %w[version status].each do |field|
+    errors << "#{item['id']} #{field} must be nonempty text" if item.key?(field) && !nonempty_string?(item[field])
+  end
+  if item["date"]
+    begin
+      date = Date.iso8601(item["date"])
+      errors << "#{item['id']} date must match citation year and use YYYY-MM-DD" unless date.year == item["year"] && date.iso8601 == item["date"]
+    rescue ArgumentError, TypeError
+      errors << "#{item['id']} date must be a valid YYYY-MM-DD string"
+    end
+  end
+end
 records = items + repositories
 ids = records.map { |record| record["id"] }
 duplicates = ids.tally.select { |_id, count| count > 1 }.keys
@@ -304,6 +321,12 @@ records.each do |record|
   end
   if record["related_id"] && !known_ids.include?(record["related_id"])
     errors << "#{record['id']} references missing #{record['related_id']}"
+  end
+  if record["display_with"]
+    parent = items.find { |item| item["id"] == record["display_with"] }
+    unless parent && Array(parent["related_ids"]).include?(record["id"]) && parent.dig("selected", "work")
+      errors << "#{record['id']} display_with must point to a selected work item linking this repository"
+    end
   end
   if record["repository"] && record["repository"] !~ %r{\Areblocke/[^/]+\z}
     errors << "invalid repository name #{record['repository']}"

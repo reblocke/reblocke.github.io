@@ -32,6 +32,22 @@
     "latest_release": "stata-baseline-v1"
   },
   {
+    "repository": "reblocke/ards-nlp",
+    "title": "MIMIC-CXR Bilateral Opacity Benchmark",
+    "artifact_type": "research software",
+    "analysis_language": "Python",
+    "related_doi": null,
+    "related_pmid": null,
+    "data_availability": "Restricted MIMIC-CXR data are not distributed; credentialed access is required.",
+    "license_status": "MIT",
+    "public_url": "https://github.com/reblocke/ards-nlp",
+    "live_url": null,
+    "live_label": null,
+    "archived": false,
+    "default_branch": "main",
+    "latest_release": "v0.3.0"
+  },
+  {
     "repository": "reblocke/Bari-CPAP",
     "title": "Bariatric Surgery and CPAP Analysis",
     "artifact_type": "legacy analysis code",
@@ -352,6 +368,22 @@
     "latest_release": "v0.3.0"
   },
   {
+    "repository": "reblocke/single_vent_sim",
+    "title": "Parallel Circulation Oxygen Explorer",
+    "artifact_type": "research software",
+    "analysis_language": "Python",
+    "related_doi": null,
+    "related_pmid": null,
+    "data_availability": "Educational simulations only; not clinically validated.",
+    "license_status": "MIT",
+    "public_url": "https://github.com/reblocke/single_vent_sim",
+    "live_url": "https://reblocke.github.io/single_vent_sim/",
+    "live_label": "Live tool",
+    "archived": false,
+    "default_branch": null,
+    "latest_release": null
+  },
+  {
     "repository": "reblocke/sodium_change",
     "title": "Sodium Change Probability",
     "artifact_type": "clinical teaching tool",
@@ -528,6 +560,22 @@
     "latest_release": "v2025.06"
   },
   {
+    "repository": "reblocke/VBG_interpreter",
+    "title": "VBG Acid–Base Explorer",
+    "artifact_type": "research software",
+    "analysis_language": "Python",
+    "related_doi": null,
+    "related_pmid": null,
+    "data_availability": "Public research preview only; do not enter patient information.",
+    "license_status": "MIT",
+    "public_url": "https://github.com/reblocke/VBG_interpreter",
+    "live_url": "https://reblocke.github.io/VBG_interpreter/",
+    "live_label": "Live tool",
+    "archived": false,
+    "default_branch": "main",
+    "latest_release": null
+  },
+  {
     "repository": "reblocke/vr_icu",
     "title": "Immersive Virtual Reality in the ICU",
     "artifact_type": "mixed-methods analysis",
@@ -542,5 +590,21 @@
     "archived": false,
     "default_branch": "main",
     "latest_release": null
+  },
+  {
+    "repository": "reblocke/wald-inference-tools",
+    "title": "Wald inference tools",
+    "artifact_type": "research software",
+    "analysis_language": "Python",
+    "related_doi": null,
+    "related_pmid": null,
+    "data_availability": "Statistical examples only; no clinical data.",
+    "license_status": "MIT",
+    "public_url": "https://github.com/reblocke/wald-inference-tools",
+    "live_url": "https://reblocke.github.io/wald-inference-tools/",
+    "live_label": "Live tool",
+    "archived": false,
+    "default_branch": "main",
+    "latest_release": "v0.2.2"
   }
 ]

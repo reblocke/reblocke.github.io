@@ -83,6 +83,13 @@ EXPECTED_CATALOG_COLUMNS = [
     "latest_release",
 ]
 BLOCKING_ROBOTS = {"noindex", "nofollow", "none"}
+PUBLICATION_TYPES = {"journal-article", "conference-paper", "preprint", "commentary", "letter"}
+CV_PRODUCT_SECTIONS = {
+    "registered-protocols": ("protocol", "Registered protocols"),
+    "datasets": ("dataset", "Datasets and analysis resources"),
+    "research-software": ("software", "Research software"),
+    "educational-resources": ("educational-resource", "Educational resources"),
+}
 
 
 class PageParser(HTMLParser):
@@ -625,7 +632,7 @@ def validate(site: Path) -> list[str]:
 
     items = work.get("items", [])
     topics = work.get("topics", [])
-    expected_publications = [item["id"] for item in items if item.get("type") != "abstract"]
+    expected_publications = [item["id"] for item in items if item.get("type") in PUBLICATION_TYPES]
     if "/publications/" in canonical_pages:
         compare_work_ids(
             "/publications/",
@@ -646,10 +653,69 @@ def validate(site: Path) -> list[str]:
     expected_cv = [
         item["id"]
         for item in items
-        if item.get("type") != "abstract" and item.get("selected", {}).get("cv")
+        if item.get("type") in PUBLICATION_TYPES and item.get("selected", {}).get("cv")
+    ]
+    expected_cv += [
+        item["id"] for product_type, _ in CV_PRODUCT_SECTIONS.values()
+        for item in items
+        if item.get("type") == product_type and item.get("selected", {}).get("cv")
     ]
     if "/cv/" in canonical_pages:
         compare_work_ids("/cv/", canonical_pages["/cv/"].data_work_ids, expected_cv, errors)
+        cv_html = route_file(site, "/cv/").read_text(encoding="utf-8")
+        for section_id, (product_type, heading) in CV_PRODUCT_SECTIONS.items():
+            match = re.search(rf'<section[^>]*id="{section_id}"[^>]*>(.*?)</section>', cv_html, re.S)
+            if not match or heading not in normalized_text(match[1]):
+                errors.append(f"/cv/ missing labeled product section {section_id}")
+                continue
+            section_parser = PageParser()
+            section_parser.feed(match[1])
+            compare_work_ids(f"/cv/#{section_id}", section_parser.data_work_ids, [
+                item["id"] for item in items
+                if item.get("type") == product_type and item.get("selected", {}).get("cv")
+            ], errors)
+
+    # Verify rendered citation metadata and each record's own related links, not
+    # merely their presence somewhere on the page. IDs must occur exactly once.
+    records = {item["id"]: item for item in items + work.get("repositories", [])}
+    for route in ("/work/", "/publications/", "/cv/"):
+        if route not in canonical_pages:
+            continue
+        page_html = route_file(site, route).read_text(encoding="utf-8")
+        for tag, record_id, fragment in re.findall(
+            r'<(article|li)\b[^>]*data-work-id="([^"]+)"[^>]*>(.*?)</\1>', page_html, re.S
+        ):
+            item = records.get(unescape(record_id))
+            if not item:
+                continue
+            rendered = normalized_text(fragment)
+            required = [item["type"].replace("-", " ").capitalize()]
+            required += [str(item[key]) for key in ("version", "date", "status") if item.get(key)]
+            if item["type"] == "preprint":
+                required.append("Not peer reviewed")
+            if route != "/work/":
+                required.append(item["authors"])
+            for value in required:
+                if value not in rendered:
+                    errors.append(f"{route} {record_id} missing citation metadata: {value}")
+            fragment_parser = PageParser()
+            fragment_parser.feed(fragment)
+            required_links = []
+            if item.get("doi"):
+                required_links.append(f'https://doi.org/{item["doi"]}')
+            if item.get("url"):
+                required_links.append(item["url"])
+            for related_id in item.get("related_ids", []):
+                related = records[related_id]
+                if related.get("repository"):
+                    required_links.append(f'https://github.com/{related["repository"]}')
+                    if related.get("live_url"):
+                        required_links.append(related["live_url"])
+                elif related.get("doi"):
+                    required_links.append(f'https://doi.org/{related["doi"]}')
+            for url in required_links:
+                if url not in fragment_parser.hrefs:
+                    errors.append(f"{route} {record_id} missing related/citation link {url}")
     topic = next(
         (entry for entry in topics if entry.get("id") == "hypercapnic-respiratory-failure"),
         None,

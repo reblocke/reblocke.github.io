@@ -7,6 +7,7 @@ schema_type: "CollectionPage"
 ---
 {% assign person = site.data.person %}
 {% assign work = site.data.generated.work %}
+{% assign publication_types = "journal-article,conference-paper,preprint,commentary,letter" | split: "," %}
 <article class="site-container page page--cv">
   <header class="page-header prose">
     <h1>Publications</h1>
@@ -17,7 +18,7 @@ schema_type: "CollectionPage"
     <h2 id="publication-list-heading">Publication list</h2>
     <ol class="citation-list">
       {% for item in work.items %}
-        {% if item.type != "abstract" %}{% include publication-citation.html item=item %}{% endif %}
+        {% if publication_types contains item.type %}{% include publication-citation.html item=item %}{% endif %}
       {% endfor %}
     </ol>
   </section>

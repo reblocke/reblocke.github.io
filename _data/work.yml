@@ -39,6 +39,185 @@ topics:
       - "abstract:ats:2024:bicarbonate-hypercapnia"
 
 items:
+  - id: "doi:10.64898/2026.09.13.26362573"
+    type: "preprint"
+    title: "The information in diagnostic tests"
+    authors: "He S, Locke BW, Joseph JW, Liebovitz DM, Rohlfsen C, Goff A, Safari P, Kabrhel C, Mohamed A, Raja AS, Goldstein JN"
+    venue: "medRxiv"
+    year: 2026
+    date: "2026-09-14"
+    doi: "10.64898/2026.09.13.26362573"
+    section: "evidence-and-prediction"
+    summary: "A preprint examining the information in diagnostic tests, with separately cited registered protocol and supporting data and analysis code."
+    related_ids: ["doi:10.55157/csr.di.2026.001", "doi:10.55157/csd.di.2026.001"]
+    selected: {homepage: false, work: true, cv: true}
+    order: -20
+  - id: "doi:10.64898/2026.09.08.26362556"
+    type: "preprint"
+    title: "Meaning of clinical calculator results: a cross-sectional analysis of the MDCalc catalogue"
+    authors: "He S, Joseph JW, Safari P, Akomeh N, Goff A, Slusarz PJ, Mohamed A, Lord S, Goldstein JN, Raja AS, Kabrhel C, Locke BW, Rohlfsen C, Liebovitz DM"
+    venue: "medRxiv"
+    year: 2026
+    date: "2026-09-10"
+    doi: "10.64898/2026.09.08.26362556"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: true, cv: true}
+    order: -10
+  - id: "doi:10.55157/csr.di.2026.001"
+    type: "protocol"
+    title: "The information in diagnostic tests: registered protocol"
+    authors: "He S, Joseph JW, Liebovitz DM, Rohlfsen C, Locke BW, Goff A, Safari P, Kabrhel C, Mohamed A, Raja AS, Goldstein JN"
+    venue: "ConductScience"
+    year: 2026
+    date: "2026-09-13"
+    status: "Registered protocol"
+    doi: "10.55157/csr.di.2026.001"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: false, cv: true}
+    order: 201
+  - id: "doi:10.55157/csd.nnt.2026.001"
+    type: "dataset"
+    title: "Decomposing treatment effect estimation reveals asymmetric clinical knowledge in large language models: analysis code, frozen prompts and aggregate results"
+    authors: "He S, Mohamed A, Rohlfsen C, Locke BW, Sheridan B, Akomeah N, Sorrick A, Parsons AS, Raja A, Lee J, Liebovitz D"
+    venue: "ConductScience Data"
+    year: 2026
+    date: "2026-09-24"
+    version: "1.0.1"
+    status: "Public dataset; source-specific reuse terms"
+    doi: "10.55157/csd.nnt.2026.001"
+    url: "https://conductscience.org/data/records/nnt-estimation"
+    section: "evidence-and-prediction"
+    summary: "Analysis code, frozen prompts, and aggregate results for treatment-effect estimation. This record is a dataset, not a manuscript publication."
+    selected: {homepage: false, work: true, cv: true}
+    order: 202
+  - id: "doi:10.55157/csd.di.2026.001"
+    type: "dataset"
+    title: "The information in diagnostic tests: supporting data and analysis code"
+    authors: "He S, Locke BW, Joseph JW, Liebovitz DM, Rohlfsen C, Goff A, Safari P, Kabrhel C, Mohamed A, Raja AS, Goldstein JN"
+    venue: "ConductScience Data"
+    year: 2026
+    date: "2026-09-14"
+    version: "1.13.3"
+    status: "Public dataset; source-specific reuse terms"
+    doi: "10.55157/csd.di.2026.001"
+    url: "https://conductscience.org/data/records/diagnostic-information"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: false, cv: true}
+    order: 203
+  - id: "software:reblocke/single_vent_sim"
+    type: "software"
+    title: "Parallel Circulation Oxygen Explorer"
+    authors: "Locke BW"
+    venue: "GitHub Pages"
+    year: 2026
+    date: "2026-09-22"
+    status: "Deployed educational/research application; not clinically validated"
+    section: "software-and-repositories"
+    summary: "An interactive educational and research exploration of parallel circulation and oxygen transport. No formal release version is claimed; source-replication caveats remain documented in the repository."
+    related_ids: ["repo:reblocke/single_vent_sim"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 204
+  - id: "software:reblocke/VBG_interpreter"
+    type: "software"
+    title: "VBG Acid–Base Explorer"
+    authors: "Locke BW"
+    venue: "GitHub"
+    year: 2026
+    date: "2026-09-14"
+    version: "0.6.1"
+    status: "Public research preview; source version; not clinically validated"
+    section: "software-and-repositories"
+    summary: "A research and educational acid–base explorer. The version and date follow the source citation file; do not enter patient information or use it for clinical decisions."
+    related_ids: ["repo:reblocke/VBG_interpreter"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 205
+  - id: "software:reblocke/wald-inference-tools"
+    type: "software"
+    title: "Wald inference tools"
+    authors: "Locke BW"
+    venue: "GitHub"
+    year: 2026
+    date: "2026-07-31"
+    version: "0.2.2"
+    status: "Open-source research software"
+    section: "software-and-repositories"
+    summary: "An umbrella project for Wald inference tools, including confidence-curve and likelihood visualizations."
+    related_ids: ["repo:reblocke/wald-inference-tools", "repo:reblocke/conf_curve_likelihood"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 206
+  - id: "software:reblocke/ards-nlp"
+    type: "software"
+    title: "MIMIC-CXR Bilateral Opacity Benchmark"
+    authors: "Locke BW"
+    venue: "GitHub"
+    year: 2026
+    date: "2026-07-12"
+    version: "0.3.0"
+    status: "Public Preview; research benchmark, not a clinical diagnostic model"
+    section: "software-and-repositories"
+    summary: "An automated silver-label benchmark for bilateral opacity in MIMIC-CXR reports, not a validated full ARDS diagnosis system. Restricted MIMIC data are not distributed."
+    related_ids: ["repo:reblocke/ards-nlp"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 207
+  - id: "education:pap-rad-hmv-companion"
+    type: "educational-resource"
+    title: "PAP, RADs, HMVs: Historical pathways and the current landscape"
+    authors: "Locke BW"
+    venue: "PCCM educational text companion"
+    year: 2026
+    date: "2026-09-19"
+    version: "Working Version 2"
+    status: "Working educational materials"
+    url: "https://github.com/reblocke/pap_rad_hmv/blob/main/PAP_RAD_HMV_Companion_v2.md"
+    section: "teaching-resources"
+    summary: "A working text companion for pulmonary and critical care fellows covering PAP, respiratory assist devices, and home mechanical ventilators."
+    selected: {homepage: false, work: true, cv: true}
+    order: 208
+  - id: "doi:10.1002/pul2.12225"
+    type: "journal-article"
+    title: "The association between pulmonary artery enlargement and mortality in an Emergency Department population undergoing computed tomography pulmonary angiography"
+    authors: "Scarpato BM, Locke BW, Bledsoe J, Knox DB, Conner K, Stoddard GJ, Cirulis MM, Elliott CG, Dodson MW"
+    venue: "Pulmonary Circulation"
+    year: 2023
+    doi: "10.1002/pul2.12225"
+    section: "evidence-and-prediction"
+    related_ids: ["repo:reblocke/CTPA-Dose-Response"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 71
+  - id: "doi:10.1177/0272989x231192521"
+    type: "letter"
+    title: "The Verity of a Unifying Diagnosis"
+    authors: "Locke BW, Aberegg SK"
+    venue: "Medical Decision Making"
+    year: 2023
+    doi: "10.1177/0272989x231192521"
+    pmid: "37706444"
+    status: "Letter/Comment"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: true, cv: true}
+    order: 72
+  - id: "doi:10.5664/jcsm.10472"
+    type: "journal-article"
+    title: "Severity, comorbidities, and adherence to therapy in Native Hawaiians/Pacific Islanders with obstructive sleep apnea"
+    authors: "Locke BW, Sundar DJ, Ryujin D"
+    venue: "Journal of Clinical Sleep Medicine"
+    year: 2023
+    doi: "10.5664/jcsm.10472"
+    section: "respiratory-failure"
+    related_ids: ["repo:reblocke/NHPI-OSA-Burden"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 73
+  - id: "doi:10.5664/jcsm.9750"
+    type: "journal-article"
+    title: "Electronic health record–derived outcomes in obstructive sleep apnea managed with positive airway pressure tracking systems"
+    authors: "Locke BW, Neill SE, Howe HE, Crotty MC, Kim J, Sundar KM"
+    venue: "Journal of Clinical Sleep Medicine"
+    year: 2022
+    doi: "10.5664/jcsm.9750"
+    section: "respiratory-failure"
+    related_ids: ["repo:reblocke/CPAPOutcomes"]
+    selected: {homepage: false, work: true, cv: true}
+    order: 81
   - id: "doi:10.1038/s41598-026-61766-2"
     type: "journal-article"
     title: "Large language models generate diagnostic likelihood ratios with low mean bias but wide dispersion"
@@ -479,6 +658,10 @@ items:
     order: 200
 
 repositories:
+  - {id: "repo:reblocke/single_vent_sim", repository: "reblocke/single_vent_sim", title: "Parallel Circulation Oxygen Explorer", section: "software-and-repositories", artifact_type: "research software", analysis_language: "Python", related_id: "software:reblocke/single_vent_sim", display_with: "software:reblocke/single_vent_sim", license: "MIT", selected_work: true, order: 540, live_url: "https://reblocke.github.io/single_vent_sim/", live_label: "Live tool", data_availability: "Educational simulations only; not clinically validated."}
+  - {id: "repo:reblocke/VBG_interpreter", repository: "reblocke/VBG_interpreter", title: "VBG Acid–Base Explorer", section: "software-and-repositories", artifact_type: "research software", analysis_language: "Python", related_id: "software:reblocke/VBG_interpreter", display_with: "software:reblocke/VBG_interpreter", license: "MIT", selected_work: true, order: 550, live_url: "https://reblocke.github.io/VBG_interpreter/", live_label: "Live tool", data_availability: "Public research preview only; do not enter patient information."}
+  - {id: "repo:reblocke/wald-inference-tools", repository: "reblocke/wald-inference-tools", title: "Wald inference tools", section: "software-and-repositories", artifact_type: "research software", analysis_language: "Python", related_id: "software:reblocke/wald-inference-tools", display_with: "software:reblocke/wald-inference-tools", license: "MIT", selected_work: true, order: 560, live_url: "https://reblocke.github.io/wald-inference-tools/", live_label: "Live tool", data_availability: "Statistical examples only; no clinical data."}
+  - {id: "repo:reblocke/ards-nlp", repository: "reblocke/ards-nlp", title: "MIMIC-CXR Bilateral Opacity Benchmark", section: "software-and-repositories", artifact_type: "research software", analysis_language: "Python", related_id: "software:reblocke/ards-nlp", display_with: "software:reblocke/ards-nlp", license: "MIT", selected_work: true, order: 570, data_availability: "Restricted MIMIC-CXR data are not distributed; credentialed access is required."}
   - {id: "repo:reblocke/Hypercap-Case-Definitions", repository: "reblocke/Hypercap-Case-Definitions", title: "Hypercapnic Respiratory Failure Case Definitions", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1016/j.chest.2025.08.002", display_with: "doi:10.1016/j.chest.2025.08.002", license: "MIT", selected_work: true, order: 210, data_availability: "Restricted EHR-derived data are not public."}
   - {id: "repo:reblocke/tcco2-accuracy", repository: "reblocke/tcco2-accuracy", title: "Transcutaneous CO2 Accuracy", section: "respiratory-failure", artifact_type: "simulation and analysis", analysis_language: "Python", display_with: "abstract:chest:2025:tcco2-sensor-performance", license: "MIT", selected_work: true, order: 220, live_url: "https://reblocke.github.io/tcco2-accuracy/", live_label: "Live tool", data_availability: "Simulation outputs only; no patient-level data are published."}
   - {id: "repo:reblocke/Hypercap-Trial-Adverse-Events", repository: "reblocke/Hypercap-Trial-Adverse-Events", title: "Hypercapnia Trial Adverse Events", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Jupyter Notebook", display_with: "abstract:chest:2024:hypercapnia-adverse-events", license: "MIT", selected_work: true, order: 230, data_availability: "Public trial-registry-derived data only."}
@@ -492,9 +675,9 @@ repositories:
   - {id: "repo:reblocke/NRH-SCI-Vent", repository: "reblocke/NRH-SCI-Vent", title: "Post-Acute Ventilator Weaning and Discharge Outcomes in Cervical Spinal Cord Injury", section: "health-services", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1177/19433654261428406", display_with: "doi:10.1177/19433654261428406", license: "MIT", selected_work: false, order: 310, data_availability: "Restricted EHR data are not public."}
   - {id: "repo:reblocke/Hypercap-CC-NLP", repository: "reblocke/Hypercap-CC-NLP", title: "Hypercapnia Presenting-Concern NLP Study", section: "respiratory-failure", artifact_type: "reproducible NLP analysis", analysis_language: "Python", related_id: "doi:10.64898/2026.07.03.26357242", display_with: "doi:10.64898/2026.07.03.26357242", license: "MIT", selected_work: false, order: 315, data_availability: "Restricted MIMIC-IV data are not public; access requires PhysioNet credentials and applicable approvals."}
   - {id: "repo:reblocke/CSA-CPAP-Prescribing", repository: "reblocke/CSA-CPAP-Prescribing", title: "Central Sleep Apnea CPAP Prescribing", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.1007/s00408-023-00657-z", license: "MIT", selected_work: false, order: 320, data_availability: "Restricted clinical sleep-center data are not public."}
-  - {id: "repo:reblocke/CPAPOutcomes", repository: "reblocke/CPAPOutcomes", title: "Electronic Health Record-derived CPAP Outcomes", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Python", doi: "10.5664/jcsm.9750", license: "Unconfirmed", selected_work: false, order: 330, data_availability: "Restricted EHR-derived data are not public."}
-  - {id: "repo:reblocke/NHPI-OSA-Burden", repository: "reblocke/NHPI-OSA-Burden", title: "Native Hawaiian and Pacific Islander OSA Burden", section: "health-services", artifact_type: "reproducible analysis", analysis_language: "Stata", doi: "10.5664/jcsm.10472", license: "MIT", selected_work: false, order: 340, data_availability: "Restricted clinical data are not public."}
-  - {id: "repo:reblocke/CTPA-Dose-Response", repository: "reblocke/CTPA-Dose-Response", title: "Pulmonary Artery Enlargement and Mortality", section: "evidence-and-prediction", artifact_type: "reproducible analysis", doi: "10.1002/pul2.12225", license: "Unconfirmed", selected_work: false, order: 350, data_availability: "Restricted imaging and EHR data are not public."}
+  - {id: "repo:reblocke/CPAPOutcomes", repository: "reblocke/CPAPOutcomes", title: "Electronic Health Record-derived CPAP Outcomes", section: "respiratory-failure", artifact_type: "reproducible analysis", analysis_language: "Python", related_id: "doi:10.5664/jcsm.9750", display_with: "doi:10.5664/jcsm.9750", license: "Unconfirmed", selected_work: false, order: 330, data_availability: "Restricted EHR-derived data are not public."}
+  - {id: "repo:reblocke/NHPI-OSA-Burden", repository: "reblocke/NHPI-OSA-Burden", title: "Native Hawaiian and Pacific Islander OSA Burden", section: "health-services", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.5664/jcsm.10472", display_with: "doi:10.5664/jcsm.10472", license: "MIT", selected_work: false, order: 340, data_availability: "Restricted clinical data are not public."}
+  - {id: "repo:reblocke/CTPA-Dose-Response", repository: "reblocke/CTPA-Dose-Response", title: "Pulmonary Artery Enlargement and Mortality", section: "evidence-and-prediction", artifact_type: "reproducible analysis", related_id: "doi:10.1002/pul2.12225", display_with: "doi:10.1002/pul2.12225", license: "Unconfirmed", selected_work: false, order: 350, data_availability: "Restricted imaging and EHR data are not public."}
   - {id: "repo:reblocke/Splenectomy-PE", repository: "reblocke/Splenectomy-PE", title: "Splenectomy and Pulmonary Embolism", section: "evidence-and-prediction", artifact_type: "reproducible analysis", related_id: "doi:10.1002/pul2.70231", display_with: "doi:10.1002/pul2.70231", license: "MIT", selected_work: false, order: 360, data_availability: "Restricted clinical data are not public."}
   - {id: "repo:reblocke/code-seminar-analysis", repository: "reblocke/code-seminar-analysis", title: "Inpatient Emergency Leadership Seminar Analysis", section: "teaching-resources", artifact_type: "educational evaluation", analysis_language: "R and Quarto", doi: "10.1164/ajrccm.2025.211.abstracts.a5624", license: "MIT", selected_work: false, order: 370, data_availability: "No trainee identifiers are published."}
   - {id: "repo:reblocke/llm_estimate_lrs", repository: "reblocke/llm_estimate_lrs", title: "LLM Estimation of Likelihood Ratios", section: "evidence-and-prediction", artifact_type: "research notebooks", analysis_language: "Jupyter Notebook", related_id: "doi:10.1038/s41598-026-61766-2", display_with: "doi:10.1038/s41598-026-61766-2", license: "MIT", selected_work: false, order: 380, data_availability: "Generated model outputs and literature-derived comparisons only."}
@@ -507,7 +690,7 @@ repositories:
   - {id: "repo:reblocke/tele_crit_care", repository: "reblocke/tele_crit_care", title: "Tele-critical Care Transfers During COVID", section: "health-services", artifact_type: "research code", analysis_language: "Stata", license: "MIT", selected_work: false, order: 450, data_availability: "Restricted clinical operations data are not public."}
   - {id: "repo:reblocke/clinical_talks", repository: "reblocke/clinical_talks", title: "Clinical Talks", section: "teaching-resources", artifact_type: "teaching site", analysis_language: "Quarto", license: "MIT", selected_work: false, order: 460, data_availability: "Teaching materials only."}
   - {id: "repo:reblocke/stata-codex-skills", repository: "reblocke/stata-codex-skills", title: "Stata Codex Skills", section: "software-and-repositories", artifact_type: "developer tool", analysis_language: "Python", license: "MIT", selected_work: true, order: 470, data_availability: "No clinical data."}
-  - {id: "repo:reblocke/conf_curve_likelihood", repository: "reblocke/conf_curve_likelihood", title: "Confidence Curves and Likelihood", section: "software-and-repositories", artifact_type: "statistical visualization tool", analysis_language: "Python", license: "MIT", selected_work: true, order: 480, live_url: "https://reblocke.github.io/conf_curve_likelihood/", live_label: "Live tool", data_availability: "No clinical data."}
+  - {id: "repo:reblocke/conf_curve_likelihood", repository: "reblocke/conf_curve_likelihood", title: "Confidence Curves and Likelihood", section: "software-and-repositories", artifact_type: "statistical visualization tool", analysis_language: "Python", related_id: "software:reblocke/wald-inference-tools", display_with: "software:reblocke/wald-inference-tools", license: "MIT", selected_work: true, order: 480, live_url: "https://reblocke.github.io/conf_curve_likelihood/", live_label: "Live tool", data_availability: "No clinical data."}
   - {id: "repo:reblocke/stewart-light", repository: "reblocke/stewart-light", title: "Stewart-Light Acid-Base Visualization", section: "software-and-repositories", artifact_type: "clinical teaching tool", analysis_language: "Python", license: "MIT", selected_work: false, order: 490, data_availability: "No patient data."}
   - {id: "repo:reblocke/forensic_metascience", repository: "reblocke/forensic_metascience", title: "Forensic Metascience Replications", section: "software-and-repositories", artifact_type: "replication code", analysis_language: "Python", license: "MIT", selected_work: false, order: 500, data_availability: "Public replication data; consult source licenses."}
   - {id: "repo:reblocke/sofa_resp_sim", repository: "reblocke/sofa_resp_sim", title: "SOFA Respiratory Score Simulation", section: "software-and-repositories", artifact_type: "simulation", analysis_language: "Python", license: "MIT", selected_work: true, order: 510, live_url: "https://reblocke.github.io/sofa_resp_sim/", live_label: "Live tool", data_availability: "Simulation data only."}
