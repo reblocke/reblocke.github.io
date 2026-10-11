@@ -165,6 +165,16 @@ def add_notice_json_ld(site: Path) -> None:
 def mutations() -> list[Mutation]:
     return [
         Mutation(
+            "support-consultant-role",
+            "/cv/ current support entry 1 missing role: Consultant",
+            lambda site: replace_once(route_file(site, "/cv/"), "Role: Consultant", "Role omitted"),
+        ),
+        Mutation(
+            "support-award-number",
+            "/cv/ current support entry 1 missing award: 1R44LM015020-01",
+            lambda site: replace_once(route_file(site, "/cv/"), "1R44LM015020-01", "Award omitted"),
+        ),
+        Mutation(
             "product-section-label",
             "/cv/ missing labeled product section datasets",
             lambda site: replace_once(route_file(site, "/cv/"), "Datasets and analysis resources", "Other outputs"),

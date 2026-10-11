@@ -133,10 +133,13 @@ secondary_affiliations.each_with_index do |affiliation, index|
     errors << "person.yml secondary affiliation #{index + 1} must be an object"
     next
   end
-  %w[role organization legal_name descriptor].each do |key|
+  %w[role organization legal_name].each do |key|
     unless nonempty_string?(affiliation[key])
       errors << "person.yml secondary affiliation #{index + 1} missing #{key}"
     end
+  end
+  if affiliation.key?("descriptor") && !nonempty_string?(affiliation["descriptor"])
+    errors << "person.yml secondary affiliation #{index + 1} descriptor must be nonempty text when supplied"
   end
 end
 

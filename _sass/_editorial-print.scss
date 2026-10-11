@@ -11,5 +11,6 @@
   .cv-entry { grid-template-columns: 1.15in 1fr; padding-block: 7pt; }
   .cv-section, .work-section { margin-top: 20pt; }
   .cv-entry, .citation-list li { break-inside: avoid; }
+  #disclosure { break-inside: avoid; }
   .section--surface { background: transparent; }
 }
