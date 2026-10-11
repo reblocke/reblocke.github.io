@@ -53,6 +53,10 @@ positions:
     organization: "Mountain Biometrics, Inc. (MTN)"
     dates: "2024–present"
     status: "current"
+    summary: >-
+      I advise Mountain Biometrics, which is developing an AI platform to map
+      and interpret fragmented organizational data for analytics and automation
+      in healthcare and financial services.
   - id: "position-utah-pccm-core"
     title: "Core Faculty"
     organization: "University of Utah Pulmonary and Critical Care Fellowship"
@@ -74,11 +78,21 @@ certifications:
 
 research_support:
   current:
+    - id: "support-r44lm015020-01"
+      title: "Unlocking Medical AI: A Scalable, Privacy-Preserving Annotation Platform for Clinical and Physiological Data"
+      sponsor: "NIH/NLM SBIR"
+      award: "1R44LM015020-01"
+      organization: "Mountain Biometrics"
+      role: "Consultant"
+      date_label: "Currently funded period"
+      dates: "08/2026–01/2027"
+      url: "https://reporter.nih.gov/project-details/11255371"
     - id: "support-r01hl169521"
       title: "Informing best practices for evaluation and treatment of myocardial injury during sepsis"
-      sponsor: "NIH NHLBI"
+      sponsor: "NIH/NHLBI"
       award: "R01HL169521"
-      role: "Intermountain site contributor"
+      role: "Co-Investigator, Intermountain site"
+      date_label: "Participation"
       dates: "11/2025–06/2027"
       summary: >-
         Evaluates diagnostic and treatment practices for myocardial injury
@@ -86,7 +100,8 @@ research_support:
     - id: "support-fund-hypercapnia"
       title: "Follow-up Utilization and Needs after Discharge with Hypercapnic Respiratory Failure (FUND-Hypercapnia)"
       sponsor: "Intermountain Clinical and Research Fund"
-      role: "PI"
+      award: "20400306"
+      role: "Principal Investigator"
       dates: "09/2024–02/2027"
       summary: >-
         Uses administrative data to characterize post-discharge testing,

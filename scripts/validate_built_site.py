@@ -397,6 +397,7 @@ def validate(site: Path) -> list[str]:
 
     try:
         person = load_yaml(ROOT / "_data/person.yml")
+        cv = load_yaml(ROOT / "_data/cv.yml")
     except (RuntimeError, json.JSONDecodeError) as exc:
         return [str(exc)]
     try:
@@ -663,6 +664,36 @@ def validate(site: Path) -> list[str]:
     if "/cv/" in canonical_pages:
         compare_work_ids("/cv/", canonical_pages["/cv/"].data_work_ids, expected_cv, errors)
         cv_html = route_file(site, "/cv/").read_text(encoding="utf-8")
+        support_match = re.search(r'<section[^>]*id="support"[^>]*>(.*?)</section>', cv_html, re.S)
+        support_html = support_match.group(1) if support_match else ""
+        current_html, separator, completed_html = support_html.partition("<h3>Completed</h3>")
+        if "<h3>Current</h3>" not in current_html or not separator:
+            errors.append("/cv/ research support must separate Current and Completed")
+        for group, fragment in (("current", current_html), ("completed", completed_html)):
+            expected_support = cv.get("research_support", {}).get(group, [])
+            rendered_support = re.findall(r'<article\b[^>]*class="cv-entry"[^>]*>(.*?)</article>', fragment, re.S)
+            if len(rendered_support) != len(expected_support):
+                errors.append(f"/cv/ {group} support count is {len(rendered_support)}, expected {len(expected_support)}")
+            for index, (entry, rendered_entry) in enumerate(zip(expected_support, rendered_support), 1):
+                prefix = f"/cv/ {group} support entry {index}"
+                title_match = re.search(r'<h3>(.*?)</h3>', rendered_entry, re.S)
+                if not title_match or normalized_text(title_match.group(1)) != entry["title"]:
+                    errors.append(f"{prefix} title/order does not match cv.yml")
+                rendered_text = normalized_text(rendered_entry)
+                for field in ("sponsor", "award", "organization", "role"):
+                    if entry.get(field):
+                        value = f"Role: {entry[field]}" if field == "role" else str(entry[field])
+                        if value not in rendered_text:
+                            errors.append(f"{prefix} missing {field}: {entry[field]}")
+                dates_match = re.search(r'<p class="cv-entry__dates">(.*?)</p>', rendered_entry, re.S)
+                expected_dates = f'{entry["date_label"]}: {entry["dates"]}' if entry.get("date_label") else entry["dates"]
+                if not dates_match or normalized_text(dates_match.group(1)) != expected_dates:
+                    errors.append(f"{prefix} dates/label do not match cv.yml")
+                if entry.get("url"):
+                    support_parser = PageParser()
+                    support_parser.feed(rendered_entry)
+                    if entry["url"] not in support_parser.hrefs:
+                        errors.append(f"{prefix} missing award link {entry['url']}")
         for section_id, (product_type, heading) in CV_PRODUCT_SECTIONS.items():
             match = re.search(rf'<section[^>]*id="{section_id}"[^>]*>(.*?)</section>', cv_html, re.S)
             if not match or heading not in normalized_text(match[1]):
