@@ -209,9 +209,9 @@
   },
   {
     "repository": "reblocke/forensic_metascience",
-    "title": "Forensic Metascience Replications",
-    "artifact_type": "replication code",
-    "analysis_language": "Python",
+    "title": "Forensic Meta-Science",
+    "artifact_type": "Research toolkit for forensic checks and source-traceable medical-study review.",
+    "analysis_language": "R, Python, and Quarto",
     "related_doi": null,
     "related_pmid": null,
     "data_availability": "Public replication data; consult source licenses.",
