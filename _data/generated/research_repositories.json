@@ -380,7 +380,7 @@
     "live_url": "https://reblocke.github.io/single_vent_sim/",
     "live_label": "Live tool",
     "archived": false,
-    "default_branch": null,
+    "default_branch": "main",
     "latest_release": null
   },
   {
