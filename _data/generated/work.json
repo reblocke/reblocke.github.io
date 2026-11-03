@@ -1202,12 +1202,12 @@
       "repository": "reblocke/notebooks_dx_reasoning",
       "title": "Diagnostic Reasoning Notebooks",
       "section": "teaching-resources",
-      "artifact_type": "interactive teaching notebooks",
-      "analysis_language": "Jupyter Notebook",
-      "license": "MIT",
+      "artifact_type": "interactive teaching notebooks and reproducible narrated-animation source",
+      "analysis_language": "Python, Jupyter Notebook, and Manim",
+      "license": "Apache-2.0",
       "selected_work": true,
       "order": 270,
-      "data_availability": "Teaching examples only; no patient data."
+      "data_availability": "Synthetic teaching examples and animation source only; no patient data. Final narrated movies are not public."
     },
     {
       "id": "repo:reblocke/U-of-U-IM-Codes-and-Rapid-Responses",
