@@ -509,6 +509,19 @@ items:
     related_ids: ["repo:reblocke/CSA-CPAP-Prescribing", "repo:reblocke/CSA"]
     selected: {homepage: false, work: false, cv: false}
     order: 125
+  - id: "conference:esicm-lives-2026:000224"
+    type: "abstract"
+    title: "Impact of a severe crystalloid fluid shortage on sepsis resuscitation practices and outcomes"
+    authors: "Peltan I, Groat D, Green N, Blagev D, Madsen T, Brown S, Smith A, Bledsoe J, Jacobs J, Locke B, Munroe E"
+    venue: "ESICM LIVES; Intensive Care Medicine Experimental 14(Suppl 1):131, abstract 000224"
+    year: 2026
+    date: "2026-10-09"
+    location: "Lisbon, Portugal"
+    url: "https://link.springer.com/content/pdf/10.1186/s40635-026-00962-w.pdf#page=101"
+    section: "health-services"
+    summary: "Published in the ESICM LIVES 2026 proceedings, abstract 000224, pages 101–103."
+    selected: {homepage: false, work: true, cv: true}
+    order: 119
   - id: "doi:10.1183/13993003.congress-2026.pa5421"
     type: "abstract"
     title: "Differences in the diagnosis of hypercapnic respiratory failure by race and ethnicity in the United States"
@@ -596,6 +609,7 @@ items:
     venue: "CHEST"
     year: 2025
     location: "Chicago, IL"
+    doi: "10.1016/j.chest.2025.07.3877"
     section: "respiratory-failure"
     summary: "In silico evaluation of transcutaneous CO2 measurement performance for detecting hypercapnia."
     related_ids: ["repo:reblocke/tcco2-accuracy"]
@@ -607,6 +621,7 @@ items:
     venue: "American Thoracic Society International Conference"
     year: 2025
     location: "San Francisco, CA"
+    doi: "10.1164/ajrccm.2025.211.abstracts.a7426"
     section: "health-services"
     selected: {homepage: false, work: true, cv: true}
     order: 140
@@ -616,6 +631,7 @@ items:
     venue: "American Thoracic Society International Conference"
     year: 2025
     location: "San Francisco, CA"
+    doi: "10.1164/ajrccm.2025.211.abstracts.a6391"
     section: "evidence-and-prediction"
     selected: {homepage: false, work: true, cv: true}
     order: 150
@@ -625,6 +641,7 @@ items:
     venue: "American Thoracic Society International Conference"
     year: 2025
     location: "San Francisco, CA"
+    doi: "10.1164/ajrccm.2025.211.abstracts.a5624"
     section: "teaching-resources"
     related_ids: ["repo:reblocke/code-seminar-analysis"]
     selected: {homepage: false, work: true, cv: true}
@@ -635,6 +652,7 @@ items:
     venue: "American Thoracic Society International Conference"
     year: 2025
     location: "San Francisco, CA"
+    doi: "10.1164/ajrccm.2025.211.abstracts.a2683"
     section: "respiratory-failure"
     related_ids: ["repo:reblocke/tcco2-accuracy"]
     selected: {homepage: false, work: true, cv: true}
@@ -645,6 +663,7 @@ items:
     venue: "CHEST"
     year: 2024
     location: "Boston, MA"
+    doi: "10.1016/j.chest.2024.06.3377"
     section: "respiratory-failure"
     related_ids: ["repo:reblocke/Hypercap-Trial-Adverse-Events"]
     selected: {homepage: false, work: true, cv: true}
@@ -655,6 +674,7 @@ items:
     venue: "CHEST"
     year: 2024
     location: "Boston, MA"
+    doi: "10.1016/j.chest.2024.06.149"
     section: "health-services"
     related_ids: ["doi:10.2196/62842", "repo:reblocke/vr_icu"]
     selected: {homepage: false, work: true, cv: true}
@@ -665,9 +685,112 @@ items:
     venue: "American Thoracic Society International Conference"
     year: 2024
     location: "San Diego, CA"
+    doi: "10.1164/ajrccm-conference.2024.209.1_meetingabstracts.a4916"
     section: "respiratory-failure"
     selected: {homepage: false, work: true, cv: true}
     order: 200
+
+  - id: "doi:10.1016/j.chest.2023.07.3871"
+    type: "abstract"
+    title: "PULMONARY ARTERY SIZE ON CT AND MORTALITY RISK: A DOSE-RESPONSE ANALYSIS"
+    authors: "Locke BW, Scarpato B, Bledsoe J, Knox D, Conner K, Stoddard G, Cirulis MM, Elliott CG, Dodson MW"
+    venue: "CHEST"
+    year: 2023
+    location: "Honolulu, HI"
+    doi: "10.1016/j.chest.2023.07.3871"
+    section: "evidence-and-prediction"
+    selected: {homepage: false, work: true, cv: true}
+    order: 210
+  - id: "doi:10.1016/j.chest.2023.07.3976"
+    type: "abstract"
+    title: "JUST KEEP TRYING: PRIOR ATTEMPTS AT WEANING DO NOT DETERMINE EVENTUAL LIBERATION FROM TRACHESOTOMY AND MECHANICAL VENTILATION IN HIGH-LEVEL SPINAL CORD PATIENTS"
+    authors: "Fenger C, Barker J, Creveling P, Tang W, Flis A, Park K, Rosenbluth J, Locke BW, Brown JP"
+    venue: "CHEST"
+    year: 2023
+    location: "Honolulu, HI"
+    doi: "10.1016/j.chest.2023.07.3976"
+    section: "health-services"
+    selected: {homepage: false, work: true, cv: true}
+    order: 220
+  - id: "doi:10.1093/sleep/zsad077.0930"
+    type: "abstract"
+    title: "0930 What explains high self-reports of poor sleep quality in Native Hawaiian/Pacific Islanders?"
+    authors: "Locke B, Situmeang J, Anderson N, Sundar K"
+    venue: "SLEEP"
+    year: 2023
+    location: "Indianapolis, IN"
+    doi: "10.1093/sleep/zsad077.0930"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 230
+  - id: "doi:10.1164/ajrccm-conference.2023.207.1_meetingabstracts.a6495"
+    type: "abstract"
+    title: "Test Performance of Serum Bicarbonate in Identifying Hypercapnia Across Settings and Diseases"
+    authors: "Locke BW, Gouripeddi R, Richards W, Brown JP, Sundar KM"
+    venue: "American Thoracic Society International Conference"
+    year: 2023
+    location: "Washington, DC"
+    doi: "10.1164/ajrccm-conference.2023.207.1_meetingabstracts.a6495"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 240
+  - id: "doi:10.1164/ajrccm-conference.2023.207.1_meetingabstracts.a1424"
+    type: "abstract"
+    title: "Trajectory of Bicarbonate With CPAP Usage Across the Spectrum of Obesity Related Hypoventilation"
+    authors: "Taylor A, Locke BW, Howe H, Workman K, Sundar KM"
+    venue: "American Thoracic Society International Conference"
+    year: 2023
+    location: "Washington, DC"
+    doi: "10.1164/ajrccm-conference.2023.207.1_meetingabstracts.a1424"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 250
+  - id: "doi:10.1164/ajrccm-conference.2022.205.1_meetingabstracts.a2889"
+    type: "abstract"
+    title: "Common Methods of Identifying Hypercapnic Respiratory Failure Produce Meaningfully Different Cohorts"
+    authors: "Locke BW, Sundar KM, Brown JP, Gouripeddi R"
+    venue: "American Thoracic Society International Conference"
+    year: 2022
+    location: "San Francisco, CA"
+    doi: "10.1164/ajrccm-conference.2022.205.1_meetingabstracts.a2889"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 260
+  - id: "doi:10.1164/ajrccm-conference.2022.205.1_meetingabstracts.a4996"
+    type: "abstract"
+    title: "Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery"
+    authors: "Locke BW, Addison C, Mishra S, Sundar KM"
+    venue: "American Thoracic Society International Conference"
+    year: 2022
+    location: "San Francisco, CA"
+    doi: "10.1164/ajrccm-conference.2022.205.1_meetingabstracts.a4996"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 270
+  - id: "doi:10.1164/ajrccm-conference.2020.201.1_meetingabstracts.a2439"
+    type: "abstract"
+    title: "The Effect of OSA Severity and CPAP Adherence on Weight Regain After Bariatric Surgery"
+    authors: "Locke BW, Kim J, Bennion J, Prasad C, Volckmann E, Sundar K"
+    venue: "American Thoracic Society International Conference"
+    year: 2020
+    location: "Philadelphia, PA"
+    doi: "10.1164/ajrccm-conference.2020.201.1_meetingabstracts.a2439"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 280
+    status: "Accepted for presentation; in-person meeting cancelled"
+  - id: "doi:10.1164/ajrccm-conference.2020.201.1_meetingabstracts.a2430"
+    type: "abstract"
+    title: "Spectrum of Central Sleep Apnea at an Academic Sleep Center Between 2016-2018 and Treatment Responses to CPAP vs. Adaptive Servo Ventilation"
+    authors: "Sellman J, Locke BW, McFarland J, Uribe F, Sundar K"
+    venue: "American Thoracic Society International Conference"
+    year: 2020
+    location: "Philadelphia, PA"
+    doi: "10.1164/ajrccm-conference.2020.201.1_meetingabstracts.a2430"
+    section: "respiratory-failure"
+    selected: {homepage: false, work: true, cv: true}
+    order: 290
+    status: "Accepted for presentation; in-person meeting cancelled"
 
 repositories:
   - {id: "repo:reblocke/single_vent_sim", repository: "reblocke/single_vent_sim", title: "Parallel Circulation Oxygen Explorer", section: "software-and-repositories", artifact_type: "research software", analysis_language: "Python", related_id: "software:reblocke/single_vent_sim", display_with: "software:reblocke/single_vent_sim", license: "MIT", selected_work: true, order: 540, live_url: "https://reblocke.github.io/single_vent_sim/", live_label: "Live tool", data_availability: "Educational simulations only; not clinically validated."}
@@ -691,7 +814,7 @@ repositories:
   - {id: "repo:reblocke/NHPI-OSA-Burden", repository: "reblocke/NHPI-OSA-Burden", title: "Native Hawaiian and Pacific Islander OSA Burden", section: "health-services", artifact_type: "reproducible analysis", analysis_language: "Stata", related_id: "doi:10.5664/jcsm.10472", display_with: "doi:10.5664/jcsm.10472", license: "MIT", selected_work: false, order: 340, data_availability: "Restricted clinical data are not public."}
   - {id: "repo:reblocke/CTPA-Dose-Response", repository: "reblocke/CTPA-Dose-Response", title: "Pulmonary Artery Enlargement and Mortality", section: "evidence-and-prediction", artifact_type: "reproducible analysis", related_id: "doi:10.1002/pul2.12225", display_with: "doi:10.1002/pul2.12225", license: "Unconfirmed", selected_work: false, order: 350, data_availability: "Restricted imaging and EHR data are not public."}
   - {id: "repo:reblocke/Splenectomy-PE", repository: "reblocke/Splenectomy-PE", title: "Splenectomy and Pulmonary Embolism", section: "evidence-and-prediction", artifact_type: "reproducible analysis", related_id: "doi:10.1002/pul2.70231", display_with: "doi:10.1002/pul2.70231", license: "MIT", selected_work: false, order: 360, data_availability: "Restricted clinical data are not public."}
-  - {id: "repo:reblocke/code-seminar-analysis", repository: "reblocke/code-seminar-analysis", title: "Inpatient Emergency Leadership Seminar Analysis", section: "teaching-resources", artifact_type: "educational evaluation", analysis_language: "R and Quarto", doi: "10.1164/ajrccm.2025.211.abstracts.a5624", license: "MIT", selected_work: false, order: 370, data_availability: "No trainee identifiers are published."}
+  - {id: "repo:reblocke/code-seminar-analysis", repository: "reblocke/code-seminar-analysis", title: "Inpatient Emergency Leadership Seminar Analysis", section: "teaching-resources", artifact_type: "educational evaluation", analysis_language: "R and Quarto", related_id: "abstract:ats:2025:inpatient-emergency-leadership", license: "MIT", selected_work: false, order: 370, data_availability: "No trainee identifiers are published."}
   - {id: "repo:reblocke/llm_estimate_lrs", repository: "reblocke/llm_estimate_lrs", title: "LLM Estimation of Likelihood Ratios", section: "evidence-and-prediction", artifact_type: "research notebooks", analysis_language: "Jupyter Notebook", related_id: "doi:10.1038/s41598-026-61766-2", display_with: "doi:10.1038/s41598-026-61766-2", license: "MIT", selected_work: false, order: 380, data_availability: "Generated model outputs and literature-derived comparisons only."}
   - {id: "repo:reblocke/abg-vbg-project", repository: "reblocke/abg-vbg-project", title: "ABG versus VBG Project", section: "respiratory-failure", artifact_type: "active research code", license: "MIT", selected_work: false, order: 390, data_availability: "Restricted clinical data are not public."}
   - {id: "repo:reblocke/TriNetXHypercapnia", repository: "reblocke/TriNetXHypercapnia", title: "TriNetX Hypercapnia Analysis", section: "software-and-repositories", artifact_type: "legacy analysis code", analysis_language: "Python", license: "Unconfirmed", selected_work: false, order: 400, data_availability: "No restricted row-level TriNetX data are published."}
