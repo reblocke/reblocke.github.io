@@ -42,6 +42,7 @@
 - Uncomfortable Truths About Data, Justice, and Idiopathic Pulmonary Fibrosis in the Veterans Health Administration (2023): https://doi.org/10.1016/j.chest.2023.03.037
 - Creating a COVID-19 Action Plan for GME Programs (2020): https://doi.org/10.4300/jgme-d-20-00206.1
 - Enhancing Medical Student Quality Improvement Education through Immersion (2017): https://doi.org/10.1111/medu.13313
+- Impact of a severe crystalloid fluid shortage on sepsis resuscitation practices and outcomes (2026): https://link.springer.com/content/pdf/10.1186/s40635-026-00962-w.pdf#page=101
 - Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies Carried by Mountain Climbers in Colorado (2017): https://doi.org/10.1093/jtm/taw088
 - Differences in the diagnosis of hypercapnic respiratory failure by race and ethnicity in the United States (2026): https://doi.org/10.1183/13993003.congress-2026.pa5421
 - A55-47 Prognostic Value of Hypercapnia by ABG vs VBG: A Propensity-Weighted, Multicenter EHR Cohort (2026): https://doi.org/10.1093/ajrccm/aamag162.4637
@@ -50,20 +51,29 @@
 - C58-05 Epidemiology of Sarcoidosis in Utah: Incidence, Organ Involvement, and Mortality Compared With National Benchmarks (2026): https://doi.org/10.1093/ajrccm/aamag162.2740
 - C75-05 Costs Surrounding Index Hospitalization for Any-Cause Hypercapnic Respiratory Failure in an Integrated Healthsystem (2026): https://doi.org/10.1093/ajrccm/aamag162.6420
 - C75-09 Chief Complaint Profiles in Hypercapnic Respiratory Failure: A Natural Language Processing Study of MIMIC-IV (2026): https://doi.org/10.1093/ajrccm/aamag162.4737
-- Simulation suggests transcutaneous CO2 sensors may accurately detect hypercapnia across settings (2025): https://reblocke.github.io/work/
-- Rates of diagnostic evaluation for causes of hypercapnic respiratory failure in Utah (2025): https://reblocke.github.io/work/
-- Central versus peripheral location of pulmonary embolism in asplenic patients (2025): https://reblocke.github.io/work/
-- Enhancing intern leadership of inpatient emergencies (2025): https://reblocke.github.io/work/
-- In silico estimation of transcutaneous CO2 sensor performance (2025): https://reblocke.github.io/work/
-- Hypercapnic respiratory failure is infrequently reported as an adverse event in clinical trials (2024): https://reblocke.github.io/work/
-- Low research-burden study of immersive virtual reality feasibility in ICU (2024): https://reblocke.github.io/work/
-- Determinants of serum bicarbonate performance for identifying hypercapnia (2024): https://reblocke.github.io/work/
+- Simulation suggests transcutaneous CO2 sensors may accurately detect hypercapnia across settings (2025): https://doi.org/10.1016/j.chest.2025.07.3877
+- Rates of diagnostic evaluation for causes of hypercapnic respiratory failure in Utah (2025): https://doi.org/10.1164/ajrccm.2025.211.abstracts.a7426
+- Central versus peripheral location of pulmonary embolism in asplenic patients (2025): https://doi.org/10.1164/ajrccm.2025.211.abstracts.a6391
+- Enhancing intern leadership of inpatient emergencies (2025): https://doi.org/10.1164/ajrccm.2025.211.abstracts.a5624
+- In silico estimation of transcutaneous CO2 sensor performance (2025): https://doi.org/10.1164/ajrccm.2025.211.abstracts.a2683
+- Hypercapnic respiratory failure is infrequently reported as an adverse event in clinical trials (2024): https://doi.org/10.1016/j.chest.2024.06.3377
+- Low research-burden study of immersive virtual reality feasibility in ICU (2024): https://doi.org/10.1016/j.chest.2024.06.149
+- Determinants of serum bicarbonate performance for identifying hypercapnia (2024): https://doi.org/10.1164/ajrccm-conference.2024.209.1_meetingabstracts.a4916
 - Decomposing treatment effect estimation reveals asymmetric clinical knowledge in large language models: analysis code, frozen prompts and aggregate results (2026): https://doi.org/10.55157/csd.nnt.2026.001
 - Parallel Circulation Oxygen Explorer (2026): https://reblocke.github.io/work/
 - VBG Acid–Base Explorer (2026): https://reblocke.github.io/work/
 - Wald inference tools (2026): https://reblocke.github.io/work/
 - MIMIC-CXR Bilateral Opacity Benchmark (2026): https://reblocke.github.io/work/
 - PAP, RADs, HMVs: Historical pathways and the current landscape (2026): https://github.com/reblocke/pap_rad_hmv/blob/main/PAP_RAD_HMV_Companion_v2.md
+- PULMONARY ARTERY SIZE ON CT AND MORTALITY RISK: A DOSE-RESPONSE ANALYSIS (2023): https://doi.org/10.1016/j.chest.2023.07.3871
+- JUST KEEP TRYING: PRIOR ATTEMPTS AT WEANING DO NOT DETERMINE EVENTUAL LIBERATION FROM TRACHESOTOMY AND MECHANICAL VENTILATION IN HIGH-LEVEL SPINAL CORD PATIENTS (2023): https://doi.org/10.1016/j.chest.2023.07.3976
+- 0930 What explains high self-reports of poor sleep quality in Native Hawaiian/Pacific Islanders? (2023): https://doi.org/10.1093/sleep/zsad077.0930
+- Test Performance of Serum Bicarbonate in Identifying Hypercapnia Across Settings and Diseases (2023): https://doi.org/10.1164/ajrccm-conference.2023.207.1_meetingabstracts.a6495
+- Trajectory of Bicarbonate With CPAP Usage Across the Spectrum of Obesity Related Hypoventilation (2023): https://doi.org/10.1164/ajrccm-conference.2023.207.1_meetingabstracts.a1424
+- Common Methods of Identifying Hypercapnic Respiratory Failure Produce Meaningfully Different Cohorts (2022): https://doi.org/10.1164/ajrccm-conference.2022.205.1_meetingabstracts.a2889
+- Changes in Bicarbonate in Patients at Risk for Obesity Hypoventilation Undergoing Bariatric Surgery (2022): https://doi.org/10.1164/ajrccm-conference.2022.205.1_meetingabstracts.a4996
+- The Effect of OSA Severity and CPAP Adherence on Weight Regain After Bariatric Surgery (2020): https://doi.org/10.1164/ajrccm-conference.2020.201.1_meetingabstracts.a2439
+- Spectrum of Central Sleep Apnea at an Academic Sleep Center Between 2016-2018 and Treatment Responses to CPAP vs. Adaptive Servo Ventilation (2020): https://doi.org/10.1164/ajrccm-conference.2020.201.1_meetingabstracts.a2430
 
 ## Machine-readable data
 
