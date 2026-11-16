@@ -43,6 +43,7 @@
 - Creating a COVID-19 Action Plan for GME Programs (2020): https://doi.org/10.4300/jgme-d-20-00206.1
 - Enhancing Medical Student Quality Improvement Education through Immersion (2017): https://doi.org/10.1111/medu.13313
 - Mountain Medical Kits: Epidemiology-Based Recommendations and Analysis of Medical Supplies Carried by Mountain Climbers in Colorado (2017): https://doi.org/10.1093/jtm/taw088
+- Differences in the diagnosis of hypercapnic respiratory failure by race and ethnicity in the United States (2026): https://doi.org/10.1183/13993003.congress-2026.pa5421
 - A55-47 Prognostic Value of Hypercapnia by ABG vs VBG: A Propensity-Weighted, Multicenter EHR Cohort (2026): https://doi.org/10.1093/ajrccm/aamag162.4637
 - B38-12 Intern Code Blue and Rapid Response Leadership: A Pre-post Evaluation of a Micro-Module Curriculum (2026): https://doi.org/10.1093/ajrccm/aamag162.939
 - C56-19 Beyond Verification: Exploring Resident Attitudes and Behaviors in Code-Status Discussions (2026): https://doi.org/10.1093/ajrccm/aamag162.1058

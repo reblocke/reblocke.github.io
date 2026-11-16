@@ -614,6 +614,24 @@
       "order": 120
     },
     {
+      "id": "doi:10.1183/13993003.congress-2026.pa5421",
+      "type": "abstract",
+      "title": "Differences in the diagnosis of hypercapnic respiratory failure by race and ethnicity in the United States",
+      "authors": "Locke B, Lanspa M, Carr J, Dean N, Richards W, Brown J, Gouripeddi R, Peltan I, Brown S",
+      "venue": "ERS Congress; European Respiratory Journal 68(Suppl 70):PA5421",
+      "year": 2026,
+      "date": "2026-09-05",
+      "doi": "10.1183/13993003.congress-2026.pa5421",
+      "status": "Presented by Michael Lanspa",
+      "section": "respiratory-failure",
+      "selected": {
+        "homepage": false,
+        "work": true,
+        "cv": true
+      },
+      "order": 120
+    },
+    {
       "id": "doi:10.1093/ajrccm/aamag162.4637",
       "type": "abstract",
       "title": "A55-47 Prognostic Value of Hypercapnia by ABG vs VBG: A Propensity-Weighted, Multicenter EHR Cohort",
